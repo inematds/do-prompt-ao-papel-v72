@@ -39,6 +39,7 @@ UI = {  # padrões (iguais a CONF_UI do gerar.py); o curso.json → ui pode troc
     "conf_sem_duracao": "Plano {i}: falta a duração em segundos (ex.: 4 s).",
     "conf_duracao": "Os planos somam {s} s; o pedido é de {x} a {y} s.",
     "conf_termo": "Falta citar {g}.",
+    "conf_proibe": "{g}: troque \"{c}\" por algo que dê para conferir.",  # 7.14.21
     "conf_mais": "… e mais {n}.",
     # 7.12.15: modo vídeo (regra "video")
     "conf_video_dur": "O vídeo tem {s} s; o pedido é de {x} a {y} s.",
@@ -225,7 +226,11 @@ def conferir(texto, sec, ui=None, lang="pt"):
                 if g.get("campo"):  # 7.13.16: só a linha "Campo: …" conta
                     pc = re.compile(r"^\s*[-*•]?\s*" + re.escape(norm(g["campo"])) + r"\s*:(.*)$")
                     alvo = "\n".join((pc.match(norm(l)) or [None, ""])[1] for l in linhas)
-                if not achados(alvo, r["grupos"])[gi]:
+                ach = achados(alvo, r["grupos"])[gi]
+                if g.get("proibe"):  # 7.14.21: grupo de termos proibidos (vazio, adjetivo sem teste): citar reprova
+                    if ach:
+                        faltas.append(fmt(T["conf_proibe"], g=g["rot"], c=g["termos"][min(ach)].split(" / ")[0].strip()))
+                elif not ach:
                     faltas.append(fmt(T["conf_termo"], g=g["rot"]))
     if faltas:
         return False, T["conf_falta"], faltas

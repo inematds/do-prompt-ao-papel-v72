@@ -109,7 +109,10 @@
             var pc = new RegExp("^\\s*[-*•]?\\s*" + escRe(norm(g.campo)) + "\\s*:(.*)$");
             alvo = linhas.map(function (l) { var m = pc.exec(norm(l)); return m ? m[1] : ""; }).join("\n");
           }
-          if (!achados(alvo, r.grupos)[gi].n) faltas.push(fmt(T.conf_termo, { g: g.rot }));
+          var ach = achados(alvo, r.grupos)[gi];
+          if (g.proibe) {  // 7.14.21: grupo de termos proibidos (vazio, adjetivo sem teste): citar reprova
+            if (ach.n) faltas.push(fmt(T.conf_proibe, { g: g.rot, c: g.termos[Math.min.apply(null, Object.keys(ach.fams).map(Number))].split(" / ")[0].trim() }));
+          } else if (!ach.n) faltas.push(fmt(T.conf_termo, { g: g.rot }));
         });
       }
     });

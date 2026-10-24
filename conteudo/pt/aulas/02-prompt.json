@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "Muleta ou destino?",
-      "sub": "A pergunta para cada técnica: ela diz o que eu quero ou compensa uma fraqueza do modelo antigo? Clique em cada grupo.",
+      "sub": "A pergunta para cada técnica: ela diz o que eu quero ou compensa uma fraqueza do modelo antigo? Toque ou clique em cada grupo.",
       "nos": [
         {
           "icone": "x",
@@ -52,7 +52,7 @@
               "t": "lista longa de \"não faça\""
             },
             {
-              "t": "cadeia manual de 5 prompts"
+              "t": "cadeia manual de prompts (pesquisa → roteiro → texto, um por vez)"
             }
           ],
           "detalhe": "Os modelos atuais raciocinam antes de responder e encadeiam etapas sozinhos. \"Você é o melhor redator do mundo\" não muda o resultado. Listas de \"não faça\" competem entre si e enchem o espaço da conversa. Essas instruções não acrescentam e às vezes pioram."
@@ -69,7 +69,7 @@
               "t": "papel com perspectiva"
             },
             {
-              "t": "saída em JSON"
+              "t": "saída em JSON (dados para outro programa)"
             },
             {
               "t": "etapas com aprovação"
@@ -105,7 +105,7 @@
     {
       "tipo": "passos",
       "titulo": "Auditoria por subtração",
-      "sub": "Quatro passos para enxugar um prompt antigo. Clique em cada um.",
+      "sub": "Quatro passos para enxugar um prompt antigo. Toque ou clique em cada um.",
       "passos": [
         {
           "titulo": "Separar",
@@ -152,7 +152,7 @@
           ],
           "exemplo": {
             "rot": "Registro",
-            "texto": "Versão antiga: 14 linhas. Nova: 6 linhas. Resultado: igual em 2 de 2, mais direto em 1."
+            "texto": "Versão antiga: 11 linhas. Nova: 5 linhas. Resultado: igual em 2 de 2, mais direto em 1."
           }
         }
       ]

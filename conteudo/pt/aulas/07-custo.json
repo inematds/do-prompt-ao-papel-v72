@@ -5,8 +5,8 @@
   "titulo": "O lado ruim: a conta, e como cuidar dela",
   "titulo_curto": "Cuidar do custo",
   "minutos": 13,
-  "lead": "Com agente rodando o dia inteiro, o uso cresce rápido e vira uma conta grande, principalmente quando se paga por uso na API. Eu rodo quase tudo pela assinatura. Mesmo assim, como com qualquer funcionário, é preciso auditar o desempenho e cuidar do custo. Quatro alavancas resolvem a maior parte: o modelo certo, o cache, o lote e a conta acompanhada.",
-  "objetivo": "escolher o modelo e o jeito de rodar (na hora ou em lote) para cada tarefa recorrente e acompanhar o uso de uma semana.",
+  "lead": "Com agente rodando o dia inteiro, o uso cresce rápido: na assinatura você bate no limite; pagando por uso, vira uma conta grande. No meu caso (Nei, do INEMA), quase tudo roda pela assinatura. Como com qualquer funcionário, é preciso auditar e cuidar do custo. Primeiro o que vale para todos: o modelo certo e a conta acompanhada. Depois, para quem paga por uso, cache e lote.",
+  "objetivo": "escolher o modelo certo para cada tarefa recorrente, acompanhar o uso de uma semana e saber quando cache e lote valem.",
   "competencias": [
     "escolher-modelo-por-tarefa",
     "usar-cache-e-lote",
@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "Quatro alavancas do custo",
-      "sub": "Clique em cada uma.",
+      "sub": "Toque ou clique em cada uma.",
       "nos": [
         {
           "icone": "chip",
@@ -43,44 +43,16 @@
           "sub": "certo",
           "itens": [
             {
-              "t": "Haiku: tarefa simples"
+              "t": "menor: tarefa simples"
             },
             {
-              "t": "Sonnet: dia a dia"
+              "t": "do meio: dia a dia"
             },
             {
-              "t": "Opus ou Fable: o que importa"
+              "t": "maior: o que importa"
             }
           ],
-          "detalhe": "Nem toda tarefa precisa do modelo mais forte. Classificar mensagens ou extrair um campo vai no menor; escrever e revisar no do meio; decisão, código difícil e o que faz diferença de verdade no maior. Os nomes acima são da família Claude; outras empresas têm a mesma escada."
-        },
-        {
-          "icone": "memoria",
-          "titulo": "Cache",
-          "sub": "o começo repetido",
-          "itens": [
-            {
-              "t": "mesmo início de conversa"
-            },
-            {
-              "t": "em pouco tempo"
-            }
-          ],
-          "detalhe": "Se você repete o mesmo começo de conversa (as regras, a ficha, os documentos) em pouco tempo, essa parte é guardada e sai por uma fração do preço. Por isso vale manter o começo fixo e deixar o que muda no fim."
-        },
-        {
-          "icone": "relogio",
-          "titulo": "Lote",
-          "sub": "o que não é urgente",
-          "itens": [
-            {
-              "t": "batch API"
-            },
-            {
-              "t": "metade do preço"
-            }
-          ],
-          "detalhe": "O que pode esperar (relatórios, classificações em massa, traduções) vai em lote pela batch API, que cobra metade do preço e devolve o resultado em até um dia. Tarefa que alguém espera na hora fica fora do lote."
+          "detalhe": "Nem toda tarefa precisa do modelo mais forte. Classificar mensagens ou extrair um campo vai no menor; escrever e revisar no do meio; decisão e o que faz diferença de verdade no maior. Os nomes, do menor para o maior: no Claude, Haiku → Sonnet → Opus ou Fable; no ChatGPT, as versões \"mini\" → o modelo padrão → as de raciocínio e as \"Pro\"; no Gemini, Flash → Pro. O modelo se escolhe no seletor no alto da conversa; o que aparece ali depende do seu plano."
         },
         {
           "icone": "grafico",
@@ -95,16 +67,44 @@
               "t": "olhar toda semana"
             }
           ],
-          "detalhe": "Anote quanto cada tarefa consome: na assinatura, a fatia do limite; na API, o valor. Um agente bem treinado já dá conta de boa parte das tarefas, e a equipe inteira pode falar com ele no mesmo canal. Sem conta acompanhada, o custo só aparece na fatura."
+          "detalhe": "Anote quanto cada tarefa consome: na assinatura, quantas vezes você bateu no limite e com que tarefa; na API, o valor. Um agente bem treinado já dá conta de boa parte das tarefas, e a equipe inteira pode falar com ele no mesmo canal. Sem conta acompanhada, o custo só aparece na fatura."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Cache",
+          "sub": "se paga por uso",
+          "itens": [
+            {
+              "t": "mesmo início de conversa"
+            },
+            {
+              "t": "em pouco tempo"
+            }
+          ],
+          "detalhe": "Vale para quem paga por uso pela API (o acesso direto ao modelo por programa, cobrado por volume). Se você repete o mesmo começo de conversa (as regras, a ficha, os documentos) em pouco tempo, essa parte é guardada e sai por uma fração do preço. Por isso vale manter o começo fixo e deixar o que muda no fim."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Lote",
+          "sub": "se paga por uso",
+          "itens": [
+            {
+              "t": "batch API"
+            },
+            {
+              "t": "metade do preço"
+            }
+          ],
+          "detalhe": "Também é da API. O que pode esperar (relatórios, classificações em massa, traduções) vai em lote pela batch API, que cobra metade do preço e devolve o resultado em até um dia. Tarefa que alguém espera na hora fica fora do lote."
         }
       ],
       "legenda": "Audite como auditaria um funcionário: o que ele entrega, quanto custa e se o modelo é o certo para o trabalho.",
-      "dica": "Eu deixo o modelo de cada sistema num arquivo só. Trocar de modelo, quando sai um melhor ou mais barato, é mudar uma linha."
+      "dica": "No meu caso, o modelo de cada sistema fica anotado num lugar só. Quando sai um melhor ou mais barato, troco numa linha, sem caçar pelo resto."
     },
     {
       "tipo": "passos",
       "titulo": "Decidir, tarefa por tarefa",
-      "sub": "Três perguntas para cada tarefa recorrente. Clique em cada uma.",
+      "sub": "Três perguntas para cada tarefa recorrente. Toque ou clique em cada uma.",
       "passos": [
         {
           "titulo": "Quão difícil?",
@@ -119,7 +119,19 @@
           }
         },
         {
-          "titulo": "Alguém espera?",
+          "titulo": "Só assinatura?",
+          "sub": "o que conta",
+          "texto": [
+            "Se você usa só a assinatura do chat, cache e lote não aparecem para você: quem cuida disso é o fornecedor.",
+            "O que conta é escolher o modelo certo, não repetir o contexto à toa (o projeto já guarda) e observar quando você bate no limite."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Bateu no limite toda quinta? Veja que tarefa usou o modelo maior sem precisar."
+          }
+        },
+        {
+          "titulo": "Alguém espera? (API)",
           "sub": "escolhe o lote",
           "texto": [
             "Se ninguém está esperando a resposta agora, a tarefa pode ir em lote pela metade do preço.",
@@ -131,7 +143,7 @@
           }
         },
         {
-          "titulo": "O começo se repete?",
+          "titulo": "Começo se repete? (API)",
           "sub": "aproveita o cache",
           "texto": [
             "Se toda chamada começa com as mesmas regras e documentos, deixe esse começo idêntico e no início.",
@@ -150,9 +162,9 @@
       "sub": "Uma tabela por agente. Troque o texto entre < > pelo seu.",
       "blocos": [
         {
-          "rot": "custo-por-tarefa.md",
+          "rot": "Custo por tarefa (documento ou planilha)",
           "icone": "grafico",
-          "conteudo": "# Custo por tarefa · <agente> · semana de <data>\n\n| tarefa | vezes na semana | modelo | na hora ou em lote | começo fixo (cache)? | uso anotado |\n|---|---|---|---|---|---|\n| <tarefa 1> | | menor / meio / maior | hora / lote | sim / não | <fatia do limite ou valor> |\n| <tarefa 2> | | | | | |\n| <tarefa 3> | | | | | |\n| <tarefa 4> | | | | | |\n| <tarefa 5> | | | | | |\n\nDecisão da semana: <o que muda de modelo ou vai para o lote>"
+          "conteudo": "# Custo por tarefa · <agente> · semana de <data>\n\n| tarefa | vezes na semana | modelo | motivo | na hora ou em lote | começo fixo (cache)? | uso anotado |\n|---|---|---|---|---|---|---|\n| <tarefa 1> | | menor / meio / maior | <por quê, em uma frase> | hora / lote | sim / não | <bateu no limite? ou o valor> |\n| <tarefa 2> | | | | | | |\n| <tarefa 3> | | | | | | |\n| <tarefa 4> | | | | | | |\n| <tarefa 5> | | | | | | |\n\nDecisão da semana: <o que muda de modelo ou vai para o lote>"
         },
         {
           "rot": "Pedido: revisar o custo com o próprio agente",
@@ -183,7 +195,7 @@
           "id": "e1",
           "titulo": "E1 · A tabela",
           "min": "20 min",
-          "texto": "Liste as cinco tarefas que você mais entrega à IA e preencha o custo-por-tarefa.md com modelo, hora ou lote e começo fixo.",
+          "texto": "Liste as cinco tarefas que você mais entrega à IA e preencha a tabela de custo por tarefa com modelo, hora ou lote e começo fixo (se você só usa assinatura, marque \"hora\").",
           "pronto": "as cinco linhas têm modelo e \"hora\" ou \"lote\" marcados, com o motivo em uma frase."
         },
         {
@@ -191,7 +203,7 @@
           "titulo": "E2 · Uma semana anotada",
           "min": "10 min",
           "dias": 7,
-          "texto": "Durante uma semana, anote o uso de cada tarefa: a fatia do limite da assinatura ou o valor na API.",
+          "texto": "Durante uma semana, anote o uso de cada tarefa: na assinatura, se usou o modelo maior e se bateu no limite; na API, o valor.",
           "pronto": "a coluna \"uso anotado\" está preenchida para a semana inteira."
         },
         {
@@ -228,28 +240,28 @@
           "ref": "passos"
         },
         {
-          "p": "O que a batch API oferece?",
+          "p": "Você bate no limite da assinatura toda quinta. O que olhar primeiro?",
           "opcoes": [
-            "Respostas mais rápidas pelo mesmo preço, porque o pedido entra na frente da fila.",
-            "Um modelo mais inteligente.",
-            "Uso ilimitado na assinatura.",
-            "Metade do preço para o que pode esperar até um dia."
+            "Se precisa trocar para um plano mais caro já nesta semana.",
+            "Que tarefa está usando o modelo maior sem precisar.",
+            "Se dá para abrir mais contas grátis em outras ferramentas.",
+            "Se o problema some ao apagar as conversas antigas do projeto."
           ],
-          "certa": 3,
-          "explica": "O lote cobra metade e devolve o resultado em até um dia. Serve para o que ninguém espera na hora.",
-          "ref": "diagrama"
+          "certa": 1,
+          "explica": "Na assinatura, a alavanca é o modelo certo para cada tarefa. A tabela de custo por tarefa mostra qual delas gasta o modelo maior à toa.",
+          "ref": "passos"
         },
         {
-          "p": "Como aproveitar o cache de prompt?",
+          "p": "Cache e lote valem para quem?",
           "opcoes": [
-            "Deixar o começo do pedido (regras, documentos) idêntico e pôr o que muda no fim.",
-            "Escrever cada pedido de um jeito diferente.",
-            "Apagar o histórico a cada conversa.",
-            "Usar sempre o modelo menor, que guarda melhor o começo da conversa do que os maiores."
+            "Para quem paga por uso pela API; na assinatura, quem cuida disso é o fornecedor.",
+            "Para todo mundo que usa o ChatGPT, sem nenhuma configuração.",
+            "Só para quem usa o modelo menor.",
+            "Só para quem trabalha no terminal."
           ],
           "certa": 0,
-          "explica": "O cache guarda o começo repetido em pouco tempo e cobra uma fração por ele. Começo fixo, variação no fim.",
-          "ref": "passos"
+          "explica": "Cache e lote são recursos da API, cobrada por volume. Quem usa só a assinatura cuida do modelo certo e do limite.",
+          "ref": "diagrama"
         }
       ]
     },

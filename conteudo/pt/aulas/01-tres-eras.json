@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "As três eras",
-      "sub": "Clique em cada era. Repare no que muda: quem faz o trabalho e o que você entrega.",
+      "sub": "Toque ou clique em cada era. Repare no que muda: quem faz o trabalho e o que você entrega.",
       "estilo": "escada",
       "nos": [
         {
@@ -96,12 +96,13 @@
       "rolagem_fim": {
         "titulo": "Do pedido à gestão",
         "texto": "No prompt, você escrevia o trabalho. No contexto, você preparava a base. No papel, você gerencia: define, confere e corrige."
-      }
+      },
+      "dica": "Neste curso, \"agente\" é a IA com um papel fixo. No chat, é um projeto (ChatGPT, Claude) ou um Gem (Gemini) com instruções e arquivos. No terminal, é o Claude Code ou o Codex trabalhando numa pasta. O papel é o mesmo nos dois."
     },
     {
       "tipo": "passos",
       "titulo": "O que cada era pede de você",
-      "sub": "Clique em cada era e compare o mesmo pedido.",
+      "sub": "Toque ou clique em cada era e compare o mesmo pedido.",
       "passos": [
         {
           "titulo": "Prompt",
@@ -144,10 +145,10 @@
     {
       "tipo": "codigo",
       "titulo": "Modelo: o diagnóstico dos seus pedidos",
-      "sub": "Copie para um arquivo e preencha com cinco pedidos que você fez à IA nesta semana.",
+      "sub": "Copie para um documento (Word, Google Docs) ou uma planilha e preencha com cinco pedidos que você fez à IA nesta semana.",
       "blocos": [
         {
-          "rot": "diagnostico-eras.md",
+          "rot": "Diagnóstico (documento ou planilha)",
           "icone": "arquivo",
           "conteudo": "# Diagnóstico: em que era estão os meus pedidos\n\n| # | pedido (resumo) | era | o que faltou para chegar ao papel |\n|---|---|---|---|\n| 1 | <pedido> | prompt / contexto / papel | <objetivo medível? contexto guardado? exemplo?> |\n| 2 | | | |\n| 3 | | | |\n| 4 | | | |\n| 5 | | | |\n\nPergunta para cada linha:\n- Eu escrevi COMO fazer ou O QUE é sucesso?\n- A IA já sabia o contexto ou eu repeti tudo?\n- Ela conseguiria conferir sozinha se terminou?"
         }
@@ -157,7 +158,7 @@
         "abas": [
           {
             "rot": "Exemplo preenchido",
-            "html": "<ol><li><b>\"Resuma este PDF em 5 tópicos\"</b> · prompt · faltou dizer para quem é o resumo e o que fazer com ele.</li><li><b>\"Escreva o e-mail no tom do arquivo de regras\"</b> · contexto · faltou o critério de pronto (quem aprova, até quando).</li><li><b>\"Toda sexta, monte o relatório igual ao de exemplo e me mande\"</b> · papel · tem objetivo, exemplo e rotina.</li></ol>"
+            "html": "<ol><li><b>\"Resuma este PDF em 5 tópicos\"</b> · prompt · faltou dizer para quem é o resumo e o que fazer com ele.</li><li><b>\"Escreva o e-mail no tom do arquivo de regras\"</b> · contexto · faltou o critério de pronto (quem aprova, até quando).</li><li><b>\"Toda sexta até 17h, monte o relatório igual ao de exemplo; pronto quando os totais batem com a planilha e eu aprovo\"</b> · papel · tem objetivo medível, exemplo, prazo e quem aprova.</li></ol>"
           },
           {
             "rot": "Erros comuns",
@@ -175,7 +176,7 @@
           "id": "e1",
           "titulo": "E1 · Cinco pedidos reais",
           "min": "15 min",
-          "texto": "Abra o histórico do seu chat de IA e copie o resumo de cinco pedidos desta semana para o diagnostico-eras.md.",
+          "texto": "Abra o histórico do seu chat de IA e copie o resumo de cinco pedidos desta semana para o documento do diagnóstico.",
           "pronto": "a tabela tem cinco linhas com pedidos que você fez de verdade."
         },
         {

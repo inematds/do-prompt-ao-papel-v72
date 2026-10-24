@@ -109,6 +109,20 @@
           "Treinando o agente em ciclo até ter um procedimento padrão escrito.",
           "Escolhendo o modelo certo para cada tarefa e acompanhando a conta."
         ]
+      },
+      {
+        "t": "Onde fazer",
+        "itens": [
+          "No chat (ChatGPT, Claude ou Gemini), com um projeto de instruções fixas: é o caminho principal do curso.",
+          "No terminal, com Claude Code ou Codex, para quem já usa: as aulas 3, 4 e 6 mostram também esse caminho."
+        ]
+      },
+      {
+        "t": "Quem fala no curso",
+        "itens": [
+          "Nei Maldaner, do INEMA.CLUB: 40 anos de tecnologia, de programador a fundador de empresas.",
+          "Quando o texto diz \"eu\" ou \"no meu caso\", é ele contando como trabalha hoje com agentes de IA."
+        ]
       }
     ]
   },
@@ -123,7 +137,7 @@
     "aula_anterior": "Aula anterior",
     "voltar_inicio": "Voltar ao início do curso",
     "marcar_concluida": "Marcar aula como concluída",
-    "dg_dica": "Clique em cada bloco do diagrama para ver o que ele faz.",
+    "dg_dica": "Toque ou clique em cada bloco do diagrama para ver o que ele faz.",
     "copiar": "Copiar",
     "copiado": "Copiado",
     "selo_simulacao": "Simulação: exemplo ilustrativo",
@@ -149,7 +163,7 @@
     "role_dica": "Role a página: cada etapa abaixo acende a sua parte do diagrama.",
     "pre_requisito": "requer",
     "ver_aula": "Ver a aula",
-    "mapa_dica": "Clique num exercício para ver o que fazer e o \"pronto quando\".",
+    "mapa_dica": "Toque ou clique num exercício para ver o que fazer e o \"pronto quando\".",
     "etapas": "Etapas",
     "exercicios": "exercícios",
     "rever": "Rever:",
@@ -213,7 +227,8 @@
     "conv_placar": "Você fez {p} de {m} pontos possíveis.",
     "conv_licao": "Lição:",
     "conv_recomecar": "Recomeçar a conversa",
-    "conv_feita": "Seu melhor placar: {p} de {m} pontos."
+    "conv_feita": "Seu melhor placar: {p} de {m} pontos.",
+    "conf_campo": "A linha {c} está faltando ou curta demais: escreva \"{c}:\" no começo e pelo menos {x} letras depois."
   },
   "icone": "camadas"
 }

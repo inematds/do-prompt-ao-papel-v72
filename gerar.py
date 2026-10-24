@@ -9,7 +9,7 @@ Campos de texto aceitam <b>, <code>, <a> e <br>; o resto é escapado na origem (
 """
 import argparse, html, json, pathlib, re, sys
 
-VERSAO = "7.14.19"    # versão do motor (CHANGELOG.md da skill formato-curso-v72)
+VERSAO = "7.14.21"    # versão do motor (CHANGELOG.md da skill formato-curso-v72)
 RAIZ = pathlib.Path(__file__).resolve().parent
 PREFIXO = "../../"  # caminho até a raiz a partir da página em geração (v7.2: foto do "Você" no diagrama)
 FOTO_VOCE = "assets/img/voce.jpg"
@@ -349,6 +349,7 @@ CONF_UI = {  # 7.9.12: textos do conferidor; ficam em curso.json → ui (mesmos 
     "conf_sem_duracao": "Plano {i}: falta a duração em segundos (ex.: 4 s).",
     "conf_duracao": "Os planos somam {s} s; o pedido é de {x} a {y} s.",
     "conf_termo": "Falta citar {g}.",
+    "conf_proibe": "{g}: troque \"{c}\" por algo que dê para conferir.",  # 7.14.21
     "conf_mais": "… e mais {n}.",
     "conf_rot": "Cole aqui o seu arquivo (ou carregue o .txt):",
     "conf_conferir": "Conferir", "conf_exemplo": "Exemplo que passa", "conf_errado": "Exemplo com erro",
@@ -392,7 +393,9 @@ def sec_conferidor(s, ui, conf_id, prefixo=""):
     dados = json.dumps({"regras": s["regras"], "ok": s["ok"], "exemplo": s["exemplo"], "exemplo_errado": s["exemplo_errado"],
                         "arquivo": s.get("arquivo", "arquivo.txt"), "txt": txt}, ensure_ascii=False).replace("</", "<\\/")
     tid = f"cf-{conf_id}"
-    return (f'<div class="confer" data-conf="{attr(conf_id)}" data-ok-prefixo="{attr(re.split(r"[{:]", s["ok"])[0])}">'
+    # 7.14.20: ficha só de campos/termos (sem lista de planos) quebra a linha na caixa; antes ficava cortada no celular
+    quebra = "" if any(r.get("tipo") in ("planos", "cada_plano", "duracao") for r in s["regras"]) else " quebra"
+    return (f'<div class="confer{quebra}" data-conf="{attr(conf_id)}" data-ok-prefixo="{attr(re.split(r"[{:]", s["ok"])[0])}">'
             f'<div class="cf-cab"><span class="cf-arquivo">{ic("arquivo")}{esc(s.get("arquivo", "arquivo.txt"))}</span>'
             f'<span class="cf-exs"><button type="button" class="btn neutro" data-cf-ex="ok">{ic("check")}{txt["conf_exemplo"]}</button>'
             f'<button type="button" class="btn neutro" data-cf-ex="errado">{ic("x")}{txt["conf_errado"]}</button></span></div>'

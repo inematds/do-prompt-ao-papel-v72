@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "Uma tarefa, três versões",
-      "sub": "Clique em cada versão. A tarefa é a mesma; muda o que você entrega à IA.",
+      "sub": "Toque ou clique em cada versão. A tarefa é a mesma; muda o que você entrega à IA.",
       "nos": [
         {
           "icone": "caneta",
@@ -46,7 +46,7 @@
               "t": "o pedido, e só"
             }
           ],
-          "detalhe": "Você escreve o pedido numa conversa nova, sem regras guardadas, sem exemplo, sem medida. É o ponto de partida: mostra o que a IA faz sozinha."
+          "detalhe": "Você escreve o pedido numa conversa temporária (sem memória), fora do projeto: sem regras guardadas, sem exemplo, sem medida. É o ponto de partida: mostra o que a IA faz sozinha."
         },
         {
           "icone": "pasta",
@@ -91,22 +91,22 @@
       "sub": "Use a tarefa da sua ficha. Troque o texto entre < > pelo seu.",
       "blocos": [
         {
-          "rot": "Versão 1 · só prompt (conversa nova, fora do projeto)",
+          "rot": "Versão 1 · só prompt (conversa temporária, sem memória, fora do projeto)",
           "icone": "caneta",
           "conteudo": "<o pedido, do jeito que você faria antes do curso>"
         },
         {
           "rot": "Versão 2 · com contexto (dentro do projeto)",
           "icone": "pasta",
-          "conteudo": "Leia o AGENTS.md e as lições antes de começar.\n<o mesmo pedido, em uma linha>"
+          "conteudo": "Leia as regras e as lições do projeto antes de começar.\n<o mesmo pedido, em uma linha>"
         },
         {
           "rot": "Versão 3 · papel completo",
           "icone": "usuario",
-          "conteudo": "Este é o seu papel: siga a ficha-funcao.txt e o procedimento-padrao.md.\nEntrada de hoje: <o caso>\nAo terminar, mostre a conferência pela Medida."
+          "conteudo": "Este é o seu papel: siga a ficha de função e o procedimento padrão do projeto.\nEntrada de hoje: <o caso>\nAo terminar, mostre a conferência pela Medida."
         },
         {
-          "rot": "comparacao.md",
+          "rot": "Comparação (documento ou planilha)",
           "icone": "lupa",
           "conteudo": "# Comparação · <tarefa> · <data>\nRégua: <a Medida da ficha>\n\n| versão | passou na Medida? | o que ficou melhor | o que ficou pior | tempo seu |\n|---|---|---|---|---|\n| 1 · só prompt | | | | |\n| 2 · com contexto | | | | |\n| 3 · papel completo | | | | |\n\nConclusão em uma frase: <o que você passa a fazer daqui para frente>"
         }
@@ -128,7 +128,7 @@
           "id": "e2",
           "titulo": "E2 · A régua",
           "min": "15 min",
-          "texto": "Preencha o comparacao.md usando a Medida da ficha como régua.",
+          "texto": "Preencha a comparação usando a Medida da ficha como régua.",
           "pronto": "as três linhas dizem \"sim\" ou \"não\" na Medida e há uma conclusão de uma frase."
         }
       ]
@@ -136,7 +136,7 @@
     {
       "tipo": "mapa",
       "titulo": "O mapa do curso",
-      "sub": "Os quatro degraus que levam ao seu primeiro agente. Clique num exercício para ver o \"pronto quando\".",
+      "sub": "Os cinco degraus que levam ao seu primeiro agente. Toque ou clique num exercício para ver o \"pronto quando\".",
       "degraus": [
         {
           "aula": "contexto",
@@ -155,6 +155,15 @@
           "sub": "o papel",
           "saida": "Ficha de função conferida e a primeira entrega.",
           "passo": "Requer a base de contexto. O trabalho de referência feito por você vem antes da ficha."
+        },
+        {
+          "aula": "objetivo",
+          "icone": "alvo",
+          "quando": "Semana 1",
+          "titulo": "Medida",
+          "sub": "objetivo",
+          "saida": "Objetivo com número ou teste e prazo.",
+          "passo": "Reforça a Medida da ficha: três pedidos reescritos e o agente mostrando a conferência."
         },
         {
           "aula": "treinar",
@@ -178,11 +187,11 @@
       "resultado": {
         "titulo": "Ao final do curso",
         "texto": "Um agente com papel, objetivo medível, procedimento treinado e conta acompanhada.",
-        "total": "13 exercícios"
+        "total": "16 exercícios"
       },
       "rolagem_fim": {
         "titulo": "O caminho inteiro",
-        "texto": "Contexto, ficha, treino e custo, nessa ordem. Só suba quando o \"pronto quando\" do degrau anterior for verdade."
+        "texto": "Contexto, ficha, medida, treino e custo, nessa ordem. Só suba quando o \"pronto quando\" do degrau anterior for verdade."
       },
       "legenda": "Cada degrau usa o que o anterior montou."
     },
@@ -202,11 +211,15 @@
           "aula": "papel"
         },
         {
-          "titulo": "Degrau 3 · Treino em ciclo",
+          "titulo": "Degrau 3 · Objetivo medível",
+          "aula": "objetivo"
+        },
+        {
+          "titulo": "Degrau 4 · Treino em ciclo",
           "aula": "treinar"
         },
         {
-          "titulo": "Degrau 4 · Custo",
+          "titulo": "Degrau 5 · Custo",
           "aula": "custo"
         }
       ],
@@ -263,13 +276,13 @@
         {
           "p": "Qual é a ordem dos degraus do plano?",
           "opcoes": [
-            "Contexto, ficha, treino, custo.",
+            "Contexto, ficha, medida, treino, custo.",
             "Custo, treino, ficha, contexto.",
             "Ficha, custo, contexto, treino.",
             "Qualquer ordem, porque os degraus são independentes."
           ],
           "certa": 0,
-          "explica": "A ficha aponta para a base de contexto; o treino usa a Medida da ficha; o teste de custo usa o procedimento treinado.",
+          "explica": "A ficha aponta para a base de contexto; a medida firma o objetivo da ficha; o treino usa a Medida; o teste de custo usa o procedimento treinado.",
           "ref": "mapa"
         },
         {
@@ -290,8 +303,8 @@
           "opcoes": [
             "Um modelo maior.",
             "Transformar a primeira correção em regra escrita (lição ou procedimento).",
-            "Pedir com mais educação.",
-            "Apagar o histórico."
+            "Explicar de novo a correção na mesma conversa, com mais detalhe.",
+            "Abrir uma conversa nova para ele começar do zero."
           ],
           "certa": 1,
           "explica": "Correção que fica só no chat some. Escrita na lição ou no procedimento, ela entra em toda tarefa seguinte.",

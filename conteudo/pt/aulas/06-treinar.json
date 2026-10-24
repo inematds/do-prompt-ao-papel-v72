@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "O ciclo de treino",
-      "sub": "Clique em cada etapa. O ciclo só termina quando a lista zera.",
+      "sub": "Toque ou clique em cada etapa. O ciclo só termina quando a lista zera.",
       "nos": [
         {
           "icone": "fila",
@@ -103,11 +103,11 @@
               "t": "serve para qualquer agente"
             }
           ],
-          "detalhe": "Com a lista zerada, peça ao agente que escreva o procedimento padrão: os passos, as regras que nasceram das correções e o teste final. Ele vale para os próximos anos e para qualquer agente."
+          "detalhe": "Com a lista zerada, peça ao agente que escreva o procedimento padrão (um texto simples): os passos, as regras que nasceram das correções e o teste final. Ele vale para os próximos anos e para qualquer agente."
         }
       ],
       "volta": "Falhou alguma rodada? A falha volta para a lista e o ciclo recomeça",
-      "legenda": "Eu passo boa parte do dia assim: delego, dou retorno, e cada correção vira regra escrita. De certo modo, eu treino o agente tanto quanto ele me treina.",
+      "legenda": "No meu caso (Nei, do INEMA), boa parte do dia é assim: delego, dou retorno, e cada correção vira regra escrita. De certo modo, eu treino o agente tanto quanto ele me treina.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "O treino inteiro",
@@ -116,9 +116,21 @@
     },
     {
       "tipo": "passos",
-      "titulo": "Quatro hábitos do treino",
-      "sub": "Clique em cada um.",
+      "titulo": "Cinco hábitos do treino",
+      "sub": "Toque ou clique em cada um.",
       "passos": [
+        {
+          "titulo": "No chat",
+          "sub": "onde fica cada coisa",
+          "texto": [
+            "Cada rodada numa conversa nova do mesmo projeto: assim uma rodada não contamina a outra.",
+            "A lista de correções vai para as instruções do projeto antes da rodada seguinte. Conversa nova sem a lista nas instruções esquece tudo."
+          ],
+          "exemplo": {
+            "rot": "No terminal",
+            "texto": "A lista vai no AGENTS.md (ou num arquivo citado nele) e cada rodada é uma sessão nova."
+          }
+        },
         {
           "titulo": "Entradas variadas",
           "sub": "não a mesma",
@@ -175,19 +187,19 @@
       "sub": "Copie e use. Troque o texto entre < > pelo seu.",
       "blocos": [
         {
-          "rot": "avaliacao.md",
+          "rot": "Avaliação (documento ou planilha)",
           "icone": "lupa",
           "conteudo": "# Avaliação · <tarefa> · <data>\nCritério: a Medida da ficha + o exemplo de referência\n\n| rodada | entrada | passou na Medida? | o que ficou bom | o que corrigir |\n|---|---|---|---|---|\n| 1 | <caso> | sim / não | | |\n| 2 | | | | |\n| 3 | | | | |\n| 4 | | | | |\n| 5 | | | | |"
         },
         {
-          "rot": "Pedido: aplicar a lista e rodar de novo",
+          "rot": "Pedido: rodar de novo depois de colar a lista nas instruções",
           "icone": "chat",
-          "conteudo": "Avaliei as 5 rodadas. Esta é a lista de correções, da mais grave para a menos grave:\n1. <correção verificável>\n2. <correção verificável>\n3. <correção verificável>\n\nAjuste o seu jeito de fazer, rode de novo as mesmas 5 entradas e me diga, para cada rodada, quais itens da lista passaram e quais falharam."
+          "conteudo": "A lista de correções está nas instruções do projeto, da mais grave para a menos grave.\nFaça esta tarefa seguindo a lista: <a entrada desta rodada>\nAo terminar, diga quais itens da lista você conferiu e como."
         },
         {
           "rot": "Pedido: escrever o procedimento padrão",
           "icone": "arquivo",
-          "conteudo": "A lista zerou nas 5 rodadas. Escreva o procedimento-padrao.md desta tarefa com:\n- quando usar e o que entrega;\n- os passos, na ordem;\n- as regras que nasceram das correções (uma por linha);\n- o teste final: como conferir pela Medida antes de entregar.\nUse linguagem que outro agente, ou outra pessoa, entenda sem me perguntar."
+          "conteudo": "A lista zerou nas 5 rodadas. Escreva o procedimento padrão desta tarefa (um texto simples, que eu vou guardar) com:\n- quando usar e o que entrega;\n- os passos, na ordem;\n- as regras que nasceram das correções (uma por linha);\n- o teste final: como conferir pela Medida antes de entregar.\nUse linguagem que outro agente, ou outra pessoa, entenda sem me perguntar."
         }
       ],
       "saida": {
@@ -213,7 +225,7 @@
           "id": "e1",
           "titulo": "E1 · Cinco rodadas",
           "min": "40 min",
-          "texto": "Rode a tarefa da sua ficha cinco vezes, com entradas diferentes, e preencha o avaliacao.md.",
+          "texto": "Rode a tarefa da sua ficha cinco vezes, cada uma numa conversa nova do projeto e com uma entrada diferente, e preencha a avaliação (documento ou planilha).",
           "pronto": "a tabela tem cinco linhas preenchidas, com \"sim\" ou \"não\" na coluna da Medida."
         },
         {
@@ -228,14 +240,14 @@
           "titulo": "E3 · O ciclo até zerar",
           "min": "40 min",
           "dias": 2,
-          "texto": "Entregue a lista, rode de novo as mesmas entradas e repita até todas passarem.",
+          "texto": "Cole a lista nas instruções do projeto, rode de novo as mesmas entradas (conversas novas) e repita até todas passarem.",
           "pronto": "numa mesma rodada final, as cinco entradas passaram em todos os itens da lista."
         },
         {
           "id": "e4",
           "titulo": "E4 · O procedimento",
           "min": "15 min",
-          "texto": "Peça o procedimento-padrao.md e guarde junto da ficha.",
+          "texto": "Peça o procedimento padrão e guarde junto da ficha (no chat, nas instruções ou como arquivo do projeto; no terminal, na pasta).",
           "pronto": "o arquivo existe e tem as regras que nasceram das correções e o teste final."
         }
       ]
@@ -254,7 +266,7 @@
         {
           "p": "Por que rodar a mesma tarefa cinco a dez vezes?",
           "opcoes": [
-            "Para gastar a cota do mês.",
+            "Para ter mais opções e escolher a melhor resposta para entregar.",
             "Porque o agente aprende sozinho a cada rodada e vai melhorando mesmo sem você dar retorno.",
             "Porque é exigência das ferramentas.",
             "Porque uma rodada só pode ser sorte ou azar; várias mostram o que ele faz sempre."

@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "De onde vem o contexto",
-      "sub": "Quatro fontes que o agente lê antes do seu pedido. Clique em cada uma.",
+      "sub": "Quatro fontes que o agente lê antes do seu pedido. Toque ou clique em cada uma.",
       "nos": [
         {
           "icone": "arquivo",
@@ -69,7 +69,7 @@
               "t": "a data"
             }
           ],
-          "detalhe": "Toda vez que algo dá errado, uma linha nova no topo da lista: o que aconteceu e a regra que evita repetir. É assim que eu trabalho: o mesmo erro não volta, porque a correção vira regra escrita."
+          "detalhe": "Toda vez que algo dá errado, uma linha nova no topo da lista: o que aconteceu e a regra que evita repetir. No meu caso (Nei, do INEMA), é assim: o mesmo erro não volta, porque a correção vira regra escrita."
         },
         {
           "icone": "chat",
@@ -83,12 +83,12 @@
               "t": "o que já foi tentado"
             }
           ],
-          "detalhe": "O que você já decidiu com a IA não deveria ser perguntado de novo. Guarde as conversas e permita que o agente busque nelas (memória do app, ou uma busca nos registros) antes de perguntar a você."
+          "detalhe": "O que você já decidiu com a IA não deveria ser perguntado de novo. No chat, ligue a memória do ChatGPT ou do Claude nas configurações e mantenha o assunto dentro do mesmo projeto. No terminal, guarde os registros das sessões numa pasta que o agente consegue buscar."
         },
         {
           "icone": "git",
           "titulo": "Arquivos",
-          "sub": "e repositórios",
+          "sub": "e documentos",
           "itens": [
             {
               "t": "documentos de referência"
@@ -97,7 +97,7 @@
               "t": "trabalhos já feitos"
             }
           ],
-          "detalhe": "Os documentos, planilhas e projetos de verdade, numa pasta ou repositório que o agente consegue abrir. Ele usa o original em vez do seu resumo de memória."
+          "detalhe": "Os documentos e planilhas de verdade: no chat, os arquivos enviados ao projeto; no terminal, a pasta ou o repositório que o agente abre. Ele usa o original em vez do seu resumo de memória."
         },
         {
           "icone": "robo",
@@ -123,14 +123,14 @@
     {
       "tipo": "passos",
       "titulo": "Montar a base em quatro passos",
-      "sub": "Comece pequeno. Clique em cada passo.",
+      "sub": "Comece pequeno. Toque ou clique em cada passo.",
       "passos": [
         {
           "titulo": "Escolher a casa",
           "sub": "onde mora",
           "texto": [
-            "No chat, crie um projeto e use as instruções do projeto. No terminal, crie o AGENTS.md ou o CLAUDE.md na pasta do trabalho.",
-            "Uma casa por assunto: um projeto para o blog, outro para o financeiro."
+            "No chat: crie um projeto (ChatGPT ou Claude) ou um Gem (Gemini), escreva as regras nas instruções dele e envie os arquivos de referência.",
+            "No terminal, com Claude Code ou Codex (agentes que trabalham numa pasta do seu computador), as regras vão num arquivo da pasta chamado AGENTS.md ou CLAUDE.md. É só o nome do arquivo de regras."
           ],
           "exemplo": {
             "rot": "Exemplo",
@@ -181,24 +181,28 @@
       "sub": "Troque o texto entre < > pelo seu.",
       "blocos": [
         {
-          "rot": "AGENTS.md (ou CLAUDE.md, ou instruções do projeto)",
+          "rot": "Regras do projeto (instruções no chat, ou AGENTS.md no terminal)",
           "icone": "arquivo",
-          "conteudo": "# Quem sou\n<seu nome, o que você faz, para quem trabalha>\n\n# Para quem é o trabalho\n<o público, em uma frase>\n\n# Regras\n- Escreva em português, frases curtas.\n- <regra verificável 2>\n- <regra verificável 3>\n- Antes de terminar, diga o que mudou e como eu confiro.\n- Fronteira: <o que nunca pode acontecer>\n\n# Onde está o resto\n- Lições: LICOES.md (leia antes de começar)\n- Referências: pasta referencias/\n\n# Lições (a mais nova no topo)\n- <data> · <o que deu errado> → <a regra que evita>"
+          "conteudo": "# Quem sou\n<seu nome, o que você faz, para quem trabalha>\n\n# Para quem é o trabalho\n<o público, em uma frase>\n\n# Regras\n- Escreva em português, frases curtas.\n- <regra verificável 2>\n- <regra verificável 3>\n- Antes de terminar, diga o que mudou e como eu confiro.\n- Fronteira: <o que nunca pode acontecer>\n\n# Onde está o resto\n- Referências: os arquivos enviados ao projeto (no terminal, a pasta referencias/)\n\n# Lições (a mais nova no topo)\n- <data> · <o que deu errado> → <a regra que evita>"
         },
         {
           "rot": "Pedido quando a IA errar",
           "icone": "memoria",
-          "conteudo": "Você errou isto: <o que aconteceu>.\nAntes de corrigir, escreva a lição em UMA linha no topo da seção Lições do AGENTS.md:\n<data> · <o que deu errado> → <a regra que evita>.\nDepois refaça o trabalho seguindo a regra nova e me mostre as duas coisas."
+          "conteudo": "Você errou isto: <o que aconteceu>.\nAntes de corrigir, escreva a lição em UMA linha, neste formato:\n<data> · <o que deu errado> → <a regra que evita>.\nDepois refaça o trabalho seguindo a regra nova e me mostre as duas coisas."
         },
         {
           "rot": "Primeira linha de toda tarefa",
           "icone": "chat",
-          "conteudo": "Leia o AGENTS.md e as lições antes de começar. Se algo que eu pedir contrariar uma regra, me avise antes de fazer."
+          "conteudo": "Leia as regras e as lições do projeto antes de começar. Se algo que eu pedir contrariar uma regra, me avise antes de fazer."
         }
       ],
       "saida": {
         "selo": "simulacao",
         "abas": [
+          {
+            "rot": "Onde a lição vai",
+            "html": "<ul><li><b>No chat</b>: a IA escreve a linha; você copia e cola no topo da seção Lições das instruções do projeto.</li><li><b>No terminal</b>: peça que ele grave a linha no AGENTS.md (ou CLAUDE.md) e confira o arquivo.</li></ul>"
+          },
           {
             "rot": "Como conferir",
             "html": "<ol><li>O arquivo de regras existe e tem pelo menos cinco regras suas.</li><li>Há pelo menos uma lição tirada de um erro real, com data.</li><li>Numa conversa nova, um pedido de uma linha saiu seguindo a regra e a lição.</li></ol>"
@@ -226,7 +230,7 @@
           "id": "e2",
           "titulo": "E2 · A primeira lição",
           "min": "15 min",
-          "texto": "Peça uma tarefa, ache um erro (sempre tem) e use o pedido \"quando a IA errar\".",
+          "texto": "Peça uma tarefa, ache um erro (sempre tem), use o pedido \"quando a IA errar\" e cole a lição nas instruções do projeto (no terminal, ele grava no AGENTS.md).",
           "pronto": "a seção Lições tem uma linha com data, o erro e a regra que evita."
         },
         {

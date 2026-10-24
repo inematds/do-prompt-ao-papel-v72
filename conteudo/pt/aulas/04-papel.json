@@ -5,7 +5,7 @@
   "titulo": "A era do papel: brilhante, mas novo na empresa",
   "titulo_curto": "A ficha de função",
   "minutos": 16,
-  "lead": "A própria Anthropic recomenda tratar o Claude como um funcionário brilhante, mas novo, que ainda não conhece as suas normas. Quem já contratou gente sabe o que isso pede: objetivo claro, o contexto de onde ele veio e um exemplo de trabalho bem feito. Nesta aula você junta as três coisas numa ficha de função e confere a sua ficha na própria página.",
+  "lead": "A Anthropic, a empresa que faz o Claude, recomenda tratar o Claude como um funcionário brilhante, mas novo, que ainda não conhece as suas normas. Quem já contratou gente sabe o que isso pede: objetivo claro, o contexto de onde ele veio e um exemplo de trabalho bem feito. Nesta aula você junta as três coisas numa ficha de função e confere a sua ficha na própria página.",
   "objetivo": "escrever a ficha de função de um agente com papel, objetivo medível, contexto, exemplo e fronteira.",
   "competencias": [
     "definir-papel-do-agente",
@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "Os três passos viram uma ficha",
-      "sub": "Clique em cada passo.",
+      "sub": "Toque ou clique em cada passo.",
       "nos": [
         {
           "icone": "alvo",
@@ -114,8 +114,8 @@
           "titulo": "Reescrever o app",
           "sub": "mais de 2 semanas",
           "texto": [
-            "O criador do Claude Code quis o aplicativo de desktop reescrito em Swift, outra linguagem.",
-            "O pedido trazia o próprio teste: rodar o app antigo, tirar print, comparar pixel por pixel com o novo e não parar até ficar igual."
+            "O criador do Claude Code (um agente de programação) quis o aplicativo de computador reescrito em Swift, outra linguagem de programação.",
+            "O pedido trazia o próprio teste: rodar o app antigo, tirar print, comparar as telas ponto por ponto com o novo e não parar até ficar igual. O agente rodou sozinho por mais de duas semanas."
           ],
           "exemplo": {
             "rot": "Por que funciona",
@@ -126,7 +126,7 @@
           "titulo": "Responder no Slack",
           "sub": "várias ferramentas",
           "texto": [
-            "Em outro caso, o Claude entrou numa conversa do Slack, puxou dados de várias ferramentas e montou uma resposta só.",
+            "Em outro caso, o Claude entrou numa conversa do Slack (o chat interno de muitas empresas), puxou dados de várias ferramentas e montou uma resposta só.",
             "Ninguém escreveu o passo a passo: o papel era responder a equipe com dados."
           ],
           "exemplo": {
@@ -138,7 +138,7 @@
           "titulo": "Um compilador",
           "sub": "16 agentes",
           "texto": [
-            "Um pesquisador colocou dezesseis agentes Claude para construir um compilador de C, com uma ordem simples: continuem até ficar perfeito.",
+            "Um pesquisador colocou dezesseis agentes Claude para construir um compilador de C (o programa que transforma o código escrito por gente num programa que o computador roda), com uma ordem simples: continuem até ficar perfeito.",
             "Foram mais ou menos duas semanas de trabalho."
           ],
           "exemplo": {
@@ -181,11 +181,23 @@
         "abas": [
           {
             "rot": "Ficha preenchida",
-            "html": "<p><b>Papel:</b> você cuida do comunicado semanal da escola aos pais.<br><b>Objetivo:</b> toda sexta, um comunicado com o que muda na semana seguinte.<br><b>Medida:</b> cabe numa tela de celular, cita a data de cada mudança e eu aprovo sem pedir correção.<br><b>Contexto:</b> regras e lições no AGENTS.md; calendário na pasta calendario/.<br><b>Exemplo:</b> referencias/comunicado-modelo.txt, escrito por mim.<br><b>Fronteira:</b> nunca prometer transporte nem citar nome de aluno.<br><b>Conferência:</b> eu leio toda sexta às 16h antes de enviar.</p>"
+            "html": "<ul><li><b>Papel:</b> você cuida do comunicado semanal da escola aos pais.</li><li><b>Objetivo:</b> toda sexta, um comunicado com o que muda na semana seguinte.</li><li><b>Medida:</b> cabe numa tela de celular, cita a data de cada mudança e eu aprovo sem pedir correção.</li><li><b>Contexto:</b> regras e lições nas instruções do projeto; o calendário enviado ao projeto (calendario.pdf).</li><li><b>Exemplo:</b> o arquivo comunicado-modelo.txt enviado ao projeto, escrito por mim.</li><li><b>Fronteira:</b> nunca prometer transporte nem citar nome de aluno.</li><li><b>Conferência:</b> eu leio toda sexta às 16h antes de enviar.</li></ul>"
+          },
+          {
+            "rot": "Outra ficha (loja)",
+            "html": "<ul><li><b>Papel:</b> você responde os pedidos de orçamento que chegam pelo WhatsApp da loja.</li><li><b>Objetivo:</b> todo orçamento com itens, quantidades e total pela tabela atual.</li><li><b>Medida:</b> total igual ao da tabela, prazo de entrega citado, resposta em até 1 hora no horário da loja.</li><li><b>Contexto:</b> tabela de preços e regras de frete enviadas ao projeto.</li><li><b>Exemplo:</b> três orçamentos que eu mesmo respondi.</li><li><b>Fronteira:</b> nunca dar desconto nem prometer entrega no mesmo dia.</li><li><b>Conferência:</b> eu olho os orçamentos do dia às 18h.</li></ul>"
+          },
+          {
+            "rot": "Outra ficha (RH)",
+            "html": "<ul><li><b>Papel:</b> você escreve os anúncios de vaga da empresa.</li><li><b>Objetivo:</b> um anúncio por vaga aberta, a partir do pedido do gestor.</li><li><b>Medida:</b> cabe em uma tela de celular, cita salário, local e jornada, e o gestor aprova sem correção.</li><li><b>Contexto:</b> política de vagas e tom da empresa nas instruções do projeto.</li><li><b>Exemplo:</b> o anúncio da vaga de conferente, escrito por mim.</li><li><b>Fronteira:</b> nunca pedir idade, foto ou estado civil.</li><li><b>Conferência:</b> eu leio antes de publicar, no mesmo dia.</li></ul>"
           },
           {
             "rot": "Erros comuns",
             "html": "<ul><li><b>Papel de prestígio</b> (\"você é o melhor redator\"): não é função. Função diz do que ele cuida.</li><li><b>Medida vaga</b> (\"ficar bom\"): ele não sabe quando parar.</li><li><b>Sem exemplo</b>: \"ótimo\" para ele não é o seu \"ótimo\".</li></ul>"
+          },
+          {
+            "rot": "Onde a ficha fica",
+            "html": "<ul><li><b>No chat</b>: cole a ficha nas instruções do projeto e envie o exemplo como arquivo. Cada conversa nova do projeto já começa no papel.</li><li><b>No terminal</b>: salve como ficha-funcao.txt na pasta e cite o arquivo no AGENTS.md.</li></ul>"
           }
         ]
       }
@@ -193,7 +205,7 @@
     {
       "tipo": "conferidor",
       "titulo": "Confira a sua ficha",
-      "sub": "Cole a sua ficha (ou carregue o .txt). A página confere se os sete campos estão lá, cada um com conteúdo de verdade.",
+      "sub": "Cole a sua ficha (ou carregue o .txt). A página confere os sete campos, recusa vazio e adjetivo solto (\"quando der\", \"do seu jeito\", \"bom\", \"bonito\") e pede na Medida um número ou teste junto do que se mede (\"3 linhas\", \"cita a data\", \"aprovado sem correção\"). É uma checagem de forma; se a medida serve de verdade, quem decide é você. A aula 5 aprofunda.",
       "arquivo": "ficha-funcao.txt",
       "rot": "Cole aqui a sua ficha de função (um campo por linha):",
       "modelo": "Papel: ...\nObjetivo: ...\nMedida: ...\nContexto: ...\nExemplo: ...\nFronteira: ...\nConferência: ...",
@@ -210,11 +222,457 @@
             "Conferência"
           ],
           "min": 12
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "na Medida um número ou um teste (3, menos de, igual a, cabe, cita, aprovado)",
+              "campo": "Medida",
+              "termos": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46",
+                "47",
+                "48",
+                "49",
+                "50",
+                "51",
+                "52",
+                "53",
+                "54",
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70",
+                "71",
+                "72",
+                "73",
+                "74",
+                "75",
+                "76",
+                "77",
+                "78",
+                "79",
+                "80",
+                "81",
+                "82",
+                "83",
+                "84",
+                "85",
+                "86",
+                "87",
+                "88",
+                "89",
+                "90",
+                "91",
+                "92",
+                "93",
+                "94",
+                "95",
+                "96",
+                "97",
+                "98",
+                "99",
+                "100",
+                "120",
+                "150",
+                "200",
+                "300",
+                "500",
+                "1000",
+                "0h",
+                "1h",
+                "2h",
+                "3h",
+                "4h",
+                "5h",
+                "6h",
+                "7h",
+                "8h",
+                "9h",
+                "10h",
+                "11h",
+                "12h",
+                "13h",
+                "14h",
+                "15h",
+                "16h",
+                "17h",
+                "18h",
+                "19h",
+                "20h",
+                "21h",
+                "22h",
+                "23h",
+                "menos de / less than",
+                "mais de / more than / más de",
+                "no máximo / at most / como máximo",
+                "pelo menos / at least / al menos",
+                "igual a / igual ao / igual à / iguais a / equal to / the same as / igual que / igual al / igual a la",
+                "cabe / fits",
+                "cita / citam / mentions / cites / menciona",
+                "aprovo / aprova / aprovado / approve / approved / apruebo / aprobado"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "na Medida o que se mede (linhas, segundos, tela, data, total, correção…)",
+              "campo": "Medida",
+              "termos": [
+                "linha / linhas / line / lines / línea / líneas",
+                "palavra / palavras / word / words / palabra / palabras",
+                "segundo / segundos / second / seconds / s",
+                "minuto / minutos / minute / minutes",
+                "hora / horas / hour / hours",
+                "dia / dias / day / days / día / días",
+                "semana / week",
+                "tela / screen / pantalla",
+                "data / date / fecha",
+                "erro / erros / error / errors / errores",
+                "correção / correções / correction / corrections / corrección / correcciones",
+                "item / itens / items / ítem / ítems",
+                "total / totais / totals / totales",
+                "preço / preços / price / prices / precio / precios",
+                "extrato / statement / extracto",
+                "tabela / table / tabla",
+                "reais / real / R$",
+                "vezes / times / veces",
+                "por cento / percent / %",
+                "medição / medições / measurement / measurements / medición / mediciones",
+                "resposta / respostas / reply / replies / answer / respuesta / respuestas",
+                "pedido / pedidos / request / requests / order / orders",
+                "página / page / pages / páginas",
+                "teste / testes / test / tests / prueba / pruebas",
+                "0%",
+                "1%",
+                "2%",
+                "3%",
+                "4%",
+                "5%",
+                "6%",
+                "7%",
+                "8%",
+                "9%",
+                "10%",
+                "11%",
+                "12%",
+                "13%",
+                "14%",
+                "15%",
+                "16%",
+                "17%",
+                "18%",
+                "19%",
+                "20%",
+                "21%",
+                "22%",
+                "23%",
+                "24%",
+                "25%",
+                "26%",
+                "27%",
+                "28%",
+                "29%",
+                "30%",
+                "31%",
+                "32%",
+                "33%",
+                "34%",
+                "35%",
+                "36%",
+                "37%",
+                "38%",
+                "39%",
+                "40%",
+                "41%",
+                "42%",
+                "43%",
+                "44%",
+                "45%",
+                "46%",
+                "47%",
+                "48%",
+                "49%",
+                "50%",
+                "51%",
+                "52%",
+                "53%",
+                "54%",
+                "55%",
+                "56%",
+                "57%",
+                "58%",
+                "59%",
+                "60%",
+                "61%",
+                "62%",
+                "63%",
+                "64%",
+                "65%",
+                "66%",
+                "67%",
+                "68%",
+                "69%",
+                "70%",
+                "71%",
+                "72%",
+                "73%",
+                "74%",
+                "75%",
+                "76%",
+                "77%",
+                "78%",
+                "79%",
+                "80%",
+                "81%",
+                "82%",
+                "83%",
+                "84%",
+                "85%",
+                "86%",
+                "87%",
+                "88%",
+                "89%",
+                "90%",
+                "91%",
+                "92%",
+                "93%",
+                "94%",
+                "95%",
+                "96%",
+                "97%",
+                "98%",
+                "99%",
+                "100%"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "No Papel",
+              "campo": "Papel",
+              "proibe": true,
+              "termos": [
+                "melhor do mundo / best in the world / mejor del mundo",
+                "premiado / premiada / award-winning / galardonado",
+                "o melhor / a melhor / the best / el mejor / la mejor"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "Na Medida",
+              "campo": "Medida",
+              "proibe": true,
+              "termos": [
+                "bom / boa / good / bueno / buena",
+                "bonito / bonita / pretty / nice / linda",
+                "profissional / professional / profesional",
+                "ótimo / ótima / great / excellent / óptimo / óptima / excelente",
+                "melhor / better / mejor",
+                "caprichado / caprichada / polished / esmerado",
+                "bem feito / bem escrito / well done / well written / bien hecho / bien escrito"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "No Objetivo",
+              "campo": "Objetivo",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "Na Medida",
+              "campo": "Medida",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "No Contexto",
+              "campo": "Contexto",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "No Exemplo",
+              "campo": "Exemplo",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "Na Fronteira",
+              "campo": "Fronteira",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "Na Conferência",
+              "campo": "Conferência",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
         }
       ],
       "ok": "OK: ficha com os {n} campos preenchidos",
-      "exemplo": "Papel: você cuida do comunicado semanal da escola aos pais.\nObjetivo: toda sexta, um comunicado com o que muda na semana seguinte.\nMedida: cabe numa tela de celular, cita a data de cada mudança e eu aprovo sem pedir correção.\nContexto: regras e lições no AGENTS.md; calendário na pasta calendario/.\nExemplo: referencias/comunicado-modelo.txt, escrito por mim.\nFronteira: nunca prometer transporte nem citar nome de aluno.\nConferência: eu leio toda sexta às 16h antes de enviar.",
-      "exemplo_errado": "Papel: você é o melhor redator do mundo.\nObjetivo: escrever comunicados ótimos.\nMedida: ficar bom.\nContexto: a escola.\nFronteira: não errar."
+      "exemplo": "Papel: você cuida do comunicado semanal da escola aos pais.\nObjetivo: toda sexta, um comunicado com o que muda na semana seguinte.\nMedida: cabe numa tela de celular, cita a data de cada mudança e eu aprovo sem pedir correção.\nContexto: regras e lições nas instruções do projeto; o calendário enviado ao projeto (calendario.pdf).\nExemplo: o arquivo comunicado-modelo.txt enviado ao projeto, escrito por mim.\nFronteira: nunca prometer transporte nem citar nome de aluno.\nConferência: eu leio toda sexta às 16h antes de enviar.",
+      "exemplo_errado": "Papel: você cuida do comunicado semanal da escola aos pais.\nObjetivo: toda sexta, um comunicado com o que muda na semana.\nMedida: ficar bonito e profissional, versão 2.\nContexto: regras e lições nas instruções do projeto.\nExemplo: o comunicado de setembro, escrito por mim.\nFronteira: nunca citar nome de aluno.\nConferência: eu leio toda sexta."
     },
     {
       "tipo": "pratica",
@@ -233,13 +691,13 @@
           "titulo": "E2 · A ficha",
           "min": "20 min",
           "texto": "Preencha o ficha-funcao.txt com os sete campos e cole no conferidor acima.",
-          "pronto": "o conferidor responde \"OK: ficha com os 7 campos preenchidos\"."
+          "pronto": "o conferidor responde \"OK: ficha com os 7 campos preenchidos\" e você consegue dizer, olhando uma entrega, se ela passou ou não na Medida."
         },
         {
           "id": "e3",
           "titulo": "E3 · A primeira entrega",
           "min": "20 min",
-          "texto": "Entregue a ficha ao agente com o pedido do modelo e peça a primeira execução.",
+          "texto": "Entregue a ficha ao agente (no chat: cole nas instruções do projeto e abra uma conversa nova; no terminal: salve na pasta) e peça a primeira execução com o pedido do modelo.",
           "pronto": "o agente descreveu como vai se conferir pela Medida e entregou um resultado que você comparou com a referência."
         }
       ]
@@ -273,7 +731,7 @@
           "opcoes": [
             "Porque o agente precisa de um exemplo do que é ótimo para você.",
             "Porque o agente não consegue fazer na primeira vez.",
-            "Porque é obrigatório nas ferramentas.",
+            "Porque o agente copia o seu jeito de escrever pelo histórico.",
             "Para ter certeza de que você ainda sabe fazer e pode substituir o agente se ele falhar."
           ],
           "certa": 0,
@@ -284,7 +742,7 @@
           "p": "No caso do app reescrito em Swift, o que deixou o agente rodar duas semanas sozinho?",
           "opcoes": [
             "Um prompt de várias páginas descrevendo cada passo da reescrita, tela por tela.",
-            "Uma medida no próprio pedido: comparar pixel por pixel até ficar igual.",
+            "Uma medida no próprio pedido: comparar as telas ponto por ponto até ficar igual.",
             "Uma pessoa revisando cada resposta.",
             "Um modelo que não erra."
           ],

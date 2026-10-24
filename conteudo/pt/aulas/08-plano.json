@@ -93,7 +93,7 @@
         {
           "rot": "Versão 1 · só prompt (conversa temporária, sem memória, fora do projeto)",
           "icone": "caneta",
-          "conteudo": "<o pedido, do jeito que você faria antes do curso>"
+          "conteudo": "<o pedido, do jeito que você faria antes do curso>\n\n(Para não vazar a memória: no ChatGPT, \"Chat temporário\" no alto da tela; no Claude e no Gemini, a conversa temporária ou com a memória desligada.)"
         },
         {
           "rot": "Versão 2 · com contexto (dentro do projeto)",
@@ -136,7 +136,7 @@
     {
       "tipo": "mapa",
       "titulo": "O mapa do curso",
-      "sub": "Os cinco degraus que levam ao seu primeiro agente. Toque ou clique num exercício para ver o \"pronto quando\".",
+      "sub": "Os cinco degraus do curso. Se você fez as práticas das aulas 3 a 7, use o plano para o seu SEGUNDO agente (ou para revisar o primeiro). Toque ou clique num exercício para ver o \"pronto quando\".",
       "degraus": [
         {
           "aula": "contexto",

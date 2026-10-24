@@ -63,7 +63,7 @@
           "sub": "com condição",
           "itens": [
             {
-              "t": "exemplos (few-shot)"
+              "t": "exemplos prontos no pedido (few-shot)"
             },
             {
               "t": "papel com perspectiva"
@@ -152,7 +152,7 @@
           ],
           "exemplo": {
             "rot": "Registro",
-            "texto": "Versão antiga: 11 linhas. Nova: 5 linhas. Resultado: igual em 2 de 2, mais direto em 1."
+            "texto": "Versão antiga: 11 linhas. Nova: 5 linhas. Rodei duas vezes: nas duas a versão curta ficou igual, e numa delas mais direta."
           }
         }
       ]

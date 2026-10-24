@@ -97,7 +97,7 @@
         "titulo": "Do pedido à gestão",
         "texto": "No prompt, você escrevia o trabalho. No contexto, você preparava a base. No papel, você gerencia: define, confere e corrige."
       },
-      "dica": "Neste curso, \"agente\" é a IA com um papel fixo. No chat, é um projeto (ChatGPT, Claude) ou um Gem (Gemini) com instruções e arquivos. No terminal, é o Claude Code ou o Codex trabalhando numa pasta. O papel é o mesmo nos dois."
+      "dica": "Neste curso, \"agente\" é a IA com um papel fixo. No chat, é um projeto (ChatGPT, Claude) ou um Gem (Gemini) com instruções e arquivos. No terminal, é o Claude Code ou o Codex trabalhando numa pasta. O papel é o mesmo nos dois. No chat, o agente trabalha quando você abre a conversa; rodar sozinho, por horas ou em horários marcados, é coisa do terminal e das automações."
     },
     {
       "tipo": "passos",

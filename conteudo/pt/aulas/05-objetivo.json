@@ -297,7 +297,7 @@
         "fim-bom": {
           "fim": true,
           "titulo": "Agente pronto para trabalhar",
-          "texto": "Específico, com medida que ele mesmo confere, fronteira clara e prazo. É assim que se delega para alguém novo na equipe."
+          "texto": "Pronto para trabalhar, se a medida tiver número: alvo, teste, fronteira e prazo. Se em algum passo você ficou no \"mais rápida\" ou no \"me mostra\", o placar mostra o que faltou: volte e dê o número."
         },
         "fim-quase": {
           "fim": true,
@@ -315,7 +315,7 @@
     {
       "tipo": "conferidor",
       "titulo": "Confira o seu objetivo",
-      "sub": "Cole o pedido vago e a versão reescrita. A página confere os campos, recusa vazio e adjetivo solto e pede uma Medida com número ou teste e um Prazo com dia, data ou hora. É uma checagem de forma: o julgamento final é seu.",
+      "sub": "Cole o pedido vago e a versão reescrita. A página confere os campos, recusa vazio e adjetivo solto e pede uma Medida com número ou teste e um Prazo com dia, data ou hora. O OK é uma checagem de forma, não garante que a medida é boa: quem decide é você.",
       "arquivo": "objetivo.txt",
       "rot": "Cole aqui o seu objetivo (um campo por linha):",
       "modelo": "Pedido vago: ...\nObjetivo: ...\nMedida: ...\nPrazo: ...",
@@ -481,7 +481,13 @@
                 "igual a / igual ao / igual à / iguais a / equal to / the same as / igual que / igual al / igual a la",
                 "cabe / fits",
                 "cita / citam / mentions / cites / menciona",
-                "aprovo / aprova / aprovado / approve / approved / apruebo / aprobado"
+                "aprovo / aprova / aprovado / approve / approved / apruebo / aprobado",
+                "nenhum / nenhuma / none / ningún / ninguna / ninguno",
+                "zero / cero",
+                "todo / toda / todos / todas / every / all / cada / each",
+                "bate / batem / batendo / match / matches / coincide / coinciden",
+                "confere / conferem / checks / verifica",
+                "libero / libera / liberado / release / released / libero / liberado"
               ]
             }
           ]
@@ -617,7 +623,17 @@
                 "97%",
                 "98%",
                 "99%",
-                "100%"
+                "100%",
+                "mensagem / mensagens / message / messages / mensaje / mensajes",
+                "paciente / pacientes / patient / patients",
+                "cliente / clientes / customer / customers / client / clients",
+                "agenda / schedule / calendar",
+                "planilha / spreadsheet / planilla / hoja de cálculo",
+                "horário / horários / time / times / horario / horarios",
+                "turno / turnos / shift / shifts",
+                "consulta / consultas / appointment / appointments",
+                "sessão / sessões / session / sessions / sesión / sesiones",
+                "valor / valores / amount / amounts / monto / montos"
               ]
             }
           ]
@@ -785,7 +801,6 @@
               "campo": "Medida",
               "proibe": true,
               "termos": [
-                "bom / boa / good / bueno / buena",
                 "bonito / bonita / pretty / nice / linda",
                 "profissional / professional / profesional",
                 "ótimo / ótima / great / excellent / óptimo / óptima / excelente",
@@ -881,7 +896,7 @@
           "titulo": "E2 · O objetivo conferido",
           "min": "10 min",
           "texto": "Escreva o objetivo.txt do seu agente e cole no conferidor acima.",
-          "pronto": "o conferidor responde \"OK: objetivo com os 4 campos preenchidos\" e você consegue dizer, olhando uma entrega, se ela passou ou não na Medida."
+          "pronto": "o conferidor responde \"OK: objetivo com os 4 campos preenchidos\" e você escreveu, em uma frase, como confere a Medida olhando uma entrega."
         },
         {
           "id": "e3",

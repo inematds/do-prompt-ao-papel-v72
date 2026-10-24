@@ -155,7 +155,7 @@
           ],
           "exemplo": {
             "rot": "Para levar",
-            "texto": "Pedido curto + medida clara + contexto disponível = agente que roda sozinho."
+            "texto": "Pedido curto + medida clara + contexto disponível = agente que roda sozinho. No chat, a mesma ficha faz cada conversa já começar no papel; rodar sozinho é coisa do terminal e das automações."
           }
         }
       ]
@@ -205,7 +205,7 @@
     {
       "tipo": "conferidor",
       "titulo": "Confira a sua ficha",
-      "sub": "Cole a sua ficha (ou carregue o .txt). A página confere os sete campos, recusa vazio e adjetivo solto (\"quando der\", \"do seu jeito\", \"bom\", \"bonito\") e pede na Medida um número ou teste junto do que se mede (\"3 linhas\", \"cita a data\", \"aprovado sem correção\"). É uma checagem de forma; se a medida serve de verdade, quem decide é você. A aula 5 aprofunda.",
+      "sub": "Cole a sua ficha (ou carregue o .txt). A página confere os sete campos, recusa vazio e adjetivo solto (\"quando der\", \"do seu jeito\", \"bom\", \"bonito\") e pede na Medida um número ou teste junto do que se mede (\"3 linhas\", \"cita a data\", \"aprovado sem correção\"). O OK é uma checagem de forma, não garante que a medida é boa: quem decide é você, na prática abaixo. A aula 5 aprofunda.",
       "arquivo": "ficha-funcao.txt",
       "rot": "Cole aqui a sua ficha de função (um campo por linha):",
       "modelo": "Papel: ...\nObjetivo: ...\nMedida: ...\nContexto: ...\nExemplo: ...\nFronteira: ...\nConferência: ...",
@@ -368,7 +368,13 @@
                 "igual a / igual ao / igual à / iguais a / equal to / the same as / igual que / igual al / igual a la",
                 "cabe / fits",
                 "cita / citam / mentions / cites / menciona",
-                "aprovo / aprova / aprovado / approve / approved / apruebo / aprobado"
+                "aprovo / aprova / aprovado / approve / approved / apruebo / aprobado",
+                "nenhum / nenhuma / none / ningún / ninguna / ninguno",
+                "zero / cero",
+                "todo / toda / todos / todas / every / all / cada / each",
+                "bate / batem / batendo / match / matches / coincide / coinciden",
+                "confere / conferem / checks / verifica",
+                "libero / libera / liberado / release / released / libero / liberado"
               ]
             }
           ]
@@ -504,7 +510,17 @@
                 "97%",
                 "98%",
                 "99%",
-                "100%"
+                "100%",
+                "mensagem / mensagens / message / messages / mensaje / mensajes",
+                "paciente / pacientes / patient / patients",
+                "cliente / clientes / customer / customers / client / clients",
+                "agenda / schedule / calendar",
+                "planilha / spreadsheet / planilla / hoja de cálculo",
+                "horário / horários / time / times / horario / horarios",
+                "turno / turnos / shift / shifts",
+                "consulta / consultas / appointment / appointments",
+                "sessão / sessões / session / sessions / sesión / sesiones",
+                "valor / valores / amount / amounts / monto / montos"
               ]
             }
           ]
@@ -519,7 +535,11 @@
               "termos": [
                 "melhor do mundo / best in the world / mejor del mundo",
                 "premiado / premiada / award-winning / galardonado",
-                "o melhor / a melhor / the best / el mejor / la mejor"
+                "o melhor",
+                "a melhor",
+                "the best",
+                "el mejor",
+                "la mejor"
               ]
             }
           ]
@@ -532,7 +552,6 @@
               "campo": "Medida",
               "proibe": true,
               "termos": [
-                "bom / boa / good / bueno / buena",
                 "bonito / bonita / pretty / nice / linda",
                 "profissional / professional / profesional",
                 "ótimo / ótima / great / excellent / óptimo / óptima / excelente",
@@ -691,7 +710,7 @@
           "titulo": "E2 · A ficha",
           "min": "20 min",
           "texto": "Preencha o ficha-funcao.txt com os sete campos e cole no conferidor acima.",
-          "pronto": "o conferidor responde \"OK: ficha com os 7 campos preenchidos\" e você consegue dizer, olhando uma entrega, se ela passou ou não na Medida."
+          "pronto": "o conferidor responde \"OK: ficha com os 7 campos preenchidos\" e você escreveu, em uma frase, como confere a Medida olhando uma entrega."
         },
         {
           "id": "e3",
@@ -747,7 +766,7 @@
             "Um modelo que não erra."
           ],
           "certa": 1,
-          "explica": "O pedido era curto, mas trazia o teste. Com medida clara, o agente se confere e sabe quando parou de estar certo.",
+          "explica": "O pedido era curto, mas trazia o teste. Com medida clara, o agente se confere e sabe quando terminou.",
           "ref": "passos"
         },
         {

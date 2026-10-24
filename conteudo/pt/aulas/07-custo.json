@@ -52,7 +52,7 @@
               "t": "maior: o que importa"
             }
           ],
-          "detalhe": "Nem toda tarefa precisa do modelo mais forte. Classificar mensagens ou extrair um campo vai no menor; escrever e revisar no do meio; decisão e o que faz diferença de verdade no maior. Os nomes, do menor para o maior: no Claude, Haiku → Sonnet → Opus ou Fable; no ChatGPT, as versões \"mini\" → o modelo padrão → as de raciocínio e as \"Pro\"; no Gemini, Flash → Pro. O modelo se escolhe no seletor no alto da conversa; o que aparece ali depende do seu plano."
+          "detalhe": "Nem toda tarefa precisa do modelo mais forte. Classificar mensagens ou extrair um campo vai no menor; escrever e revisar no do meio; decisão e o que faz diferença de verdade no maior. Os nomes, do menor para o maior: no Claude, Haiku → Sonnet → Opus ou Fable (Fable é o mais novo e mais forte deles); no ChatGPT, as versões \"mini\" → o modelo padrão → as de raciocínio e as \"Pro\"; no Gemini, Flash → Pro. O modelo se escolhe no seletor no alto da conversa; o que aparece ali depende do seu plano."
         },
         {
           "icone": "grafico",
@@ -95,7 +95,7 @@
               "t": "metade do preço"
             }
           ],
-          "detalhe": "Também é da API. O que pode esperar (relatórios, classificações em massa, traduções) vai em lote pela batch API, que cobra metade do preço e devolve o resultado em até um dia. Tarefa que alguém espera na hora fica fora do lote."
+          "detalhe": "Também é da API. O que pode esperar (relatórios, classificações em massa, traduções) vai em lote pela batch API (envio em lote) da API, que cobra metade do preço e devolve o resultado em até um dia. Tarefa que alguém espera na hora fica fora do lote."
         }
       ],
       "legenda": "Audite como auditaria um funcionário: o que ele entrega, quanto custa e se o modelo é o certo para o trabalho.",

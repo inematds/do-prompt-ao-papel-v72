@@ -1,0 +1,320 @@
+{
+  "slug": "contexto",
+  "num": 3,
+  "menu": "Contexto",
+  "titulo": "A era do contexto: a IA sabe antes de você pedir",
+  "titulo_curto": "A base de contexto",
+  "minutos": 15,
+  "lead": "Quando a IA já sabe quem você é, quais são as regras da casa e o que deu errado da última vez, o pedido cabe numa linha. Essa base não se monta a cada conversa: fica num lugar que a IA lê sozinha antes de começar. É o que separa repetir tudo toda vez de ter alguém que já conhece o trabalho.",
+  "objetivo": "montar a base de contexto que o agente lê antes de qualquer pedido, com regras e uma lição de um erro real.",
+  "competencias": [
+    "montar-base-de-contexto",
+    "escrever-regras-do-projeto",
+    "registrar-licoes"
+  ],
+  "aprende": [
+    {
+      "icone": "pasta",
+      "t": "As quatro fontes de contexto"
+    },
+    {
+      "icone": "arquivo",
+      "t": "O arquivo de regras do projeto"
+    },
+    {
+      "icone": "memoria",
+      "t": "Transformar erro em lição escrita"
+    },
+    {
+      "icone": "check",
+      "t": "Testar se a base funciona"
+    }
+  ],
+  "hero_alt": "Estante escura com pastas e caixas organizadas; um robô humanoide de perfil puxa uma pasta da prateleira.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De onde vem o contexto",
+      "sub": "Quatro fontes que o agente lê antes do seu pedido. Clique em cada uma.",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Regras",
+          "sub": "do projeto",
+          "itens": [
+            {
+              "t": "quem é você"
+            },
+            {
+              "t": "como trabalhar"
+            },
+            {
+              "t": "o que nunca fazer"
+            }
+          ],
+          "detalhe": "Um arquivo por projeto (AGENTS.md no Codex, CLAUDE.md no Claude Code, as instruções do projeto no ChatGPT ou no Claude) com quem você é, o público, o tom, as ferramentas e as fronteiras. O agente lê antes de começar."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Lições",
+          "sub": "de cada erro",
+          "itens": [
+            {
+              "t": "uma linha por erro"
+            },
+            {
+              "t": "a regra que evita"
+            },
+            {
+              "t": "a data"
+            }
+          ],
+          "detalhe": "Toda vez que algo dá errado, uma linha nova no topo da lista: o que aconteceu e a regra que evita repetir. É assim que eu trabalho: o mesmo erro não volta, porque a correção vira regra escrita."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Histórico",
+          "sub": "das conversas",
+          "itens": [
+            {
+              "t": "decisões já tomadas"
+            },
+            {
+              "t": "o que já foi tentado"
+            }
+          ],
+          "detalhe": "O que você já decidiu com a IA não deveria ser perguntado de novo. Guarde as conversas e permita que o agente busque nelas (memória do app, ou uma busca nos registros) antes de perguntar a você."
+        },
+        {
+          "icone": "git",
+          "titulo": "Arquivos",
+          "sub": "e repositórios",
+          "itens": [
+            {
+              "t": "documentos de referência"
+            },
+            {
+              "t": "trabalhos já feitos"
+            }
+          ],
+          "detalhe": "Os documentos, planilhas e projetos de verdade, numa pasta ou repositório que o agente consegue abrir. Ele usa o original em vez do seu resumo de memória."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agente",
+          "sub": "já sabe",
+          "forte": true,
+          "itens": [
+            {
+              "t": "pedido de uma linha"
+            }
+          ],
+          "detalhe": "Com as quatro fontes no lugar, o pedido fica curto e o agente entende de onde ele veio e por quê. Você não monta o contexto do zero a cada vez."
+        }
+      ],
+      "volta": "Cada erro novo vira uma linha nas lições, e a base melhora sozinha com o uso",
+      "legenda": "Contexto bom tem casa própria: mora num arquivo ou pasta, não no texto do pedido.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "A base inteira",
+        "texto": "Regras, lições, histórico e arquivos chegam ao agente antes do pedido. Cada erro vira lição, e a próxima tarefa já começa melhor."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Montar a base em quatro passos",
+      "sub": "Comece pequeno. Clique em cada passo.",
+      "passos": [
+        {
+          "titulo": "Escolher a casa",
+          "sub": "onde mora",
+          "texto": [
+            "No chat, crie um projeto e use as instruções do projeto. No terminal, crie o AGENTS.md ou o CLAUDE.md na pasta do trabalho.",
+            "Uma casa por assunto: um projeto para o blog, outro para o financeiro."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Projeto \"Comunicação da escola\" com instruções próprias."
+          }
+        },
+        {
+          "titulo": "Regras",
+          "sub": "cinco linhas",
+          "texto": [
+            "Comece com cinco regras: quem é você, para quem é o trabalho, o tom, a ferramenta e uma fronteira.",
+            "Regra boa é verificável: dá para olhar o resultado e dizer se foi seguida."
+          ],
+          "exemplo": {
+            "rot": "Regra verificável",
+            "texto": "Todo comunicado diz a data em que a mudança começa."
+          }
+        },
+        {
+          "titulo": "Lições",
+          "sub": "uma por erro",
+          "texto": [
+            "Quando a IA errar, não corrija só aquela resposta: escreva a lição no topo da lista, com a data.",
+            "Uma linha: o que aconteceu e a regra que evita."
+          ],
+          "exemplo": {
+            "rot": "Lição",
+            "texto": "Comunicado saiu sem a data de início: toda mudança cita o dia em que começa. (24/10)"
+          }
+        },
+        {
+          "titulo": "Testar",
+          "sub": "sessão nova",
+          "texto": [
+            "Abra uma conversa nova, faça um pedido curto e veja se a regra e a lição foram seguidas sem você lembrar.",
+            "Se não foram, a regra está escondida ou vaga: suba para o topo e escreva de um jeito que dá para conferir."
+          ],
+          "exemplo": {
+            "rot": "Pedido curto",
+            "texto": "Escreva o comunicado da festa junina."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "Troque o texto entre < > pelo seu.",
+      "blocos": [
+        {
+          "rot": "AGENTS.md (ou CLAUDE.md, ou instruções do projeto)",
+          "icone": "arquivo",
+          "conteudo": "# Quem sou\n<seu nome, o que você faz, para quem trabalha>\n\n# Para quem é o trabalho\n<o público, em uma frase>\n\n# Regras\n- Escreva em português, frases curtas.\n- <regra verificável 2>\n- <regra verificável 3>\n- Antes de terminar, diga o que mudou e como eu confiro.\n- Fronteira: <o que nunca pode acontecer>\n\n# Onde está o resto\n- Lições: LICOES.md (leia antes de começar)\n- Referências: pasta referencias/\n\n# Lições (a mais nova no topo)\n- <data> · <o que deu errado> → <a regra que evita>"
+        },
+        {
+          "rot": "Pedido quando a IA errar",
+          "icone": "memoria",
+          "conteudo": "Você errou isto: <o que aconteceu>.\nAntes de corrigir, escreva a lição em UMA linha no topo da seção Lições do AGENTS.md:\n<data> · <o que deu errado> → <a regra que evita>.\nDepois refaça o trabalho seguindo a regra nova e me mostre as duas coisas."
+        },
+        {
+          "rot": "Primeira linha de toda tarefa",
+          "icone": "chat",
+          "conteudo": "Leia o AGENTS.md e as lições antes de começar. Se algo que eu pedir contrariar uma regra, me avise antes de fazer."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>O arquivo de regras existe e tem pelo menos cinco regras suas.</li><li>Há pelo menos uma lição tirada de um erro real, com data.</li><li>Numa conversa nova, um pedido de uma linha saiu seguindo a regra e a lição.</li></ol>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Regra vaga</b> (\"seja profissional\"): ninguém consegue conferir. Escreva o que dá para ver no resultado.</li><li><b>Corrigir só a resposta</b>: o erro volta amanhã. A correção tem de virar lição escrita.</li><li><b>Senha ou chave no arquivo de regras</b>: tudo o que está em texto pode vazar. Chave fica fora.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a sua base de contexto",
+      "sub": "Escolha um assunto em que você usa IA toda semana.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · A casa e as regras",
+          "min": "20 min",
+          "texto": "Crie o projeto (no chat) ou a pasta com AGENTS.md (no terminal) e escreva as cinco regras do modelo.",
+          "pronto": "o arquivo ou as instruções do projeto têm cinco regras, e cada uma dá para conferir olhando o resultado."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A primeira lição",
+          "min": "15 min",
+          "texto": "Peça uma tarefa, ache um erro (sempre tem) e use o pedido \"quando a IA errar\".",
+          "pronto": "a seção Lições tem uma linha com data, o erro e a regra que evita."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · O teste da sessão nova",
+          "min": "10 min",
+          "texto": "Abra uma conversa nova e faça um pedido de uma linha do mesmo tipo.",
+          "pronto": "o resultado seguiu a regra e a lição sem você repetir nenhuma das duas no pedido."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "A IA esqueceu a data no comunicado. O que fazer para o erro não voltar?",
+          "opcoes": [
+            "Corrigir só aquela resposta e seguir.",
+            "Escrever o pedido mais longo da próxima vez.",
+            "Trocar de modelo de IA.",
+            "Escrever a lição numa linha no topo da lista, com a regra que evita."
+          ],
+          "certa": 3,
+          "explica": "Corrigir só a resposta resolve hoje. A lição escrita entra no contexto de toda tarefa seguinte, e o mesmo erro não volta.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "Qual destas é uma regra verificável?",
+          "opcoes": [
+            "Todo comunicado diz a data em que a mudança começa.",
+            "Seja sempre profissional e cuidadoso com a imagem da escola.",
+            "Escreva com qualidade.",
+            "Capriche no texto."
+          ],
+          "certa": 0,
+          "explica": "Dá para olhar o comunicado e dizer se a data está lá. \"Profissional\" e \"qualidade\" ninguém consegue conferir.",
+          "ref": "passos"
+        },
+        {
+          "p": "Por que o contexto deve ter \"casa própria\"?",
+          "opcoes": [
+            "Porque o pedido precisa ser o mais longo possível.",
+            "Porque assim ele é lido em toda tarefa, sem você repetir a cada conversa.",
+            "Porque só funciona no terminal.",
+            "Porque a IA não lê com atenção o que está no pedido, só o que está guardado em arquivo."
+          ],
+          "certa": 1,
+          "explica": "Num arquivo ou nas instruções do projeto, o contexto chega antes de todo pedido. Repetido no pedido, ele some na próxima conversa.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Quatro fontes",
+          "texto": "Regras do projeto, lições, histórico e arquivos chegam ao agente antes do pedido."
+        },
+        {
+          "t": "Erro vira lição",
+          "texto": "Toda correção vira uma linha escrita, e o mesmo erro não volta."
+        },
+        {
+          "t": "Teste na sessão nova",
+          "texto": "A base funciona quando um pedido de uma linha já sai certo."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "FEC: Formação de Engenharia de Contexto",
+          "href": "https://inematds.github.io/FEC/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Camada de contexto: o seu negócio num lugar só",
+          "href": "https://inematds.github.io/camada-contexto/guia/",
+          "icone": "pasta"
+        }
+      ]
+    }
+  ]
+}

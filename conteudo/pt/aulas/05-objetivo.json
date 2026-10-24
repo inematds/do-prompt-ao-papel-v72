@@ -1,0 +1,441 @@
+{
+  "slug": "objetivo",
+  "num": 5,
+  "menu": "Objetivo",
+  "titulo": "Objetivo que dá para medir: o M do SMART",
+  "titulo_curto": "Objetivo medível",
+  "minutos": 15,
+  "lead": "Gerente delega com o SMART há meio século: específico, mensurável, atingível, relevante e com prazo. Para um agente, a letra que mais pesa é o M. Sem medida, ele não consegue conferir o próprio trabalho e não sabe quando acabou. \"Melhora o meu site\" não é objetivo. \"A página inicial abre em menos de dois segundos no celular\" é.",
+  "objetivo": "transformar um pedido vago num objetivo com medida e prazo que o agente consegue conferir sozinho.",
+  "competencias": [
+    "escrever-objetivo-smart",
+    "definir-criterio-de-pronto",
+    "responder-duvidas-do-agente"
+  ],
+  "aprende": [
+    {
+      "icone": "alvo",
+      "t": "As cinco letras do SMART"
+    },
+    {
+      "icone": "grafico",
+      "t": "Por que o M é o que mais pesa"
+    },
+    {
+      "icone": "chat",
+      "t": "Responder às dúvidas de um agente novo"
+    },
+    {
+      "icone": "check",
+      "t": "Conferir o seu objetivo na página"
+    }
+  ],
+  "hero_alt": "Cronômetro de mesa e régua metálica sobre uma prancheta com folha em branco.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "SMART para agentes",
+      "sub": "Clique em cada letra. A do meio é a que decide.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "S",
+          "sub": "específico",
+          "itens": [
+            {
+              "t": "qual página, qual tarefa"
+            }
+          ],
+          "detalhe": "Específico: diz exatamente o quê. \"O site\" é tudo; \"a página inicial\" é uma coisa só."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "M",
+          "sub": "mensurável",
+          "forte": true,
+          "itens": [
+            {
+              "t": "número ou teste"
+            },
+            {
+              "t": "dá para conferir"
+            }
+          ],
+          "detalhe": "Mensurável, ou seja, verificável: um número, um teste, uma comparação. É o que deixa o agente conferir o próprio trabalho e saber quando parar. Sem o M, ele para quando acha, não quando acabou."
+        },
+        {
+          "icone": "check",
+          "titulo": "A",
+          "sub": "atingível",
+          "itens": [
+            {
+              "t": "com o acesso que ele tem"
+            }
+          ],
+          "detalhe": "Atingível com o que o agente tem: acesso, ferramentas, permissões. Pedir que ele mude o servidor sem dar acesso ao servidor não é atingível."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "R",
+          "sub": "relevante",
+          "itens": [
+            {
+              "t": "por que importa"
+            }
+          ],
+          "detalhe": "Relevante: por que isso importa agora. É o pedaço de contexto que ajuda o agente a decidir quando aparecer um caso que você não previu."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "T",
+          "sub": "com prazo",
+          "itens": [
+            {
+              "t": "até quando"
+            },
+            {
+              "t": "como mostrar"
+            }
+          ],
+          "detalhe": "Com prazo: até quando e como ele mostra o resultado. Sem prazo, a tarefa não tem fim nem conferência."
+        }
+      ],
+      "legenda": "O mesmo método que gerente usa com pessoas. Com agente, o M deixa de ser detalhe e vira o critério de parada.",
+      "dica": "Teste rápido: se você não consegue dizer como vai conferir, o agente também não consegue."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Do vago ao medível",
+      "sub": "Três pedidos reescritos. Clique em cada um.",
+      "passos": [
+        {
+          "titulo": "Site",
+          "sub": "velocidade",
+          "texto": [
+            "Vago: \"Melhora o meu site.\"",
+            "Medível: a página inicial abre em menos de 2 segundos no celular, medida três vezes seguidas, até sexta."
+          ],
+          "exemplo": {
+            "rot": "Como conferir",
+            "texto": "Ferramenta de velocidade no perfil de celular: três medições abaixo de 2 s."
+          }
+        },
+        {
+          "titulo": "Planilha",
+          "sub": "fechamento",
+          "texto": [
+            "Vago: \"Organiza a planilha de vendas.\"",
+            "Medível: uma aba por mês, total de cada aba igual ao do extrato do banco, até o dia 5."
+          ],
+          "exemplo": {
+            "rot": "Como conferir",
+            "texto": "Somar a aba e comparar com o extrato: diferença zero."
+          }
+        },
+        {
+          "titulo": "Atendimento",
+          "sub": "respostas",
+          "texto": [
+            "Vago: \"Responde melhor os clientes.\"",
+            "Medível: toda mensagem respondida em até 1 hora no horário comercial, com o preço da tabela atual, a partir de segunda."
+          ],
+          "exemplo": {
+            "rot": "Como conferir",
+            "texto": "Amostra de 20 conversas por semana: hora da resposta e preço batem."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "Troque o texto entre < > pelo seu.",
+      "blocos": [
+        {
+          "rot": "objetivo.txt",
+          "icone": "alvo",
+          "conteudo": "Pedido vago: <o pedido do jeito que você faria antes>\nObjetivo: <o quê, específico: qual página, qual tarefa, qual documento>\nMedida: <o número ou o teste que diz que acabou e ficou bom>\nPrazo: <até quando, e como o agente mostra o resultado>"
+        },
+        {
+          "rot": "Pedido: o agente pergunta o que falta",
+          "icone": "chat",
+          "conteudo": "Antes de começar esta tarefa, me faça as perguntas que um funcionário novo faria para saber:\n- o que exatamente é para fazer;\n- como conferir que terminou (um número ou um teste);\n- o que não pode mudar;\n- até quando e como me mostrar.\nSó comece depois que eu responder.\n\nTarefa: <o pedido>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>A Medida tem um número ou um teste, não um adjetivo.</li><li>O Prazo diz até quando e como o resultado chega.</li><li>Você consegue dizer, olhando a entrega, se passou ou não.</li></ol>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Adjetivo no lugar do número</b> (\"rápido\", \"bonito\"): o agente decide sozinho o que isso quer dizer.</li><li><b>Medida que só você consegue rodar</b>: prefira um teste que o próprio agente executa.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulação: o primeiro dia de um agente novo",
+      "sub": "Conversa simulada para treinar. O agente acabou de chegar e pergunta. Escolha a resposta que você daria.",
+      "personagem": {
+        "nome": "Agente novo",
+        "papel": "simulação · primeiro dia na equipe"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Oi! Fui designado para cuidar do site da loja. O que você quer que eu faça?",
+          "opcoes": [
+            {
+              "t": "Melhora o meu site.",
+              "vai": "fim-vago",
+              "nota": 0,
+              "comenta": "Sem medida, o agente vai mexer no que achar e parar quando achar. Você não terá como dizer se ficou melhor."
+            },
+            {
+              "t": "Deixa a página inicial mais rápida.",
+              "vai": "medida",
+              "nota": 1,
+              "comenta": "Ficou específico (a página inicial), mas \"mais rápida\" ainda não tem número. O agente vai precisar perguntar."
+            },
+            {
+              "t": "Faz a página inicial abrir em menos de 2 segundos no celular.",
+              "vai": "medida",
+              "nota": 2,
+              "comenta": "Específico e com número. O agente já sabe o alvo; falta combinar como medir."
+            }
+          ]
+        },
+        "medida": {
+          "cliente": "Entendido. E como eu confiro se cheguei lá?",
+          "opcoes": [
+            {
+              "t": "Você vai sentir quando estiver rápido.",
+              "vai": "fim-vago",
+              "nota": 0,
+              "comenta": "\"Sentir\" não é medida. O agente não tem como se conferir e você não tem como aprovar."
+            },
+            {
+              "t": "Mede na ferramenta de velocidade, perfil de celular: pronto quando der menos de 2 s em três medições seguidas.",
+              "vai": "fronteira",
+              "nota": 2,
+              "comenta": "Esse é o M: um teste que o próprio agente roda. Três medições evitam o resultado de sorte."
+            },
+            {
+              "t": "Me mostra o antes e o depois.",
+              "vai": "fronteira",
+              "nota": 1,
+              "comenta": "Ajuda você a aprovar, mas o agente ainda não sabe quando parar. Diga o número que encerra a tarefa."
+            }
+          ]
+        },
+        "fronteira": {
+          "cliente": "Para ganhar tempo, posso trocar as fotos e mudar o layout?",
+          "opcoes": [
+            {
+              "t": "Pode comprimir as fotos. Layout, textos e preços não mudam sem me perguntar.",
+              "vai": "prazo",
+              "nota": 2,
+              "comenta": "Fronteira clara: o que pode e o que precisa do seu sim. O agente trabalha solto dentro dela."
+            },
+            {
+              "t": "Pode mudar tudo, contanto que fique rápido.",
+              "vai": "fim-fronteira",
+              "nota": 0,
+              "comenta": "Medida sem fronteira: o jeito mais rápido pode ser tirar metade da página. Ele cumpre o número e quebra a loja."
+            },
+            {
+              "t": "Faz o que achar melhor e me conta depois.",
+              "vai": "prazo",
+              "nota": 1,
+              "comenta": "Confiança é bom, mas \"me conta depois\" descobre o problema tarde. Diga o que precisa do seu sim antes."
+            }
+          ]
+        },
+        "prazo": {
+          "cliente": "Combinado. Até quando, e como eu te mostro?",
+          "opcoes": [
+            {
+              "t": "Quando der.",
+              "vai": "fim-prazo",
+              "nota": 0,
+              "comenta": "Sem prazo, a tarefa não tem fim nem conferência marcada."
+            },
+            {
+              "t": "Até sexta.",
+              "vai": "fim-bom",
+              "nota": 1,
+              "comenta": "Tem prazo, mas não diz como você vai receber. Você vai ter de perguntar na sexta."
+            },
+            {
+              "t": "Até sexta. Me manda as três medições e a lista do que mudou.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Prazo e formato de entrega. Na sexta você confere em dois minutos."
+            }
+          ]
+        },
+        "fim-vago": {
+          "fim": true,
+          "titulo": "O agente vai chutar",
+          "texto": "Sem um jeito de medir, o agente trabalha até achar que está bom. Volte e dê a ele um número ou um teste que ele mesmo consegue rodar."
+        },
+        "fim-fronteira": {
+          "fim": true,
+          "titulo": "Bateu a meta, quebrou a loja",
+          "texto": "A página ficou rápida porque perdeu as fotos e metade dos textos. Medida sem fronteira é perigosa: diga o que não pode mudar sem você."
+        },
+        "fim-prazo": {
+          "fim": true,
+          "titulo": "Tarefa sem fim",
+          "texto": "O objetivo estava bom, mas sem prazo nem formato de entrega ninguém sabe quando conferir. Feche sempre com até quando e como mostrar."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Agente pronto para trabalhar",
+          "texto": "Específico, com medida que ele mesmo confere, fronteira clara e prazo. É assim que se delega para alguém novo na equipe."
+        }
+      },
+      "licao": "O agente pergunta o que você esqueceu de dizer: o número, o teste, a fronteira e o prazo. Responda antes, na ficha, e ele não precisa perguntar."
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira o seu objetivo",
+      "sub": "Cole o pedido vago e a versão reescrita. A página confere se os quatro campos estão lá, cada um com conteúdo.",
+      "arquivo": "objetivo.txt",
+      "rot": "Cole aqui o seu objetivo (um campo por linha):",
+      "modelo": "Pedido vago: ...\nObjetivo: ...\nMedida: ...\nPrazo: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "campos": [
+            "Pedido vago",
+            "Objetivo",
+            "Medida",
+            "Prazo"
+          ],
+          "min": 8
+        }
+      ],
+      "ok": "OK: objetivo com os {n} campos preenchidos",
+      "exemplo": "Pedido vago: melhora o meu site.\nObjetivo: a página inicial da loja abre rápido no celular.\nMedida: menos de 2 segundos em três medições seguidas, perfil de celular.\nPrazo: até sexta, com as três medições e a lista do que mudou.",
+      "exemplo_errado": "Pedido vago: melhora o meu site.\nObjetivo: deixar o site melhor.\nMedida: ficar bom."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o objetivo da sua ficha",
+      "sub": "Volte à ficha da aula 4 e reforce o campo Medida.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Três pedidos reescritos",
+          "min": "15 min",
+          "texto": "Pegue três pedidos vagos do seu diagnóstico (aula 1) e reescreva cada um com o SMART.",
+          "pronto": "os três têm um número ou um teste no lugar de um adjetivo."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · O objetivo conferido",
+          "min": "10 min",
+          "texto": "Escreva o objetivo.txt do seu agente e cole no conferidor acima.",
+          "pronto": "o conferidor responde \"OK: objetivo com os 4 campos preenchidos\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · O agente se confere",
+          "min": "15 min",
+          "texto": "Entregue o objetivo ao agente e peça que ele mostre a medição ao terminar.",
+          "pronto": "o agente entregou o resultado junto com a medição combinada, e você conferiu sem refazer a medida."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Esta aula em um minuto",
+      "sub": "Como delegar para a IA: o objetivo SMART.",
+      "chave": "dpap-reel2"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Por que o M é a letra que mais pesa para um agente?",
+          "opcoes": [
+            "Porque deixa o pedido mais curto.",
+            "Porque com medida o agente confere o próprio trabalho e sabe quando acabou.",
+            "Porque é a primeira letra a ser lida.",
+            "Porque os modelos só entendem números."
+          ],
+          "certa": 1,
+          "explica": "Sem medida, ele para quando acha que está bom. Com um número ou teste, ele mesmo verifica e você aprova sem refazer a medição.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Qual destes é um objetivo medível?",
+          "opcoes": [
+            "Organiza a planilha de vendas.",
+            "Deixa a planilha mais profissional, com cores, gráficos e totais em cada aba.",
+            "Uma aba por mês, total igual ao extrato do banco, até o dia 5.",
+            "Melhora a planilha o máximo possível."
+          ],
+          "certa": 2,
+          "explica": "Tem o quê (uma aba por mês), o teste (total igual ao extrato) e o prazo (dia 5). Os outros dependem da opinião de quem olha.",
+          "ref": "passos"
+        },
+        {
+          "p": "Na simulação, \"pode mudar tudo, contanto que fique rápido\" deu errado. Por quê?",
+          "opcoes": [
+            "Porque medida sem fronteira deixa o agente cumprir o número quebrando o resto.",
+            "Porque o agente não sabe mexer em layout.",
+            "Porque faltou dar o nome da loja e o endereço do site para o agente saber onde mexer.",
+            "Porque velocidade não se mede."
+          ],
+          "certa": 0,
+          "explica": "O jeito mais rápido pode ser tirar fotos e textos. Junto com a medida vai a fronteira: o que não muda sem o seu sim.",
+          "ref": "simconversa"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "SMART",
+          "texto": "Específico, mensurável, atingível, relevante e com prazo: o mesmo método de delegar para pessoas."
+        },
+        {
+          "t": "O M decide",
+          "texto": "Um número ou teste que o agente roda sozinho é o critério de parada."
+        },
+        {
+          "t": "Medida com fronteira",
+          "texto": "Diga também o que não pode mudar para bater a meta."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "O reel no YouTube",
+          "href": "https://www.youtube.com/watch?v=T945m2nfaAA",
+          "icone": "video"
+        },
+        {
+          "t": "FEP 2026: as seis partes do briefing",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "slug": "custo",
+  "num": 7,
+  "menu": "Custo",
+  "titulo": "O lado ruim: a conta, e como cuidar dela",
+  "titulo_curto": "Cuidar do custo",
+  "minutos": 13,
+  "lead": "Com agente rodando o dia inteiro, o uso cresce rápido e vira uma conta grande, principalmente quando se paga por uso na API. Eu rodo quase tudo pela assinatura. Mesmo assim, como com qualquer funcionário, é preciso auditar o desempenho e cuidar do custo. Quatro alavancas resolvem a maior parte: o modelo certo, o cache, o lote e a conta acompanhada.",
+  "objetivo": "escolher o modelo e o jeito de rodar (na hora ou em lote) para cada tarefa recorrente e acompanhar o uso de uma semana.",
+  "competencias": [
+    "escolher-modelo-por-tarefa",
+    "usar-cache-e-lote",
+    "acompanhar-custo"
+  ],
+  "aprende": [
+    {
+      "icone": "chip",
+      "t": "O modelo certo para cada trabalho"
+    },
+    {
+      "icone": "memoria",
+      "t": "O que é o cache de prompt"
+    },
+    {
+      "icone": "relogio",
+      "t": "Quando mandar em lote"
+    },
+    {
+      "icone": "grafico",
+      "t": "Acompanhar a conta"
+    }
+  ],
+  "hero_alt": "Mesa escura com um medidor analógico, uma calculadora e um caderno; ao fundo, servidores com luzes frias.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Quatro alavancas do custo",
+      "sub": "Clique em cada uma.",
+      "nos": [
+        {
+          "icone": "chip",
+          "titulo": "Modelo",
+          "sub": "certo",
+          "itens": [
+            {
+              "t": "Haiku: tarefa simples"
+            },
+            {
+              "t": "Sonnet: dia a dia"
+            },
+            {
+              "t": "Opus ou Fable: o que importa"
+            }
+          ],
+          "detalhe": "Nem toda tarefa precisa do modelo mais forte. Classificar mensagens ou extrair um campo vai no menor; escrever e revisar no do meio; decisão, código difícil e o que faz diferença de verdade no maior. Os nomes acima são da família Claude; outras empresas têm a mesma escada."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Cache",
+          "sub": "o começo repetido",
+          "itens": [
+            {
+              "t": "mesmo início de conversa"
+            },
+            {
+              "t": "em pouco tempo"
+            }
+          ],
+          "detalhe": "Se você repete o mesmo começo de conversa (as regras, a ficha, os documentos) em pouco tempo, essa parte é guardada e sai por uma fração do preço. Por isso vale manter o começo fixo e deixar o que muda no fim."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Lote",
+          "sub": "o que não é urgente",
+          "itens": [
+            {
+              "t": "batch API"
+            },
+            {
+              "t": "metade do preço"
+            }
+          ],
+          "detalhe": "O que pode esperar (relatórios, classificações em massa, traduções) vai em lote pela batch API, que cobra metade do preço e devolve o resultado em até um dia. Tarefa que alguém espera na hora fica fora do lote."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Conta",
+          "sub": "acompanhada",
+          "forte": true,
+          "itens": [
+            {
+              "t": "uso por tarefa"
+            },
+            {
+              "t": "olhar toda semana"
+            }
+          ],
+          "detalhe": "Anote quanto cada tarefa consome: na assinatura, a fatia do limite; na API, o valor. Um agente bem treinado já dá conta de boa parte das tarefas, e a equipe inteira pode falar com ele no mesmo canal. Sem conta acompanhada, o custo só aparece na fatura."
+        }
+      ],
+      "legenda": "Audite como auditaria um funcionário: o que ele entrega, quanto custa e se o modelo é o certo para o trabalho.",
+      "dica": "Eu deixo o modelo de cada sistema num arquivo só. Trocar de modelo, quando sai um melhor ou mais barato, é mudar uma linha."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Decidir, tarefa por tarefa",
+      "sub": "Três perguntas para cada tarefa recorrente. Clique em cada uma.",
+      "passos": [
+        {
+          "titulo": "Quão difícil?",
+          "sub": "escolhe o modelo",
+          "texto": [
+            "Simples e repetitiva vai no menor; texto e análise do dia a dia no do meio; o que tem risco ou decide dinheiro no maior.",
+            "Na dúvida, rode o procedimento da aula 6 nos dois e compare."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Separar e-mails por assunto: modelo menor. Proposta para cliente: modelo maior."
+          }
+        },
+        {
+          "titulo": "Alguém espera?",
+          "sub": "escolhe o lote",
+          "texto": [
+            "Se ninguém está esperando a resposta agora, a tarefa pode ir em lote pela metade do preço.",
+            "Junte as do dia e mande de uma vez."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Resumo semanal de 200 avaliações de clientes: lote."
+          }
+        },
+        {
+          "titulo": "O começo se repete?",
+          "sub": "aproveita o cache",
+          "texto": [
+            "Se toda chamada começa com as mesmas regras e documentos, deixe esse começo idêntico e no início.",
+            "O que muda (a pergunta, o caso) vai no fim."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Atendimento: regras e tabela de preços sempre iguais no começo; a mensagem do cliente no fim."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "Uma tabela por agente. Troque o texto entre < > pelo seu.",
+      "blocos": [
+        {
+          "rot": "custo-por-tarefa.md",
+          "icone": "grafico",
+          "conteudo": "# Custo por tarefa · <agente> · semana de <data>\n\n| tarefa | vezes na semana | modelo | na hora ou em lote | começo fixo (cache)? | uso anotado |\n|---|---|---|---|---|---|\n| <tarefa 1> | | menor / meio / maior | hora / lote | sim / não | <fatia do limite ou valor> |\n| <tarefa 2> | | | | | |\n| <tarefa 3> | | | | | |\n| <tarefa 4> | | | | | |\n| <tarefa 5> | | | | | |\n\nDecisão da semana: <o que muda de modelo ou vai para o lote>"
+        },
+        {
+          "rot": "Pedido: revisar o custo com o próprio agente",
+          "icone": "chat",
+          "conteudo": "Abaixo está a lista das tarefas que você faz para mim toda semana.\nPara cada uma, diga:\n1. se ela precisa mesmo do modelo maior, ou se o menor dá conta (e como eu testo isso);\n2. se ela pode esperar e ir em lote;\n3. se o começo do pedido é sempre igual (e o que eu deixo fixo para aproveitar o cache).\nResponda numa tabela e não mude nada ainda.\n\n<lista de tarefas>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Exemplo preenchido",
+            "html": "<ul><li><b>Separar e-mails por assunto</b> · 50×/semana · menor · hora · começo fixo.</li><li><b>Resumo das avaliações</b> · 1×/semana · meio · lote.</li><li><b>Proposta para cliente</b> · 3×/semana · maior · hora.</li></ul><p>Decisão: o resumo vai para o lote; a separação de e-mails desce para o modelo menor depois de passar no teste de 5 rodadas.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Tudo no modelo maior</b> \"por garantia\": paga caro pelo que o menor faz igual.</li><li><b>Trocar de modelo sem testar</b>: rode o procedimento nos dois e compare.</li><li><b>Mudar o começo do pedido toda vez</b>: perde o cache.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a conta do seu agente",
+      "sub": "Uma semana de uso real.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · A tabela",
+          "min": "20 min",
+          "texto": "Liste as cinco tarefas que você mais entrega à IA e preencha o custo-por-tarefa.md com modelo, hora ou lote e começo fixo.",
+          "pronto": "as cinco linhas têm modelo e \"hora\" ou \"lote\" marcados, com o motivo em uma frase."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Uma semana anotada",
+          "min": "10 min",
+          "dias": 7,
+          "texto": "Durante uma semana, anote o uso de cada tarefa: a fatia do limite da assinatura ou o valor na API.",
+          "pronto": "a coluna \"uso anotado\" está preenchida para a semana inteira."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Uma decisão",
+          "min": "15 min",
+          "texto": "Com a semana na mão, escolha uma mudança (modelo menor, lote ou começo fixo) e teste com o procedimento da aula 6.",
+          "pronto": "a linha \"Decisão da semana\" tem uma mudança testada, com o resultado da comparação."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Esta aula em um minuto",
+      "sub": "Agente de IA sem quebrar com o custo.",
+      "chave": "dpap-reel4"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Separar 50 e-mails por assunto toda semana. Qual escolha faz mais sentido?",
+          "opcoes": [
+            "O modelo maior, por garantia, já que errar na separação custa mais que o modelo.",
+            "Testar no modelo menor e ficar com ele se passar nas rodadas.",
+            "Fazer à mão para não gastar.",
+            "Trocar de fornecedor de IA."
+          ],
+          "certa": 1,
+          "explica": "Tarefa simples e repetitiva costuma ir bem no modelo menor. O teste de várias rodadas (aula 6) diz se ele dá conta.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "O que a batch API oferece?",
+          "opcoes": [
+            "Respostas mais rápidas pelo mesmo preço, porque o pedido entra na frente da fila.",
+            "Um modelo mais inteligente.",
+            "Uso ilimitado na assinatura.",
+            "Metade do preço para o que pode esperar até um dia."
+          ],
+          "certa": 3,
+          "explica": "O lote cobra metade e devolve o resultado em até um dia. Serve para o que ninguém espera na hora.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Como aproveitar o cache de prompt?",
+          "opcoes": [
+            "Deixar o começo do pedido (regras, documentos) idêntico e pôr o que muda no fim.",
+            "Escrever cada pedido de um jeito diferente.",
+            "Apagar o histórico a cada conversa.",
+            "Usar sempre o modelo menor, que guarda melhor o começo da conversa do que os maiores."
+          ],
+          "certa": 0,
+          "explica": "O cache guarda o começo repetido em pouco tempo e cobra uma fração por ele. Começo fixo, variação no fim.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Modelo certo",
+          "texto": "Menor para o simples, do meio para o dia a dia, maior para o que importa."
+        },
+        {
+          "t": "Cache e lote",
+          "texto": "Começo fixo sai por uma fração; o que pode esperar vai em lote pela metade."
+        },
+        {
+          "t": "Conta acompanhada",
+          "texto": "Uso anotado por tarefa, toda semana, e uma decisão testada de cada vez."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "O reel no YouTube",
+          "href": "https://www.youtube.com/watch?v=1yXmp-xTErI",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.440
+Prompt engineering está ficando para trás.
+
+00:00:02.440 --> 00:00:04.040
+Em 2027,
+
+00:00:04.040 --> 00:00:05.960
+a habilidade que vale é outra:
+
+00:00:05.960 --> 00:00:06.900
+gerenciar
+
+00:00:06.900 --> 00:00:10.380
+a IA como alguém da sua equipe.
+
+00:00:10.380 --> 00:00:13.000
+O criador do Claude Code hoje usa
+
+00:00:13.000 --> 00:00:15.080
+o Claude quase só pelo Slack,
+
+00:00:15.080 --> 00:00:16.740
+como quem fala com um colega.
+
+00:00:16.740 --> 00:00:18.220
+E os agentes pessoais,
+
+00:00:18.220 --> 00:00:20.580
+os Jarvis, levaram a mesma virada para
+
+00:00:20.580 --> 00:00:23.200
+todo mundo: a IA deixou de ser
+
+00:00:23.200 --> 00:00:25.560
+ferramenta e virou funcionário permanente.
+
+00:00:25.560 --> 00:00:27.100
+Eu passei exatamente por isso.
+
+00:00:27.100 --> 00:00:28.800
+Neste vídeo eu mostro o que eu
+
+00:00:28.800 --> 00:00:30.040
+aprenderia no lugar do prompt:
+
+00:00:30.040 --> 00:00:31.540
+a engenharia de função,
+
+00:00:31.540 --> 00:00:33.120
+os três passos para delegar,
+
+00:00:33.120 --> 00:00:34.900
+como treinar o agente em ciclo e,
+
+00:00:34.900 --> 00:00:36.400
+no fim, como não quebrar com o
+
+00:00:36.400 --> 00:00:36.740
+custo.
+
+00:00:36.740 --> 00:00:37.960
+Um ano e meio atrás,
+
+00:00:37.960 --> 00:00:39.800
+eu mesmo achava exagero quem dizia que
+
+00:00:39.800 --> 00:00:41.460
+tinha uma empresa rodando com agentes.
+
+00:00:41.460 --> 00:00:43.820
+Aqueles agentes não respondiam nem um e-mail
+
+00:00:43.820 --> 00:00:43.980
+direito.
+
+00:00:43.980 --> 00:00:45.080
+Hoje é diferente.
+
+00:00:45.080 --> 00:00:46.030
+Na
+
+00:00:46.030 --> 00:00:47.340
+Anthropic, o pessoal dá uma tarefa para
+
+00:00:47.340 --> 00:00:48.640
+o Claude e deixa ele rodando por
+
+00:00:48.640 --> 00:00:49.520
+dias, até semanas,
+
+00:00:49.520 --> 00:00:50.360
+em segundo plano.
+
+00:00:50.360 --> 00:00:51.940
+Ninguém fica olhando cada resposta:
+
+00:00:51.940 --> 00:00:53.920
+de vez em quando o Claude aparece,
+
+00:00:53.920 --> 00:00:55.120
+mostra o andamento,
+
+00:00:55.120 --> 00:00:56.440
+eles ajustam e seguem.
+
+00:00:56.440 --> 00:00:58.040
+Segundo a própria Anthropic,
+
+00:00:58.040 --> 00:00:59.540
+mais de oitenta por cento do código
+
+00:00:59.540 --> 00:01:01.320
+que eles juntam ao produto já é
+
+00:01:01.320 --> 00:01:02.460
+escrito pelo Claude.
+
+00:01:02.460 --> 00:01:04.400
+Antes, a habilidade principal era como escrever
+
+00:01:04.400 --> 00:01:05.020
+o pedido.
+
+00:01:05.020 --> 00:01:06.460
+Isso era o prompt engineering:
+
+00:01:06.460 --> 00:01:08.480
+palavras especiais, modelos de prompt,
+
+00:01:08.480 --> 00:01:09.060
+truques.
+
+00:01:09.060 --> 00:01:11.600
+Agora a IA é tão generalista e
+
+00:01:11.600 --> 00:01:13.540
+tão capaz que isso perdeu o sentido.
+
+00:01:13.540 --> 00:01:15.300
+Você não escreve palavra por palavra o
+
+00:01:15.300 --> 00:01:16.760
+que um bom funcionário tem que fazer.
+
+00:01:16.760 --> 00:01:17.820
+Você dá um esboço,
+
+00:01:17.820 --> 00:01:19.560
+confia que ele faz direito e confere
+
+00:01:19.560 --> 00:01:20.240
+de vez em quando.
+
+00:01:20.240 --> 00:01:21.540
+É assim que eu uso o Claude
+
+00:01:21.540 --> 00:01:21.960
+hoje.
+
+00:01:21.960 --> 00:01:23.180
+E é isso que eu chamo de
+
+00:01:23.180 --> 00:01:24.180
+engenharia de função,
+
+00:01:24.180 --> 00:01:26.800
+role engineering: em vez do prompt perfeito,
+
+00:01:26.800 --> 00:01:28.000
+você define o papel.
+
+00:01:28.000 --> 00:01:29.420
+A própria Anthropic diz,
+
+00:01:29.420 --> 00:01:30.100
+no guia dela:
+
+00:01:30.100 --> 00:01:31.980
+trate o Claude como um funcionário brilhante,
+
+00:01:31.980 --> 00:01:33.640
+mas novo, que ainda não conhece as
+
+00:01:33.640 --> 00:01:34.800
+suas normas e o seu jeito de
+
+00:01:34.800 --> 00:01:35.340
+trabalhar.
+
+00:01:35.340 --> 00:01:36.960
+Quem já contratou gente sabe o que
+
+00:01:36.960 --> 00:01:37.600
+isso quer dizer,
+
+00:01:37.600 --> 00:01:39.020
+e eu fiz isso a vida inteira
+
+00:01:39.020 --> 00:01:39.920
+nas minhas empresas.
+
+00:01:39.920 --> 00:01:40.900
+São três coisas.
+
+00:01:40.900 --> 00:01:42.000
+Um objetivo claro.
+
+00:01:42.000 --> 00:01:43.660
+Todo o contexto para entender de onde
+
+00:01:43.660 --> 00:01:45.200
+veio esse objetivo e por quê.
+
+00:01:45.200 --> 00:01:47.220
+E um exemplo de trabalho bem feito,
+
+00:01:47.220 --> 00:01:48.780
+com os erros que você quer evitar.
+
+00:01:48.780 --> 00:01:49.860
+Para o objetivo,
+
+00:01:49.860 --> 00:01:51.000
+use o SMART,
+
+00:01:51.000 --> 00:01:52.940
+o mesmo método que gerente usa para
+
+00:01:52.940 --> 00:01:54.800
+delegar há meio século:
+
+00:01:54.800 --> 00:01:56.560
+específico, mensurável, atingível,
+
+00:01:56.560 --> 00:01:58.340
+relevante e com prazo.
+
+00:01:58.340 --> 00:01:59.180
+Para o agente,
+
+00:01:59.180 --> 00:02:00.960
+a letra mais importante é o M,
+
+00:02:00.960 --> 00:02:02.540
+de mensurável, ou seja,
+
+00:02:02.540 --> 00:02:03.440
+verificável.
+
+00:02:03.440 --> 00:02:04.440
+Se não dá para medir,
+
+00:02:04.440 --> 00:02:06.460
+ele não consegue conferir o próprio trabalho.
+
+00:02:06.460 --> 00:02:08.280
+Melhora o meu site não é objetivo.
+
+00:02:08.280 --> 00:02:10.300
+Faz a página inicial abrir em menos
+
+00:02:10.300 --> 00:02:11.620
+de dois segundos no celular,
+
+00:02:11.620 --> 00:02:12.340
+isso é objetivo.
+
+00:02:12.340 --> 00:02:14.020
+Agora o agente sabe quando acabou.
+
+00:02:14.020 --> 00:02:15.760
+O contexto vem de uma base de
+
+00:02:15.760 --> 00:02:16.420
+conhecimento.
+
+00:02:16.420 --> 00:02:18.180
+No meu caso são os arquivos de
+
+00:02:18.180 --> 00:02:19.300
+regras de cada projeto,
+
+00:02:19.300 --> 00:02:20.580
+as lições que eu anoto toda vez
+
+00:02:20.580 --> 00:02:21.360
+que algo dá errado,
+
+00:02:21.360 --> 00:02:22.800
+o histórico de tudo que eu já
+
+00:02:22.800 --> 00:02:24.180
+conversei com o Claude e com o
+
+00:02:24.180 --> 00:02:26.060
+Codex, e os repositórios.
+
+00:02:26.060 --> 00:02:27.880
+Assim eu não monto o contexto do
+
+00:02:27.880 --> 00:02:28.780
+zero a cada pedido:
+
+00:02:28.780 --> 00:02:30.340
+o agente já tem tudo para entender
+
+00:02:30.340 --> 00:02:31.080
+o que eu quero.
+
+00:02:31.080 --> 00:02:31.820
+E o exemplo.
+
+00:02:31.820 --> 00:02:33.740
+Não adianta pedir faça um ótimo trabalho,
+
+00:02:33.740 --> 00:02:34.780
+porque ele não sabe o que é
+
+00:02:34.780 --> 00:02:35.780
+ótimo para você.
+
+00:02:35.780 --> 00:02:36.940
+Faça a tarefa uma vez,
+
+00:02:36.940 --> 00:02:38.360
+você mesmo, bem feita.
+
+00:02:38.360 --> 00:02:39.880
+É o tempo mais valioso que você
+
+00:02:39.880 --> 00:02:41.640
+vai gastar, e provavelmente a última vez
+
+00:02:41.640 --> 00:02:42.840
+que você faz essa tarefa.
+
+00:02:42.840 --> 00:02:43.760
+Depois é só dizer:
+
+00:02:43.760 --> 00:02:45.133
+faz igual a este.
+
+00:02:45.160 --> 00:02:46.100
+Parece exagero?
+
+00:02:46.100 --> 00:02:47.320
+Olha o que o pessoal da Anthropic
+
+00:02:47.320 --> 00:02:47.740
+pede.
+
+00:02:47.740 --> 00:02:49.420
+O criador do Claude Code quis o
+
+00:02:49.420 --> 00:02:51.600
+aplicativo de desktop reescrito em Swift,
+
+00:02:51.600 --> 00:02:52.600
+outra linguagem.
+
+00:02:52.600 --> 00:02:54.120
+O pedido foi mais ou menos este:
+
+00:02:54.120 --> 00:02:55.540
+roda o aplicativo antigo,
+
+00:02:55.540 --> 00:02:57.620
+tira print, compara pixel por pixel com
+
+00:02:57.620 --> 00:02:59.100
+a versão nova e não para até
+
+00:02:59.100 --> 00:02:59.800
+ficar igual.
+
+00:02:59.800 --> 00:03:01.480
+Rodou por mais de duas semanas.
+
+00:03:01.480 --> 00:03:02.540
+Em outro caso,
+
+00:03:02.540 --> 00:03:04.280
+o Claude entrou sozinho numa conversa do
+
+00:03:04.280 --> 00:03:06.600
+Slack, puxou dados de várias ferramentas e
+
+00:03:06.600 --> 00:03:07.660
+montou uma resposta só.
+
+00:03:07.660 --> 00:03:10.520
+E o pesquisador Nicholas Carlini colocou dezesseis
+
+00:03:10.520 --> 00:03:13.000
+agentes Claude para construir um compilador de
+
+00:03:13.000 --> 00:03:14.380
+C, com uma ordem simples:
+
+00:03:14.380 --> 00:03:15.720
+continuem até ficar perfeito.
+
+00:03:15.720 --> 00:03:16.960
+Mais ou menos duas semanas.
+
+00:03:16.960 --> 00:03:18.460
+É exatamente o que você diria para
+
+00:03:18.460 --> 00:03:19.300
+alguém da equipe.
+
+00:03:19.300 --> 00:03:21.020
+Quando o agente já faz o trabalho,
+
+00:03:21.020 --> 00:03:22.980
+vem a parte que quase ninguém faz:
+
+00:03:22.980 --> 00:03:23.600
+treinar.
+
+00:03:23.600 --> 00:03:24.880
+Não peça uma vez só.
+
+00:03:24.880 --> 00:03:26.400
+Peça cinco, dez vezes,
+
+00:03:26.400 --> 00:03:28.620
+e avalie como você avaliaria um funcionário.
+
+00:03:28.620 --> 00:03:30.440
+Gasta mais token e mais tempo,
+
+00:03:30.440 --> 00:03:31.860
+mas é o que muda o jogo.
+
+00:03:31.860 --> 00:03:33.800
+Olhe todos os resultados e escreva o
+
+00:03:33.800 --> 00:03:35.840
+que melhorar: na tarefa A eu não
+
+00:03:35.840 --> 00:03:38.200
+gostei disso, na tarefa B faltou aquilo.
+
+00:03:38.200 --> 00:03:39.400
+Junte tudo numa lista,
+
+00:03:39.400 --> 00:03:41.180
+entregue ao Claude e rode em ciclo
+
+00:03:41.180 --> 00:03:42.460
+até ele corrigir tudo.
+
+00:03:42.460 --> 00:03:44.840
+Pronto: você tem um procedimento padrão escrito,
+
+00:03:44.840 --> 00:03:46.960
+que serve para qualquer agente pelos próximos
+
+00:03:46.960 --> 00:03:47.400
+anos.
+
+00:03:47.400 --> 00:03:49.000
+É isso que ocupa boa parte do
+
+00:03:49.000 --> 00:03:49.700
+meu dia hoje.
+
+00:03:49.700 --> 00:03:52.020
+Eu delego para vários agentes e subagentes:
+
+00:03:52.020 --> 00:03:53.400
+vídeos, cursos, publicação,
+
+00:03:53.400 --> 00:03:54.820
+filas que rodam sozinhas.
+
+00:03:54.820 --> 00:03:56.860
+E fico dando retorno do que melhorar.
+
+00:03:56.860 --> 00:03:58.680
+Toda correção vira uma regra escrita,
+
+00:03:58.680 --> 00:03:59.980
+e o mesmo erro não volta.
+
+00:03:59.980 --> 00:04:00.740
+De certo modo,
+
+00:04:00.740 --> 00:04:02.240
+eu treino o agente tanto quanto ele
+
+00:04:02.240 --> 00:04:02.700
+me treina.
+
+00:04:02.700 --> 00:04:03.600
+E tem um bônus:
+
+00:04:03.600 --> 00:04:05.020
+quando sai um modelo novo,
+
+00:04:05.020 --> 00:04:06.880
+o seu funcionário fica mais inteligente de
+
+00:04:06.880 --> 00:04:07.300
+graça.
+
+00:04:07.300 --> 00:04:08.800
+Guarde a lista de tarefas que ele
+
+00:04:08.800 --> 00:04:10.780
+faz sempre, rode no modelo novo e
+
+00:04:10.780 --> 00:04:12.440
+compare a qualidade e o custo.
+
+00:04:12.440 --> 00:04:13.560
+Agora o lado ruim:
+
+00:04:13.560 --> 00:04:14.340
+o custo.
+
+00:04:14.340 --> 00:04:16.000
+Com agente rodando o dia inteiro,
+
+00:04:16.000 --> 00:04:17.400
+token vira uma conta grande,
+
+00:04:17.400 --> 00:04:18.680
+principalmente pagando por API.
+
+00:04:18.680 --> 00:04:20.600
+Eu rodo quase tudo pela assinatura.
+
+00:04:20.600 --> 00:04:22.080
+Então, como com funcionário,
+
+00:04:22.080 --> 00:04:24.500
+audite o desempenho e cuide do custo.
+
+00:04:24.500 --> 00:04:26.880
+Primeiro, o modelo certo para cada trabalho:
+
+00:04:26.880 --> 00:04:28.640
+Haiku para tarefa simples,
+
+00:04:28.640 --> 00:04:29.940
+Sonnet para o dia a dia,
+
+00:04:29.940 --> 00:04:32.000
+e Opus ou Fable para o que
+
+00:04:32.000 --> 00:04:33.880
+faz diferença de verdade.
+
+00:04:33.880 --> 00:04:35.340
+Segundo, aproveite o cache de prompt:
+
+00:04:35.340 --> 00:04:37.220
+se você repete o mesmo começo de
+
+00:04:37.220 --> 00:04:38.020
+conversa em pouco tempo,
+
+00:04:38.020 --> 00:04:39.940
+essa parte sai por uma fração do
+
+00:04:39.940 --> 00:04:40.700
+preço.
+
+00:04:40.700 --> 00:04:42.360
+Terceiro, o que não é urgente vai
+
+00:04:42.360 --> 00:04:43.680
+em lote, pela batch API,
+
+00:04:43.680 --> 00:04:45.760
+que roda de madrugada pela metade do
+
+00:04:45.760 --> 00:04:45.980
+preço.
+
+00:04:45.980 --> 00:04:47.160
+E acompanhe a conta:
+
+00:04:47.160 --> 00:04:48.860
+um agente bem treinado já dá conta
+
+00:04:48.860 --> 00:04:49.980
+de boa parte das tarefas,
+
+00:04:49.980 --> 00:04:51.540
+e a equipe inteira pode falar com
+
+00:04:51.540 --> 00:04:52.900
+ele no mesmo canal.
+
+00:04:52.900 --> 00:04:55.080
+Resumindo: pare de caçar o prompt perfeito.
+
+00:04:55.080 --> 00:04:56.340
+Defina o papel,
+
+00:04:56.340 --> 00:04:58.000
+dê um objetivo que dá para medir,
+
+00:04:58.000 --> 00:04:59.160
+contexto e um exemplo,
+
+00:04:59.160 --> 00:05:01.220
+treine em ciclo e cuide do custo.
+
+00:05:01.220 --> 00:05:02.240
+Não tem milagre:
+
+00:05:02.240 --> 00:05:04.000
+só dá para relaxar quando o sistema
+
+00:05:04.000 --> 00:05:04.740
+roda certo.
+
+00:05:04.740 --> 00:05:05.920
+Me conta nos comentários:
+
+00:05:05.920 --> 00:05:07.880
+qual tarefa você entregaria primeiro para um
+
+00:05:07.880 --> 00:05:08.300
+agente?
+
+00:05:08.300 --> 00:05:09.460
+Tudo isso, de graça,
+
+00:05:09.460 --> 00:05:11.053
+está no inema ponto club.

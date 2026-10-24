@@ -1,0 +1,323 @@
+{
+  "slug": "treinar",
+  "num": 6,
+  "menu": "Treinar",
+  "titulo": "Treinar em ciclo: cinco, dez rodadas e uma lista",
+  "titulo_curto": "Treinar o agente",
+  "minutos": 16,
+  "lead": "Quando o agente já faz o trabalho, vem a parte que quase ninguém faz: treinar. Não peça uma vez só. Peça cinco, dez vezes, avalie como avaliaria um funcionário, junte as correções numa lista e rode em ciclo até ele corrigir tudo. Gasta mais tempo e mais uso, mas no fim você tem um procedimento padrão escrito que serve para qualquer agente.",
+  "objetivo": "rodar a mesma tarefa em ciclo, juntar as correções numa lista e fechar um procedimento padrão escrito.",
+  "competencias": [
+    "avaliar-saidas-do-agente",
+    "escrever-lista-de-correcoes",
+    "escrever-procedimento-padrao"
+  ],
+  "aprende": [
+    {
+      "icone": "fila",
+      "t": "Por que uma rodada só engana"
+    },
+    {
+      "icone": "lista",
+      "t": "Da avaliação à lista de correções"
+    },
+    {
+      "icone": "arquivo",
+      "t": "O procedimento padrão escrito"
+    },
+    {
+      "icone": "chip",
+      "t": "O teste do modelo novo"
+    }
+  ],
+  "hero_alt": "Robô humanoide numa mesa com cinco folhas iguais em fila; uma pessoa aponta para a folha marcada com etiqueta vermelha.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O ciclo de treino",
+      "sub": "Clique em cada etapa. O ciclo só termina quando a lista zera.",
+      "nos": [
+        {
+          "icone": "fila",
+          "titulo": "Rodar",
+          "sub": "5 a 10 vezes",
+          "itens": [
+            {
+              "t": "a mesma tarefa"
+            },
+            {
+              "t": "entradas diferentes"
+            }
+          ],
+          "detalhe": "Uma rodada boa pode ser sorte; uma ruim pode ser azar. Cinco a dez rodadas, com entradas diferentes, mostram o que o agente faz sempre e o que faz às vezes."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Avaliar",
+          "sub": "como funcionário",
+          "itens": [
+            {
+              "t": "pela Medida da ficha"
+            },
+            {
+              "t": "contra o exemplo"
+            }
+          ],
+          "detalhe": "Olhe todos os resultados com o critério da ficha e compare com o seu exemplo. Anote por rodada: \"na tarefa A não gostei disso, na B faltou aquilo\"."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Lista",
+          "sub": "de correções",
+          "itens": [
+            {
+              "t": "o que se repete"
+            },
+            {
+              "t": "uma linha cada"
+            }
+          ],
+          "detalhe": "Junte as anotações numa lista única, sem repetição, do mais grave para o menos grave. É ela que você entrega ao agente, e não um desabafo solto."
+        },
+        {
+          "icone": "check",
+          "titulo": "Corrigir",
+          "sub": "em ciclo",
+          "itens": [
+            {
+              "t": "rodar de novo"
+            },
+            {
+              "t": "riscar o que passou"
+            }
+          ],
+          "detalhe": "Entregue a lista, peça que ele ajuste e rode de novo. Risque o que passou, mantenha o que falhou. Repita até a lista ficar vazia em todas as rodadas."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Procedimento",
+          "sub": "padrão escrito",
+          "forte": true,
+          "itens": [
+            {
+              "t": "serve para qualquer agente"
+            }
+          ],
+          "detalhe": "Com a lista zerada, peça ao agente que escreva o procedimento padrão: os passos, as regras que nasceram das correções e o teste final. Ele vale para os próximos anos e para qualquer agente."
+        }
+      ],
+      "volta": "Falhou alguma rodada? A falha volta para a lista e o ciclo recomeça",
+      "legenda": "Eu passo boa parte do dia assim: delego, dou retorno, e cada correção vira regra escrita. De certo modo, eu treino o agente tanto quanto ele me treina.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "O treino inteiro",
+        "texto": "Rodar várias vezes, avaliar, listar, corrigir em ciclo até zerar e escrever o procedimento. O mesmo erro não volta."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Quatro hábitos do treino",
+      "sub": "Clique em cada um.",
+      "passos": [
+        {
+          "titulo": "Entradas variadas",
+          "sub": "não a mesma",
+          "texto": [
+            "Use casos diferentes em cada rodada: um fácil, um difícil, um esquisito.",
+            "Rodar cinco vezes o mesmo caso só mede a sorte."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Comunicado de festa, de mudança de horário e de greve de ônibus."
+          }
+        },
+        {
+          "titulo": "Avaliar tudo",
+          "sub": "não só o pior",
+          "texto": [
+            "Anote também o que saiu bom: é isso que entra no procedimento como \"faça assim\".",
+            "Sem o que deu certo, a lista vira só proibição."
+          ],
+          "exemplo": {
+            "rot": "Anotação",
+            "texto": "Rodada 3: abertura ótima, guardar. Faltou a data de início."
+          }
+        },
+        {
+          "titulo": "Uma correção por linha",
+          "sub": "verificável",
+          "texto": [
+            "Cada linha da lista diz o que mudar de um jeito que dá para conferir.",
+            "\"Ficou estranho\" não ajuda; \"a data vem na primeira frase\" ajuda."
+          ],
+          "exemplo": {
+            "rot": "Linha boa",
+            "texto": "A data de início aparece na primeira frase."
+          }
+        },
+        {
+          "titulo": "Modelo novo",
+          "sub": "de graça",
+          "texto": [
+            "Quando sai um modelo novo, o seu funcionário fica mais inteligente de graça. Guarde a lista de tarefas que ele faz sempre.",
+            "Rode o procedimento no modelo novo, compare qualidade e custo e decida com o resultado na mão."
+          ],
+          "exemplo": {
+            "rot": "Teste",
+            "texto": "As mesmas 5 entradas, no modelo atual e no novo, lado a lado."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos do ciclo",
+      "sub": "Copie e use. Troque o texto entre < > pelo seu.",
+      "blocos": [
+        {
+          "rot": "avaliacao.md",
+          "icone": "lupa",
+          "conteudo": "# Avaliação · <tarefa> · <data>\nCritério: a Medida da ficha + o exemplo de referência\n\n| rodada | entrada | passou na Medida? | o que ficou bom | o que corrigir |\n|---|---|---|---|---|\n| 1 | <caso> | sim / não | | |\n| 2 | | | | |\n| 3 | | | | |\n| 4 | | | | |\n| 5 | | | | |"
+        },
+        {
+          "rot": "Pedido: aplicar a lista e rodar de novo",
+          "icone": "chat",
+          "conteudo": "Avaliei as 5 rodadas. Esta é a lista de correções, da mais grave para a menos grave:\n1. <correção verificável>\n2. <correção verificável>\n3. <correção verificável>\n\nAjuste o seu jeito de fazer, rode de novo as mesmas 5 entradas e me diga, para cada rodada, quais itens da lista passaram e quais falharam."
+        },
+        {
+          "rot": "Pedido: escrever o procedimento padrão",
+          "icone": "arquivo",
+          "conteudo": "A lista zerou nas 5 rodadas. Escreva o procedimento-padrao.md desta tarefa com:\n- quando usar e o que entrega;\n- os passos, na ordem;\n- as regras que nasceram das correções (uma por linha);\n- o teste final: como conferir pela Medida antes de entregar.\nUse linguagem que outro agente, ou outra pessoa, entenda sem me perguntar."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Lista de exemplo",
+            "html": "<ol><li>A data de início aparece na primeira frase. (falhou em 3 de 5)</li><li>Nada de nome de aluno, nem em exemplo. (falhou em 1 de 5)</li><li>O texto cabe numa tela de celular. (falhou em 2 de 5)</li></ol><p>Depois do ciclo: 5 de 5 em todos os itens.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Uma rodada e pronto</b>: o erro que aparece 1 vez em 5 fica escondido até o dia que importa.</li><li><b>Correção solta no chat</b>: some na próxima conversa. Vai para a lista e depois para o procedimento.</li><li><b>Procedimento escrito por você antes do ciclo</b>: ele nasce do que as rodadas mostraram, não do que você imaginou.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: treine o seu agente",
+      "sub": "Use a ficha da aula 4 e o objetivo da aula 5.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Cinco rodadas",
+          "min": "40 min",
+          "texto": "Rode a tarefa da sua ficha cinco vezes, com entradas diferentes, e preencha o avaliacao.md.",
+          "pronto": "a tabela tem cinco linhas preenchidas, com \"sim\" ou \"não\" na coluna da Medida."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A lista de correções",
+          "min": "15 min",
+          "texto": "Junte o que corrigir numa lista única, uma correção verificável por linha.",
+          "pronto": "a lista tem pelo menos três correções, cada uma dá para conferir olhando o resultado."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · O ciclo até zerar",
+          "min": "40 min",
+          "dias": 2,
+          "texto": "Entregue a lista, rode de novo as mesmas entradas e repita até todas passarem.",
+          "pronto": "numa mesma rodada final, as cinco entradas passaram em todos os itens da lista."
+        },
+        {
+          "id": "e4",
+          "titulo": "E4 · O procedimento",
+          "min": "15 min",
+          "texto": "Peça o procedimento-padrao.md e guarde junto da ficha.",
+          "pronto": "o arquivo existe e tem as regras que nasceram das correções e o teste final."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Esta aula em um minuto",
+      "sub": "Treine o agente como um funcionário.",
+      "chave": "dpap-reel3"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Por que rodar a mesma tarefa cinco a dez vezes?",
+          "opcoes": [
+            "Para gastar a cota do mês.",
+            "Porque o agente aprende sozinho a cada rodada e vai melhorando mesmo sem você dar retorno.",
+            "Porque é exigência das ferramentas.",
+            "Porque uma rodada só pode ser sorte ou azar; várias mostram o que ele faz sempre."
+          ],
+          "certa": 3,
+          "explica": "O erro que aparece 1 vez em 5 só se vê com várias rodadas. O agente não aprende sozinho entre elas: quem melhora é a lista que você entrega.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Qual linha serve para a lista de correções?",
+          "opcoes": [
+            "Ficou estranho.",
+            "A data de início aparece na primeira frase.",
+            "Capricha mais da próxima vez.",
+            "Não gostei do tom."
+          ],
+          "certa": 1,
+          "explica": "Dá para olhar o resultado e conferir. As outras são opinião sem critério: o agente não sabe o que mudar.",
+          "ref": "passos"
+        },
+        {
+          "p": "Saiu um modelo novo. Qual é o jeito certo de decidir se troca?",
+          "opcoes": [
+            "Rodar o procedimento nas mesmas entradas nos dois modelos e comparar qualidade e custo.",
+            "Trocar logo, porque o modelo novo é sempre melhor e mais barato que o anterior, em qualquer tarefa.",
+            "Esperar alguém comentar nas redes.",
+            "Reescrever todos os prompts do zero."
+          ],
+          "certa": 0,
+          "explica": "Com a lista de tarefas e o procedimento guardados, a troca vira teste: mesmas entradas, lado a lado, qualidade e custo na mão.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Várias rodadas",
+          "texto": "Cinco a dez execuções com entradas diferentes mostram o que o agente faz sempre."
+        },
+        {
+          "t": "Lista e ciclo",
+          "texto": "Correções verificáveis, uma por linha, aplicadas em ciclo até zerar."
+        },
+        {
+          "t": "Procedimento padrão",
+          "texto": "O resultado do treino é um texto que serve para qualquer agente e qualquer modelo novo."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "O reel no YouTube",
+          "href": "https://www.youtube.com/watch?v=z60IMZwKrTM",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.720
+Quando o agente já faz o trabalho,
+
+00:00:01.720 --> 00:00:03.680
+vem a parte que quase ninguém faz:
+
+00:00:03.680 --> 00:00:04.300
+treinar.
+
+00:00:04.300 --> 00:00:05.580
+Não peça uma vez só.
+
+00:00:05.580 --> 00:00:07.100
+Peça cinco, dez vezes,
+
+00:00:07.100 --> 00:00:09.320
+e avalie como você avaliaria um funcionário.
+
+00:00:09.320 --> 00:00:11.140
+Gasta mais token e mais tempo,
+
+00:00:11.140 --> 00:00:12.560
+mas é o que muda o jogo.
+
+00:00:12.560 --> 00:00:14.500
+Olhe todos os resultados e escreva o
+
+00:00:14.500 --> 00:00:16.540
+que melhorar: na tarefa A eu não
+
+00:00:16.540 --> 00:00:18.900
+gostei disso, na tarefa B faltou aquilo.
+
+00:00:18.900 --> 00:00:20.100
+Junte tudo numa lista,
+
+00:00:20.100 --> 00:00:21.880
+entregue ao Claude e rode em ciclo
+
+00:00:21.880 --> 00:00:23.160
+até ele corrigir tudo.
+
+00:00:23.160 --> 00:00:25.540
+Pronto: você tem um procedimento padrão escrito,
+
+00:00:25.540 --> 00:00:27.660
+que serve para qualquer agente pelos próximos
+
+00:00:27.660 --> 00:00:28.100
+anos.
+
+00:00:28.100 --> 00:00:29.700
+É isso que ocupa boa parte do
+
+00:00:29.700 --> 00:00:30.400
+meu dia hoje.
+
+00:00:30.400 --> 00:00:32.720
+Eu delego para vários agentes e subagentes:
+
+00:00:32.720 --> 00:00:34.100
+vídeos, cursos, publicação,
+
+00:00:34.100 --> 00:00:35.520
+filas que rodam sozinhas.
+
+00:00:35.520 --> 00:00:37.560
+E fico dando retorno do que melhorar.
+
+00:00:37.560 --> 00:00:39.380
+Toda correção vira uma regra escrita,
+
+00:00:39.380 --> 00:00:40.680
+e o mesmo erro não volta.
+
+00:00:40.680 --> 00:00:41.440
+De certo modo,
+
+00:00:41.440 --> 00:00:42.940
+eu treino o agente tanto quanto ele
+
+00:00:42.940 --> 00:00:43.400
+me treina.
+
+00:00:43.400 --> 00:00:44.300
+E tem um bônus:
+
+00:00:44.300 --> 00:00:45.720
+quando sai um modelo novo,
+
+00:00:45.720 --> 00:00:47.580
+o seu funcionário fica mais inteligente de
+
+00:00:47.580 --> 00:00:48.000
+graça.
+
+00:00:48.000 --> 00:00:49.500
+Guarde a lista de tarefas que ele
+
+00:00:49.500 --> 00:00:51.480
+faz sempre, rode no modelo novo e
+
+00:00:51.480 --> 00:00:53.140
+compare a qualidade e o custo.

@@ -1,0 +1,112 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.220
+Um ano e meio atrás,
+
+00:00:01.220 --> 00:00:03.060
+eu mesmo achava exagero quem dizia que
+
+00:00:03.060 --> 00:00:04.720
+tinha uma empresa rodando com agentes.
+
+00:00:04.720 --> 00:00:07.080
+Aqueles agentes não respondiam nem um e-mail
+
+00:00:07.080 --> 00:00:07.240
+direito.
+
+00:00:07.240 --> 00:00:08.340
+Hoje é diferente.
+
+00:00:08.340 --> 00:00:09.290
+Na
+
+00:00:09.290 --> 00:00:10.600
+Anthropic, o pessoal dá uma tarefa para
+
+00:00:10.600 --> 00:00:11.900
+o Claude e deixa ele rodando por
+
+00:00:11.900 --> 00:00:12.780
+dias, até semanas,
+
+00:00:12.780 --> 00:00:13.620
+em segundo plano.
+
+00:00:13.620 --> 00:00:15.200
+Ninguém fica olhando cada resposta:
+
+00:00:15.200 --> 00:00:17.180
+de vez em quando o Claude aparece,
+
+00:00:17.180 --> 00:00:18.380
+mostra o andamento,
+
+00:00:18.380 --> 00:00:19.700
+eles ajustam e seguem.
+
+00:00:19.700 --> 00:00:21.300
+Segundo a própria Anthropic,
+
+00:00:21.300 --> 00:00:22.800
+mais de oitenta por cento do código
+
+00:00:22.800 --> 00:00:24.580
+que eles juntam ao produto já é
+
+00:00:24.580 --> 00:00:25.720
+escrito pelo Claude.
+
+00:00:25.720 --> 00:00:27.660
+Antes, a habilidade principal era como escrever
+
+00:00:27.660 --> 00:00:28.280
+o pedido.
+
+00:00:28.280 --> 00:00:29.720
+Isso era o prompt engineering:
+
+00:00:29.720 --> 00:00:31.740
+palavras especiais, modelos de prompt,
+
+00:00:31.740 --> 00:00:32.320
+truques.
+
+00:00:32.320 --> 00:00:34.860
+Agora a IA é tão generalista e
+
+00:00:34.860 --> 00:00:36.800
+tão capaz que isso perdeu o sentido.
+
+00:00:36.800 --> 00:00:38.560
+Você não escreve palavra por palavra o
+
+00:00:38.560 --> 00:00:40.020
+que um bom funcionário tem que fazer.
+
+00:00:40.020 --> 00:00:41.080
+Você dá um esboço,
+
+00:00:41.080 --> 00:00:42.820
+confia que ele faz direito e confere
+
+00:00:42.820 --> 00:00:43.500
+de vez em quando.
+
+00:00:43.500 --> 00:00:44.800
+É assim que eu uso o Claude
+
+00:00:44.800 --> 00:00:45.220
+hoje.
+
+00:00:45.220 --> 00:00:46.440
+E é isso que eu chamo de
+
+00:00:46.440 --> 00:00:47.440
+engenharia de função,
+
+00:00:47.440 --> 00:00:50.060
+role engineering: em vez do prompt perfeito,
+
+00:00:50.060 --> 00:00:51.260
+você define o papel.

@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.120
+Agora o lado ruim:
+
+00:00:01.120 --> 00:00:01.900
+o custo.
+
+00:00:01.900 --> 00:00:03.560
+Com agente rodando o dia inteiro,
+
+00:00:03.560 --> 00:00:04.960
+token vira uma conta grande,
+
+00:00:04.960 --> 00:00:06.240
+principalmente pagando por API.
+
+00:00:06.240 --> 00:00:08.160
+Eu rodo quase tudo pela assinatura.
+
+00:00:08.160 --> 00:00:09.640
+Então, como com funcionário,
+
+00:00:09.640 --> 00:00:12.060
+audite o desempenho e cuide do custo.
+
+00:00:12.060 --> 00:00:14.440
+Primeiro, o modelo certo para cada trabalho:
+
+00:00:14.440 --> 00:00:16.200
+Haiku para tarefa simples,
+
+00:00:16.200 --> 00:00:17.500
+Sonnet para o dia a dia,
+
+00:00:17.500 --> 00:00:19.560
+e Opus ou Fable para o que
+
+00:00:19.560 --> 00:00:21.440
+faz diferença de verdade.
+
+00:00:21.440 --> 00:00:22.900
+Segundo, aproveite o cache de prompt:
+
+00:00:22.900 --> 00:00:24.780
+se você repete o mesmo começo de
+
+00:00:24.780 --> 00:00:25.580
+conversa em pouco tempo,
+
+00:00:25.580 --> 00:00:27.500
+essa parte sai por uma fração do
+
+00:00:27.500 --> 00:00:28.260
+preço.
+
+00:00:28.260 --> 00:00:29.920
+Terceiro, o que não é urgente vai
+
+00:00:29.920 --> 00:00:31.240
+em lote, pela batch API,
+
+00:00:31.240 --> 00:00:33.320
+que roda de madrugada pela metade do
+
+00:00:33.320 --> 00:00:33.540
+preço.
+
+00:00:33.540 --> 00:00:34.720
+E acompanhe a conta:
+
+00:00:34.720 --> 00:00:36.420
+um agente bem treinado já dá conta
+
+00:00:36.420 --> 00:00:37.540
+de boa parte das tarefas,
+
+00:00:37.540 --> 00:00:39.100
+e a equipe inteira pode falar com
+
+00:00:39.100 --> 00:00:40.460
+ele no mesmo canal.

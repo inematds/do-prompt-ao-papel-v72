@@ -1,0 +1,344 @@
+{
+  "slug": "papel",
+  "num": 4,
+  "menu": "Papel",
+  "titulo": "A era do papel: brilhante, mas novo na empresa",
+  "titulo_curto": "A ficha de função",
+  "minutos": 16,
+  "lead": "A própria Anthropic recomenda tratar o Claude como um funcionário brilhante, mas novo, que ainda não conhece as suas normas. Quem já contratou gente sabe o que isso pede: objetivo claro, o contexto de onde ele veio e um exemplo de trabalho bem feito. Nesta aula você junta as três coisas numa ficha de função e confere a sua ficha na própria página.",
+  "objetivo": "escrever a ficha de função de um agente com papel, objetivo medível, contexto, exemplo e fronteira.",
+  "competencias": [
+    "definir-papel-do-agente",
+    "delegar-com-ficha",
+    "escolher-exemplo-de-referencia"
+  ],
+  "aprende": [
+    {
+      "icone": "usuario",
+      "t": "Por que tratar a IA como alguém novo na equipe"
+    },
+    {
+      "icone": "alvo",
+      "t": "Os três passos para delegar"
+    },
+    {
+      "icone": "robo",
+      "t": "Como as equipes da Anthropic pedem"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Escrever e conferir a sua ficha"
+    }
+  ],
+  "hero_alt": "Sala de reunião escura: um gestor entrega um crachá a um robô humanoide no primeiro dia de trabalho.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Os três passos viram uma ficha",
+      "sub": "Clique em cada passo.",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Objetivo",
+          "sub": "que dá para medir",
+          "itens": [
+            {
+              "t": "o que é sucesso"
+            },
+            {
+              "t": "como medir"
+            }
+          ],
+          "detalhe": "O que precisa acontecer e como saber que aconteceu. Se não dá para medir, o agente não consegue conferir o próprio trabalho e não sabe quando parar (aula 5)."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Contexto",
+          "sub": "de onde veio",
+          "itens": [
+            {
+              "t": "por que a tarefa existe"
+            },
+            {
+              "t": "regras e lições"
+            }
+          ],
+          "detalhe": "De onde veio esse objetivo e por quê: quem pediu, para quem é, o que já foi tentado. Na maior parte vem da base da aula 3; na ficha você só aponta onde ela está."
+        },
+        {
+          "icone": "check",
+          "titulo": "Exemplo",
+          "sub": "bem feito",
+          "itens": [
+            {
+              "t": "um trabalho de referência"
+            },
+            {
+              "t": "os erros a evitar"
+            }
+          ],
+          "detalhe": "\"Faça um ótimo trabalho\" não funciona: ele não sabe o que é ótimo para você. Faça a tarefa uma vez, você mesmo, bem feita. É o tempo mais bem gasto, e provavelmente a última vez que você faz essa tarefa."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Ficha de função",
+          "sub": "o papel inteiro",
+          "forte": true,
+          "itens": [
+            {
+              "t": "papel"
+            },
+            {
+              "t": "fronteira"
+            },
+            {
+              "t": "quando você confere"
+            }
+          ],
+          "detalhe": "A ficha junta os três passos e acrescenta duas coisas que todo funcionário precisa: o que nunca pode fazer (fronteira) e quando você confere o trabalho. É ela que você entrega ao agente."
+        }
+      ],
+      "legenda": "Um esboço bem feito e conferência de vez em quando: é assim que se delega para alguém capaz.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Do pedido à função",
+        "texto": "Objetivo medível, contexto e exemplo, mais fronteira e conferência: a ficha de função. Você para de escrever o trabalho e passa a gerenciá-lo."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como as equipes da Anthropic pedem",
+      "sub": "Casos contados pela própria Anthropic. Repare no tamanho dos pedidos.",
+      "passos": [
+        {
+          "titulo": "Reescrever o app",
+          "sub": "mais de 2 semanas",
+          "texto": [
+            "O criador do Claude Code quis o aplicativo de desktop reescrito em Swift, outra linguagem.",
+            "O pedido trazia o próprio teste: rodar o app antigo, tirar print, comparar pixel por pixel com o novo e não parar até ficar igual."
+          ],
+          "exemplo": {
+            "rot": "Por que funciona",
+            "texto": "O objetivo se mede sozinho: a tela nova é igual à antiga ou não é."
+          }
+        },
+        {
+          "titulo": "Responder no Slack",
+          "sub": "várias ferramentas",
+          "texto": [
+            "Em outro caso, o Claude entrou numa conversa do Slack, puxou dados de várias ferramentas e montou uma resposta só.",
+            "Ninguém escreveu o passo a passo: o papel era responder a equipe com dados."
+          ],
+          "exemplo": {
+            "rot": "Por que funciona",
+            "texto": "O contexto (acesso às ferramentas) já estava lá; o pedido foi a pergunta da equipe."
+          }
+        },
+        {
+          "titulo": "Um compilador",
+          "sub": "16 agentes",
+          "texto": [
+            "Um pesquisador colocou dezesseis agentes Claude para construir um compilador de C, com uma ordem simples: continuem até ficar perfeito.",
+            "Foram mais ou menos duas semanas de trabalho."
+          ],
+          "exemplo": {
+            "rot": "Por que funciona",
+            "texto": "\"Perfeito\" ali tinha medida: o compilador passa nos testes ou não passa."
+          }
+        },
+        {
+          "titulo": "O padrão",
+          "sub": "o que se repete",
+          "texto": [
+            "Os pedidos são curtos, como os que você faria para alguém da equipe. O que eles têm é um jeito de medir o resultado e o contexto à mão.",
+            "É isso que a ficha de função força você a escrever."
+          ],
+          "exemplo": {
+            "rot": "Para levar",
+            "texto": "Pedido curto + medida clara + contexto disponível = agente que roda sozinho."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: a ficha de função",
+      "sub": "Uma linha por campo. Troque o texto entre < > pelo seu.",
+      "blocos": [
+        {
+          "rot": "ficha-funcao.txt",
+          "icone": "arquivo",
+          "conteudo": "Papel: <a função, em uma frase: você cuida de ...>\nObjetivo: <o que precisa acontecer>\nMedida: <como saber que terminou e ficou bom>\nContexto: <onde estão as regras, as lições e os arquivos; por que a tarefa existe>\nExemplo: <onde está o trabalho de referência feito por você>\nFronteira: <o que nunca pode fazer>\nConferência: <quando e como você olha o trabalho>"
+        },
+        {
+          "rot": "Como entregar a ficha ao agente",
+          "icone": "chat",
+          "conteudo": "A partir de agora este é o seu papel. Leia a ficha abaixo, as regras do projeto e o exemplo indicado.\nAntes de começar, me diga em três linhas como você vai conferir o próprio trabalho pela Medida.\n\n<cole aqui a ficha>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ficha preenchida",
+            "html": "<p><b>Papel:</b> você cuida do comunicado semanal da escola aos pais.<br><b>Objetivo:</b> toda sexta, um comunicado com o que muda na semana seguinte.<br><b>Medida:</b> cabe numa tela de celular, cita a data de cada mudança e eu aprovo sem pedir correção.<br><b>Contexto:</b> regras e lições no AGENTS.md; calendário na pasta calendario/.<br><b>Exemplo:</b> referencias/comunicado-modelo.txt, escrito por mim.<br><b>Fronteira:</b> nunca prometer transporte nem citar nome de aluno.<br><b>Conferência:</b> eu leio toda sexta às 16h antes de enviar.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Papel de prestígio</b> (\"você é o melhor redator\"): não é função. Função diz do que ele cuida.</li><li><b>Medida vaga</b> (\"ficar bom\"): ele não sabe quando parar.</li><li><b>Sem exemplo</b>: \"ótimo\" para ele não é o seu \"ótimo\".</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira a sua ficha",
+      "sub": "Cole a sua ficha (ou carregue o .txt). A página confere se os sete campos estão lá, cada um com conteúdo de verdade.",
+      "arquivo": "ficha-funcao.txt",
+      "rot": "Cole aqui a sua ficha de função (um campo por linha):",
+      "modelo": "Papel: ...\nObjetivo: ...\nMedida: ...\nContexto: ...\nExemplo: ...\nFronteira: ...\nConferência: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "campos": [
+            "Papel",
+            "Objetivo",
+            "Medida",
+            "Contexto",
+            "Exemplo",
+            "Fronteira",
+            "Conferência"
+          ],
+          "min": 12
+        }
+      ],
+      "ok": "OK: ficha com os {n} campos preenchidos",
+      "exemplo": "Papel: você cuida do comunicado semanal da escola aos pais.\nObjetivo: toda sexta, um comunicado com o que muda na semana seguinte.\nMedida: cabe numa tela de celular, cita a data de cada mudança e eu aprovo sem pedir correção.\nContexto: regras e lições no AGENTS.md; calendário na pasta calendario/.\nExemplo: referencias/comunicado-modelo.txt, escrito por mim.\nFronteira: nunca prometer transporte nem citar nome de aluno.\nConferência: eu leio toda sexta às 16h antes de enviar.",
+      "exemplo_errado": "Papel: você é o melhor redator do mundo.\nObjetivo: escrever comunicados ótimos.\nMedida: ficar bom.\nContexto: a escola.\nFronteira: não errar."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a ficha do seu primeiro agente",
+      "sub": "Use o \"candidato a papel\" que você marcou na aula 1.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · O trabalho de referência",
+          "min": "30 min",
+          "texto": "Faça a tarefa uma vez, você mesmo, do jeito que você considera ótimo. Salve como referência e anote dois erros que você quer evitar.",
+          "pronto": "existe um arquivo de referência feito por você e uma lista com dois erros a evitar."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A ficha",
+          "min": "20 min",
+          "texto": "Preencha o ficha-funcao.txt com os sete campos e cole no conferidor acima.",
+          "pronto": "o conferidor responde \"OK: ficha com os 7 campos preenchidos\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · A primeira entrega",
+          "min": "20 min",
+          "texto": "Entregue a ficha ao agente com o pedido do modelo e peça a primeira execução.",
+          "pronto": "o agente descreveu como vai se conferir pela Medida e entregou um resultado que você comparou com a referência."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Esta aula em um minuto",
+      "sub": "Pare de escrever prompt: defina o papel.",
+      "chave": "dpap-reel1"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Quais são os três passos para delegar a um agente?",
+          "opcoes": [
+            "Persona, tom e tamanho do texto.",
+            "Ferramenta, modelo e preço.",
+            "Objetivo claro, contexto e um exemplo de trabalho bem feito.",
+            "Prompt longo com cada passo, revisão linha a linha e aprovação final."
+          ],
+          "certa": 2,
+          "explica": "É o que você daria a alguém brilhante, mas novo na empresa: o que fazer e como medir, de onde veio, e como é um trabalho bem feito.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Por que fazer a tarefa uma vez você mesmo antes de delegar?",
+          "opcoes": [
+            "Porque o agente precisa de um exemplo do que é ótimo para você.",
+            "Porque o agente não consegue fazer na primeira vez.",
+            "Porque é obrigatório nas ferramentas.",
+            "Para ter certeza de que você ainda sabe fazer e pode substituir o agente se ele falhar."
+          ],
+          "certa": 0,
+          "explica": "\"Faça um ótimo trabalho\" não diz nada. O exemplo mostra o padrão. É tempo bem gasto: provavelmente a última vez que você faz essa tarefa.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "No caso do app reescrito em Swift, o que deixou o agente rodar duas semanas sozinho?",
+          "opcoes": [
+            "Um prompt de várias páginas descrevendo cada passo da reescrita, tela por tela.",
+            "Uma medida no próprio pedido: comparar pixel por pixel até ficar igual.",
+            "Uma pessoa revisando cada resposta.",
+            "Um modelo que não erra."
+          ],
+          "certa": 1,
+          "explica": "O pedido era curto, mas trazia o teste. Com medida clara, o agente se confere e sabe quando parou de estar certo.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"Papel: você é o melhor redator do mundo.\" O que há de errado?",
+          "opcoes": [
+            "Nada, é um bom papel.",
+            "Falta dizer o idioma.",
+            "Deveria ser mais longo, com os anos de experiência e os prêmios do redator.",
+            "É título de prestígio, não função: não diz do que ele cuida."
+          ],
+          "certa": 3,
+          "explica": "Função diz do que o agente cuida (\"você cuida do comunicado semanal aos pais\"). Prestígio não muda o resultado, como vimos na aula 2.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Brilhante, mas novo",
+          "texto": "Delegue como para alguém capaz que ainda não conhece a casa."
+        },
+        {
+          "t": "Três passos",
+          "texto": "Objetivo medível, contexto e um exemplo feito por você."
+        },
+        {
+          "t": "A ficha",
+          "texto": "Papel, objetivo, medida, contexto, exemplo, fronteira e conferência, numa folha só."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Claude: dicas de prompt da Anthropic (em inglês)",
+          "href": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "icone": "lista"
+        },
+        {
+          "t": "O reel no YouTube",
+          "href": "https://www.youtube.com/watch?v=6L7V2d1iSoY",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Plano",
+  "titulo": "A mesma tarefa nas três eras, e o seu plano",
+  "titulo_curto": "Comparar e planejar",
+  "minutos": 14,
+  "lead": "A melhor prova de que a forma de trabalhar mudou é fazer a mesma tarefa três vezes: só com o prompt, com prompt e contexto, e com o papel completo. Você vê com os seus olhos o que cada era entrega. Depois, monta o plano com datas para colocar o seu primeiro agente para trabalhar, um degrau de cada vez.",
+  "objetivo": "comparar a mesma tarefa feita nas três eras e sair com um plano datado para o seu primeiro agente.",
+  "competencias": [
+    "comparar-eras-na-pratica",
+    "planejar-adocao",
+    "medir-pronto-quando"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "A mesma tarefa em três versões"
+    },
+    {
+      "icone": "lupa",
+      "t": "O que comparar lado a lado"
+    },
+    {
+      "icone": "calendario",
+      "t": "O plano com datas"
+    },
+    {
+      "icone": "alvo",
+      "t": "O teste final do curso"
+    }
+  ],
+  "hero_alt": "Mesa vista de cima com um calendário de papel, um crachá, uma caneta e um caderno com itens marcados.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Uma tarefa, três versões",
+      "sub": "Clique em cada versão. A tarefa é a mesma; muda o que você entrega à IA.",
+      "nos": [
+        {
+          "icone": "caneta",
+          "titulo": "Só prompt",
+          "sub": "versão 1",
+          "itens": [
+            {
+              "t": "o pedido, e só"
+            }
+          ],
+          "detalhe": "Você escreve o pedido numa conversa nova, sem regras guardadas, sem exemplo, sem medida. É o ponto de partida: mostra o que a IA faz sozinha."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Com contexto",
+          "sub": "versão 2",
+          "itens": [
+            {
+              "t": "pedido curto"
+            },
+            {
+              "t": "regras e lições"
+            }
+          ],
+          "detalhe": "O mesmo pedido, agora dentro do projeto com a base da aula 3. O tom e as regras da casa já chegam antes do pedido."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Papel completo",
+          "sub": "versão 3",
+          "forte": true,
+          "itens": [
+            {
+              "t": "ficha de função"
+            },
+            {
+              "t": "procedimento treinado"
+            }
+          ],
+          "detalhe": "A ficha da aula 4, o objetivo da aula 5 e o procedimento da aula 6. O agente se confere pela Medida e entrega junto a prova."
+        }
+      ],
+      "legenda": "Compare com a mesma régua: a Medida da ficha. Ela vale para as três versões.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "A evolução na sua mesa",
+        "texto": "A versão 1 mostra o que a IA faz sozinha. A 2 mostra o ganho do contexto. A 3 mostra o ganho de gerenciar: objetivo, exemplo e treino."
+      }
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Os três pedidos e a régua",
+      "sub": "Use a tarefa da sua ficha. Troque o texto entre < > pelo seu.",
+      "blocos": [
+        {
+          "rot": "Versão 1 · só prompt (conversa nova, fora do projeto)",
+          "icone": "caneta",
+          "conteudo": "<o pedido, do jeito que você faria antes do curso>"
+        },
+        {
+          "rot": "Versão 2 · com contexto (dentro do projeto)",
+          "icone": "pasta",
+          "conteudo": "Leia o AGENTS.md e as lições antes de começar.\n<o mesmo pedido, em uma linha>"
+        },
+        {
+          "rot": "Versão 3 · papel completo",
+          "icone": "usuario",
+          "conteudo": "Este é o seu papel: siga a ficha-funcao.txt e o procedimento-padrao.md.\nEntrada de hoje: <o caso>\nAo terminar, mostre a conferência pela Medida."
+        },
+        {
+          "rot": "comparacao.md",
+          "icone": "lupa",
+          "conteudo": "# Comparação · <tarefa> · <data>\nRégua: <a Medida da ficha>\n\n| versão | passou na Medida? | o que ficou melhor | o que ficou pior | tempo seu |\n|---|---|---|---|---|\n| 1 · só prompt | | | | |\n| 2 · com contexto | | | | |\n| 3 · papel completo | | | | |\n\nConclusão em uma frase: <o que você passa a fazer daqui para frente>"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a comparação",
+      "sub": "A mesma entrada nas três versões.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Três versões",
+          "min": "30 min",
+          "texto": "Rode a tarefa da sua ficha nas três versões, com a mesma entrada, e salve os três resultados.",
+          "pronto": "você tem três arquivos de resultado, um por versão, com a mesma entrada."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A régua",
+          "min": "15 min",
+          "texto": "Preencha o comparacao.md usando a Medida da ficha como régua.",
+          "pronto": "as três linhas dizem \"sim\" ou \"não\" na Medida e há uma conclusão de uma frase."
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "O mapa do curso",
+      "sub": "Os quatro degraus que levam ao seu primeiro agente. Clique num exercício para ver o \"pronto quando\".",
+      "degraus": [
+        {
+          "aula": "contexto",
+          "icone": "pasta",
+          "quando": "Semana 1",
+          "titulo": "Contexto",
+          "sub": "regras e lições",
+          "saida": "Base que o agente lê antes de qualquer pedido.",
+          "passo": "Primeiro a casa: arquivo de regras, a primeira lição de um erro real e o teste da sessão nova."
+        },
+        {
+          "aula": "papel",
+          "icone": "usuario",
+          "quando": "Semana 1",
+          "titulo": "Ficha",
+          "sub": "o papel",
+          "saida": "Ficha de função conferida e a primeira entrega.",
+          "passo": "Requer a base de contexto. O trabalho de referência feito por você vem antes da ficha."
+        },
+        {
+          "aula": "treinar",
+          "icone": "fila",
+          "quando": "Semana 2",
+          "titulo": "Treino",
+          "sub": "em ciclo",
+          "saida": "Procedimento padrão escrito.",
+          "passo": "Requer a ficha com Medida. Cinco rodadas, a lista e o ciclo até zerar; o ciclo pode levar dois dias."
+        },
+        {
+          "aula": "custo",
+          "icone": "grafico",
+          "quando": "Semana 3",
+          "titulo": "Custo",
+          "sub": "a conta",
+          "saida": "Uma semana de uso anotada e uma decisão testada.",
+          "passo": "Requer o procedimento: é com ele que você testa um modelo menor ou o lote."
+        }
+      ],
+      "resultado": {
+        "titulo": "Ao final do curso",
+        "texto": "Um agente com papel, objetivo medível, procedimento treinado e conta acompanhada.",
+        "total": "13 exercícios"
+      },
+      "rolagem_fim": {
+        "titulo": "O caminho inteiro",
+        "texto": "Contexto, ficha, treino e custo, nessa ordem. Só suba quando o \"pronto quando\" do degrau anterior for verdade."
+      },
+      "legenda": "Cada degrau usa o que o anterior montou."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha a data de início e quanto tempo você tem por semana. O plano respeita os exercícios que pedem dias de uso real.",
+      "curso": "Do prompt ao papel",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Degrau 1 · Contexto",
+          "aula": "contexto"
+        },
+        {
+          "titulo": "Degrau 2 · Ficha de função",
+          "aula": "papel"
+        },
+        {
+          "titulo": "Degrau 3 · Treino em ciclo",
+          "aula": "treinar"
+        },
+        {
+          "titulo": "Degrau 4 · Custo",
+          "aula": "custo"
+        }
+      ],
+      "txt": {
+        "titulo": "Plano — Do prompt ao papel",
+        "inicio": "Início",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "até",
+        "pronto": "pronto quando",
+        "semanas": "semanas",
+        "travou": "## O que travou e a regra que criei",
+        "h": "h por semana",
+        "exs": "exercícios",
+        "ex1": "exercício"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "O curso em três frases",
+      "itens": [
+        {
+          "t": "Pare de caçar o prompt perfeito",
+          "texto": "Defina o papel: objetivo que dá para medir, contexto e um exemplo seu."
+        },
+        {
+          "t": "Treine em ciclo",
+          "texto": "Várias rodadas, lista de correções e procedimento escrito. O mesmo erro não volta."
+        },
+        {
+          "t": "Cuide do custo",
+          "texto": "Modelo certo, cache, lote e conta acompanhada. Não tem milagre: só dá para relaxar quando o sistema roda certo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste final",
+      "sub": "Quatro perguntas sobre o curso inteiro.",
+      "perguntas": [
+        {
+          "p": "Na comparação das três versões, qual é a régua?",
+          "opcoes": [
+            "O tamanho do texto de cada versão.",
+            "A sua impressão na hora.",
+            "O tempo que a IA levou para responder em cada versão.",
+            "A Medida da ficha de função, a mesma para as três."
+          ],
+          "certa": 3,
+          "explica": "Uma régua só deixa a comparação justa. A Medida da ficha diz se o resultado serve, em qualquer versão.",
+          "cert": true,
+          "ref": "codigo"
+        },
+        {
+          "p": "Qual é a ordem dos degraus do plano?",
+          "opcoes": [
+            "Contexto, ficha, treino, custo.",
+            "Custo, treino, ficha, contexto.",
+            "Ficha, custo, contexto, treino.",
+            "Qualquer ordem, porque os degraus são independentes."
+          ],
+          "certa": 0,
+          "explica": "A ficha aponta para a base de contexto; o treino usa a Medida da ficha; o teste de custo usa o procedimento treinado.",
+          "ref": "mapa"
+        },
+        {
+          "p": "O que a engenharia de papel muda no seu trabalho?",
+          "opcoes": [
+            "Você passa a escrever prompts maiores.",
+            "Você deixa de conferir o que a IA faz.",
+            "Você passa a definir a função, conferir e corrigir, como faria com alguém da equipe.",
+            "Você precisa aprender a programar."
+          ],
+          "certa": 2,
+          "explica": "Papel é gestão: ficha, medida, exemplo, treino e custo. Conferir continua, só que de vez em quando e com régua.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "O agente errou a mesma coisa duas vezes. O que faltou?",
+          "opcoes": [
+            "Um modelo maior.",
+            "Transformar a primeira correção em regra escrita (lição ou procedimento).",
+            "Pedir com mais educação.",
+            "Apagar o histórico."
+          ],
+          "certa": 1,
+          "explica": "Correção que fica só no chat some. Escrita na lição ou no procedimento, ela entra em toda tarefa seguinte.",
+          "ref": "resumo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continue por aqui",
+      "links": [
+        {
+          "t": "FEP → AGI: do prompt à intenção",
+          "href": "https://inematds.github.io/FEP-AGI/",
+          "icone": "camadas"
+        },
+        {
+          "t": "FEC: Formação de Engenharia de Contexto",
+          "href": "https://inematds.github.io/FEC/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Do chat ao agente: os quatro degraus",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "robo"
+        },
+        {
+          "t": "Cursos abertos no INEMA.CLUB",
+          "href": "https://inema.club/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

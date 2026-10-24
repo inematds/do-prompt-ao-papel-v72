@@ -1,0 +1,287 @@
+{
+  "slug": "tres-eras",
+  "num": 1,
+  "menu": "Eras",
+  "titulo": "Três eras: do prompt ao papel",
+  "titulo_curto": "As três eras",
+  "minutos": 12,
+  "lead": "Em poucos anos, o jeito de trabalhar com a IA mudou três vezes. Primeiro, o pedido escrito palavra por palavra. Depois, o contexto que a IA recebe antes do pedido. Agora, o papel: a IA trabalha como alguém da equipe e você gerencia. Saber em que era está cada pedido seu mostra o que falta.",
+  "objetivo": "classificar cinco pedidos seus nas três eras e dizer o que falta em cada um para chegar ao papel.",
+  "competencias": [
+    "reconhecer-eras-da-ia",
+    "diagnosticar-pedido",
+    "pensar-como-gestor"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "O que cada era pedia de você"
+    },
+    {
+      "icone": "lupa",
+      "t": "Reconhecer a era de um pedido"
+    },
+    {
+      "icone": "usuario",
+      "t": "Por que a IA virou alguém da equipe"
+    },
+    {
+      "icone": "video",
+      "t": "O curso inteiro em cinco minutos"
+    }
+  ],
+  "hero_alt": "Três objetos numa mesa escura: uma folha amassada, uma pasta cheia de documentos e um crachá de funcionário.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "As três eras",
+      "sub": "Clique em cada era. Repare no que muda: quem faz o trabalho e o que você entrega.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "caneta",
+          "titulo": "Prompt",
+          "sub": "o pedido",
+          "itens": [
+            {
+              "t": "palavras especiais"
+            },
+            {
+              "t": "modelos de prompt"
+            },
+            {
+              "t": "truques"
+            }
+          ],
+          "detalhe": "A habilidade era escrever o pedido. Como o modelo era fraco, você compensava com instruções: \"pense passo a passo\", \"você é um especialista\", listas de \"não faça\". Muito disso perdeu o sentido com os modelos de hoje (aula 2)."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Contexto",
+          "sub": "o que ela sabe",
+          "itens": [
+            {
+              "t": "regras do projeto"
+            },
+            {
+              "t": "documentos e memória"
+            },
+            {
+              "t": "ferramentas"
+            }
+          ],
+          "detalhe": "O pedido ficou curto porque a IA passou a receber, antes dele, o que precisa saber: as regras, os arquivos, o histórico. A habilidade virou montar essa base uma vez, em vez de repetir tudo em cada conversa (aula 3)."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Papel",
+          "sub": "quem ela é",
+          "forte": true,
+          "itens": [
+            {
+              "t": "objetivo que dá para medir"
+            },
+            {
+              "t": "contexto e exemplo"
+            },
+            {
+              "t": "treino em ciclo"
+            }
+          ],
+          "detalhe": "A IA roda sozinha por horas ou dias, como um funcionário. Você não escreve o que ela faz palavra por palavra: define o papel, o objetivo e o padrão de qualidade, e confere de vez em quando. É a engenharia de papel, em inglês role engineering (aulas 4 a 7)."
+        }
+      ],
+      "legenda": "Uma era não apaga a anterior: o papel usa um pedido claro e um bom contexto. O que muda é onde está o seu trabalho.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Do pedido à gestão",
+        "texto": "No prompt, você escrevia o trabalho. No contexto, você preparava a base. No papel, você gerencia: define, confere e corrige."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que cada era pede de você",
+      "sub": "Clique em cada era e compare o mesmo pedido.",
+      "passos": [
+        {
+          "titulo": "Prompt",
+          "sub": "você escreve tudo",
+          "texto": [
+            "Você descreve passo a passo como fazer, porque o modelo não descobria sozinho.",
+            "O resultado dependia mais da redação do pedido do que do seu conhecimento do assunto."
+          ],
+          "exemplo": {
+            "rot": "Pedido típico",
+            "texto": "Você é um redator premiado. Pense passo a passo. Escreva um post sobre o nosso curso. Não use emojis. Não seja prolixo. Use tom amigável."
+          }
+        },
+        {
+          "titulo": "Contexto",
+          "sub": "você prepara a base",
+          "texto": [
+            "Quem é o público, qual é o tom da casa, o que já foi publicado: isso fica guardado num lugar que a IA lê antes de responder.",
+            "O pedido fica curto porque o resto já está lá."
+          ],
+          "exemplo": {
+            "rot": "Pedido típico",
+            "texto": "Escreva o post de lançamento do curso novo, seguindo o tom e o público do arquivo de regras."
+          }
+        },
+        {
+          "titulo": "Papel",
+          "sub": "você gerencia",
+          "texto": [
+            "Você entrega uma função inteira, não uma tarefa solta: o que é sucesso, como medir, onde está o contexto, como é um trabalho bem feito.",
+            "O agente trabalha, se confere e mostra o resultado. Você avalia e corrige, como faria com alguém novo na equipe."
+          ],
+          "exemplo": {
+            "rot": "Pedido típico",
+            "texto": "Você cuida da divulgação dos cursos. Toda segunda, publique um post por curso novo, no padrão do post de exemplo. Pronto quando: cada post tem link que abre e foi aprovado por mim."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo: o diagnóstico dos seus pedidos",
+      "sub": "Copie para um arquivo e preencha com cinco pedidos que você fez à IA nesta semana.",
+      "blocos": [
+        {
+          "rot": "diagnostico-eras.md",
+          "icone": "arquivo",
+          "conteudo": "# Diagnóstico: em que era estão os meus pedidos\n\n| # | pedido (resumo) | era | o que faltou para chegar ao papel |\n|---|---|---|---|\n| 1 | <pedido> | prompt / contexto / papel | <objetivo medível? contexto guardado? exemplo?> |\n| 2 | | | |\n| 3 | | | |\n| 4 | | | |\n| 5 | | | |\n\nPergunta para cada linha:\n- Eu escrevi COMO fazer ou O QUE é sucesso?\n- A IA já sabia o contexto ou eu repeti tudo?\n- Ela conseguiria conferir sozinha se terminou?"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Exemplo preenchido",
+            "html": "<ol><li><b>\"Resuma este PDF em 5 tópicos\"</b> · prompt · faltou dizer para quem é o resumo e o que fazer com ele.</li><li><b>\"Escreva o e-mail no tom do arquivo de regras\"</b> · contexto · faltou o critério de pronto (quem aprova, até quando).</li><li><b>\"Toda sexta, monte o relatório igual ao de exemplo e me mande\"</b> · papel · tem objetivo, exemplo e rotina.</li></ol>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Achar que pedido longo é pedido de papel</b>: comprimento não muda a era. O que muda é ter objetivo medível, contexto guardado e exemplo.</li><li><b>Pular a coluna do que faltou</b>: ela é o seu plano para as próximas aulas.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: diagnostique os seus pedidos",
+      "sub": "Use pedidos reais, da sua semana.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Cinco pedidos reais",
+          "min": "15 min",
+          "texto": "Abra o histórico do seu chat de IA e copie o resumo de cinco pedidos desta semana para o diagnostico-eras.md.",
+          "pronto": "a tabela tem cinco linhas com pedidos que você fez de verdade."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A era e o que faltou",
+          "min": "15 min",
+          "texto": "Para cada pedido, marque a era e escreva o que faltou usando as três perguntas do modelo.",
+          "pronto": "todas as cinco linhas têm a era marcada e a coluna \"o que faltou\" preenchida."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · O candidato a papel",
+          "min": "5 min",
+          "texto": "Escolha o pedido que você repete toda semana. É ele que vira a ficha de função da aula 4.",
+          "pronto": "um dos pedidos está marcado como \"candidato a papel\", com a frequência anotada (ex.: toda segunda)."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "O curso inteiro em vídeo",
+      "sub": "Cinco minutos: da virada para a IA como funcionário até o custo.",
+      "chave": "dpap-completo"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "O que mais muda da era do prompt para a era do papel?",
+          "opcoes": [
+            "O tamanho do pedido, que fica bem maior porque o agente precisa de mais detalhes para trabalhar sozinho.",
+            "O seu trabalho: de escrever como fazer para definir o que é sucesso e conferir.",
+            "A ferramenta, que precisa ser outra.",
+            "Nada: é só um nome novo para a mesma coisa."
+          ],
+          "certa": 1,
+          "explica": "No papel você gerencia: objetivo, contexto, exemplo e conferência. O pedido pode até ficar mais curto. Trocar de ferramenta não muda a era.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "\"Escreva o e-mail no tom do arquivo de regras\" está em que era?",
+          "opcoes": [
+            "Contexto: o tom já está guardado e o pedido ficou curto.",
+            "Prompt: é um pedido de uma linha.",
+            "Papel: a IA vai trabalhar sozinha.",
+            "Nenhuma das três."
+          ],
+          "certa": 0,
+          "explica": "O pedido usa uma base guardada (o arquivo de regras): é contexto. Para ser papel faltaria o objetivo medível e a rotina, como quem aprova e quando.",
+          "ref": "passos"
+        },
+        {
+          "p": "Com a era do papel, o que acontece com o contexto?",
+          "opcoes": [
+            "Deixa de importar, porque o modelo de hoje já sabe tudo o que precisa sobre o seu negócio.",
+            "Vira responsabilidade do fornecedor da IA.",
+            "Só serve para quem programa.",
+            "Continua: o papel usa um bom contexto e um pedido claro."
+          ],
+          "certa": 3,
+          "explica": "Uma era não apaga a anterior. O papel se apoia no contexto (aula 3); o que muda é onde está o seu trabalho: definir, conferir e corrigir.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Três eras",
+          "texto": "Prompt (escrever o pedido), contexto (preparar a base) e papel (gerenciar a IA como alguém da equipe)."
+        },
+        {
+          "t": "Uma apoia a outra",
+          "texto": "O papel usa pedido claro e bom contexto. A diferença é que você entrega uma função, não uma tarefa solta."
+        },
+        {
+          "t": "O diagnóstico é o plano",
+          "texto": "O que faltou em cada pedido seu é o que as próximas aulas ensinam."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "FEP → AGI: do prompt à intenção, as eras em nove aulas",
+          "href": "https://inematds.github.io/FEP-AGI/",
+          "icone": "camadas"
+        },
+        {
+          "t": "FEP 2026: o que morreu e o que ficou do prompt",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        },
+        {
+          "t": "O vídeo no YouTube",
+          "href": "https://www.youtube.com/watch?v=miP2vLsr6jE",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

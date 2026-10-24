@@ -1,0 +1,319 @@
+{
+  "slug": "prompt",
+  "num": 2,
+  "menu": "Prompt",
+  "titulo": "A era do prompt: o que morreu e o que ficou",
+  "titulo_curto": "O que ficou do prompt",
+  "minutos": 14,
+  "lead": "Boa parte das técnicas de prompt nasceu para compensar modelos fracos: mandar pensar passo a passo, inventar uma persona de 30 linhas, listar tudo o que não pode. Os modelos de hoje fazem isso sozinhos. Outras técnicas continuam valendo, mas só em certas condições. E algumas nunca envelhecem. Separar uma coisa da outra deixa o seu pedido menor e melhor.",
+  "objetivo": "cortar de um prompt antigo seu o que o modelo de hoje já faz sozinho, sem piorar o resultado.",
+  "competencias": [
+    "auditar-prompt",
+    "distinguir-muleta-de-destino",
+    "testar-antes-e-depois"
+  ],
+  "aprende": [
+    {
+      "icone": "x",
+      "t": "O que morreu e por quê"
+    },
+    {
+      "icone": "relogio",
+      "t": "O que vale só em certas condições"
+    },
+    {
+      "icone": "check",
+      "t": "O núcleo que não envelhece"
+    },
+    {
+      "icone": "caneta",
+      "t": "Auditar um prompt por subtração"
+    }
+  ],
+  "hero_alt": "Mão com uma caneta sobre um caderno cheio de linhas riscadas, com papéis amassados em volta.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Muleta ou destino?",
+      "sub": "A pergunta para cada técnica: ela diz o que eu quero ou compensa uma fraqueza do modelo antigo? Clique em cada grupo.",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Morreu",
+          "sub": "era muleta",
+          "itens": [
+            {
+              "t": "\"pense passo a passo\""
+            },
+            {
+              "t": "persona de 30 linhas"
+            },
+            {
+              "t": "lista longa de \"não faça\""
+            },
+            {
+              "t": "cadeia manual de 5 prompts"
+            }
+          ],
+          "detalhe": "Os modelos atuais raciocinam antes de responder e encadeiam etapas sozinhos. \"Você é o melhor redator do mundo\" não muda o resultado. Listas de \"não faça\" competem entre si e enchem o espaço da conversa. Essas instruções não acrescentam e às vezes pioram."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Só quando serve",
+          "sub": "com condição",
+          "itens": [
+            {
+              "t": "exemplos (few-shot)"
+            },
+            {
+              "t": "papel com perspectiva"
+            },
+            {
+              "t": "saída em JSON"
+            },
+            {
+              "t": "etapas com aprovação"
+            }
+          ],
+          "detalhe": "Exemplos servem quando o estilo é difícil de descrever. Papel serve quando define perspectiva e critério (\"avalie como um auditor que procura o que falta\"), não título de prestígio. JSON serve quando o resultado vai para outro programa. Etapas servem quando você aprova entre uma e outra."
+        },
+        {
+          "icone": "check",
+          "titulo": "Continua",
+          "sub": "é destino",
+          "forte": true,
+          "itens": [
+            {
+              "t": "clareza do resultado"
+            },
+            {
+              "t": "contexto"
+            },
+            {
+              "t": "formato de entrega"
+            },
+            {
+              "t": "fronteiras"
+            }
+          ],
+          "detalhe": "O que descreve o destino não envelhece: o que deve acontecer, para quem, em que formato, o que nunca pode acontecer no seu negócio. A clareza muda de lugar: sai do procedimento (como fazer) e vai para o resultado (o que é bom)."
+        }
+      ],
+      "legenda": "Muleta compensava o modelo de ontem. Destino diz o que você quer, e vale para qualquer modelo.",
+      "dica": "\"Papel\" aqui não é a engenharia de papel da aula 4: lá o papel é uma função inteira, com objetivo, contexto e exemplo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Auditoria por subtração",
+      "sub": "Quatro passos para enxugar um prompt antigo. Clique em cada um.",
+      "passos": [
+        {
+          "titulo": "Separar",
+          "sub": "linha por linha",
+          "texto": [
+            "Pegue um prompt que você usa há tempo e quebre em linhas, uma instrução por linha.",
+            "Marque cada linha: muleta, só quando serve ou destino."
+          ],
+          "exemplo": {
+            "rot": "Marcação",
+            "texto": "\"Pense passo a passo\" → muleta. \"Para pais de alunos do 5º ano\" → destino."
+          }
+        },
+        {
+          "titulo": "Cortar",
+          "sub": "as muletas",
+          "texto": [
+            "Apague as muletas. Nas linhas \"só quando serve\", confira se a condição vale para este caso; se não vale, apague também.",
+            "Não mexa ainda nas linhas de destino."
+          ],
+          "exemplo": {
+            "rot": "Sai",
+            "texto": "\"Você é um especialista premiado com 20 anos de experiência.\""
+          }
+        },
+        {
+          "titulo": "Completar",
+          "sub": "o destino",
+          "texto": [
+            "Agora veja o que falta no destino: o resultado esperado, para quem é, o formato, a fronteira e o critério de bom.",
+            "Muitas vezes o prompt antigo era longo e mesmo assim não dizia o que é um bom resultado."
+          ],
+          "exemplo": {
+            "rot": "Entra",
+            "texto": "Bom resultado: o pai entende em 30 segundos o que muda na rotina do filho."
+          }
+        },
+        {
+          "titulo": "Testar",
+          "sub": "antes e depois",
+          "texto": [
+            "Rode as duas versões com a mesma entrada, duas vezes cada, e compare os resultados lado a lado.",
+            "Se a versão curta ficou igual ou melhor, ela fica. Se piorou, volte só a linha que fez falta."
+          ],
+          "exemplo": {
+            "rot": "Registro",
+            "texto": "Versão antiga: 14 linhas. Nova: 6 linhas. Resultado: igual em 2 de 2, mais direto em 1."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Antes e depois",
+      "sub": "O mesmo pedido, na era do prompt e depois da auditoria.",
+      "blocos": [
+        {
+          "rot": "Antes · prompt antigo (11 linhas)",
+          "icone": "x",
+          "conteudo": "Você é um redator premiado com 20 anos de experiência em educação.\nPense passo a passo antes de responder.\nEscreva um comunicado para os pais sobre a mudança de horário.\nNão use emojis.\nNão seja prolixo.\nNão use termos técnicos.\nNão use frases longas.\nNão esqueça a data.\nUse tom amigável.\nRevise o texto antes de entregar.\nDê o seu melhor."
+        },
+        {
+          "rot": "Depois · pedido auditado (5 linhas)",
+          "icone": "check",
+          "conteudo": "Escreva o comunicado aos pais do 5º ano sobre a mudança de horário da saída.\nO que muda: a saída passa das 17h30 para as 17h, a partir de 3 de novembro.\nPara quem: pais que leem no celular, com pressa.\nFronteira: não prometa transporte; a escola não oferece.\nBom resultado: o pai entende em 30 segundos o que muda e desde quando."
+        },
+        {
+          "rot": "Pedido para a própria IA auditar",
+          "icone": "lupa",
+          "conteudo": "Abaixo está um prompt que eu uso há tempo. Separe-o em linhas e marque cada uma como:\n- MULETA (compensava modelo antigo: \"pense passo a passo\", persona de prestígio, lista de \"não faça\" de estilo),\n- SÓ QUANDO SERVE (diga a condição e se ela vale aqui),\n- DESTINO (resultado, público, formato, fronteira, critério de bom).\nDepois escreva a versão enxuta e diga o que falta no destino.\n\n<cole aqui o seu prompt>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "O que foi cortado",
+            "html": "<ul><li><b>Persona de prestígio</b> e \"dê o seu melhor\": não mudam o resultado.</li><li><b>\"Pense passo a passo\"</b> e \"revise antes\": o modelo já faz.</li><li><b>Cinco \"não\" de estilo</b>: viraram uma linha positiva, \"pais que leem no celular, com pressa\".</li></ul>"
+          },
+          {
+            "rot": "O que entrou",
+            "html": "<ul><li>O fato que faltava (17h30 → 17h, desde 3 de novembro).</li><li>Uma <b>fronteira</b> real do negócio (transporte).</li><li>O <b>critério de bom</b>, que o modelo antigo nunca recebeu.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: audite um prompt seu",
+      "sub": "Use um prompt que você usa de verdade, não o exemplo.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Marcar as linhas",
+          "min": "15 min",
+          "texto": "Escolha o prompt que você mais reutiliza. Quebre em linhas e marque cada uma como muleta, só quando serve ou destino (à mão ou com o pedido de auditoria).",
+          "pronto": "toda linha do prompt tem uma das três marcas."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A versão enxuta",
+          "min": "15 min",
+          "texto": "Corte as muletas e complete o destino: resultado, público, formato, fronteira e critério de bom.",
+          "pronto": "a versão nova tem menos linhas que a antiga e tem uma linha que começa com \"Bom resultado:\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Antes e depois",
+          "min": "20 min",
+          "texto": "Rode as duas versões com a mesma entrada, duas vezes cada, e anote a comparação.",
+          "pronto": "você tem os quatro resultados salvos e uma frase dizendo qual versão ficou e por quê."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Por que \"pense passo a passo\" perdeu força?",
+          "opcoes": [
+            "Porque os modelos de hoje já raciocinam antes de responder.",
+            "Porque ficou proibido pelos fornecedores de IA.",
+            "Porque só funciona em inglês.",
+            "Porque deixa a resposta curta demais e sem as explicações que o leitor espera."
+          ],
+          "certa": 0,
+          "explica": "Era uma muleta para modelos que não raciocinavam. Hoje o modelo já faz isso; a instrução não acrescenta e às vezes deixa a resposta mais longa sem ganho.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Quando dar um papel à IA ainda ajuda?",
+          "opcoes": [
+            "Sempre que o papel for de alguém famoso.",
+            "Quando define perspectiva e critério: \"avalie como um auditor que procura o que falta\".",
+            "Quando o papel tem pelo menos 20 linhas descrevendo a experiência, o estilo e as manias do especialista.",
+            "Nunca: papel é técnica morta."
+          ],
+          "certa": 1,
+          "explica": "Papel como título de prestígio não muda nada. Papel que diz de que ponto de vista olhar e o que julgar muda o resultado. Por isso ele está em \"só quando serve\".",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Na auditoria por subtração, o que vem depois de cortar as muletas?",
+          "opcoes": [
+            "Publicar a versão curta sem testar.",
+            "Pedir à IA que escreva uma persona nova, mais detalhada, para compensar as linhas cortadas.",
+            "Juntar todos os \"não faça\" numa lista só.",
+            "Completar o destino e testar as duas versões com a mesma entrada."
+          ],
+          "certa": 3,
+          "explica": "Cortar sem testar é chute. Completa-se o destino (resultado, público, formato, fronteira, critério) e roda-se antes e depois com a mesma entrada.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"Não prometa transporte; a escola não oferece.\" Por que essa linha fica?",
+          "opcoes": [
+            "Porque toda lista de \"não faça\" ajuda o modelo a evitar erros, então quanto mais, melhor.",
+            "Porque deixa o texto mais longo e completo.",
+            "Porque é uma fronteira do negócio, não uma regra de estilo.",
+            "Porque o modelo não entende frases positivas."
+          ],
+          "certa": 2,
+          "explica": "Instrução negativa fica quando é fronteira real (o que nunca pode acontecer). \"Não seja prolixo\" é estilo e vira uma frase positiva sobre o leitor.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Muleta morre",
+          "texto": "O que compensava modelo fraco (passo a passo, persona de prestígio, lista de \"não\") pode sair."
+        },
+        {
+          "t": "Destino fica",
+          "texto": "Resultado, público, formato, fronteira e critério de bom valem para qualquer modelo."
+        },
+        {
+          "t": "Corte e teste",
+          "texto": "Versão enxuta só fica depois de rodar antes e depois com a mesma entrada."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "FEP 2026: cada técnica do FEP, o que morreu e o que ficou",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        },
+        {
+          "t": "FEP: Engenharia de Prompts (o curso original)",
+          "href": "https://inematds.github.io/FEP/",
+          "icone": "caneta"
+        },
+        {
+          "t": "FEP2: Prompt Engineering Masterclass",
+          "href": "https://inematds.github.io/FEP2/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

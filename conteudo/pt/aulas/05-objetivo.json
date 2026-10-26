@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "SMART para agentes",
-      "sub": "Toque ou clique em cada letra. A do meio é a que decide.",
+      "sub": "Toque ou clique em cada letra. O M, de medível, é o que decide.",
       "estilo": "escada",
       "nos": [
         {
@@ -869,7 +869,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]
@@ -890,7 +890,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]
@@ -911,7 +911,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]

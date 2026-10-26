@@ -663,7 +663,6 @@
  "Conferir o seu objetivo na página": "Revisar tu objetivo en la página",
  "Cronômetro de mesa e régua metálica sobre uma prancheta com folha em branco.": "Cronómetro de escritorio y regla metálica sobre una tablilla con una hoja en blanco.",
  "SMART para agentes": "SMART para agentes",
- "Toque ou clique em cada letra. A do meio é a que decide.": "Toca o haz clic en cada letra. La del medio es la que decide.",
  "S": "S",
  "específico": "específico",
  "qual página, qual tarefa": "qué página, qué tarea",
@@ -731,7 +730,7 @@
  "Ajuda você a aprovar, mas o agente ainda não sabe quando parar. Diga o número que encerra a tarefa.": "Te ayuda a aprobar, pero el agente todavía no sabe cuándo parar. Dile el número que cierra la tarea.",
  "Para ganhar tempo, posso trocar as fotos e mudar o layout?": "Para ganar tiempo, ¿puedo cambiar las fotos y modificar el diseño?",
  "Pode comprimir as fotos. Layout, textos e preços não mudam sem me perguntar.": "Puedes comprimir las fotos. El diseño, los textos y los precios no cambian sin preguntarme.",
- "Fronteira clara: o que pode e o que precisa do seu sim. O agente trabalha solto dentro dela.": "Límite claro: lo que se puede y lo que necesita tu sí. El agente trabaja con libertad dentro de ella.",
+ "Fronteira clara: o que pode e o que precisa do seu sim. O agente trabalha solto dentro dela.": "Límite claro: lo que se puede y lo que necesita tu sí. El agente trabaja con libertad dentro de él.",
  "Pode mudar tudo, contanto que fique rápido.": "Puedes cambiar todo, mientras quede rápida.",
  "Medida sem fronteira: o jeito mais rápido pode ser tirar metade da página. Ele cumpre o número e quebra a loja.": "Medida sin límite: la forma más rápida puede ser quitar la mitad de la página. Cumple el número y rompe la tienda.",
  "Faz o que achar melhor e me conta depois.": "Haz lo que te parezca mejor y me cuentas después.",
@@ -858,7 +857,7 @@
  "não a mesma": "no la misma",
  "Use casos diferentes em cada rodada: um fácil, um difícil, um esquisito.": "Usa casos diferentes en cada ronda: uno fácil, uno difícil, uno raro.",
  "Rodar cinco vezes o mesmo caso só mede a sorte.": "Correr cinco veces el mismo caso solo mide la suerte.",
- "Comunicado de festa, de mudança de horário e de greve de ônibus.": "Aviso de una fiesta, de un cambio de horario y de una paro de transporte.",
+ "Comunicado de festa, de mudança de horário e de greve de ônibus.": "Aviso de una fiesta, de un cambio de horario y de un paro de transporte.",
  "Avaliar tudo": "Evaluar todo",
  "não só o pior": "no solo lo peor",
  "Anote também o que saiu bom: é isso que entra no procedimento como \"faça assim\".": "Anota también lo que salió bien: eso es lo que entra en el procedimiento como \"haz así\".",
@@ -1157,5 +1156,6 @@
  "FEP → AGI: do prompt à intenção": "FEP → AGI: del prompt a la intención",
  "Do chat ao agente: os quatro degraus": "Del chat al agente: los cuatro niveles",
  "Cursos abertos no INEMA.CLUB": "Cursos abiertos en INEMA.CLUB",
- "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a> · <a href=\"https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/\">Ficha completa deste curso no INEMA.CLUB</a>": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a> · <a href=\"https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/\">Ficha completa de este curso en INEMA.CLUB</a>"
+ "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a> · <a href=\"https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/\">Ficha completa deste curso no INEMA.CLUB</a>": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a> · <a href=\"https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/\">Ficha completa de este curso en INEMA.CLUB</a>",
+ "Toque ou clique em cada letra. O M, de medível, é o que decide.": "Toca o haz clic en cada letra. La M, de medible, es la que decide."
 }

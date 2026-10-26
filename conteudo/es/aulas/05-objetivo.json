@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "SMART para agentes",
-      "sub": "Toca o haz clic en cada letra. La del medio es la que decide.",
+      "sub": "Toca o haz clic en cada letra. La M, de medible, es la que decide.",
       "estilo": "escada",
       "nos": [
         {
@@ -240,7 +240,7 @@
               "t": "Puedes comprimir las fotos. El diseño, los textos y los precios no cambian sin preguntarme.",
               "vai": "prazo",
               "nota": 2,
-              "comenta": "Límite claro: lo que se puede y lo que necesita tu sí. El agente trabaja con libertad dentro de ella."
+              "comenta": "Límite claro: lo que se puede y lo que necesita tu sí. El agente trabaja con libertad dentro de él."
             },
             {
               "t": "Puedes cambiar todo, mientras quede rápida.",
@@ -869,7 +869,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]
@@ -890,7 +890,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]
@@ -911,7 +911,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]

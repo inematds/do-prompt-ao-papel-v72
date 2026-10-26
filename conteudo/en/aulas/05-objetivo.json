@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "SMART for agents",
-      "sub": "Tap or click each letter. The middle one is the one that decides.",
+      "sub": "Tap or click each letter. The M, for measurable, is the one that decides.",
       "estilo": "escada",
       "nos": [
         {
@@ -869,7 +869,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]
@@ -890,7 +890,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]
@@ -911,7 +911,7 @@
                 "tanto faz / doesn't matter / da igual",
                 "a definir / to be defined / tbd / por definir",
                 "algum dia / someday / some day / algún día",
-                "sem pressa / no rush / sin prisa"
+                "sem pressa / no rush / sin prisa / sin apuro"
               ]
             }
           ]

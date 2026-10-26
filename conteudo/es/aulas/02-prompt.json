@@ -93,7 +93,7 @@
               "t": "formato de entrega"
             },
             {
-              "t": "fronteras"
+              "t": "límites"
             }
           ],
           "detalhe": "Lo que describe el destino no envejece: qué debe pasar, para quién, en qué formato, qué nunca puede pasar en tu negocio. La claridad cambia de lugar: sale del procedimiento (cómo hacerlo) y va al resultado (qué es bueno)."
@@ -259,7 +259,7 @@
             "Completar el destino y probar las dos versiones con la misma entrada."
           ],
           "certa": 3,
-          "explica": "Cortar sin probar es adivinar. Se completa el destino (resultado, público, formato, frontera, criterio) y se ejecuta antes y después con la misma entrada.",
+          "explica": "Cortar sin probar es adivinar. Se completa el destino (resultado, público, formato, límite, criterio) y se ejecuta antes y después con la misma entrada.",
           "ref": "passos"
         },
         {
@@ -267,11 +267,11 @@
           "opcoes": [
             "Porque toda lista de \"no hagas\" ayuda al modelo a evitar errores, así que cuantos más, mejor.",
             "Porque deja el texto más largo y completo.",
-            "Porque es una frontera del negocio, no una regla de estilo.",
+            "Porque es un límite del negocio, no una regla de estilo.",
             "Porque el modelo no entiende frases positivas."
           ],
           "certa": 2,
-          "explica": "Una instrucción negativa se queda cuando es una frontera real (lo que nunca puede ocurrir). \"No seas prolijo\" es estilo y se convierte en una frase positiva sobre el lector.",
+          "explica": "Una instrucción negativa se queda cuando es un límite real (lo que nunca puede ocurrir). \"No seas extenso\" es estilo y se convierte en una frase positiva sobre el lector.",
           "ref": "codigo"
         }
       ]
@@ -286,7 +286,7 @@
         },
         {
           "t": "El destino se queda",
-          "texto": "Resultado, público, formato, frontera y criterio de bueno valen para cualquier modelo."
+          "texto": "Resultado, público, formato, límite y criterio de bueno valen para cualquier modelo."
         },
         {
           "t": "Corta y prueba",

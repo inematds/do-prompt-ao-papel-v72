@@ -170,7 +170,7 @@
           ],
           "exemplo": {
             "rot": "Solicitud corta",
-            "texto": "Escribe el comunicado de la fiesta junina."
+            "texto": "Escribe el comunicado del festival del Día de las Madres."
           }
         }
       ]
@@ -183,7 +183,7 @@
         {
           "rot": "Reglas del proyecto (instrucciones en el chat, o AGENTS.md en la terminal)",
           "icone": "arquivo",
-          "conteudo": "# Quién soy\n<tu nombre, a qué te dedicas, para quién trabajas>\n\n# Para quién es el trabajo\n<el público, en una frase>\n\n# Reglas\n- Escribe en español, con frases cortas.\n- <regla verificable 2>\n- <regla verificable 3>\n- Antes de terminar, di qué cambió y cómo lo reviso.\n- Frontera: <lo que nunca puede pasar>\n\n# Dónde está el resto\n- Referencias: los archivos enviados al proyecto (en la terminal, la carpeta referencias/)\n\n# Lecciones (la más nueva arriba)\n- <fecha> · <qué salió mal> → <la regla que lo evita>"
+          "conteudo": "# Quién soy\n<tu nombre, a qué te dedicas, para quién trabajas>\n\n# Para quién es el trabajo\n<el público, en una frase>\n\n# Reglas\n- Escribe en español, con frases cortas.\n- <regla verificable 2>\n- <regla verificable 3>\n- Antes de terminar, di qué cambió y cómo lo reviso.\n- Límite: <lo que nunca puede pasar>\n\n# Dónde está el resto\n- Referencias: los archivos enviados al proyecto (en la terminal, la carpeta referencias/)\n\n# Lecciones (la más nueva arriba)\n- <fecha> · <qué salió mal> → <la regla que lo evita>"
         },
         {
           "rot": "Solicitud cuando la IA se equivoque",

@@ -153,14 +153,14 @@
       "sub": "Replace the text between < > with your own.",
       "blocos": [
         {
-          "rot": "objetivo.txt",
+          "rot": "goal.txt",
           "icone": "alvo",
           "conteudo": "Vague request: <your request the way you would have made it before>\nGoal: <what, specifically: which page, which task, which document>\nMeasure: <the number or test that tells you it's done and it came out good>\nDeadline: <by when, and how the agent shows you the result>"
         },
         {
           "rot": "Request: the agent asks what's missing",
           "icone": "chat",
-          "conteudo": "Before starting this task, ask me the questions a new employee would ask to know:\n- what exactly needs to be done;\n- how to check that it's finished (a number or a test);\n- what must not change;\n- by when and how to show me the result.\nOnly start after I answer.\n\nTarefa: <o pedido>"
+          "conteudo": "Before starting this task, ask me the questions a new employee would ask to know:\n- what exactly needs to be done;\n- how to check that it's finished (a number or a test);\n- what must not change;\n- by when and how to show me the result.\nOnly start after I answer.\n\nTask: <your request>"
         }
       ],
       "saida": {
@@ -310,13 +310,13 @@
           "texto": "The agent changed the layout and touched the prices to gain speed. You only found out afterward, with the page already live. Say up front what needs your yes."
         }
       },
-      "licao": "The agent asks what you forgot to say: the number, the test, the boundary and the deadline. Answer first, in the form, and it won't need to ask."
+      "licao": "The agent asks what you forgot to say: the number, the test, the boundary and the deadline. Put it in the sheet up front, and it won't need to ask."
     },
     {
       "tipo": "conferidor",
       "titulo": "Check your goal",
       "sub": "Paste the vague request and the rewritten version. The page checks the fields, rejects empty ones and loose adjectives, and asks for a Measure with a number or a test and a Deadline with a day, date or time. The OK is a check of form; it doesn't guarantee the measure is a good one: you decide.",
-      "arquivo": "objetivo.txt",
+      "arquivo": "goal.txt",
       "rot": "Paste your goal here (one field per line):",
       "modelo": "Vague request: ...\nGoal: ...\nMeasure: ...\nDeadline: ...",
       "regras": [
@@ -487,7 +487,8 @@
                 "todo / toda / todos / todas / every / all / cada / each",
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
-                "libero / libera / liberado / release / released / libero / liberado"
+                "libero / libera / liberado / release / released / libero / liberado",
+                "aprueba / aprueban / approves / aprovam"
               ]
             }
           ]
@@ -633,7 +634,9 @@
                 "turno / turnos / shift / shifts",
                 "consulta / consultas / appointment / appointments",
                 "sessão / sessões / session / sessions / sesión / sesiones",
-                "valor / valores / amount / amounts / monto / montos"
+                "valor / valores / amount / amounts / monto / montos",
+                "e-mail / e-mails / email / emails / correo / correos",
+                "mudança / mudanças / cambio / cambios / change / changes"
               ]
             }
           ]
@@ -788,7 +791,38 @@
                 "fim do mês / end of the month / end of month / fin de mes / final del mes",
                 "início do mês / start of the month / inicio de mes",
                 "mês que vem / next month / el próximo mes",
-                "semana que vem / next week / la próxima semana"
+                "semana que vem / next week / la próxima semana",
+                "1st",
+                "2nd",
+                "3rd",
+                "4th",
+                "5th",
+                "6th",
+                "7th",
+                "8th",
+                "9th",
+                "10th",
+                "11th",
+                "12th",
+                "13th",
+                "14th",
+                "15th",
+                "16th",
+                "17th",
+                "18th",
+                "19th",
+                "20th",
+                "21st",
+                "22nd",
+                "23rd",
+                "24th",
+                "25th",
+                "26th",
+                "27th",
+                "28th",
+                "29th",
+                "30th",
+                "31st"
               ]
             }
           ]
@@ -895,7 +929,7 @@
           "id": "e2",
           "titulo": "E2 · The goal, checked",
           "min": "10 min",
-          "texto": "Write your agent's objetivo.txt and paste it into the checker above.",
+          "texto": "Write your agent's goal.txt and paste it into the checker above.",
           "pronto": "the checker answers \"OK: goal with all 4 fields filled in\" and you wrote, in one sentence, how you check the Measure by looking at a delivery."
         },
         {

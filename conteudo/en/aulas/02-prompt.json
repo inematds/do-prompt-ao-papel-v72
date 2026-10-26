@@ -209,7 +209,7 @@
           "titulo": "E2 · The lean version",
           "min": "15 min",
           "texto": "Cut the crutches and fill in the destination: result, audience, format, boundary, and what counts as good.",
-          "pronto": "the new version has fewer lines than the old one and has a line that starts with \"Bom resultado:\"."
+          "pronto": "the new version has fewer lines than the old one and has a line that starts with \"Good result:\"."
         },
         {
           "id": "e3",

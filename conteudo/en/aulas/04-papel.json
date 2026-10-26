@@ -2,7 +2,7 @@
   "slug": "papel",
   "num": 4,
   "menu": "Role",
-  "titulo": "The paper era: brilliant, but new to the company",
+  "titulo": "The role era: brilliant, but new to the company",
   "titulo_curto": "The role sheet",
   "minutos": 16,
   "lead": "Anthropic, the company that makes Claude, recommends treating Claude like a brilliant but new employee who doesn't know your rules yet. Anyone who has hired people knows what that takes: a clear goal, the background of where it came from, and an example of work done well. In this lesson you put the three together into a role sheet and check your sheet right on the page.",
@@ -166,7 +166,7 @@
       "sub": "One line per field. Replace the text between < > with your own.",
       "blocos": [
         {
-          "rot": "ficha-funcao.txt",
+          "rot": "role-sheet.txt",
           "icone": "arquivo",
           "conteudo": "Role: <the job, in one sentence: you take care of ...>\nGoal: <what needs to happen>\nMeasure: <how to know it is finished and good>\nContext: <where the rules, the lessons and the files are; why the task exists>\nExample: <where the reference work done by you is>\nBoundary: <what it must never do>\nCheck: <when and how you look at the work>"
         },
@@ -181,7 +181,7 @@
         "abas": [
           {
             "rot": "Filled-in sheet",
-            "html": "<ul><li><b>Role:</b> you take care of the school's weekly notice to parents.</li><li><b>Goal:</b> every Friday, a notice with what changes the following week.</li><li><b>Measure:</b> it fits on one phone screen, gives the date of each change, and I approve it without asking for corrections.</li><li><b>Context:</b> rules and lessons in the project instructions; the calendar sent to the project (calendario.pdf).</li><li><b>Example:</b> the file comunicado-modelo.txt sent to the project, written by me.</li><li><b>Boundary:</b> never promise transportation or mention a student's name.</li><li><b>Check:</b> I read it every Friday at 4 p.m. before sending it.</li></ul>"
+            "html": "<ul><li><b>Role:</b> you take care of the school's weekly notice to parents.</li><li><b>Goal:</b> every Friday, a notice with what changes the following week.</li><li><b>Measure:</b> it fits on one phone screen, gives the date of each change, and I approve it without asking for corrections.</li><li><b>Context:</b> rules and lessons in the project instructions; the calendar sent to the project (calendar.pdf).</li><li><b>Example:</b> the file sample-notice.txt sent to the project, written by me.</li><li><b>Boundary:</b> never promise transportation or mention a student's name.</li><li><b>Check:</b> I read it every Friday at 4 p.m. before sending it.</li></ul>"
           },
           {
             "rot": "Another sheet (store)",
@@ -197,7 +197,7 @@
           },
           {
             "rot": "Where the sheet lives",
-            "html": "<ul><li><b>In the chat</b>: paste the sheet into the project instructions and send the example as a file. Every new conversation in the project already starts in the role.</li><li><b>In the terminal</b>: save it as ficha-funcao.txt in the folder and mention the file in AGENTS.md.</li></ul>"
+            "html": "<ul><li><b>In the chat</b>: paste the sheet into the project instructions and send the example as a file. Every new conversation in the project already starts in the role.</li><li><b>In the terminal</b>: save it as role-sheet.txt in the folder and mention the file in AGENTS.md.</li></ul>"
           }
         ]
       }
@@ -206,7 +206,7 @@
       "tipo": "conferidor",
       "titulo": "Check your sheet",
       "sub": "Paste your sheet (or upload the .txt). The page checks the seven fields, rejects anything empty or vague and asks that the Measure include a number or a test along with what is being measured (\"3 lines\", \"cites the date\", \"approved with no corrections\"). The OK is a check of form, not a guarantee that the measure is a good one: you are the one who decides, in the practice below.",
-      "arquivo": "ficha-funcao.txt",
+      "arquivo": "role-sheet.txt",
       "rot": "Paste your role sheet here (one field per line):",
       "modelo": "Role: ...\nGoal: ...\nMeasure: ...\nContext: ...\nExample: ...\nBoundary: ...\nCheck: ...",
       "regras": [
@@ -374,7 +374,8 @@
                 "todo / toda / todos / todas / every / all / cada / each",
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
-                "libero / libera / liberado / release / released / libero / liberado"
+                "libero / libera / liberado / release / released / libero / liberado",
+                "aprueba / aprueban / approves / aprovam"
               ]
             }
           ]
@@ -520,7 +521,9 @@
                 "turno / turnos / shift / shifts",
                 "consulta / consultas / appointment / appointments",
                 "sessão / sessões / session / sessions / sesión / sesiones",
-                "valor / valores / amount / amounts / monto / montos"
+                "valor / valores / amount / amounts / monto / montos",
+                "e-mail / e-mails / email / emails / correo / correos",
+                "mudança / mudanças / cambio / cambios / change / changes"
               ]
             }
           ]
@@ -690,7 +693,7 @@
         }
       ],
       "ok": "OK: sheet with all {n} fields filled in",
-      "exemplo": "Role: you handle the school's weekly notice to parents.\nGoal: every Friday, a notice with what changes the following week.\nMeasure: fits on one phone screen, gives the date of each change, and I approve it without asking for corrections.\nContext: rules and lessons in the project instructions; the calendar uploaded to the project (calendario.pdf).\nExample: the file comunicado-modelo.txt uploaded to the project, written by me.\nBoundary: never promise transportation or mention a student's name.\nCheck: I read it every Friday at 4 p.m. before sending it.",
+      "exemplo": "Role: you handle the school's weekly notice to parents.\nGoal: every Friday, a notice with what changes the following week.\nMeasure: fits on one phone screen, gives the date of each change, and I approve it without asking for corrections.\nContext: rules and lessons in the project instructions; the calendar uploaded to the project (calendar.pdf).\nExample: the file sample-notice.txt uploaded to the project, written by me.\nBoundary: never promise transportation or mention a student's name.\nCheck: I read it every Friday at 4 p.m. before sending it.",
       "exemplo_errado": "Role: you handle the school's weekly notice to parents.\nGoal: every Friday, a notice with what changes during the week.\nMeasure: look nice and professional, version 2.\nContext: rules and lessons in the project instructions.\nExample: the September notice, written by me.\nBoundary: never mention a student's name.\nCheck: I read it every Friday."
     },
     {
@@ -709,7 +712,7 @@
           "id": "e2",
           "titulo": "E2 · The sheet",
           "min": "20 min",
-          "texto": "Fill in ficha-funcao.txt with the seven fields and paste it into the checker above.",
+          "texto": "Fill in role-sheet.txt with the seven fields and paste it into the checker above.",
           "pronto": "the checker answers \"OK: sheet with all 7 fields filled in\" and you wrote, in one sentence, how you check the Measure by looking at a deliverable."
         },
         {

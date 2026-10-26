@@ -170,7 +170,7 @@
           ],
           "exemplo": {
             "rot": "Short request",
-            "texto": "Write the announcement for the June festival."
+            "texto": "Write the notice for the holiday party."
           }
         }
       ]
@@ -183,7 +183,7 @@
         {
           "rot": "Project rules (instructions in the chat, or AGENTS.md in the terminal)",
           "icone": "arquivo",
-          "conteudo": "# Who I am\n<your name, what you do, who you work for>\n\n# Who the work is for\n<the audience, in one sentence>\n\n# Rules\n- Write in English, short sentences.\n- <checkable rule 2>\n- <checkable rule 3>\n- Before you finish, tell me what changed and how I can check it.\n- Boundary: <what must never happen>\n\n# Where the rest is\n- References: the files uploaded to the project (in the terminal, the referencias/ folder)\n\n# Lessons (newest on top)\n- <date> · <what went wrong> → <the rule that prevents it>"
+          "conteudo": "# Who I am\n<your name, what you do, who you work for>\n\n# Who the work is for\n<the audience, in one sentence>\n\n# Rules\n- Write in English, short sentences.\n- <checkable rule 2>\n- <checkable rule 3>\n- Before you finish, tell me what changed and how I can check it.\n- Boundary: <what must never happen>\n\n# Where the rest is\n- References: the files uploaded to the project (in the terminal, the references/ folder)\n\n# Lessons (newest on top)\n- <date> · <what went wrong> → <the rule that prevents it>"
         },
         {
           "rot": "Request for when the AI gets it wrong",

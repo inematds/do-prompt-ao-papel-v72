@@ -487,7 +487,8 @@
                 "todo / toda / todos / todas / every / all / cada / each",
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
-                "libero / libera / liberado / release / released / libero / liberado"
+                "libero / libera / liberado / release / released / libero / liberado",
+                "aprueba / aprueban / approves / aprovam"
               ]
             }
           ]
@@ -633,7 +634,9 @@
                 "turno / turnos / shift / shifts",
                 "consulta / consultas / appointment / appointments",
                 "sessão / sessões / session / sessions / sesión / sesiones",
-                "valor / valores / amount / amounts / monto / montos"
+                "valor / valores / amount / amounts / monto / montos",
+                "e-mail / e-mails / email / emails / correo / correos",
+                "mudança / mudanças / cambio / cambios / change / changes"
               ]
             }
           ]
@@ -788,7 +791,38 @@
                 "fim do mês / end of the month / end of month / fin de mes / final del mes",
                 "início do mês / start of the month / inicio de mes",
                 "mês que vem / next month / el próximo mes",
-                "semana que vem / next week / la próxima semana"
+                "semana que vem / next week / la próxima semana",
+                "1st",
+                "2nd",
+                "3rd",
+                "4th",
+                "5th",
+                "6th",
+                "7th",
+                "8th",
+                "9th",
+                "10th",
+                "11th",
+                "12th",
+                "13th",
+                "14th",
+                "15th",
+                "16th",
+                "17th",
+                "18th",
+                "19th",
+                "20th",
+                "21st",
+                "22nd",
+                "23rd",
+                "24th",
+                "25th",
+                "26th",
+                "27th",
+                "28th",
+                "29th",
+                "30th",
+                "31st"
               ]
             }
           ]

@@ -173,7 +173,7 @@
     "data_inicio": "Start date",
     "ritmo": "Time available",
     "gerar_plano": "Create my plan",
-    "baixar_md": "Download plano.md",
+    "baixar_md": "Download the plan (.md)",
     "baixar_ics": "Download to your calendar (.ics)",
     "ind_estudo": "Study (lessons)",
     "ind_pratica": "Self-reported practice",

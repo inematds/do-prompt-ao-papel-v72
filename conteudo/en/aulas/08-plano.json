@@ -151,10 +151,10 @@
           "aula": "papel",
           "icone": "usuario",
           "quando": "Week 1",
-          "titulo": "Job sheet",
+          "titulo": "Role sheet",
           "sub": "the role",
-          "saida": "Job sheet checked and the first deliverable.",
-          "passo": "Requires the context foundation. The reference work you did yourself comes before the job sheet."
+          "saida": "Role sheet checked and the first deliverable.",
+          "passo": "Requires the context foundation. The reference work you did yourself comes before the role sheet."
         },
         {
           "aula": "objetivo",
@@ -163,7 +163,7 @@
           "titulo": "Measure",
           "sub": "goal",
           "saida": "A goal with a number or a test, and a deadline.",
-          "passo": "Reinforces the job sheet's Measure: three requests rewritten and the agent showing the check."
+          "passo": "Reinforces the role sheet's Measure: three requests rewritten and the agent showing the check."
         },
         {
           "aula": "treinar",
@@ -172,7 +172,7 @@
           "titulo": "Training",
           "sub": "in a cycle",
           "saida": "Standard procedure written down.",
-          "passo": "Requires the job sheet with a Measure. Five rounds, the list, and the cycle until it hits zero; the cycle can take two days."
+          "passo": "Requires the role sheet with a Measure. Five rounds, the list, and the cycle until it hits zero; the cycle can take two days."
         },
         {
           "aula": "custo",
@@ -191,7 +191,7 @@
       },
       "rolagem_fim": {
         "titulo": "The whole path",
-        "texto": "Context, job sheet, measure, training, and cost, in that order. Only move up when the \"done when\" of the previous step is true."
+        "texto": "Context, role sheet, measure, training, and cost, in that order. Only move up when the \"done when\" of the previous step is true."
       },
       "legenda": "Each step builds on what the previous one set up."
     },
@@ -207,7 +207,7 @@
           "aula": "contexto"
         },
         {
-          "titulo": "Step 2 · Job sheet",
+          "titulo": "Step 2 · Role sheet",
           "aula": "papel"
         },
         {
@@ -277,8 +277,8 @@
           "p": "What is the order of the steps in the plan?",
           "opcoes": [
             "Context, sheet, measure, training, cost.",
-            "Cost, training, sheet, context.",
-            "Sheet, cost, context, training.",
+            "Cost, training, measure, sheet, context.",
+            "Sheet, measure, cost, context, training.",
             "Any order, because the steps are independent."
           ],
           "certa": 0,
@@ -286,7 +286,7 @@
           "ref": "mapa"
         },
         {
-          "p": "What does paper engineering change in your work?",
+          "p": "What does role engineering change in your work?",
           "opcoes": [
             "You start writing longer prompts.",
             "You stop checking what the AI does.",
@@ -294,7 +294,7 @@
             "You need to learn to code."
           ],
           "certa": 2,
-          "explica": "Paper is management: sheet, measure, example, training and cost. Checking still happens, only now from time to time and with a yardstick.",
+          "explica": "The role is management: sheet, measure, example, training and cost. Checking still happens, only now from time to time and with a yardstick.",
           "cert": true,
           "ref": "diagrama"
         },

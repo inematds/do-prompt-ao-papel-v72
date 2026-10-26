@@ -277,8 +277,8 @@
           "p": "Qual é a ordem dos degraus do plano?",
           "opcoes": [
             "Contexto, ficha, medida, treino, custo.",
-            "Custo, treino, ficha, contexto.",
-            "Ficha, custo, contexto, treino.",
+            "Custo, treino, medida, ficha, contexto.",
+            "Ficha, medida, custo, contexto, treino.",
             "Qualquer ordem, porque os degraus são independentes."
           ],
           "certa": 0,

@@ -95,7 +95,7 @@
               "t": "half the price"
             }
           ],
-          "detalhe": "This one is also an API feature. Whatever can wait (reports, bulk classifications, translations) goes in a batch through the API's batch API (sending in bulk), which charges half the price and returns the result within a day. A task someone is waiting on right now stays out of the batch."
+          "detalhe": "This one is also an API feature. Whatever can wait (reports, bulk classifications, translations) goes through the API's batch option (sending in bulk), which charges half the price and returns the result within a day. A task someone is waiting on right now stays out of the batch."
         }
       ],
       "legenda": "Audit it the way you would audit an employee: what it delivers, how much it costs and whether the model is the right one for the job.",

@@ -173,7 +173,7 @@
     "data_inicio": "Fecha de inicio",
     "ritmo": "Tiempo disponible",
     "gerar_plano": "Generar mi plan",
-    "baixar_md": "Descargar plano.md",
+    "baixar_md": "Descargar el plan (.md)",
     "baixar_ics": "Descargar al calendario (.ics)",
     "ind_estudo": "Estudio (clases)",
     "ind_pratica": "Práctica declarada",

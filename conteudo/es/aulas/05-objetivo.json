@@ -240,13 +240,13 @@
               "t": "Puedes comprimir las fotos. El diseño, los textos y los precios no cambian sin preguntarme.",
               "vai": "prazo",
               "nota": 2,
-              "comenta": "Frontera clara: lo que se puede y lo que necesita tu sí. El agente trabaja con libertad dentro de ella."
+              "comenta": "Límite claro: lo que se puede y lo que necesita tu sí. El agente trabaja con libertad dentro de ella."
             },
             {
               "t": "Puedes cambiar todo, mientras quede rápida.",
               "vai": "fim-fronteira",
               "nota": 0,
-              "comenta": "Medida sin frontera: la forma más rápida puede ser quitar la mitad de la página. Cumple el número y rompe la tienda."
+              "comenta": "Medida sin límite: la forma más rápida puede ser quitar la mitad de la página. Cumple el número y rompe la tienda."
             },
             {
               "t": "Haz lo que te parezca mejor y me cuentas después.",
@@ -287,7 +287,7 @@
         "fim-fronteira": {
           "fim": true,
           "titulo": "Cumplió la meta, rompió la tienda",
-          "texto": "La página quedó rápida porque perdió las fotos y la mitad de los textos. Una medida sin frontera es peligrosa: dile qué no se puede cambiar sin tu aprobación."
+          "texto": "La página quedó rápida porque perdió las fotos y la mitad de los textos. Una medida sin límite es peligrosa: dile qué no se puede cambiar sin tu aprobación."
         },
         "fim-prazo": {
           "fim": true,
@@ -297,12 +297,12 @@
         "fim-bom": {
           "fim": true,
           "titulo": "Agente listo para trabajar",
-          "texto": "Listo para trabajar, si la medida tiene número: meta, prueba, frontera y plazo. Si en algún paso te quedaste en el \"más rápida\" o en el \"muéstrame\", el marcador muestra lo que faltó: vuelve y dale el número."
+          "texto": "Listo para trabajar, si la medida tiene número: meta, prueba, límite y plazo. Si en algún paso te quedaste en el \"más rápida\" o en el \"muéstrame\", el marcador muestra lo que faltó: vuelve y dale el número."
         },
         "fim-quase": {
           "fim": true,
           "titulo": "Casi listo",
-          "texto": "El agente conoce la meta, la medida, la frontera y el plazo. Solo no sabe cómo entregar: el viernes vas a tener que pedir las mediciones. Dile también el formato de la entrega."
+          "texto": "El agente conoce la meta, la medida, el límite y el plazo. Solo no sabe cómo entregar: el viernes vas a tener que pedir las mediciones. Dile también el formato de la entrega."
         },
         "fim-tarde": {
           "fim": true,
@@ -310,7 +310,7 @@
           "texto": "El agente cambió el diseño y tocó los precios para ganar velocidad. Tú solo te enteraste después, con la página ya en línea. Dile antes qué necesita tu sí."
         }
       },
-      "licao": "El agente pregunta lo que olvidaste decirle: el número, la prueba, la frontera y el plazo. Responde antes, en la ficha, y no necesita preguntar."
+      "licao": "El agente pregunta lo que olvidaste decirle: el número, la prueba, el límite y el plazo. Responde antes, en la ficha, y no necesita preguntar."
     },
     {
       "tipo": "conferidor",
@@ -487,7 +487,8 @@
                 "todo / toda / todos / todas / every / all / cada / each",
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
-                "libero / libera / liberado / release / released / libero / liberado"
+                "libero / libera / liberado / release / released / libero / liberado",
+                "aprueba / aprueban / approves / aprovam"
               ]
             }
           ]
@@ -633,7 +634,9 @@
                 "turno / turnos / shift / shifts",
                 "consulta / consultas / appointment / appointments",
                 "sessão / sessões / session / sessions / sesión / sesiones",
-                "valor / valores / amount / amounts / monto / montos"
+                "valor / valores / amount / amounts / monto / montos",
+                "e-mail / e-mails / email / emails / correo / correos",
+                "mudança / mudanças / cambio / cambios / change / changes"
               ]
             }
           ]
@@ -788,7 +791,38 @@
                 "fim do mês / end of the month / end of month / fin de mes / final del mes",
                 "início do mês / start of the month / inicio de mes",
                 "mês que vem / next month / el próximo mes",
-                "semana que vem / next week / la próxima semana"
+                "semana que vem / next week / la próxima semana",
+                "1st",
+                "2nd",
+                "3rd",
+                "4th",
+                "5th",
+                "6th",
+                "7th",
+                "8th",
+                "9th",
+                "10th",
+                "11th",
+                "12th",
+                "13th",
+                "14th",
+                "15th",
+                "16th",
+                "17th",
+                "18th",
+                "19th",
+                "20th",
+                "21st",
+                "22nd",
+                "23rd",
+                "24th",
+                "25th",
+                "26th",
+                "27th",
+                "28th",
+                "29th",
+                "30th",
+                "31st"
               ]
             }
           ]
@@ -857,7 +891,7 @@
           "tipo": "termos",
           "grupos": [
             {
-              "rot": "A tiempo",
+              "rot": "En el Plazo",
               "campo": "Plazo",
               "proibe": true,
               "termos": [
@@ -934,25 +968,25 @@
         {
           "p": "¿Cuál de estos es un objetivo medible?",
           "opcoes": [
-            "Organiza la planilla de ventas.",
-            "Deja la planilla más profesional, con colores, gráficos y totales en cada hoja.",
+            "Organiza la hoja de cálculo de ventas.",
+            "Deja la hoja de cálculo más profesional, con colores, gráficos y totales en cada hoja.",
             "Una hoja por mes, total igual al extracto del banco, hasta el día 5.",
-            "Mejora la planilla lo máximo posible."
+            "Mejora la hoja de cálculo lo máximo posible."
           ],
           "certa": 2,
           "explica": "Tiene el qué (una hoja por mes), la prueba (total igual al extracto) y el plazo (día 5). Los otros dependen de la opinión de quien mira.",
           "ref": "passos"
         },
         {
-          "p": "En la simulación, \"puedes cambiar todo, siempre que quede rápido\" salió mal. ¿Por qué?",
+          "p": "En la simulación, \"puedes cambiar todo, mientras quede rápida\" salió mal. ¿Por qué?",
           "opcoes": [
-            "Porque una medida sin frontera deja que el agente cumpla el número rompiendo todo lo demás.",
+            "Porque una medida sin límite deja que el agente cumpla el número rompiendo todo lo demás.",
             "Porque el agente no sabe tocar el diseño.",
             "Porque faltó darle el nombre de la tienda y la dirección del sitio para que el agente supiera dónde actuar.",
             "Porque la velocidad no se mide."
           ],
           "certa": 0,
-          "explica": "La forma más rápida puede ser quitar fotos y textos. Junto con la medida va la frontera: lo que no cambia sin tu sí.",
+          "explica": "La forma más rápida puede ser quitar fotos y textos. Junto con la medida va el límite: lo que no cambia sin tu sí.",
           "ref": "simconversa"
         }
       ]
@@ -970,7 +1004,7 @@
           "texto": "Un número o una prueba que el agente ejecuta solo es el criterio de parada."
         },
         {
-          "t": "Medida con frontera",
+          "t": "Medida con límite",
           "texto": "Di también qué no puede cambiar para alcanzar la meta."
         }
       ]

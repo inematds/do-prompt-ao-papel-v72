@@ -2,11 +2,11 @@
   "slug": "papel",
   "num": 4,
   "menu": "Rol",
-  "titulo": "La era del papel: brillante, pero nuevo en la empresa",
+  "titulo": "La era del rol: brillante, pero nuevo en la empresa",
   "titulo_curto": "La ficha de función",
   "minutos": 16,
   "lead": "Anthropic, la empresa que hace Claude, recomienda tratar a Claude como un empleado brillante, pero nuevo, que todavía no conoce tus normas. Quien ya ha contratado personal sabe lo que eso exige: un objetivo claro, el contexto de dónde viene y un ejemplo de trabajo bien hecho. En esta clase juntas las tres cosas en una ficha de función y revisas tu ficha en la misma página.",
-  "objetivo": "escribir la ficha de función de un agente con papel, objetivo medible, contexto, ejemplo y límite.",
+  "objetivo": "escribir la ficha de función de un agente con rol, objetivo medible, contexto, ejemplo y límite.",
   "competencias": [
     "definir-papel-do-agente",
     "delegar-com-ficha",
@@ -166,9 +166,9 @@
       "sub": "Una línea por campo. Cambia el texto entre < > por el tuyo.",
       "blocos": [
         {
-          "rot": "ficha-funcao.txt",
+          "rot": "ficha-funcion.txt",
           "icone": "arquivo",
-          "conteudo": "Rol: <la función, en una frase: tú te encargas de ...>\nObjetivo: <qué necesita pasar>\nMedida: <cómo saber que terminó y quedó bien>\nContexto: <dónde están las reglas, las lecciones y los archivos; por qué existe la tarea>\nEjemplo: <dónde está el trabajo de referencia hecho por ti>\nFrontera: <qué nunca puede hacer>\nRevisión: <cuándo y cómo miras el trabajo>"
+          "conteudo": "Rol: <la función, en una frase: tú te encargas de ...>\nObjetivo: <qué necesita pasar>\nMedida: <cómo saber que terminó y quedó bien>\nContexto: <dónde están las reglas, las lecciones y los archivos; por qué existe la tarea>\nEjemplo: <dónde está el trabajo de referencia hecho por ti>\nLímite: <qué nunca puede hacer>\nRevisión: <cuándo y cómo miras el trabajo>"
         },
         {
           "rot": "Cómo entregar la ficha al agente",
@@ -181,15 +181,15 @@
         "abas": [
           {
             "rot": "Ficha completada",
-            "html": "<ul><li><b>Rol:</b> te encargas del comunicado semanal de la escuela a los padres.</li><li><b>Objetivo:</b> cada viernes, un comunicado con lo que cambia la semana siguiente.</li><li><b>Medida:</b> cabe en la pantalla de un celular, cita la fecha de cada cambio y yo lo apruebo sin pedir correcciones.</li><li><b>Contexto:</b> reglas y lecciones en las instrucciones del proyecto; el calendario enviado al proyecto (calendario.pdf).</li><li><b>Ejemplo:</b> el archivo comunicado-modelo.txt enviado al proyecto, escrito por mí.</li><li><b>Frontera:</b> nunca prometer transporte ni citar el nombre de un alumno.</li><li><b>Revisión:</b> lo leo todos los viernes a las 16 h antes de enviarlo.</li></ul>"
+            "html": "<ul><li><b>Rol:</b> te encargas del comunicado semanal de la escuela a los padres.</li><li><b>Objetivo:</b> cada viernes, un comunicado con lo que cambia la semana siguiente.</li><li><b>Medida:</b> cabe en la pantalla de un celular, cita la fecha de cada cambio y yo lo apruebo sin pedir correcciones.</li><li><b>Contexto:</b> reglas y lecciones en las instrucciones del proyecto; el calendario enviado al proyecto (calendario.pdf).</li><li><b>Ejemplo:</b> el archivo comunicado-modelo.txt enviado al proyecto, escrito por mí.</li><li><b>Límite:</b> nunca prometer transporte ni citar el nombre de un alumno.</li><li><b>Revisión:</b> lo leo todos los viernes a las 16 h antes de enviarlo.</li></ul>"
           },
           {
             "rot": "Otra ficha (tienda)",
-            "html": "<ul><li><b>Rol:</b> respondes los pedidos de cotización que llegan por el WhatsApp de la tienda.</li><li><b>Objetivo:</b> cada cotización con artículos, cantidades y total según la tabla actual.</li><li><b>Medida:</b> total igual al de la tabla, plazo de entrega mencionado, respuesta en hasta 1 hora dentro del horario de la tienda.</li><li><b>Contexto:</b> tabla de precios y reglas de flete enviadas al proyecto.</li><li><b>Ejemplo:</b> tres cotizaciones que yo mismo respondí.</li><li><b>Frontera:</b> nunca dar descuento ni prometer entrega el mismo día.</li><li><b>Revisión:</b> reviso las cotizaciones del día a las 18 h.</li></ul>"
+            "html": "<ul><li><b>Rol:</b> respondes los pedidos de cotización que llegan por el WhatsApp de la tienda.</li><li><b>Objetivo:</b> cada cotización con artículos, cantidades y total según la tabla actual.</li><li><b>Medida:</b> total igual al de la tabla, plazo de entrega mencionado, respuesta en hasta 1 hora dentro del horario de la tienda.</li><li><b>Contexto:</b> tabla de precios y reglas de flete enviadas al proyecto.</li><li><b>Ejemplo:</b> tres cotizaciones que yo mismo respondí.</li><li><b>Límite:</b> nunca dar descuento ni prometer entrega el mismo día.</li><li><b>Revisión:</b> reviso las cotizaciones del día a las 18 h.</li></ul>"
           },
           {
             "rot": "Otra ficha (RR. HH.)",
-            "html": "<ul><li><b>Rol:</b> escribes los anuncios de vacantes de la empresa.</li><li><b>Objetivo:</b> un anuncio por vacante abierta, a partir del pedido del gerente.</li><li><b>Medida:</b> cabe en la pantalla de un celular, cita salario, lugar y jornada, y el gerente lo aprueba sin correcciones.</li><li><b>Contexto:</b> política de vacantes y tono de la empresa en las instrucciones del proyecto.</li><li><b>Ejemplo:</b> el anuncio de la vacante de verificador, escrito por mí.</li><li><b>Frontera:</b> nunca pedir edad, foto ni estado civil.</li><li><b>Revisión:</b> lo leo antes de publicarlo, el mismo día.</li></ul>"
+            "html": "<ul><li><b>Rol:</b> escribes los anuncios de vacantes de la empresa.</li><li><b>Objetivo:</b> un anuncio por vacante abierta, a partir del pedido del gerente.</li><li><b>Medida:</b> cabe en la pantalla de un celular, cita salario, lugar y jornada, y el gerente lo aprueba sin correcciones.</li><li><b>Contexto:</b> política de vacantes y tono de la empresa en las instrucciones del proyecto.</li><li><b>Ejemplo:</b> el anuncio de la vacante de auxiliar de almacén, escrito por mí.</li><li><b>Límite:</b> nunca pedir edad, foto ni estado civil.</li><li><b>Revisión:</b> lo leo antes de publicarlo, el mismo día.</li></ul>"
           },
           {
             "rot": "Errores comunes",
@@ -197,7 +197,7 @@
           },
           {
             "rot": "Dónde queda la ficha",
-            "html": "<ul><li><b>En el chat</b>: pega la ficha en las instrucciones del proyecto y envía el ejemplo como archivo. Cada conversación nueva del proyecto ya empieza con el rol asignado.</li><li><b>En la terminal</b>: guárdala como ficha-funcao.txt en la carpeta y menciona el archivo en el AGENTS.md.</li></ul>"
+            "html": "<ul><li><b>En el chat</b>: pega la ficha en las instrucciones del proyecto y envía el ejemplo como archivo. Cada conversación nueva del proyecto ya empieza con el rol asignado.</li><li><b>En la terminal</b>: guárdala como ficha-funcion.txt en la carpeta y menciona el archivo en el AGENTS.md.</li></ul>"
           }
         ]
       }
@@ -206,9 +206,9 @@
       "tipo": "conferidor",
       "titulo": "Revisa tu ficha",
       "sub": "Pega tu ficha (o carga el .txt). La página revisa los siete campos, rechaza lo vacío y los adjetivos sueltos y pide en la Medida un número o una prueba junto con lo que se mide (\"3 líneas\", \"cita la fecha\", \"aprobado sin corrección\"). El OK es una revisión de forma, no garantiza que la medida sea buena: quien decide eres tú, en la práctica de abajo.",
-      "arquivo": "ficha-funcao.txt",
+      "arquivo": "ficha-funcion.txt",
       "rot": "Pega aquí tu ficha de función (un campo por línea):",
-      "modelo": "Rol: ...\nObjetivo: ...\nMedida: ...\nContexto: ...\nEjemplo: ...\nFrontera: ...\nRevisión: ...",
+      "modelo": "Rol: ...\nObjetivo: ...\nMedida: ...\nContexto: ...\nEjemplo: ...\nLímite: ...\nRevisión: ...",
       "regras": [
         {
           "tipo": "campos",
@@ -218,7 +218,7 @@
             "Medida",
             "Contexto",
             "Ejemplo",
-            "Frontera",
+            "Límite",
             "Revisión"
           ],
           "min": 12
@@ -374,7 +374,8 @@
                 "todo / toda / todos / todas / every / all / cada / each",
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
-                "libero / libera / liberado / release / released / libero / liberado"
+                "libero / libera / liberado / release / released / libero / liberado",
+                "aprueba / aprueban / approves / aprovam"
               ]
             }
           ]
@@ -520,7 +521,9 @@
                 "turno / turnos / shift / shifts",
                 "consulta / consultas / appointment / appointments",
                 "sessão / sessões / session / sessions / sesión / sesiones",
-                "valor / valores / amount / amounts / monto / montos"
+                "valor / valores / amount / amounts / monto / montos",
+                "e-mail / e-mails / email / emails / correo / correos",
+                "mudança / mudanças / cambio / cambios / change / changes"
               ]
             }
           ]
@@ -650,8 +653,8 @@
           "tipo": "termos",
           "grupos": [
             {
-              "rot": "En la Frontera",
-              "campo": "Frontera",
+              "rot": "En el Límite",
+              "campo": "Límite",
               "proibe": true,
               "termos": [
                 "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
@@ -690,8 +693,8 @@
         }
       ],
       "ok": "OK: ficha con los {n} campos completos",
-      "exemplo": "Rol: tú te encargas del comunicado semanal de la escuela para los padres.\nObjetivo: cada viernes, un comunicado con lo que cambia la semana siguiente.\nMedida: cabe en una pantalla de celular, cita la fecha de cada cambio y yo lo apruebo sin pedir corrección.\nContexto: reglas y lecciones en las instrucciones del proyecto; el calendario enviado al proyecto (calendario.pdf).\nEjemplo: el archivo comunicado-modelo.txt enviado al proyecto, escrito por mí.\nFrontera: nunca prometer transporte ni citar el nombre de ningún alumno.\nRevisión: yo lo leo cada viernes a las 16h antes de enviarlo.",
-      "exemplo_errado": "Rol: tú te encargas del comunicado semanal de la escuela para los padres.\nObjetivo: cada viernes, un comunicado con lo que cambia en la semana.\nMedida: que quede bonito y profesional, versión 2.\nContexto: reglas y lecciones en las instrucciones del proyecto.\nEjemplo: el comunicado de septiembre, escrito por mí.\nFrontera: nunca citar el nombre de ningún alumno.\nRevisión: yo lo leo cada viernes."
+      "exemplo": "Rol: tú te encargas del comunicado semanal de la escuela para los padres.\nObjetivo: cada viernes, un comunicado con lo que cambia la semana siguiente.\nMedida: cabe en una pantalla de celular, cita la fecha de cada cambio y yo lo apruebo sin pedir corrección.\nContexto: reglas y lecciones en las instrucciones del proyecto; el calendario enviado al proyecto (calendario.pdf).\nEjemplo: el archivo comunicado-modelo.txt enviado al proyecto, escrito por mí.\nLímite: nunca prometer transporte ni citar el nombre de ningún alumno.\nRevisión: yo lo leo cada viernes a las 16h antes de enviarlo.",
+      "exemplo_errado": "Rol: tú te encargas del comunicado semanal de la escuela para los padres.\nObjetivo: cada viernes, un comunicado con lo que cambia en la semana.\nMedida: que quede bonito y profesional, versión 2.\nContexto: reglas y lecciones en las instrucciones del proyecto.\nEjemplo: el comunicado de septiembre, escrito por mí.\nLímite: nunca citar el nombre de ningún alumno.\nRevisión: yo lo leo cada viernes."
     },
     {
       "tipo": "pratica",
@@ -709,7 +712,7 @@
           "id": "e2",
           "titulo": "E2 · La ficha",
           "min": "20 min",
-          "texto": "Completa el ficha-funcao.txt con los siete campos y pégalo en el verificador de arriba.",
+          "texto": "Completa la ficha-funcion.txt con los siete campos y pégalo en el verificador de arriba.",
           "pronto": "el verificador responde \"OK: ficha con los 7 campos completos\" y escribiste, en una frase, cómo compruebas la Medida al mirar una entrega."
         },
         {

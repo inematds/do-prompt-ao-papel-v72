@@ -95,7 +95,7 @@
               "t": "la mitad del precio"
             }
           ],
-          "detalhe": "También es de la API. Lo que puede esperar (informes, clasificaciones masivas, traducciones) va en lote mediante la batch API (envío por lotes) de la API, que cobra la mitad del precio y devuelve el resultado en hasta un día. La tarea que alguien espera en el momento queda fuera del lote."
+          "detalhe": "También es de la API. Lo que puede esperar (informes, clasificaciones masivas, traducciones) va por el envío por lotes de la API (batch), que cobra la mitad del precio y devuelve el resultado en hasta un día. La tarea que alguien espera en el momento queda fuera del lote."
         }
       ],
       "legenda": "Audita como auditarías a un empleado: qué entrega, cuánto cuesta y si el modelo es el adecuado para el trabajo.",
@@ -218,7 +218,7 @@
     {
       "tipo": "video",
       "titulo": "Esta clase en un minuto",
-      "sub": "Agente de IA sin que el costo lo rompa.",
+      "sub": "Agente de IA sin que el costo se te vaya de las manos.",
       "chave": "dpap-reel4"
     },
     {

@@ -277,8 +277,8 @@
           "p": "¿Cuál es el orden de los niveles del plan?",
           "opcoes": [
             "Contexto, ficha, medida, entrenamiento, costo.",
-            "Costo, entrenamiento, ficha, contexto.",
-            "Ficha, costo, contexto, entrenamiento.",
+            "Costo, entrenamiento, medida, ficha, contexto.",
+            "Ficha, medida, costo, contexto, entrenamiento.",
             "Cualquier orden, porque los niveles son independientes."
           ],
           "certa": 0,
@@ -286,7 +286,7 @@
           "ref": "mapa"
         },
         {
-          "p": "¿Qué cambia la ingeniería de papel en tu trabajo?",
+          "p": "¿Qué cambia la ingeniería de roles en tu trabajo?",
           "opcoes": [
             "Pasas a escribir prompts más largos.",
             "Dejas de revisar lo que hace la IA.",

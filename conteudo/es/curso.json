@@ -13,12 +13,14 @@
     "t": "En lugar del prompt perfecto, el rol",
     "texto": "Un objetivo que se pueda medir, el contexto que el agente ya tiene y un ejemplo bien hecho. Después, entrenamiento en ciclos.",
     "link": "Ir a la ficha de función",
-    "href": "aulas/papel/"
+    "href": "https://inematds.github.io/do-prompt-ao-papel-v72/aulas/papel/",
+    "href_en": "https://inematds.github.io/do-prompt-ao-papel-v72/en/aulas/papel/",
+    "href_es": "https://inematds.github.io/do-prompt-ao-papel-v72/es/aulas/papel/"
   },
-  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a>",
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a> · <a href=\"https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/\">Ficha completa de este curso en INEMA.CLUB</a>",
   "videos": {
     "dpap-completo": {
-      "titulo": "Olvida el prompt: en 2027, gestiona la IA",
+      "titulo": "Olvida el prompt: en 2027, gestiona la IA (video en portugués)",
       "duracao": "5 min 11 s",
       "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-completo.mp4",
       "vtt": "assets/vtt/dpap-completo.vtt",
@@ -26,7 +28,7 @@
       "pagina": "https://www.youtube.com/watch?v=miP2vLsr6jE"
     },
     "dpap-reel1": {
-      "titulo": "Deja de escribir prompts: define el rol",
+      "titulo": "Deja de escribir prompts: define el rol (video en portugués)",
       "duracao": "51 s",
       "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel1.mp4",
       "vtt": "assets/vtt/dpap-reel1.vtt",
@@ -35,7 +37,7 @@
       "formato": "9:16"
     },
     "dpap-reel2": {
-      "titulo": "Cómo delegar en la IA: objetivo SMART",
+      "titulo": "Cómo delegar en la IA: objetivo SMART (video en portugués)",
       "duracao": "46 s",
       "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel2.mp4",
       "vtt": "assets/vtt/dpap-reel2.vtt",
@@ -44,7 +46,7 @@
       "formato": "9:16"
     },
     "dpap-reel3": {
-      "titulo": "Entrena al agente como a un empleado",
+      "titulo": "Entrena al agente como a un empleado (video en portugués)",
       "duracao": "53 s",
       "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel3.mp4",
       "vtt": "assets/vtt/dpap-reel3.vtt",
@@ -53,7 +55,7 @@
       "formato": "9:16"
     },
     "dpap-reel4": {
-      "titulo": "Agente de IA sin que el costo se te vaya de las manos",
+      "titulo": "Agente de IA sin que el costo se te vaya de las manos (video en portugués)",
       "duracao": "40 s",
       "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel4.mp4",
       "vtt": "assets/vtt/dpap-reel4.vtt",

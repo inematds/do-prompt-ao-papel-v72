@@ -5,7 +5,7 @@
   "titulo": "Entrenar en ciclo: cinco, diez rondas y una lista",
   "titulo_curto": "Entrenar al agente",
   "minutos": 16,
-  "lead": "Cuando el agente ya hace el trabajo, viene la parte que casi nadie hace: entrenar. No pidas una sola vez. Pide cinco, diez veces, evalúa como evaluarías a un empleado, junta las correcciones en una lista y ejecútala en ciclo hasta que corrija todo. Gasta más tiempo y más uso, pero al final tienes un procedimiento estándar escrito que sirve para cualquier agente.",
+  "lead": "Cuando el agente ya hace el trabajo, viene la parte que casi nadie hace: entrenar. No pidas una sola vez. Pide cinco, diez veces, evalúa como evaluarías a un empleado, junta las correcciones en una lista, ponla en las instrucciones y repite la tarea en rondas hasta que todo salga bien. Gasta más tiempo y más uso, pero al final tienes un procedimiento estándar escrito que sirve para cualquier agente.",
   "objetivo": "ejecutar la misma tarea en ciclo, juntar las correcciones en una lista y cerrar un procedimiento estándar escrito.",
   "competencias": [
     "evaluar-salidas-del-agente",
@@ -140,7 +140,7 @@
           ],
           "exemplo": {
             "rot": "Ejemplo",
-            "texto": "Aviso de una fiesta, de un cambio de horario y de una huelga de autobuses."
+            "texto": "Aviso de una fiesta, de un cambio de horario y de una paro de transporte."
           }
         },
         {

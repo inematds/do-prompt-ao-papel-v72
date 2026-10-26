@@ -5,7 +5,7 @@
   "titulo": "Train in a cycle: five, ten rounds and a list",
   "titulo_curto": "Train the agent",
   "minutos": 16,
-  "lead": "Once the agent already does the work, comes the part almost nobody does: training. Don't ask just once. Ask five, ten times, evaluate it the way you'd evaluate an employee, gather the corrections into a list and run it in a cycle until it fixes everything. It takes more time and more usage, but in the end you have a written standard procedure that works for any agent.",
+  "lead": "Once the agent can do the work, the part almost nobody does comes next: training. Don't ask just once. Ask five, ten times, evaluate it the way you'd evaluate an employee, gather the corrections into a list and run it in a cycle until it fixes everything. It takes more time and more usage, but in the end you have a written standard procedure that works for any agent.",
   "objetivo": "run the same task in a cycle, gather the corrections into one list, and close out a written standard procedure.",
   "competencias": [
     "avaliar-saidas-do-agente",
@@ -77,7 +77,7 @@
               "t": "one line each"
             }
           ],
-          "detalhe": "Put your notes together into a single list, with no repeats, from most serious to least serious. This is what you hand to the agent, not a loose vent."
+          "detalhe": "Put your notes together into a single list, with no repeats, from most serious to least serious. This is what you hand to the agent, not a pile of complaints."
         },
         {
           "icone": "check",
@@ -183,7 +183,7 @@
     },
     {
       "tipo": "codigo",
-      "titulo": "Models in the cycle",
+      "titulo": "Templates for the cycle",
       "sub": "Copy and use. Replace the text between < > with your own.",
       "blocos": [
         {

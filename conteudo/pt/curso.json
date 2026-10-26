@@ -13,9 +13,11 @@
     "t": "Em vez do prompt perfeito, o papel",
     "texto": "Objetivo que dá para medir, contexto que o agente já tem e um exemplo bem feito. Depois, treino em ciclo.",
     "link": "Ir para a ficha de função",
-    "href": "aulas/papel/"
+    "href": "https://inematds.github.io/do-prompt-ao-papel-v72/aulas/papel/",
+    "href_en": "https://inematds.github.io/do-prompt-ao-papel-v72/en/aulas/papel/",
+    "href_es": "https://inematds.github.io/do-prompt-ao-papel-v72/es/aulas/papel/"
   },
-  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a>",
+  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a> · <a href=\"https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/\">Ficha completa deste curso no INEMA.CLUB</a>",
   "videos": {
     "dpap-completo": {
       "titulo": "Esqueça o prompt: em 2027, gerencie a IA",

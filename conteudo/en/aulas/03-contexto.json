@@ -5,7 +5,7 @@
   "titulo": "The context era: the AI knows before you ask",
   "titulo_curto": "The context base",
   "minutos": 15,
-  "lead": "When the AI already knows who you are, what the house rules are and what went wrong last time, your request fits on one line. You don't build this base in every conversation: it lives in a place the AI reads on its own before it starts. It's what separates repeating everything every time from having someone who already knows the work.",
+  "lead": "When the AI already knows who you are, what the company rules are and what went wrong last time, your request fits on one line. You don't build this base in every conversation: it lives in a place the AI reads on its own before it starts. It's what separates repeating everything every time from having someone who already knows the work.",
   "objetivo": "build the context base the agent reads before any request, with rules and a lesson from a real mistake.",
   "competencias": [
     "montar-base-de-contexto",

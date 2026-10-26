@@ -121,6 +121,16 @@ def familias(grupo):
             for fam in grupo.get("termos", [])]
 
 
+def citado(texto, familia):
+    """7.14.22: no aviso de termo proibido, cita a forma que a pessoa escreveu (não o 1º sinônimo, que pode ser de outro idioma)."""
+    ln = norm(texto)
+    alts = [a.strip() for a in familia.split(" / ") if a.strip()]
+    for a in sorted(alts, key=len, reverse=True):
+        if re.search(r"(?<![a-z0-9])" + re.escape(norm(a)) + r"(?![a-z0-9])", ln):
+            return a
+    return alts[0] if alts else familia
+
+
 def achados(linha, grupos):
     """Para cada grupo, o conjunto de famílias citadas na linha. Termo dentro de termo maior (de qualquer grupo) não conta:
     'extreme close-up' não conta também como 'close-up'."""
@@ -229,7 +239,7 @@ def conferir(texto, sec, ui=None, lang="pt"):
                 ach = achados(alvo, r["grupos"])[gi]
                 if g.get("proibe"):  # 7.14.21: grupo de termos proibidos (vazio, adjetivo sem teste): citar reprova
                     if ach:
-                        faltas.append(fmt(T["conf_proibe"], g=g["rot"], c=g["termos"][min(ach)].split(" / ")[0].strip()))
+                        faltas.append(fmt(T["conf_proibe"], g=g["rot"], c=citado(alvo, g["termos"][min(ach)])))
                 elif not ach:
                     faltas.append(fmt(T["conf_termo"], g=g["rot"]))
     if faltas:

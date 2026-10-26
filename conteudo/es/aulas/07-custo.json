@@ -5,7 +5,7 @@
   "titulo": "El lado malo: la cuenta, y cómo cuidarla",
   "titulo_curto": "Cuidar el costo",
   "minutos": 13,
-  "lead": "Con un agente funcionando todo el día, el uso crece rápido: en la suscripción llegas al límite; pagando por uso, se vuelve una cuenta grande. En mi caso, casi todo corre por la suscripción. Como con cualquier empleado, hay que auditar y cuidar el costo. Primero lo que vale para todos: el modelo correcto y la cuenta bien seguida. Después, para quien paga por uso, caché y lote.",
+  "lead": "Con un agente funcionando todo el día, el uso crece rápido: en la suscripción llegas al límite; pagando por uso, se vuelve una cuenta grande. En mi caso, casi todo corre por la suscripción. Como con cualquier empleado, hay que auditar y cuidar el costo. Primero lo que vale para todos: el modelo correcto y el control del gasto. Después, para quien paga por uso, caché y lote.",
   "objetivo": "elegir el modelo correcto para cada tarea recurrente, seguir el uso de una semana y saber cuándo valen el caché y el lote.",
   "competencias": [
     "escolher-modelo-por-tarefa",
@@ -56,8 +56,8 @@
         },
         {
           "icone": "grafico",
-          "titulo": "Cuenta",
-          "sub": "con seguimiento",
+          "titulo": "Gasto",
+          "sub": "bajo control",
           "forte": true,
           "itens": [
             {
@@ -67,7 +67,7 @@
               "t": "revisar cada semana"
             }
           ],
-          "detalhe": "Anota cuánto consume cada tarea: en la suscripción, cuántas veces llegaste al límite y con qué tarea; en la API, el valor. Un agente bien entrenado ya se encarga de buena parte de las tareas, y todo el equipo puede hablar con él en el mismo canal. Sin una cuenta con seguimiento, el costo solo aparece en la factura."
+          "detalhe": "Anota cuánto consume cada tarea: en la suscripción, cuántas veces llegaste al límite y con qué tarea; en la API, el valor. Un agente bien entrenado ya se encarga de buena parte de las tareas, y todo el equipo puede hablar con él en el mismo canal. Sin llevar el control del gasto, el costo solo aparece en la factura."
         },
         {
           "icone": "memoria",
@@ -177,7 +177,7 @@
         "abas": [
           {
             "rot": "Ejemplo completado",
-            "html": "<ul><li><b>Separar correos por asunto</b> · 50×/semana · menor · al momento · inicio fijo.</li><li><b>Resumen de las evaluaciones</b> · 1×/semana · medio · lote.</li><li><b>Propuesta para el cliente</b> · 3×/semana · mayor · al momento.</li></ul><p>Decisión: el resumen pasa al lote; la separación de correos baja al modelo menor después de pasar la prueba de 5 rondas.</p>"
+            "html": "<ul><li><b>Separar correos por asunto</b> · 50×/semana · menor · al momento · inicio fijo.</li><li><b>Resumen de las reseñas</b> · 1×/semana · medio · lote.</li><li><b>Propuesta para el cliente</b> · 3×/semana · mayor · al momento.</li></ul><p>Decisión: el resumen pasa al lote; la separación de correos baja al modelo menor después de pasar la prueba de 5 rondas.</p>"
           },
           {
             "rot": "Errores comunes",

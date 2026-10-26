@@ -60,7 +60,7 @@
               "t": "rules and lessons"
             }
           ],
-          "detalhe": "The same request, now inside the project with the base from lesson 3. The tone and the house rules arrive before the request."
+          "detalhe": "The same request, now inside the project with the base from lesson 3. The tone and the company rules arrive before the request."
         },
         {
           "icone": "usuario",
@@ -145,7 +145,7 @@
           "titulo": "Context",
           "sub": "rules and lessons",
           "saida": "The foundation the agent reads before any request.",
-          "passo": "First the house: a rules file, the first lesson from a real mistake, and the new-session test."
+          "passo": "First, the foundation: a rules file, the first lesson from a real mistake, and the new-session test."
         },
         {
           "aula": "papel",

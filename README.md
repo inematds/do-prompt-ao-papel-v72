@@ -27,3 +27,9 @@ Primeiro a gente escrevia o pedido palavra por palavra (engenharia de prompt). D
 6. 🧠 Commit + push (GitHub Pages da raiz da main). Vídeos na release `video-v1.0.0`.
 
 Conteúdo: CC BY 4.0 · INEMA.CLUB, conteúdo aberto e gratuito.
+
+## Mais no INEMA.CLUB
+
+- [Ficha completa deste curso](https://www.inema.club/cursos/387-do-prompt-ao-papel-gerencie-a-ia-como-alguem-da-equipe/)
+- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)

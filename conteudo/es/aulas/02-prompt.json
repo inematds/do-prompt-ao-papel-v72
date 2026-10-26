@@ -135,7 +135,7 @@
           "titulo": "Completar",
           "sub": "el destino",
           "texto": [
-            "Ahora mira qué falta en el destino: el resultado esperado, para quién es, el formato, el límite y el criterio de bueno.",
+            "Ahora mira qué falta en el destino: el resultado esperado, para quién es, el formato, el límite y qué es un buen resultado.",
             "Muchas veces el prompt antiguo era largo y aun así no decía qué es un buen resultado."
           ],
           "exemplo": {
@@ -175,7 +175,7 @@
         {
           "rot": "Pedido para que la propia IA audite",
           "icone": "lupa",
-          "conteudo": "Abajo está un prompt que uso desde hace tiempo. Sepáralo en líneas y marca cada una como:\n- MULETA (compensaba un modelo antiguo: \"piensa paso a paso\", persona de prestigio, lista de \"no hagas\" de estilo),\n- SOLO CUANDO SIRVE (di la condición y si vale aquí),\n- DESTINO (resultado, público, formato, límite, criterio de bueno).\nDespués escribe la versión depurada y di qué falta en el destino.\n\n<pega aquí tu prompt>"
+          "conteudo": "Abajo está un prompt que uso desde hace tiempo. Sepáralo en líneas y marca cada una como:\n- MULETA (compensaba un modelo antiguo: \"piensa paso a paso\", persona de prestigio, lista de \"no hagas\" de estilo),\n- SOLO CUANDO SIRVE (di la condición y si vale aquí),\n- DESTINO (resultado, público, formato, límite, qué es un buen resultado).\nDespués escribe la versión depurada y di qué falta en el destino.\n\n<pega aquí tu prompt>"
         }
       ],
       "saida": {
@@ -187,7 +187,7 @@
           },
           {
             "rot": "Lo que entró",
-            "html": "<ul><li>El dato que faltaba (17:30 → 17:00, desde el 3 de noviembre).</li><li>Un <b>límite</b> real del negocio (transporte).</li><li>El <b>criterio de bueno</b>, que el modelo antiguo nunca recibió.</li></ul>"
+            "html": "<ul><li>El dato que faltaba (17:30 → 17:00, desde el 3 de noviembre).</li><li>Un <b>límite</b> real del negocio (transporte).</li><li>El <b>qué es un buen resultado</b>, que el modelo antiguo nunca recibió.</li></ul>"
           }
         ]
       }
@@ -208,7 +208,7 @@
           "id": "e2",
           "titulo": "E2 · La versión depurada",
           "min": "15 min",
-          "texto": "Recorta las muletas y completa el destino: resultado, público, formato, límite y criterio de bueno.",
+          "texto": "Recorta las muletas y completa el destino: resultado, público, formato, límite y qué es un buen resultado.",
           "pronto": "la versión nueva tiene menos líneas que la antigua y tiene una línea que empieza con \"Buen resultado:\"."
         },
         {
@@ -286,7 +286,7 @@
         },
         {
           "t": "El destino se queda",
-          "texto": "Resultado, público, formato, límite y criterio de bueno valen para cualquier modelo."
+          "texto": "Resultado, público, formato, límite y qué es un buen resultado valen para cualquier modelo."
         },
         {
           "t": "Corta y prueba",

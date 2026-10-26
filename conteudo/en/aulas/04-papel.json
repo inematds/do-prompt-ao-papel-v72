@@ -205,7 +205,7 @@
     {
       "tipo": "conferidor",
       "titulo": "Check your sheet",
-      "sub": "Paste your sheet (or upload the .txt). The page checks the seven fields, rejects anything empty or vague and asks that the Measure include a number or a test along with what is being measured (\"3 lines\", \"cites the date\", \"approved with no corrections\"). The OK is a check of form, not a guarantee that the measure is a good one: you are the one who decides, in the practice below.",
+      "sub": "Paste your sheet (or upload the .txt). The page checks the seven fields, rejects anything empty or vague and asks that the Measure include a number or a test along with what is being measured (\"3 lines\", \"cites the date\", \"approved with no corrections\"). The OK only checks the format; it doesn't guarantee the measure is a good one: you are the one who decides, in the practice below.",
       "arquivo": "role-sheet.txt",
       "rot": "Paste your role sheet here (one field per line):",
       "modelo": "Role: ...\nGoal: ...\nMeasure: ...\nContext: ...\nExample: ...\nBoundary: ...\nCheck: ...",
@@ -375,7 +375,8 @@
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
                 "libero / libera / liberado / release / released / libero / liberado",
-                "aprueba / aprueban / approves / aprovam"
+                "aprueba / aprueban / approves / aprovam",
+                "cuadra / cuadran / cuadre"
               ]
             }
           ]
@@ -523,7 +524,10 @@
                 "sessão / sessões / session / sessions / sesión / sesiones",
                 "valor / valores / amount / amounts / monto / montos",
                 "e-mail / e-mails / email / emails / correo / correos",
-                "mudança / mudanças / cambio / cambios / change / changes"
+                "mudança / mudanças / cambio / cambios / change / changes",
+                "peso / pesos / dólar / dólares / dollar / dollars / $",
+                "cotização / cotizações / orçamento / orçamentos / cotización / cotizaciones / quote / quotes",
+                "factura / facturas / fatura / faturas / invoice / invoices / nota fiscal"
               ]
             }
           ]

@@ -488,7 +488,8 @@
                 "bate / batem / batendo / match / matches / coincide / coinciden",
                 "confere / conferem / checks / verifica",
                 "libero / libera / liberado / release / released / libero / liberado",
-                "aprueba / aprueban / approves / aprovam"
+                "aprueba / aprueban / approves / aprovam",
+                "cuadra / cuadran / cuadre"
               ]
             }
           ]
@@ -636,7 +637,10 @@
                 "sessão / sessões / session / sessions / sesión / sesiones",
                 "valor / valores / amount / amounts / monto / montos",
                 "e-mail / e-mails / email / emails / correo / correos",
-                "mudança / mudanças / cambio / cambios / change / changes"
+                "mudança / mudanças / cambio / cambios / change / changes",
+                "peso / pesos / dólar / dólares / dollar / dollars / $",
+                "cotização / cotizações / orçamento / orçamentos / cotización / cotizaciones / quote / quotes",
+                "factura / facturas / fatura / faturas / invoice / invoices / nota fiscal"
               ]
             }
           ]
@@ -822,7 +826,11 @@
                 "28th",
                 "29th",
                 "30th",
-                "31st"
+                "31st",
+                "sábados / saturdays / domingos / sundays / lunes a viernes / monday to friday / segunda a sexta",
+                "segundas / terças / quartas / quintas / sextas / mondays / tuesdays / wednesdays / thursdays / fridays / martes / miércoles / jueves / viernes",
+                "semana que viene / mes que viene",
+                "antes de cerrar / antes de fechar / before closing / before we close"
               ]
             }
           ]

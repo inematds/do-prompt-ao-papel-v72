@@ -1,0 +1,342 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Plan",
+  "titulo": "The same task in the three eras, and your plan",
+  "titulo_curto": "Compare and plan",
+  "minutos": 14,
+  "lead": "The best proof that the way of working has changed is to do the same task three times: with just the prompt, with prompt and context, and with the full role. You see with your own eyes what each era delivers. Then you build the plan with dates to put your first agent to work, one step at a time.",
+  "objetivo": "compare the same task done in all three eras and walk away with a dated plan for your first agent.",
+  "competencias": [
+    "compare-eras-in-practice",
+    "plan-adoption",
+    "measure-done-when"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "The same task in three versions"
+    },
+    {
+      "icone": "lupa",
+      "t": "What to compare side by side"
+    },
+    {
+      "icone": "calendario",
+      "t": "The plan with dates"
+    },
+    {
+      "icone": "alvo",
+      "t": "The final test of the course"
+    }
+  ],
+  "hero_alt": "Desk seen from above with a paper calendar, a badge, a pen and a notebook with checked items.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "One task, three versions",
+      "sub": "Tap or click each version. The task is the same; what changes is what you hand to the AI.",
+      "nos": [
+        {
+          "icone": "caneta",
+          "titulo": "Prompt only",
+          "sub": "version 1",
+          "itens": [
+            {
+              "t": "the request, and nothing else"
+            }
+          ],
+          "detalhe": "You write the request in a temporary chat (no memory), outside the project: no saved rules, no example, no measure. It's the starting point: it shows what the AI does on its own."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "With context",
+          "sub": "version 2",
+          "itens": [
+            {
+              "t": "short request"
+            },
+            {
+              "t": "rules and lessons"
+            }
+          ],
+          "detalhe": "The same request, now inside the project with the base from lesson 3. The tone and the house rules arrive before the request."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Full role",
+          "sub": "version 3",
+          "forte": true,
+          "itens": [
+            {
+              "t": "role sheet"
+            },
+            {
+              "t": "trained procedure"
+            }
+          ],
+          "detalhe": "The sheet from lesson 4, the goal from lesson 5 and the procedure from lesson 6. The agent checks itself against the Measure and hands in the proof along with the work."
+        }
+      ],
+      "legenda": "Compare using the same ruler: the Measure on the sheet. It applies to all three versions.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "The evolution on your desk",
+        "texto": "Version 1 shows what the AI does on its own. Version 2 shows what context adds. Version 3 shows what managing adds: a goal, an example and training."
+      }
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The three requests and the ruler",
+      "sub": "Use the task from your sheet. Replace the text between < > with your own.",
+      "blocos": [
+        {
+          "rot": "Version 1 · prompt only (temporary chat, no memory, outside the project)",
+          "icone": "caneta",
+          "conteudo": "<the request, the way you would have written it before the course>\n\n(To keep memory from leaking in: in ChatGPT, \"Temporary chat\" at the top of the screen; in Claude and Gemini, a temporary chat or one with memory turned off.)"
+        },
+        {
+          "rot": "Version 2 · with context (inside the project)",
+          "icone": "pasta",
+          "conteudo": "Read the project's rules and lessons before you start.\n<the same request, in one line>"
+        },
+        {
+          "rot": "Version 3 · full role",
+          "icone": "usuario",
+          "conteudo": "This is your role: follow the role sheet and the project's standard procedure.\nToday's input: <the case>\nWhen you finish, show the check against the Measure."
+        },
+        {
+          "rot": "Comparison (document or spreadsheet)",
+          "icone": "lupa",
+          "conteudo": "# Comparison · <task> · <date>\nRuler: <the Measure from the sheet>\n\n| version | passed the Measure? | what got better | what got worse | your time |\n|---|---|---|---|---|\n| 1 · prompt only | | | | |\n| 2 · with context | | | | |\n| 3 · full role | | | | |\n\nConclusion in one sentence: <what you will do from now on>"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the comparison",
+      "sub": "The same input in all three versions.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Three versions",
+          "min": "30 min",
+          "texto": "Run the task from your sheet in all three versions, with the same input, and save the three results.",
+          "pronto": "you have three result files, one per version, with the same input."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The ruler",
+          "min": "15 min",
+          "texto": "Fill in the comparison using the Measure from the sheet as your ruler.",
+          "pronto": "the three rows say \"yes\" or \"no\" on the Measure and there is a one-sentence conclusion."
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "The five steps of the course. If you did the practice exercises from lessons 3 to 7, use the plan for your SECOND agent (or to review the first one). Tap or click an exercise to see its \"done when\".",
+      "degraus": [
+        {
+          "aula": "contexto",
+          "icone": "pasta",
+          "quando": "Week 1",
+          "titulo": "Context",
+          "sub": "rules and lessons",
+          "saida": "The foundation the agent reads before any request.",
+          "passo": "First the house: a rules file, the first lesson from a real mistake, and the new-session test."
+        },
+        {
+          "aula": "papel",
+          "icone": "usuario",
+          "quando": "Week 1",
+          "titulo": "Job sheet",
+          "sub": "the role",
+          "saida": "Job sheet checked and the first deliverable.",
+          "passo": "Requires the context foundation. The reference work you did yourself comes before the job sheet."
+        },
+        {
+          "aula": "objetivo",
+          "icone": "alvo",
+          "quando": "Week 1",
+          "titulo": "Measure",
+          "sub": "goal",
+          "saida": "A goal with a number or a test, and a deadline.",
+          "passo": "Reinforces the job sheet's Measure: three requests rewritten and the agent showing the check."
+        },
+        {
+          "aula": "treinar",
+          "icone": "fila",
+          "quando": "Week 2",
+          "titulo": "Training",
+          "sub": "in a cycle",
+          "saida": "Standard procedure written down.",
+          "passo": "Requires the job sheet with a Measure. Five rounds, the list, and the cycle until it hits zero; the cycle can take two days."
+        },
+        {
+          "aula": "custo",
+          "icone": "grafico",
+          "quando": "Week 3",
+          "titulo": "Cost",
+          "sub": "the cost",
+          "saida": "One week of use logged and one decision tested.",
+          "passo": "Requires the procedure: you use it to test a smaller model or the batch."
+        }
+      ],
+      "resultado": {
+        "titulo": "At the end of the course",
+        "texto": "An agent with a role, a measurable goal, a trained procedure, and a tracked cost.",
+        "total": "16 exercises"
+      },
+      "rolagem_fim": {
+        "titulo": "The whole path",
+        "texto": "Context, job sheet, measure, training, and cost, in that order. Only move up when the \"done when\" of the previous step is true."
+      },
+      "legenda": "Each step builds on what the previous one set up."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Pick a start date and how much time you have each week. The plan respects the exercises that need days of real use.",
+      "curso": "From prompt to role",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Step 1 · Context",
+          "aula": "contexto"
+        },
+        {
+          "titulo": "Step 2 · Job sheet",
+          "aula": "papel"
+        },
+        {
+          "titulo": "Step 3 · Measurable goal",
+          "aula": "objetivo"
+        },
+        {
+          "titulo": "Step 4 · Training cycle",
+          "aula": "treinar"
+        },
+        {
+          "titulo": "Step 5 · Cost",
+          "aula": "custo"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — From prompt to role",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I created",
+        "h": "h per week",
+        "exs": "exercises",
+        "ex1": "exercise"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The course in three sentences",
+      "itens": [
+        {
+          "t": "Stop hunting for the perfect prompt",
+          "texto": "Define the role: a goal you can measure, context, and an example of your own."
+        },
+        {
+          "t": "Train in cycles",
+          "texto": "Several rounds, a list of corrections and a written procedure. The same mistake doesn't come back."
+        },
+        {
+          "t": "Watch the cost",
+          "texto": "The right model, cache, batching and a bill you keep an eye on. There are no miracles: you can only relax once the system runs right."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Final test",
+      "sub": "Four questions about the whole course.",
+      "perguntas": [
+        {
+          "p": "When you compare the three versions, what is the yardstick?",
+          "opcoes": [
+            "The length of the text in each version.",
+            "Your gut impression.",
+            "How long the AI took to answer in each version.",
+            "The Measure from the role sheet, the same for all three."
+          ],
+          "certa": 3,
+          "explica": "A single yardstick keeps the comparison fair. The Measure from the sheet tells you whether the result is good enough, in any version.",
+          "cert": true,
+          "ref": "codigo"
+        },
+        {
+          "p": "What is the order of the steps in the plan?",
+          "opcoes": [
+            "Context, sheet, measure, training, cost.",
+            "Cost, training, sheet, context.",
+            "Sheet, cost, context, training.",
+            "Any order, because the steps are independent."
+          ],
+          "certa": 0,
+          "explica": "The sheet points to the context base; the measure pins down the sheet's goal; the training uses the Measure; the cost test uses the trained procedure.",
+          "ref": "mapa"
+        },
+        {
+          "p": "What does paper engineering change in your work?",
+          "opcoes": [
+            "You start writing longer prompts.",
+            "You stop checking what the AI does.",
+            "You start defining the role, checking and correcting, as you would with someone on your team.",
+            "You need to learn to code."
+          ],
+          "certa": 2,
+          "explica": "Paper is management: sheet, measure, example, training and cost. Checking still happens, only now from time to time and with a yardstick.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "The agent made the same mistake twice. What was missing?",
+          "opcoes": [
+            "A bigger model.",
+            "Turning the first correction into a written rule (a lesson or a procedure).",
+            "Explaining the correction again in the same conversation, in more detail.",
+            "Opening a new conversation so it starts from scratch."
+          ],
+          "certa": 1,
+          "explica": "A correction that stays only in the chat disappears. Written into the lesson or the procedure, it goes into every task that follows.",
+          "ref": "resumo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Keep going from here",
+      "links": [
+        {
+          "t": "FEP → AGI: from prompt to intent",
+          "href": "https://inematds.github.io/FEP-AGI/",
+          "icone": "camadas"
+        },
+        {
+          "t": "FEC: Context Engineering Training",
+          "href": "https://inematds.github.io/FEC/",
+          "icone": "pasta"
+        },
+        {
+          "t": "From chat to agent: the four steps",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
+          "icone": "robo"
+        },
+        {
+          "t": "Open courses at INEMA.CLUB",
+          "href": "https://inema.club/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

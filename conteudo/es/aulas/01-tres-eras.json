@@ -1,0 +1,288 @@
+{
+  "slug": "tres-eras",
+  "num": 1,
+  "menu": "Eras",
+  "titulo": "Tres eras: del prompt al rol",
+  "titulo_curto": "Las tres eras",
+  "minutos": 12,
+  "lead": "En pocos años, la forma de trabajar con la IA cambió tres veces. Primero, el pedido escrito palabra por palabra. Después, el contexto que la IA recibe antes del pedido. Ahora, el rol: la IA trabaja como alguien del equipo y tú la gestionas. Saber en qué era está cada pedido tuyo muestra lo que falta.",
+  "objetivo": "clasificar cinco pedidos tuyos en las tres eras y decir qué le falta a cada uno para llegar al rol.",
+  "competencias": [
+    "reconhecer-eras-da-ia",
+    "diagnosticar-pedido",
+    "pensar-como-gestor"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "Lo que cada era te pedía"
+    },
+    {
+      "icone": "lupa",
+      "t": "Reconocer la era de una solicitud"
+    },
+    {
+      "icone": "usuario",
+      "t": "Por qué la IA se convirtió en alguien del equipo"
+    },
+    {
+      "icone": "video",
+      "t": "El curso completo en cinco minutos"
+    }
+  ],
+  "hero_alt": "Tres objetos sobre una mesa oscura: una hoja arrugada, una carpeta llena de documentos y un gafete de empleado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Las tres eras",
+      "sub": "Toca o haz clic en cada era. Fíjate en qué cambia: quién hace el trabajo y qué entregas tú.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "caneta",
+          "titulo": "Prompt",
+          "sub": "la solicitud",
+          "itens": [
+            {
+              "t": "palabras especiales"
+            },
+            {
+              "t": "plantillas de prompt"
+            },
+            {
+              "t": "trucos"
+            }
+          ],
+          "detalhe": "La habilidad era escribir la solicitud. Como el modelo era débil, tú lo compensabas con instrucciones: \"piensa paso a paso\", \"eres un experto\", listas de \"no hagas\". Mucho de eso perdió sentido con los modelos de hoy (clase 2)."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Contexto",
+          "sub": "lo que sabe",
+          "itens": [
+            {
+              "t": "reglas del proyecto"
+            },
+            {
+              "t": "documentos y memoria"
+            },
+            {
+              "t": "herramientas"
+            }
+          ],
+          "detalhe": "La solicitud se volvió corta porque la IA empezó a recibir, antes de ella, lo que necesita saber: las reglas, los archivos, el historial. La habilidad pasó a ser armar esa base una sola vez, en lugar de repetirlo todo en cada conversación (clase 3)."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Rol",
+          "sub": "quién es",
+          "forte": true,
+          "itens": [
+            {
+              "t": "objetivo que se puede medir"
+            },
+            {
+              "t": "contexto y ejemplo"
+            },
+            {
+              "t": "entrenamiento en ciclo"
+            }
+          ],
+          "detalhe": "La IA trabaja sola por horas o días, como un empleado. Tú no escribes lo que hace palabra por palabra: defines el rol, el objetivo y el estándar de calidad, y revisas de vez en cuando. Es la ingeniería de roles, en inglés role engineering (clases 4 a 7)."
+        }
+      ],
+      "legenda": "Una era no borra la anterior: el rol usa una solicitud clara y un buen contexto. Lo que cambia es dónde está tu trabajo.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "De la solicitud a la gestión",
+        "texto": "En el prompt, tú escribías el trabajo. En el contexto, preparabas la base. En el rol, gestionas: defines, revisas y corriges."
+      },
+      "dica": "En este curso, \"agente\" es la IA con un rol fijo. En el chat, es un proyecto (ChatGPT, Claude) o un Gem (Gemini) con instrucciones y archivos. En la terminal, es Claude Code o Codex trabajando en una carpeta. El rol es el mismo en ambos. En el chat, el agente trabaja cuando abres la conversación; correr solo, por horas o en horarios programados, es cosa de la terminal y de las automatizaciones."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Lo que cada era te pide",
+      "sub": "Toca o haz clic en cada era y compara la misma solicitud.",
+      "passos": [
+        {
+          "titulo": "Prompt",
+          "sub": "tú escribes todo",
+          "texto": [
+            "Describes paso a paso cómo hacerlo, porque el modelo no lo descubría solo.",
+            "El resultado dependía más de la redacción de la solicitud que de tu conocimiento del tema."
+          ],
+          "exemplo": {
+            "rot": "Solicitud típica",
+            "texto": "Eres un redactor premiado. Piensa paso a paso. Escribe un post sobre nuestro curso. No uses emojis. No seas prolijo. Usa un tono amigable."
+          }
+        },
+        {
+          "titulo": "Contexto",
+          "sub": "tú preparas la base",
+          "texto": [
+            "Quién es el público, cuál es el tono de la casa, qué ya se publicó: todo eso queda guardado en un lugar que la IA lee antes de responder.",
+            "La solicitud queda corta porque lo demás ya está ahí."
+          ],
+          "exemplo": {
+            "rot": "Solicitud típica",
+            "texto": "Escribe el post de lanzamiento del curso nuevo, siguiendo el tono y el público del archivo de reglas."
+          }
+        },
+        {
+          "titulo": "Rol",
+          "sub": "tú gestionas",
+          "texto": [
+            "Entregas una función completa, no una tarea suelta: qué es el éxito, cómo medirlo, dónde está el contexto, cómo se ve un trabajo bien hecho.",
+            "El agente trabaja, se revisa y muestra el resultado. Tú lo evalúas y lo corriges, como harías con alguien nuevo en el equipo."
+          ],
+          "exemplo": {
+            "rot": "Solicitud típica",
+            "texto": "Te encargas de la difusión de los cursos. Cada lunes, publica un post por curso nuevo, siguiendo el estándar del post de ejemplo. Listo cuando: cada post tiene un enlace que abre y fue aprobado por mí."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Plantilla: el diagnóstico de tus solicitudes",
+      "sub": "Cópiala en un documento (Word, Google Docs) o en una hoja de cálculo y complétala con cinco solicitudes que le hiciste a la IA esta semana.",
+      "blocos": [
+        {
+          "rot": "Diagnóstico (documento u hoja de cálculo)",
+          "icone": "arquivo",
+          "conteudo": "# Diagnóstico: en qué era están mis pedidos\n\n| # | pedido (resumen) | era | lo que faltó para llegar al rol |\n|---|---|---|---|\n| 1 | <pedido> | prompt / contexto / rol | <¿objetivo medible? ¿contexto guardado? ¿ejemplo?> |\n| 2 | | | |\n| 3 | | | |\n| 4 | | | |\n| 5 | | | |\n\nPregunta para cada fila:\n- ¿Escribí CÓMO hacerlo o QUÉ es el éxito?\n- ¿La IA ya conocía el contexto o lo repetí todo?\n- ¿Podría comprobar por sí sola si terminó?"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo completado",
+            "html": "<ol><li><b>\"Resume este PDF en 5 puntos\"</b> · prompt · faltó decir para quién es el resumen y qué se va a hacer con él.</li><li><b>\"Escribe el correo con el tono del archivo de reglas\"</b> · contexto · faltó el criterio de listo (quién aprueba, hasta cuándo).</li><li><b>\"Todos los viernes antes de las 17 h, arma el informe igual al de ejemplo; listo cuando los totales coincidan con la hoja de cálculo y yo lo apruebe\"</b> · rol · tiene objetivo medible, ejemplo, plazo y quién aprueba.</li></ol>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Creer que un pedido largo es un pedido de rol</b>: la extensión no cambia la era. Lo que cambia es tener un objetivo medible, contexto guardado y un ejemplo.</li><li><b>Saltarte la columna de lo que faltó</b>: es tu plan para las próximas clases.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: diagnostica tus pedidos",
+      "sub": "Usa pedidos reales de tu semana.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Cinco pedidos reales",
+          "min": "15 min",
+          "texto": "Abre el historial de tu chat de IA y copia el resumen de cinco pedidos de esta semana en el documento del diagnóstico.",
+          "pronto": "la tabla tiene cinco filas con pedidos que hiciste de verdad."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · La era y lo que faltó",
+          "min": "15 min",
+          "texto": "Para cada pedido, marca la era y escribe lo que faltó usando las tres preguntas del modelo.",
+          "pronto": "las cinco filas tienen la era marcada y la columna \"lo que faltó\" completa."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · El candidato a rol",
+          "min": "5 min",
+          "texto": "Elige el pedido que repites todas las semanas. Ese es el que se convierte en la ficha de función de la clase 4.",
+          "pronto": "uno de los pedidos está marcado como \"candidato a rol\", con la frecuencia anotada (ej.: todos los lunes)."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "El curso completo en video",
+      "sub": "Cinco minutos: del giro hacia la IA como empleado hasta el costo.",
+      "chave": "dpap-completo"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué es lo que más cambia de la era del prompt a la era del rol?",
+          "opcoes": [
+            "El tamaño del pedido, que se vuelve mucho mayor porque el agente necesita más detalles para trabajar solo.",
+            "Tu trabajo: pasas de escribir cómo hacerlo a definir qué es el éxito y comprobarlo.",
+            "La herramienta, que tiene que ser otra.",
+            "Nada: es solo un nombre nuevo para lo mismo."
+          ],
+          "certa": 1,
+          "explica": "En el rol tú diriges: objetivo, contexto, ejemplo y revisión. El pedido incluso puede quedar más corto. Cambiar de herramienta no cambia la era.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "\"Escribe el correo con el tono del archivo de reglas\", ¿en qué era está?",
+          "opcoes": [
+            "Contexto: el tono ya está guardado y el pedido quedó corto.",
+            "Prompt: es un pedido de una línea.",
+            "Rol: la IA va a trabajar sola.",
+            "Ninguna de las tres."
+          ],
+          "certa": 0,
+          "explica": "El pedido usa una base guardada (el archivo de reglas): es contexto. Para ser rol faltarían el objetivo medible y la rutina, como quién aprueba y cuándo.",
+          "ref": "passos"
+        },
+        {
+          "p": "Con la era del rol, ¿qué pasa con el contexto?",
+          "opcoes": [
+            "Deja de importar, porque el modelo de hoy ya sabe todo lo que necesita sobre tu negocio.",
+            "Pasa a ser responsabilidad del proveedor de la IA.",
+            "Solo sirve para quienes programan.",
+            "Sigue: el rol usa un buen contexto y un pedido claro."
+          ],
+          "certa": 3,
+          "explica": "Una era no borra la anterior. El rol se apoya en el contexto (clase 3); lo que cambia es dónde está tu trabajo: definir, comprobar y corregir.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La clase en tres frases",
+      "itens": [
+        {
+          "t": "Tres eras",
+          "texto": "Prompt (escribir el pedido), contexto (preparar la base) y rol (dirigir la IA como a alguien del equipo)."
+        },
+        {
+          "t": "Una apoya a la otra",
+          "texto": "El rol usa un pedido claro y un buen contexto. La diferencia es que entregas una función, no una tarea suelta."
+        },
+        {
+          "t": "El diagnóstico es el plan",
+          "texto": "Lo que faltó en cada pedido tuyo es lo que enseñan las próximas clases."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "FEP → AGI: del prompt a la intención, las eras en nueve clases",
+          "href": "https://inematds.github.io/FEP-AGI/",
+          "icone": "camadas"
+        },
+        {
+          "t": "FEP 2026: qué murió y qué quedó del prompt",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        },
+        {
+          "t": "El video en YouTube",
+          "href": "https://www.youtube.com/watch?v=miP2vLsr6jE",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

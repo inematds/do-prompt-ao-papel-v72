@@ -1,0 +1,342 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Plan",
+  "titulo": "La misma tarea en las tres eras, y tu plan",
+  "titulo_curto": "Comparar y planificar",
+  "minutos": 14,
+  "lead": "La mejor prueba de que la forma de trabajar cambió es hacer la misma tarea tres veces: solo con el prompt, con prompt y contexto, y con el rol completo. Ves con tus propios ojos lo que entrega cada era. Después, armas el plan con fechas para poner a trabajar a tu primer agente, un nivel a la vez.",
+  "objetivo": "comparar la misma tarea hecha en las tres eras y salir con un plan con fechas para tu primer agente.",
+  "competencias": [
+    "comparar-eras-na-pratica",
+    "planejar-adocao",
+    "medir-pronto-quando"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "La misma tarea en tres versiones"
+    },
+    {
+      "icone": "lupa",
+      "t": "Qué comparar lado a lado"
+    },
+    {
+      "icone": "calendario",
+      "t": "El plan con fechas"
+    },
+    {
+      "icone": "alvo",
+      "t": "La prueba final del curso"
+    }
+  ],
+  "hero_alt": "Mesa vista desde arriba con un calendario de papel, una credencial, un bolígrafo y un cuaderno con ítems marcados.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Una tarea, tres versiones",
+      "sub": "Toca o haz clic en cada versión. La tarea es la misma; cambia lo que le entregas a la IA.",
+      "nos": [
+        {
+          "icone": "caneta",
+          "titulo": "Solo prompt",
+          "sub": "versión 1",
+          "itens": [
+            {
+              "t": "el pedido, y nada más"
+            }
+          ],
+          "detalhe": "Escribes el pedido en una conversación temporal (sin memoria), fuera del proyecto: sin reglas guardadas, sin ejemplo, sin medida. Es el punto de partida: muestra lo que la IA hace sola."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Con contexto",
+          "sub": "versión 2",
+          "itens": [
+            {
+              "t": "pedido corto"
+            },
+            {
+              "t": "reglas y lecciones"
+            }
+          ],
+          "detalhe": "El mismo pedido, ahora dentro del proyecto con la base de la clase 3. El tono y las reglas de la casa llegan antes del pedido."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Rol completo",
+          "sub": "versión 3",
+          "forte": true,
+          "itens": [
+            {
+              "t": "ficha de función"
+            },
+            {
+              "t": "procedimiento entrenado"
+            }
+          ],
+          "detalhe": "La ficha de la clase 4, el objetivo de la clase 5 y el procedimiento de la clase 6. El agente se revisa con la Medida y entrega la prueba junto con el resultado."
+        }
+      ],
+      "legenda": "Compara con la misma regla: la Medida de la ficha. Vale para las tres versiones.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "La evolución en tu mesa",
+        "texto": "La versión 1 muestra lo que la IA hace sola. La 2 muestra la ganancia del contexto. La 3 muestra la ganancia de gestionar: objetivo, ejemplo y entrenamiento."
+      }
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Los tres pedidos y la regla",
+      "sub": "Usa la tarea de tu ficha. Cambia el texto entre < > por el tuyo.",
+      "blocos": [
+        {
+          "rot": "Versión 1 · solo prompt (conversación temporal, sin memoria, fuera del proyecto)",
+          "icone": "caneta",
+          "conteudo": "<el pedido, como lo harías antes del curso>\n\n(Para que no se filtre la memoria: en ChatGPT, \"Chat temporal\" en la parte de arriba de la pantalla; en Claude y en Gemini, la conversación temporal o con la memoria desactivada.)"
+        },
+        {
+          "rot": "Versión 2 · con contexto (dentro del proyecto)",
+          "icone": "pasta",
+          "conteudo": "Lee las reglas y las lecciones del proyecto antes de empezar.\n<el mismo pedido, en una línea>"
+        },
+        {
+          "rot": "Versión 3 · rol completo",
+          "icone": "usuario",
+          "conteudo": "Este es tu rol: sigue la ficha de función y el procedimiento estándar del proyecto.\nEntrada de hoy: <el caso>\nAl terminar, muestra la revisión con la Medida."
+        },
+        {
+          "rot": "Comparación (documento u hoja de cálculo)",
+          "icone": "lupa",
+          "conteudo": "# Comparación · <tarea> · <fecha>\nRegla: <la Medida de la ficha>\n\n| versión | ¿pasó la Medida? | qué quedó mejor | qué quedó peor | tu tiempo |\n|---|---|---|---|---|\n| 1 · solo prompt | | | | |\n| 2 · con contexto | | | | |\n| 3 · rol completo | | | | |\n\nConclusión en una frase: <qué vas a hacer de ahora en adelante>"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la comparación",
+      "sub": "La misma entrada en las tres versiones.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Tres versiones",
+          "min": "30 min",
+          "texto": "Ejecuta la tarea de tu ficha en las tres versiones, con la misma entrada, y guarda los tres resultados.",
+          "pronto": "tienes tres archivos de resultado, uno por versión, con la misma entrada."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · La regla",
+          "min": "15 min",
+          "texto": "Completa la comparación usando la Medida de la ficha como regla.",
+          "pronto": "las tres filas dicen \"sí\" o \"no\" en la Medida y hay una conclusión de una frase."
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "El mapa del curso",
+      "sub": "Los cinco niveles del curso. Si hiciste las prácticas de las clases 3 a 7, usa el plan para tu SEGUNDO agente (o para revisar el primero). Toca o haz clic en un ejercicio para ver el \"listo cuando\".",
+      "degraus": [
+        {
+          "aula": "contexto",
+          "icone": "pasta",
+          "quando": "Semana 1",
+          "titulo": "Contexto",
+          "sub": "reglas y lecciones",
+          "saida": "Base que el agente lee antes de cualquier pedido.",
+          "passo": "Primero la casa: archivo de reglas, la primera lección de un error real y la prueba de la sesión nueva."
+        },
+        {
+          "aula": "papel",
+          "icone": "usuario",
+          "quando": "Semana 1",
+          "titulo": "Ficha",
+          "sub": "el rol",
+          "saida": "Ficha de función revisada y la primera entrega.",
+          "passo": "Requiere la base de contexto. El trabajo de referencia hecho por ti va antes de la ficha."
+        },
+        {
+          "aula": "objetivo",
+          "icone": "alvo",
+          "quando": "Semana 1",
+          "titulo": "Medida",
+          "sub": "objetivo",
+          "saida": "Objetivo con número o prueba y plazo.",
+          "passo": "Refuerza la Medida de la ficha: tres pedidos reescritos y el agente mostrando la verificación."
+        },
+        {
+          "aula": "treinar",
+          "icone": "fila",
+          "quando": "Semana 2",
+          "titulo": "Entrenamiento",
+          "sub": "en ciclo",
+          "saida": "Procedimiento estándar escrito.",
+          "passo": "Requiere la ficha con Medida. Cinco rondas, la lista y el ciclo hasta dejarla en cero; el ciclo puede tomar dos días."
+        },
+        {
+          "aula": "custo",
+          "icone": "grafico",
+          "quando": "Semana 3",
+          "titulo": "Costo",
+          "sub": "la cuenta",
+          "saida": "Una semana de uso anotada y una decisión probada.",
+          "passo": "Requiere el procedimiento: es con él que pruebas un modelo más pequeño o el lote."
+        }
+      ],
+      "resultado": {
+        "titulo": "Al final del curso",
+        "texto": "Un agente con rol, objetivo medible, procedimiento entrenado y cuenta controlada.",
+        "total": "16 ejercicios"
+      },
+      "rolagem_fim": {
+        "titulo": "El camino completo",
+        "texto": "Contexto, ficha, medida, entrenamiento y costo, en ese orden. Solo sube cuando el \"listo cuando\" del nivel anterior sea verdad."
+      },
+      "legenda": "Cada nivel usa lo que montó el anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que piden días de uso real.",
+      "curso": "Del prompt al rol",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Nivel 1 · Contexto",
+          "aula": "contexto"
+        },
+        {
+          "titulo": "Nivel 2 · Ficha de función",
+          "aula": "papel"
+        },
+        {
+          "titulo": "Nivel 3 · Objetivo medible",
+          "aula": "objetivo"
+        },
+        {
+          "titulo": "Nivel 4 · Entrenamiento en ciclo",
+          "aula": "treinar"
+        },
+        {
+          "titulo": "Nivel 5 · Costo",
+          "aula": "custo"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Del prompt al rol",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Lo que se trabó y la regla que creé",
+        "h": "h por semana",
+        "exs": "ejercicios",
+        "ex1": "ejercicio"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "El curso en tres frases",
+      "itens": [
+        {
+          "t": "Deja de buscar el prompt perfecto",
+          "texto": "Define el rol: un objetivo que puedas medir, contexto y un ejemplo tuyo."
+        },
+        {
+          "t": "Entrena en ciclos",
+          "texto": "Varias rondas, lista de correcciones y procedimiento escrito. El mismo error no vuelve."
+        },
+        {
+          "t": "Cuida el costo",
+          "texto": "Modelo adecuado, caché, lote y cuenta bajo seguimiento. No hay milagros: solo puedes relajarte cuando el sistema funciona bien."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba final",
+      "sub": "Cuatro preguntas sobre todo el curso.",
+      "perguntas": [
+        {
+          "p": "En la comparación de las tres versiones, ¿cuál es la vara de medir?",
+          "opcoes": [
+            "El tamaño del texto de cada versión.",
+            "Tu impresión en el momento.",
+            "El tiempo que la IA tardó en responder en cada versión.",
+            "La Medida de la ficha de función, la misma para las tres."
+          ],
+          "certa": 3,
+          "explica": "Una sola vara de medir hace justa la comparación. La Medida de la ficha dice si el resultado sirve, en cualquier versión.",
+          "cert": true,
+          "ref": "codigo"
+        },
+        {
+          "p": "¿Cuál es el orden de los niveles del plan?",
+          "opcoes": [
+            "Contexto, ficha, medida, entrenamiento, costo.",
+            "Costo, entrenamiento, ficha, contexto.",
+            "Ficha, costo, contexto, entrenamiento.",
+            "Cualquier orden, porque los niveles son independientes."
+          ],
+          "certa": 0,
+          "explica": "La ficha apunta a la base de contexto; la medida fija el objetivo de la ficha; el entrenamiento usa la Medida; la prueba de costo usa el procedimiento entrenado.",
+          "ref": "mapa"
+        },
+        {
+          "p": "¿Qué cambia la ingeniería de papel en tu trabajo?",
+          "opcoes": [
+            "Pasas a escribir prompts más largos.",
+            "Dejas de revisar lo que hace la IA.",
+            "Pasas a definir la función, revisar y corregir, como harías con alguien del equipo.",
+            "Necesitas aprender a programar."
+          ],
+          "certa": 2,
+          "explica": "El rol es gestión: ficha, medida, ejemplo, entrenamiento y costo. Revisar sigue siendo necesario, solo que de vez en cuando y con una vara de medir.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "El agente cometió el mismo error dos veces. ¿Qué faltó?",
+          "opcoes": [
+            "Un modelo más grande.",
+            "Convertir la primera corrección en una regla escrita (lección o procedimiento).",
+            "Explicar de nuevo la corrección en la misma conversación, con más detalle.",
+            "Abrir una conversación nueva para que empiece desde cero."
+          ],
+          "certa": 1,
+          "explica": "La corrección que queda solo en el chat desaparece. Escrita en la lección o en el procedimiento, entra en cada tarea siguiente.",
+          "ref": "resumo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continúa por aquí",
+      "links": [
+        {
+          "t": "FEP → AGI: del prompt a la intención",
+          "href": "https://inematds.github.io/FEP-AGI/",
+          "icone": "camadas"
+        },
+        {
+          "t": "FEC: Formación de Ingeniería de Contexto",
+          "href": "https://inematds.github.io/FEC/",
+          "icone": "pasta"
+        },
+        {
+          "t": "Del chat al agente: los cuatro niveles",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
+          "icone": "robo"
+        },
+        {
+          "t": "Cursos abiertos en INEMA.CLUB",
+          "href": "https://inema.club/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

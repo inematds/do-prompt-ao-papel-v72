@@ -1,0 +1,335 @@
+{
+  "slug": "treinar",
+  "num": 6,
+  "menu": "Entrenar",
+  "titulo": "Entrenar en ciclo: cinco, diez rondas y una lista",
+  "titulo_curto": "Entrenar al agente",
+  "minutos": 16,
+  "lead": "Cuando el agente ya hace el trabajo, viene la parte que casi nadie hace: entrenar. No pidas una sola vez. Pide cinco, diez veces, evalúa como evaluarías a un empleado, junta las correcciones en una lista y ejecútala en ciclo hasta que corrija todo. Gasta más tiempo y más uso, pero al final tienes un procedimiento estándar escrito que sirve para cualquier agente.",
+  "objetivo": "ejecutar la misma tarea en ciclo, juntar las correcciones en una lista y cerrar un procedimiento estándar escrito.",
+  "competencias": [
+    "evaluar-salidas-del-agente",
+    "escribir-lista-de-correcciones",
+    "escribir-procedimiento-estandar"
+  ],
+  "aprende": [
+    {
+      "icone": "fila",
+      "t": "Por qué una sola ronda engaña"
+    },
+    {
+      "icone": "lista",
+      "t": "De la evaluación a la lista de correcciones"
+    },
+    {
+      "icone": "arquivo",
+      "t": "El procedimiento estándar escrito"
+    },
+    {
+      "icone": "chip",
+      "t": "La prueba del modelo nuevo"
+    }
+  ],
+  "hero_alt": "Robot humanoide en una mesa con cinco hojas iguales en fila; una persona señala la hoja marcada con una etiqueta roja.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "El ciclo de entrenamiento",
+      "sub": "Toca o haz clic en cada etapa. El ciclo solo termina cuando la lista queda en cero.",
+      "nos": [
+        {
+          "icone": "fila",
+          "titulo": "Ejecutar",
+          "sub": "de 5 a 10 veces",
+          "itens": [
+            {
+              "t": "la misma tarea"
+            },
+            {
+              "t": "entradas diferentes"
+            }
+          ],
+          "detalhe": "Una ronda buena puede ser suerte; una mala puede ser mala suerte. De cinco a diez rondas, con entradas diferentes, muestran lo que el agente hace siempre y lo que hace a veces."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Evaluar",
+          "sub": "como a un empleado",
+          "itens": [
+            {
+              "t": "con la Medida de la ficha"
+            },
+            {
+              "t": "contra el ejemplo"
+            }
+          ],
+          "detalhe": "Mira todos los resultados con el criterio de la ficha y compáralos con tu ejemplo. Anota por ronda: \"en la tarea A no me gustó esto, en la B faltó aquello\"."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Lista",
+          "sub": "de correcciones",
+          "itens": [
+            {
+              "t": "lo que se repite"
+            },
+            {
+              "t": "una línea cada una"
+            }
+          ],
+          "detalhe": "Junta las anotaciones en una sola lista, sin repetir, de lo más grave a lo menos grave. Es lo que le entregas al agente, y no un desahogo suelto."
+        },
+        {
+          "icone": "check",
+          "titulo": "Corregir",
+          "sub": "en ciclo",
+          "itens": [
+            {
+              "t": "ejecutar de nuevo"
+            },
+            {
+              "t": "tachar lo que pasó"
+            }
+          ],
+          "detalhe": "Entrega la lista, pídele que ajuste y ejecuta de nuevo. Tacha lo que pasó, mantén lo que falló. Repite hasta que la lista quede vacía en todas las rondas."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Procedimiento",
+          "sub": "estándar escrito",
+          "forte": true,
+          "itens": [
+            {
+              "t": "sirve para cualquier agente"
+            }
+          ],
+          "detalhe": "Con la lista en cero, pídele al agente que escriba el procedimiento estándar (un texto simple): los pasos, las reglas que nacieron de las correcciones y la prueba final. Sirve para los próximos años y para cualquier agente."
+        }
+      ],
+      "volta": "¿Falló alguna ronda? La falla vuelve a la lista y el ciclo comienza de nuevo",
+      "legenda": "En mi caso (Nei, de INEMA), buena parte del día es así: delego, doy retroalimentación, y cada corrección se vuelve una regla escrita. De cierto modo, yo entreno al agente tanto como él me entrena a mí.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "El entrenamiento completo",
+        "texto": "Ejecutar varias veces, evaluar, listar, corregir en ciclo hasta llegar a cero y escribir el procedimiento. El mismo error no vuelve."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cinco hábitos del entrenamiento",
+      "sub": "Toca o haz clic en cada uno.",
+      "passos": [
+        {
+          "titulo": "En el chat",
+          "sub": "dónde queda cada cosa",
+          "texto": [
+            "Cada ronda en una conversación nueva del mismo proyecto: así una ronda no contamina a la otra.",
+            "La lista de correcciones va a las instrucciones del proyecto antes de la siguiente ronda. Una conversación nueva sin la lista en las instrucciones olvida todo."
+          ],
+          "exemplo": {
+            "rot": "En la terminal",
+            "texto": "La lista va en el AGENTS.md (o en un archivo citado en él) y cada ronda es una sesión nueva."
+          }
+        },
+        {
+          "titulo": "Entradas variadas",
+          "sub": "no la misma",
+          "texto": [
+            "Usa casos diferentes en cada ronda: uno fácil, uno difícil, uno raro.",
+            "Correr cinco veces el mismo caso solo mide la suerte."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "Aviso de una fiesta, de un cambio de horario y de una huelga de autobuses."
+          }
+        },
+        {
+          "titulo": "Evaluar todo",
+          "sub": "no solo lo peor",
+          "texto": [
+            "Anota también lo que salió bien: eso es lo que entra en el procedimiento como \"haz así\".",
+            "Sin lo que salió bien, la lista se vuelve solo prohibiciones."
+          ],
+          "exemplo": {
+            "rot": "Anotación",
+            "texto": "Ronda 3: apertura excelente, guardar. Faltó la fecha de inicio."
+          }
+        },
+        {
+          "titulo": "Una corrección por línea",
+          "sub": "verificable",
+          "texto": [
+            "Cada línea de la lista dice qué cambiar de una forma que se pueda comprobar.",
+            "\"Quedó raro\" no ayuda; \"la fecha va en la primera frase\" sí ayuda."
+          ],
+          "exemplo": {
+            "rot": "Línea buena",
+            "texto": "La fecha de inicio aparece en la primera frase."
+          }
+        },
+        {
+          "titulo": "Modelo nuevo",
+          "sub": "gratis",
+          "texto": [
+            "Cuando sale un modelo nuevo, tu empleado se vuelve más inteligente gratis. Guarda la lista de tareas que hace siempre.",
+            "Corre el procedimiento en el modelo nuevo, compara calidad y costo y decide con el resultado en la mano."
+          ],
+          "exemplo": {
+            "rot": "Prueba",
+            "texto": "Las mismas 5 entradas, en el modelo actual y en el nuevo, lado a lado."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos del ciclo",
+      "sub": "Copia y usa. Cambia el texto entre < > por el tuyo.",
+      "blocos": [
+        {
+          "rot": "Evaluación (documento u hoja de cálculo)",
+          "icone": "lupa",
+          "conteudo": "# Evaluación · <tarea> · <fecha>\nCriterio: la Medida de la ficha + el ejemplo de referencia\n\n| ronda | entrada | ¿pasó la Medida? | lo que quedó bien | lo que hay que corregir |\n|---|---|---|---|---|\n| 1 | <caso> | sí / no | | |\n| 2 | | | | |\n| 3 | | | | |\n| 4 | | | | |\n| 5 | | | | |"
+        },
+        {
+          "rot": "Pedido: correr de nuevo después de pegar la lista en las instrucciones",
+          "icone": "chat",
+          "conteudo": "La lista de correcciones está en las instrucciones del proyecto, de la más grave a la menos grave.\nHaz esta tarea siguiendo la lista: <la entrada de esta ronda>\nAl terminar, dime qué puntos de la lista revisaste y cómo."
+        },
+        {
+          "rot": "Pedido: escribir el procedimiento estándar",
+          "icone": "arquivo",
+          "conteudo": "La lista llegó a cero en las 5 rondas. Escribe el procedimiento estándar de esta tarea (un texto simple, que voy a guardar) con:\n- cuándo usarlo y qué entrega;\n- los pasos, en orden;\n- las reglas que nacieron de las correcciones (una por línea);\n- la prueba final: cómo comprobar con la Medida antes de entregar.\nUsa un lenguaje que otro agente, u otra persona, entienda sin preguntarme."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Lista de ejemplo",
+            "html": "<ol><li>La fecha de inicio aparece en la primera frase. (falló en 3 de 5)</li><li>Nada de nombres de alumnos, ni en ejemplos. (falló en 1 de 5)</li><li>El texto cabe en una pantalla de celular. (falló en 2 de 5)</li></ol><p>Después del ciclo: 5 de 5 en todos los puntos.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Una ronda y listo</b>: el error que aparece 1 vez de cada 5 queda escondido hasta el día en que importa.</li><li><b>Corrección suelta en el chat</b>: desaparece en la próxima conversación. Va a la lista y después al procedimiento.</li><li><b>Procedimiento escrito por ti antes del ciclo</b>: nace de lo que mostraron las rondas, no de lo que imaginaste.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: entrena a tu agente",
+      "sub": "Usa la ficha de la clase 4 y el objetivo de la clase 5.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Cinco rondas",
+          "min": "40 min",
+          "texto": "Corre la tarea de tu ficha cinco veces, cada una en una conversación nueva del proyecto y con una entrada diferente, y completa la evaluación (documento u hoja de cálculo).",
+          "pronto": "la tabla tiene cinco filas completas, con \"sí\" o \"no\" en la columna de la Medida."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · La lista de correcciones",
+          "min": "15 min",
+          "texto": "Junta lo que hay que corregir en una lista única, una corrección verificable por línea.",
+          "pronto": "la lista tiene al menos tres correcciones, y cada una se puede comprobar mirando el resultado."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · El ciclo hasta llegar a cero",
+          "min": "40 min",
+          "dias": 2,
+          "texto": "Pega la lista en las instrucciones del proyecto, vuelve a correr las mismas entradas (conversaciones nuevas) y repite hasta que todas pasen.",
+          "pronto": "en una misma ronda final, las cinco entradas pasaron todos los ítems de la lista."
+        },
+        {
+          "id": "e4",
+          "titulo": "E4 · El procedimiento",
+          "min": "15 min",
+          "texto": "Pide el procedimiento estándar y guárdalo junto con la ficha (en el chat, en las instrucciones o como archivo del proyecto; en la terminal, en la carpeta).",
+          "pronto": "el archivo existe y tiene las reglas que nacieron de las correcciones y la prueba final."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Esta clase en un minuto",
+      "sub": "Entrena al agente como a un empleado.",
+      "chave": "dpap-reel3"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué correr la misma tarea de cinco a diez veces?",
+          "opcoes": [
+            "Para tener más opciones y elegir la mejor respuesta para entregar.",
+            "Porque el agente aprende solo en cada ronda y va mejorando aunque tú no le des retroalimentación.",
+            "Porque es un requisito de las herramientas.",
+            "Porque una sola ronda puede ser suerte o mala suerte; varias muestran lo que hace siempre."
+          ],
+          "certa": 3,
+          "explica": "El error que aparece 1 vez de cada 5 solo se ve con varias rondas. El agente no aprende solo entre ellas: quien mejora es la lista que tú le entregas.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Qué línea sirve para la lista de correcciones?",
+          "opcoes": [
+            "Quedó raro.",
+            "La fecha de inicio aparece en la primera frase.",
+            "Esmérate más la próxima vez.",
+            "No me gustó el tono."
+          ],
+          "certa": 1,
+          "explica": "Se puede mirar el resultado y comprobarlo. Las otras son opiniones sin criterio: el agente no sabe qué cambiar.",
+          "ref": "passos"
+        },
+        {
+          "p": "Salió un modelo nuevo. ¿Cuál es la manera correcta de decidir si lo cambias?",
+          "opcoes": [
+            "Correr el procedimiento con las mismas entradas en los dos modelos y comparar calidad y costo.",
+            "Cambiar de inmediato, porque el modelo nuevo siempre es mejor y más barato que el anterior, en cualquier tarea.",
+            "Esperar a que alguien comente en las redes.",
+            "Reescribir todos los prompts desde cero."
+          ],
+          "certa": 0,
+          "explica": "Con la lista de tareas y el procedimiento guardados, el cambio se vuelve una prueba: mismas entradas, lado a lado, con la calidad y el costo a la mano.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La clase en tres frases",
+      "itens": [
+        {
+          "t": "Varias rondas",
+          "texto": "De cinco a diez ejecuciones con entradas distintas muestran lo que el agente hace siempre."
+        },
+        {
+          "t": "Lista y ciclo",
+          "texto": "Correcciones verificables, una por línea, aplicadas en ciclo hasta dejar la lista en cero."
+        },
+        {
+          "t": "Procedimiento estándar",
+          "texto": "El resultado del entrenamiento es un texto que sirve para cualquier agente y cualquier modelo nuevo."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "El reel en YouTube",
+          "href": "https://www.youtube.com/watch?v=z60IMZwKrTM",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

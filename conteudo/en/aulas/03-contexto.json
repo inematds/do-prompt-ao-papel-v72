@@ -1,0 +1,324 @@
+{
+  "slug": "contexto",
+  "num": 3,
+  "menu": "Context",
+  "titulo": "The context era: the AI knows before you ask",
+  "titulo_curto": "The context base",
+  "minutos": 15,
+  "lead": "When the AI already knows who you are, what the house rules are and what went wrong last time, your request fits on one line. You don't build this base in every conversation: it lives in a place the AI reads on its own before it starts. It's what separates repeating everything every time from having someone who already knows the work.",
+  "objetivo": "build the context base the agent reads before any request, with rules and a lesson from a real mistake.",
+  "competencias": [
+    "montar-base-de-contexto",
+    "escrever-regras-do-projeto",
+    "registrar-licoes"
+  ],
+  "aprende": [
+    {
+      "icone": "pasta",
+      "t": "The four sources of context"
+    },
+    {
+      "icone": "arquivo",
+      "t": "The project rules file"
+    },
+    {
+      "icone": "memoria",
+      "t": "Turn mistakes into written lessons"
+    },
+    {
+      "icone": "check",
+      "t": "Test whether the base works"
+    }
+  ],
+  "hero_alt": "A dark shelf with organized folders and boxes; a humanoid robot, seen in profile, pulls a folder from the shelf.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Where context comes from",
+      "sub": "Four sources the agent reads before your request. Tap or click each one.",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Rules",
+          "sub": "of the project",
+          "itens": [
+            {
+              "t": "who you are"
+            },
+            {
+              "t": "how to work"
+            },
+            {
+              "t": "what never to do"
+            }
+          ],
+          "detalhe": "One file per project (AGENTS.md in Codex, CLAUDE.md in Claude Code, the project instructions in ChatGPT or Claude) with who you are, your audience, your tone, your tools and your boundaries. The agent reads it before it starts."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Lessons",
+          "sub": "from each mistake",
+          "itens": [
+            {
+              "t": "one line per mistake"
+            },
+            {
+              "t": "the rule that prevents it"
+            },
+            {
+              "t": "the date"
+            }
+          ],
+          "detalhe": "Every time something goes wrong, add a new line at the top of the list: what happened and the rule that keeps it from happening again. In my case (Nei, from INEMA), it works like this: the same mistake doesn't come back, because the fix becomes a written rule."
+        },
+        {
+          "icone": "chat",
+          "titulo": "History",
+          "sub": "of your conversations",
+          "itens": [
+            {
+              "t": "decisions already made"
+            },
+            {
+              "t": "what has already been tried"
+            }
+          ],
+          "detalhe": "What you've already decided with the AI shouldn't be asked again. In the chat, turn on ChatGPT or Claude memory in the settings and keep the topic inside the same project. In the terminal, save the session logs in a folder the agent can search."
+        },
+        {
+          "icone": "git",
+          "titulo": "Files",
+          "sub": "and documents",
+          "itens": [
+            {
+              "t": "reference documents"
+            },
+            {
+              "t": "work already done"
+            }
+          ],
+          "detalhe": "The real documents and spreadsheets: in the chat, the files uploaded to the project; in the terminal, the folder or repository the agent opens. It uses the original instead of your memory-based summary."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agent",
+          "sub": "already knows",
+          "forte": true,
+          "itens": [
+            {
+              "t": "one-line request"
+            }
+          ],
+          "detalhe": "With the four sources in place, the request gets short, and the agent understands where it came from and why. You don't build the context from scratch every time."
+        }
+      ],
+      "volta": "Each new mistake becomes a line in the lessons, and the base improves on its own with use",
+      "legenda": "Good context has a home of its own: it lives in a file or folder, not in the text of the request.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "The whole base",
+        "texto": "Rules, lessons, history and files reach the agent before the request. Each mistake becomes a lesson, and the next task already starts better."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Build the base in four steps",
+      "sub": "Start small. Tap or click each step.",
+      "passos": [
+        {
+          "titulo": "Choose a home",
+          "sub": "where it lives",
+          "texto": [
+            "In the chat: create a project (ChatGPT or Claude) or a Gem (Gemini), write the rules in its instructions and upload the reference files.",
+            "In the terminal, with Claude Code or Codex (agents that work in a folder on your computer), the rules go in a file in the folder called AGENTS.md or CLAUDE.md. That's just the name of the rules file."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "A project called \"School communication\" with its own instructions."
+          }
+        },
+        {
+          "titulo": "Rules",
+          "sub": "five lines",
+          "texto": [
+            "Start with five rules: who you are, who the work is for, the tone, the tool and one boundary.",
+            "A good rule is checkable: you can look at the result and say whether it was followed."
+          ],
+          "exemplo": {
+            "rot": "Checkable rule",
+            "texto": "Every announcement states the date the change starts."
+          }
+        },
+        {
+          "titulo": "Lessons",
+          "sub": "one per mistake",
+          "texto": [
+            "When the AI gets something wrong, don't just fix that one answer: write the lesson at the top of the list, with the date.",
+            "One line: what happened and the rule that prevents it."
+          ],
+          "exemplo": {
+            "rot": "Lesson",
+            "texto": "Announcement went out without the start date: every change states the day it starts. (10/24)"
+          }
+        },
+        {
+          "titulo": "Test",
+          "sub": "new session",
+          "texto": [
+            "Open a new chat, make a short request, and see whether the rule and the lesson were followed without you reminding it.",
+            "If they weren't, the rule is buried or vague: move it to the top and word it so it can be checked."
+          ],
+          "exemplo": {
+            "rot": "Short request",
+            "texto": "Write the announcement for the June festival."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "Replace the text between < > with your own.",
+      "blocos": [
+        {
+          "rot": "Project rules (instructions in the chat, or AGENTS.md in the terminal)",
+          "icone": "arquivo",
+          "conteudo": "# Who I am\n<your name, what you do, who you work for>\n\n# Who the work is for\n<the audience, in one sentence>\n\n# Rules\n- Write in English, short sentences.\n- <checkable rule 2>\n- <checkable rule 3>\n- Before you finish, tell me what changed and how I can check it.\n- Boundary: <what must never happen>\n\n# Where the rest is\n- References: the files uploaded to the project (in the terminal, the referencias/ folder)\n\n# Lessons (newest on top)\n- <date> · <what went wrong> → <the rule that prevents it>"
+        },
+        {
+          "rot": "Request for when the AI gets it wrong",
+          "icone": "memoria",
+          "conteudo": "You got this wrong: <what happened>.\nBefore fixing it, write the lesson in ONE line, in this format:\n<date> · <what went wrong> → <the rule that prevents it>.\nThen redo the work following the new rule and show me both."
+        },
+        {
+          "rot": "First line of every task",
+          "icone": "chat",
+          "conteudo": "Read the project's rules and lessons before you start. If anything I ask goes against a rule, tell me before you do it."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Where the lesson goes",
+            "html": "<ul><li><b>In the chat</b>: the AI writes the line; you copy it and paste it at the top of the Lessons section in the project instructions.</li><li><b>In the terminal</b>: ask it to save the line in AGENTS.md (or CLAUDE.md) and check the file.</li></ul>"
+          },
+          {
+            "rot": "How to check",
+            "html": "<ol><li>The rules file exists and has at least five rules of your own.</li><li>There is at least one lesson taken from a real mistake, with a date.</li><li>In a new chat, a one-line request came out following the rule and the lesson.</li></ol>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Vague rule</b> (\"be professional\"): no one can check it. Write what can be seen in the result.</li><li><b>Fixing only the answer</b>: the mistake comes back tomorrow. The fix has to become a written lesson.</li><li><b>Password or key in the rules file</b>: anything in plain text can leak. Keep keys out.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your context base",
+      "sub": "Pick a subject where you use AI every week.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "S1 · The home and the rules",
+          "min": "20 min",
+          "texto": "Create the project (in the chat) or the folder with AGENTS.md (in the terminal) and write the five rules from the template.",
+          "pronto": "the file or the project instructions have five rules, and each one can be checked by looking at the result."
+        },
+        {
+          "id": "e2",
+          "titulo": "S2 · The first lesson",
+          "min": "15 min",
+          "texto": "Ask for a task, find a mistake (there always is one), use the \"when the AI gets it wrong\" request, and paste the lesson into the project instructions (in the terminal, it saves it in AGENTS.md).",
+          "pronto": "the Lessons section has a line with the date, the mistake, and the rule that prevents it."
+        },
+        {
+          "id": "e3",
+          "titulo": "S3 · The new-session test",
+          "min": "10 min",
+          "texto": "Open a new chat and make a one-line request of the same kind.",
+          "pronto": "the result followed the rule and the lesson without you repeating either one in the request."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The AI forgot the date in the announcement. What can you do so the mistake doesn't come back?",
+          "opcoes": [
+            "Fix only that answer and move on.",
+            "Write a longer request next time.",
+            "Switch to a different AI model.",
+            "Write the lesson in one line at the top of the list, with the rule that prevents it."
+          ],
+          "certa": 3,
+          "explica": "Fixing only the answer solves it today. The written lesson goes into the context of every later task, and the same mistake doesn't come back.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "Which of these is a checkable rule?",
+          "opcoes": [
+            "Every announcement states the date the change starts.",
+            "Always be professional and careful with the school's image.",
+            "Write with quality.",
+            "Make the text really good."
+          ],
+          "certa": 0,
+          "explica": "You can look at the announcement and tell whether the date is there. Nobody can check \"professional\" or \"quality.\"",
+          "ref": "passos"
+        },
+        {
+          "p": "Why should the context have a \"home of its own\"?",
+          "opcoes": [
+            "Because the request needs to be as long as possible.",
+            "Because that way it gets read on every task, without you repeating it in each conversation.",
+            "Because it only works in the terminal.",
+            "Because the AI doesn't read what's in the request carefully, only what's saved in a file."
+          ],
+          "certa": 1,
+          "explica": "In a file or in the project instructions, the context arrives before every request. Repeated in the request, it disappears in the next conversation.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Four sources",
+          "texto": "Project rules, lessons, history and files reach the agent before the request."
+        },
+        {
+          "t": "A mistake becomes a lesson",
+          "texto": "Every correction becomes one written line, and the same mistake doesn't come back."
+        },
+        {
+          "t": "Test in a new session",
+          "texto": "The base works when a one-line request already comes out right."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "FEC: Context Engineering Training",
+          "href": "https://inematds.github.io/FEC/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Context layer: your business in one place",
+          "href": "https://inematds.github.io/camada-contexto/guia/",
+          "icone": "pasta"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "slug": "papel",
+  "num": 4,
+  "menu": "Role",
+  "titulo": "The paper era: brilliant, but new to the company",
+  "titulo_curto": "The role sheet",
+  "minutos": 16,
+  "lead": "Anthropic, the company that makes Claude, recommends treating Claude like a brilliant but new employee who doesn't know your rules yet. Anyone who has hired people knows what that takes: a clear goal, the background of where it came from, and an example of work done well. In this lesson you put the three together into a role sheet and check your sheet right on the page.",
+  "objetivo": "write an agent's role sheet with a role, a measurable goal, context, an example and a boundary.",
+  "competencias": [
+    "definir-papel-do-agente",
+    "delegar-com-ficha",
+    "escolher-exemplo-de-referencia"
+  ],
+  "aprende": [
+    {
+      "icone": "usuario",
+      "t": "Why treat the AI like someone new on the team"
+    },
+    {
+      "icone": "alvo",
+      "t": "The three steps to delegate"
+    },
+    {
+      "icone": "robo",
+      "t": "How Anthropic's teams make requests"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Write and check your sheet"
+    }
+  ],
+  "hero_alt": "Dark meeting room: a manager hands a badge to a humanoid robot on its first day of work.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The three steps become one sheet",
+      "sub": "Tap or click each step.",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Goal",
+          "sub": "that you can measure",
+          "itens": [
+            {
+              "t": "what success is"
+            },
+            {
+              "t": "how to measure"
+            }
+          ],
+          "detalhe": "What needs to happen and how to know it happened. If you can't measure it, the agent can't check its own work and doesn't know when to stop (lesson 5)."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Context",
+          "sub": "where it came from",
+          "itens": [
+            {
+              "t": "why the task exists"
+            },
+            {
+              "t": "rules and lessons"
+            }
+          ],
+          "detalhe": "Where this goal came from and why: who asked for it, who it's for, what has already been tried. Most of it comes from the base in lesson 3; in the sheet you just point to where it is."
+        },
+        {
+          "icone": "check",
+          "titulo": "Example",
+          "sub": "done well",
+          "itens": [
+            {
+              "t": "a reference piece of work"
+            },
+            {
+              "t": "the mistakes to avoid"
+            }
+          ],
+          "detalhe": "\"Do a great job\" doesn't work: it doesn't know what great means to you. Do the task once yourself, done well. It's the best-spent time, and probably the last time you do this task."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Role sheet",
+          "sub": "the whole role",
+          "forte": true,
+          "itens": [
+            {
+              "t": "role"
+            },
+            {
+              "t": "boundary"
+            },
+            {
+              "t": "when you check"
+            }
+          ],
+          "detalhe": "The sheet brings the three steps together and adds two things every employee needs: what they must never do (boundary) and when you check the work. This is the sheet you hand to the agent."
+        }
+      ],
+      "legenda": "A well-made sketch and a check once in a while: that is how you delegate to someone capable.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "From request to role",
+        "texto": "A measurable goal, context and an example, plus a boundary and a check: the role sheet. You stop writing the work and start managing it."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How Anthropic's teams make requests",
+      "sub": "Cases told by Anthropic itself. Notice how short the requests are.",
+      "passos": [
+        {
+          "titulo": "Rewriting the app",
+          "sub": "over 2 weeks",
+          "texto": [
+            "The creator of Claude Code (a programming agent) wanted the desktop app rewritten in Swift, another programming language.",
+            "The request came with its own test: run the old app, take a screenshot, compare the screens point by point with the new one, and don't stop until they match. The agent ran on its own for over two weeks."
+          ],
+          "exemplo": {
+            "rot": "Why it works",
+            "texto": "The goal measures itself: the new screen is either the same as the old one or it isn't."
+          }
+        },
+        {
+          "titulo": "Replying on Slack",
+          "sub": "several tools",
+          "texto": [
+            "In another case, Claude joined a Slack conversation (the internal chat of many companies), pulled data from several tools and put together a single reply.",
+            "Nobody wrote the step-by-step: the role was to answer the team with data."
+          ],
+          "exemplo": {
+            "rot": "Why it works",
+            "texto": "The context (access to the tools) was already there; the request was the team's question."
+          }
+        },
+        {
+          "titulo": "A compiler",
+          "sub": "16 agents",
+          "texto": [
+            "A researcher put sixteen Claude agents to work building a C compiler (the program that turns code written by people into a program the computer can run), with a simple order: keep going until it's perfect.",
+            "It took about two weeks of work."
+          ],
+          "exemplo": {
+            "rot": "Why it works",
+            "texto": "\"Perfect\" there had a measure: the compiler passes the tests or it doesn't."
+          }
+        },
+        {
+          "titulo": "The pattern",
+          "sub": "what repeats",
+          "texto": [
+            "The requests are short, like the ones you would make to someone on your team. What they have is a way to measure the result and the context at hand.",
+            "This is what the role sheet forces you to write."
+          ],
+          "exemplo": {
+            "rot": "Takeaway",
+            "texto": "Short request + clear measure + available context = an agent that runs on its own. In the chat, the same sheet makes every conversation start already in the role; running on its own is something for the terminal and automations."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: the role sheet",
+      "sub": "One line per field. Replace the text between < > with your own.",
+      "blocos": [
+        {
+          "rot": "ficha-funcao.txt",
+          "icone": "arquivo",
+          "conteudo": "Role: <the job, in one sentence: you take care of ...>\nGoal: <what needs to happen>\nMeasure: <how to know it is finished and good>\nContext: <where the rules, the lessons and the files are; why the task exists>\nExample: <where the reference work done by you is>\nBoundary: <what it must never do>\nCheck: <when and how you look at the work>"
+        },
+        {
+          "rot": "How to hand the sheet to the agent",
+          "icone": "chat",
+          "conteudo": "From now on this is your role. Read the sheet below, the project rules and the example indicated.\nBefore you start, tell me in three lines how you will check your own work against the Measure.\n\n<paste the sheet here>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Filled-in sheet",
+            "html": "<ul><li><b>Role:</b> you take care of the school's weekly notice to parents.</li><li><b>Goal:</b> every Friday, a notice with what changes the following week.</li><li><b>Measure:</b> it fits on one phone screen, gives the date of each change, and I approve it without asking for corrections.</li><li><b>Context:</b> rules and lessons in the project instructions; the calendar sent to the project (calendario.pdf).</li><li><b>Example:</b> the file comunicado-modelo.txt sent to the project, written by me.</li><li><b>Boundary:</b> never promise transportation or mention a student's name.</li><li><b>Check:</b> I read it every Friday at 4 p.m. before sending it.</li></ul>"
+          },
+          {
+            "rot": "Another sheet (store)",
+            "html": "<ul><li><b>Role:</b> you answer the quote requests that come in through the store's WhatsApp.</li><li><b>Goal:</b> every quote with items, quantities and a total from the current price list.</li><li><b>Measure:</b> total matches the price list, delivery time stated, reply within 1 hour during store hours.</li><li><b>Context:</b> price list and shipping rules sent to the project.</li><li><b>Example:</b> three quotes I answered myself.</li><li><b>Boundary:</b> never give a discount or promise same-day delivery.</li><li><b>Check:</b> I look at the day's quotes at 6 p.m.</li></ul>"
+          },
+          {
+            "rot": "Another sheet (HR)",
+            "html": "<ul><li><b>Role:</b> you write the company's job postings.</li><li><b>Goal:</b> one posting per open position, based on the manager's request.</li><li><b>Measure:</b> fits on one phone screen, gives salary, location and work schedule, and the manager approves it without corrections.</li><li><b>Context:</b> job policy and company tone in the project instructions.</li><li><b>Example:</b> the warehouse checker posting, written by me.</li><li><b>Boundary:</b> never ask for age, photo or marital status.</li><li><b>Check:</b> I read it before publishing, the same day.</li></ul>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Prestige role</b> (\"you are the best copywriter\"): it is not a role. A role says what they take care of.</li><li><b>Vague measure</b> (\"turn out good\"): they don't know when to stop.</li><li><b>No example</b>: \"great\" for them is not your \"great\".</li></ul>"
+          },
+          {
+            "rot": "Where the sheet lives",
+            "html": "<ul><li><b>In the chat</b>: paste the sheet into the project instructions and send the example as a file. Every new conversation in the project already starts in the role.</li><li><b>In the terminal</b>: save it as ficha-funcao.txt in the folder and mention the file in AGENTS.md.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your sheet",
+      "sub": "Paste your sheet (or upload the .txt). The page checks the seven fields, rejects anything empty or vague and asks that the Measure include a number or a test along with what is being measured (\"3 lines\", \"cites the date\", \"approved with no corrections\"). The OK is a check of form, not a guarantee that the measure is a good one: you are the one who decides, in the practice below.",
+      "arquivo": "ficha-funcao.txt",
+      "rot": "Paste your role sheet here (one field per line):",
+      "modelo": "Role: ...\nGoal: ...\nMeasure: ...\nContext: ...\nExample: ...\nBoundary: ...\nCheck: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "campos": [
+            "Role",
+            "Goal",
+            "Measure",
+            "Context",
+            "Example",
+            "Boundary",
+            "Check"
+          ],
+          "min": 12
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "a number or a test in the Measure (3, less than, equal to, fits, cites, approved)",
+              "campo": "Measure",
+              "termos": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46",
+                "47",
+                "48",
+                "49",
+                "50",
+                "51",
+                "52",
+                "53",
+                "54",
+                "55",
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70",
+                "71",
+                "72",
+                "73",
+                "74",
+                "75",
+                "76",
+                "77",
+                "78",
+                "79",
+                "80",
+                "81",
+                "82",
+                "83",
+                "84",
+                "85",
+                "86",
+                "87",
+                "88",
+                "89",
+                "90",
+                "91",
+                "92",
+                "93",
+                "94",
+                "95",
+                "96",
+                "97",
+                "98",
+                "99",
+                "100",
+                "120",
+                "150",
+                "200",
+                "300",
+                "500",
+                "1000",
+                "0h",
+                "1h",
+                "2h",
+                "3h",
+                "4h",
+                "5h",
+                "6h",
+                "7h",
+                "8h",
+                "9h",
+                "10h",
+                "11h",
+                "12h",
+                "13h",
+                "14h",
+                "15h",
+                "16h",
+                "17h",
+                "18h",
+                "19h",
+                "20h",
+                "21h",
+                "22h",
+                "23h",
+                "menos de / less than",
+                "mais de / more than / más de",
+                "no máximo / at most / como máximo",
+                "pelo menos / at least / al menos",
+                "igual a / igual ao / igual à / iguais a / equal to / the same as / igual que / igual al / igual a la",
+                "cabe / fits",
+                "cita / citam / mentions / cites / menciona",
+                "aprovo / aprova / aprovado / approve / approved / apruebo / aprobado",
+                "nenhum / nenhuma / none / ningún / ninguna / ninguno",
+                "zero / cero",
+                "todo / toda / todos / todas / every / all / cada / each",
+                "bate / batem / batendo / match / matches / coincide / coinciden",
+                "confere / conferem / checks / verifica",
+                "libero / libera / liberado / release / released / libero / liberado"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "what is being measured in the Measure (lines, seconds, screen, date, total, corrections…)",
+              "campo": "Measure",
+              "termos": [
+                "linha / linhas / line / lines / línea / líneas",
+                "palavra / palavras / word / words / palabra / palabras",
+                "segundo / segundos / second / seconds / s",
+                "minuto / minutos / minute / minutes",
+                "hora / horas / hour / hours",
+                "dia / dias / day / days / día / días",
+                "semana / week",
+                "tela / screen / pantalla",
+                "data / date / fecha",
+                "erro / erros / error / errors / errores",
+                "correção / correções / correction / corrections / corrección / correcciones",
+                "item / itens / items / ítem / ítems",
+                "total / totais / totals / totales",
+                "preço / preços / price / prices / precio / precios",
+                "extrato / statement / extracto",
+                "tabela / table / tabla",
+                "reais / real / R$",
+                "vezes / times / veces",
+                "por cento / percent / %",
+                "medição / medições / measurement / measurements / medición / mediciones",
+                "resposta / respostas / reply / replies / answer / respuesta / respuestas",
+                "pedido / pedidos / request / requests / order / orders",
+                "página / page / pages / páginas",
+                "teste / testes / test / tests / prueba / pruebas",
+                "0%",
+                "1%",
+                "2%",
+                "3%",
+                "4%",
+                "5%",
+                "6%",
+                "7%",
+                "8%",
+                "9%",
+                "10%",
+                "11%",
+                "12%",
+                "13%",
+                "14%",
+                "15%",
+                "16%",
+                "17%",
+                "18%",
+                "19%",
+                "20%",
+                "21%",
+                "22%",
+                "23%",
+                "24%",
+                "25%",
+                "26%",
+                "27%",
+                "28%",
+                "29%",
+                "30%",
+                "31%",
+                "32%",
+                "33%",
+                "34%",
+                "35%",
+                "36%",
+                "37%",
+                "38%",
+                "39%",
+                "40%",
+                "41%",
+                "42%",
+                "43%",
+                "44%",
+                "45%",
+                "46%",
+                "47%",
+                "48%",
+                "49%",
+                "50%",
+                "51%",
+                "52%",
+                "53%",
+                "54%",
+                "55%",
+                "56%",
+                "57%",
+                "58%",
+                "59%",
+                "60%",
+                "61%",
+                "62%",
+                "63%",
+                "64%",
+                "65%",
+                "66%",
+                "67%",
+                "68%",
+                "69%",
+                "70%",
+                "71%",
+                "72%",
+                "73%",
+                "74%",
+                "75%",
+                "76%",
+                "77%",
+                "78%",
+                "79%",
+                "80%",
+                "81%",
+                "82%",
+                "83%",
+                "84%",
+                "85%",
+                "86%",
+                "87%",
+                "88%",
+                "89%",
+                "90%",
+                "91%",
+                "92%",
+                "93%",
+                "94%",
+                "95%",
+                "96%",
+                "97%",
+                "98%",
+                "99%",
+                "100%",
+                "mensagem / mensagens / message / messages / mensaje / mensajes",
+                "paciente / pacientes / patient / patients",
+                "cliente / clientes / customer / customers / client / clients",
+                "agenda / schedule / calendar",
+                "planilha / spreadsheet / planilla / hoja de cálculo",
+                "horário / horários / time / times / horario / horarios",
+                "turno / turnos / shift / shifts",
+                "consulta / consultas / appointment / appointments",
+                "sessão / sessões / session / sessions / sesión / sesiones",
+                "valor / valores / amount / amounts / monto / montos"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Role",
+              "campo": "Role",
+              "proibe": true,
+              "termos": [
+                "melhor do mundo / best in the world / mejor del mundo",
+                "premiado / premiada / award-winning / galardonado",
+                "o melhor",
+                "a melhor",
+                "the best",
+                "el mejor",
+                "la mejor"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Measure",
+              "campo": "Measure",
+              "proibe": true,
+              "termos": [
+                "bonito / bonita / pretty / nice / linda",
+                "profissional / professional / profesional",
+                "ótimo / ótima / great / excellent / óptimo / óptima / excelente",
+                "melhor / better / mejor",
+                "caprichado / caprichada / polished / esmerado",
+                "bem feito / bem escrito / well done / well written / bien hecho / bien escrito"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Goal",
+              "campo": "Goal",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Measure",
+              "campo": "Measure",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Context",
+              "campo": "Context",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Example",
+              "campo": "Example",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Boundary",
+              "campo": "Boundary",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "In the Check",
+              "campo": "Check",
+              "proibe": true,
+              "termos": [
+                "pode fazer o que quiser / faça o que quiser / do whatever you want / whatever you want / haz lo que quieras / lo que quieras",
+                "do seu jeito / your own way / your way / a tu manera / a tu modo",
+                "quando der / when you can / whenever / cuando puedas / cuando se pueda",
+                "depois eu vejo / depois vejo / i'll check later / después lo veo / luego veo",
+                "nada ainda / nenhum ainda / nenhuma ainda / nothing yet / none yet / nada todavía / ninguno todavía / ninguna todavía",
+                "tanto faz / doesn't matter / da igual",
+                "a definir / to be defined / tbd / por definir",
+                "algum dia / someday / some day / algún día",
+                "sem pressa / no rush / sin prisa"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: sheet with all {n} fields filled in",
+      "exemplo": "Role: you handle the school's weekly notice to parents.\nGoal: every Friday, a notice with what changes the following week.\nMeasure: fits on one phone screen, gives the date of each change, and I approve it without asking for corrections.\nContext: rules and lessons in the project instructions; the calendar uploaded to the project (calendario.pdf).\nExample: the file comunicado-modelo.txt uploaded to the project, written by me.\nBoundary: never promise transportation or mention a student's name.\nCheck: I read it every Friday at 4 p.m. before sending it.",
+      "exemplo_errado": "Role: you handle the school's weekly notice to parents.\nGoal: every Friday, a notice with what changes during the week.\nMeasure: look nice and professional, version 2.\nContext: rules and lessons in the project instructions.\nExample: the September notice, written by me.\nBoundary: never mention a student's name.\nCheck: I read it every Friday."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the sheet for your first agent",
+      "sub": "Use the \"role candidate\" you marked in lesson 1.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The reference work",
+          "min": "30 min",
+          "texto": "Do the task once yourself, the way you consider excellent. Save it as the reference and write down two mistakes you want to avoid.",
+          "pronto": "there is a reference file made by you and a list of two mistakes to avoid."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The sheet",
+          "min": "20 min",
+          "texto": "Fill in ficha-funcao.txt with the seven fields and paste it into the checker above.",
+          "pronto": "the checker answers \"OK: sheet with all 7 fields filled in\" and you wrote, in one sentence, how you check the Measure by looking at a deliverable."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · The first deliverable",
+          "min": "20 min",
+          "texto": "Give the sheet to the agent (in the chat: paste it into the project instructions and open a new conversation; in the terminal: save it in the folder) and ask for the first run using the request from the template.",
+          "pronto": "the agent described how it will check itself against the Measure and delivered a result that you compared with the reference."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "This lesson in one minute",
+      "sub": "Stop writing prompts: define the role.",
+      "chave": "dpap-reel1"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "What are the three steps for delegating to an agent?",
+          "opcoes": [
+            "Persona, tone and text length.",
+            "Tool, model and price.",
+            "A clear goal, context and an example of work done well.",
+            "A long prompt with each step, line-by-line review and final approval."
+          ],
+          "certa": 2,
+          "explica": "It is what you would give to someone brilliant but new to the company: what to do and how to measure it, where it came from, and what good work looks like.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Why do the task once yourself before delegating?",
+          "opcoes": [
+            "Because the agent needs an example of what is excellent to you.",
+            "Because the agent can't do it the first time.",
+            "Because the agent copies your writing style from the history.",
+            "To make sure you still know how to do it and can step in if the agent fails."
+          ],
+          "certa": 0,
+          "explica": "\"Do a great job\" says nothing. The example shows the standard. It's time well spent: it's probably the last time you'll do this task.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "In the app rewritten in Swift, what let the agent run on its own for two weeks?",
+          "opcoes": [
+            "A prompt several pages long describing every step of the rewrite, screen by screen.",
+            "A measure built into the request itself: compare the screens point by point until they match.",
+            "A person reviewing every answer.",
+            "A model that never makes mistakes."
+          ],
+          "certa": 1,
+          "explica": "The request was short, but it came with the test. With a clear measure, the agent checks itself and knows when it's done.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"Role: you are the best copywriter in the world.\" What's wrong with it?",
+          "opcoes": [
+            "Nothing, it's a good role.",
+            "It doesn't say which language to use.",
+            "It should be longer, with the copywriter's years of experience and awards.",
+            "It's a prestige title, not a job: it doesn't say what the agent takes care of."
+          ],
+          "certa": 3,
+          "explica": "A job says what the agent takes care of (\"you take care of the weekly notice to parents\"). Prestige doesn't change the result, as we saw in lesson 2.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Brilliant, but new",
+          "texto": "Delegate as you would to someone capable who doesn't know the place yet."
+        },
+        {
+          "t": "Three steps",
+          "texto": "A measurable goal, context and an example you made yourself."
+        },
+        {
+          "t": "The sheet",
+          "texto": "Role, goal, measure, context, example, boundary and check, all on one sheet."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Claude: prompt tips from Anthropic (in English)",
+          "href": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "icone": "lista"
+        },
+        {
+          "t": "The reel on YouTube",
+          "href": "https://www.youtube.com/watch?v=6L7V2d1iSoY",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

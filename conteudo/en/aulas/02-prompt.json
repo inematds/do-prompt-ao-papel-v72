@@ -1,0 +1,319 @@
+{
+  "slug": "prompt",
+  "num": 2,
+  "menu": "Prompt",
+  "titulo": "The prompt era: what died and what stayed",
+  "titulo_curto": "What stayed of the prompt",
+  "minutos": 14,
+  "lead": "Many prompt techniques were born to make up for weak models: telling it to think step by step, inventing a 30-line persona, listing everything it must not do. Today's models do this on their own. Other techniques still work, but only under certain conditions. And some never get old. Telling one from the other makes your request smaller and better.",
+  "objetivo": "cut from one of your old prompts whatever today's model already does on its own, without making the result worse.",
+  "competencias": [
+    "auditar-prompt",
+    "distinguir-muleta-de-destino",
+    "testar-antes-e-depois"
+  ],
+  "aprende": [
+    {
+      "icone": "x",
+      "t": "What died and why"
+    },
+    {
+      "icone": "relogio",
+      "t": "What works only under certain conditions"
+    },
+    {
+      "icone": "check",
+      "t": "The core that never gets old"
+    },
+    {
+      "icone": "caneta",
+      "t": "Audit a prompt by subtraction"
+    }
+  ],
+  "hero_alt": "A hand with a pen over a notebook full of crossed-out lines, with crumpled papers around it.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Crutch or destination?",
+      "sub": "The question for each technique: does it say what I want, or does it make up for a weakness of the old model? Tap or click each group.",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Died",
+          "sub": "was a crutch",
+          "itens": [
+            {
+              "t": "\"think step by step\""
+            },
+            {
+              "t": "30-line persona"
+            },
+            {
+              "t": "long list of \"don't do this\""
+            },
+            {
+              "t": "manual chain of prompts (research → script → text, one at a time)"
+            }
+          ],
+          "detalhe": "Current models reason before they answer and chain steps on their own. \"You are the best writer in the world\" doesn't change the result. \"Don't do this\" lists compete with each other and fill up the conversation space. These instructions add nothing and sometimes make things worse."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Only when it helps",
+          "sub": "with a condition",
+          "itens": [
+            {
+              "t": "ready-made examples in the request (few-shot)"
+            },
+            {
+              "t": "role with a perspective"
+            },
+            {
+              "t": "JSON output (data for another program)"
+            },
+            {
+              "t": "steps with approval"
+            }
+          ],
+          "detalhe": "Examples help when the style is hard to describe. A role helps when it sets a perspective and a standard (\"review this like an auditor looking for what's missing\"), not a fancy title. JSON helps when the result goes to another program. Steps help when you approve between one and the next."
+        },
+        {
+          "icone": "check",
+          "titulo": "Stays",
+          "sub": "is destination",
+          "forte": true,
+          "itens": [
+            {
+              "t": "clarity of the result"
+            },
+            {
+              "t": "context"
+            },
+            {
+              "t": "delivery format"
+            },
+            {
+              "t": "boundaries"
+            }
+          ],
+          "detalhe": "What describes the destination never gets old: what should happen, for whom, in what format, what must never happen in your business. Clarity changes place: it moves out of the procedure (how to do it) and into the result (what good looks like)."
+        }
+      ],
+      "legenda": "A crutch made up for yesterday's model. A destination says what you want, and it works for any model.",
+      "dica": "\"Role\" here is not the role engineering from lesson 4: there, a role is a whole function, with a goal, context and an example."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Audit by subtraction",
+      "sub": "Four steps to trim down an old prompt. Tap or click each one.",
+      "passos": [
+        {
+          "titulo": "Separate",
+          "sub": "line by line",
+          "texto": [
+            "Take a prompt you've been using for a while and break it into lines, one instruction per line.",
+            "Mark each line: crutch, only when it helps, or destination."
+          ],
+          "exemplo": {
+            "rot": "Marking",
+            "texto": "\"Think step by step\" → crutch. \"For parents of 5th-grade students\" → destination."
+          }
+        },
+        {
+          "titulo": "Cut",
+          "sub": "the crutches",
+          "texto": [
+            "Delete the crutches. For the \"only when it helps\" lines, check whether the condition applies to this case; if it doesn't, delete those too.",
+            "Don't touch the destination lines yet."
+          ],
+          "exemplo": {
+            "rot": "Out",
+            "texto": "\"You are an award-winning expert with 20 years of experience.\""
+          }
+        },
+        {
+          "titulo": "Fill in",
+          "sub": "the destination",
+          "texto": [
+            "Now see what's missing in the destination: the expected result, who it's for, the format, the boundary, and what counts as good.",
+            "Often the old prompt was long and still didn't say what a good result looks like."
+          ],
+          "exemplo": {
+            "rot": "In",
+            "texto": "Good result: the parent understands in 30 seconds what changes in their child's routine."
+          }
+        },
+        {
+          "titulo": "Test",
+          "sub": "before and after",
+          "texto": [
+            "Run both versions with the same input, twice each, and compare the results side by side.",
+            "If the short version came out the same or better, it stays. If it got worse, bring back only the line that was missed."
+          ],
+          "exemplo": {
+            "rot": "Log",
+            "texto": "Old version: 11 lines. New: 5 lines. I ran it twice: both times the short version came out the same, and once it was more direct."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Before and after",
+      "sub": "The same request, in the old-prompt era and after the audit.",
+      "blocos": [
+        {
+          "rot": "Before · old prompt (11 lines)",
+          "icone": "x",
+          "conteudo": "You are an award-winning writer with 20 years of experience in education.\nThink step by step before answering.\nWrite a notice to parents about the schedule change.\nDon't use emojis.\nDon't be wordy.\nDon't use technical terms.\nDon't use long sentences.\nDon't forget the date.\nUse a friendly tone.\nReview the text before delivering.\nDo your best."
+        },
+        {
+          "rot": "After · audited request (5 lines)",
+          "icone": "check",
+          "conteudo": "Write the notice to 5th-grade parents about the change in dismissal time.\nWhat changes: dismissal moves from 5:30 pm to 5:00 pm, starting November 3.\nWho it's for: parents who read on their phones, in a hurry.\nBoundary: don't promise transportation; the school doesn't offer it.\nGood result: the parent understands in 30 seconds what changes and since when."
+        },
+        {
+          "rot": "Request for the AI itself to audit",
+          "icone": "lupa",
+          "conteudo": "Below is a prompt I've been using for a while. Break it into lines and mark each one as:\n- CRUTCH (made up for an older model: \"think step by step\", a prestige persona, a list of style \"don'ts\"),\n- ONLY WHEN IT HELPS (state the condition and whether it applies here),\n- DESTINATION (result, audience, format, boundary, what counts as good).\nThen write the lean version and tell me what's missing in the destination.\n\n<paste your prompt here>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "What was cut",
+            "html": "<ul><li><b>Prestige persona</b> and \"do your best\": they don't change the result.</li><li><b>\"Think step by step\"</b> and \"review before delivering\": the model already does that.</li><li><b>Five style \"don'ts\"</b>: became one positive line, \"parents who read on their phones, in a hurry\".</li></ul>"
+          },
+          {
+            "rot": "What went in",
+            "html": "<ul><li>The missing fact (5:30 pm → 5:00 pm, starting November 3).</li><li>A real <b>boundary</b> of the business (transportation).</li><li>The <b>what counts as good</b>, which the old model never got.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: audit one of your own prompts",
+      "sub": "Use a prompt you really use, not the example.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Mark the lines",
+          "min": "15 min",
+          "texto": "Pick the prompt you reuse the most. Break it into lines and mark each one as crutch, only when it helps, or destination (by hand or with the audit request).",
+          "pronto": "every line of the prompt has one of the three marks."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The lean version",
+          "min": "15 min",
+          "texto": "Cut the crutches and fill in the destination: result, audience, format, boundary, and what counts as good.",
+          "pronto": "the new version has fewer lines than the old one and has a line that starts with \"Bom resultado:\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Before and after",
+          "min": "20 min",
+          "texto": "Run both versions with the same input, twice each, and write down the comparison.",
+          "pronto": "you have the four results saved and one sentence saying which version won and why."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Why did \"think step by step\" lose its power?",
+          "opcoes": [
+            "Because today's models already reason before they answer.",
+            "Because AI providers banned it.",
+            "Because it only works in English.",
+            "Because it makes the answer too short and leaves out the explanations the reader expects."
+          ],
+          "certa": 0,
+          "explica": "It was a crutch for models that didn't reason. Today the model already does that; the instruction adds nothing and sometimes makes the answer longer for no gain.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "When does giving the AI a role still help?",
+          "opcoes": [
+            "Whenever the role is someone famous.",
+            "When it sets a perspective and a standard: \"review this like an auditor looking for what's missing\".",
+            "When the role is at least 20 lines long, describing the expert's experience, style and quirks.",
+            "Never: roles are a dead technique."
+          ],
+          "certa": 1,
+          "explica": "A role as a prestige title changes nothing. A role that says which point of view to take and what to judge changes the result. That's why it sits under \"only when it helps\".",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "In the audit by subtraction, what comes after cutting the crutches?",
+          "opcoes": [
+            "Publish the short version without testing it.",
+            "Ask the AI to write a new, more detailed persona to make up for the lines you cut.",
+            "Put all the \"don't\" rules into a single list.",
+            "Fill in the destination and test both versions with the same input."
+          ],
+          "certa": 3,
+          "explica": "Cutting without testing is a guess. You fill in the destination (result, audience, format, boundary, standard) and run before and after with the same input.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"Don't promise transportation; the school doesn't offer it.\" Why does this line stay?",
+          "opcoes": [
+            "Because every \"don't\" list helps the model avoid mistakes, so the more the better.",
+            "Because it makes the text longer and more complete.",
+            "Because it's a business boundary, not a style rule.",
+            "Because the model doesn't understand positive sentences."
+          ],
+          "certa": 2,
+          "explica": "A negative instruction stays when it's a real boundary (something that must never happen). \"Don't be wordy\" is style, and it becomes a positive sentence about the reader.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "The crutch goes",
+          "texto": "What made up for a weak model (step by step, prestige persona, \"don't\" list) can go."
+        },
+        {
+          "t": "The destination stays",
+          "texto": "Result, audience, format, boundary and standard of what's good apply to any model."
+        },
+        {
+          "t": "Cut and test",
+          "texto": "The lean version only stays after you run before and after with the same input."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "FEP 2026: each FEP technique, what died and what stayed",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        },
+        {
+          "t": "FEP: Prompt Engineering (the original course)",
+          "href": "https://inematds.github.io/FEP/",
+          "icone": "caneta"
+        },
+        {
+          "t": "FEP2: Prompt Engineering Masterclass",
+          "href": "https://inematds.github.io/FEP2/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

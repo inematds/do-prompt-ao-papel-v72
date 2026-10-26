@@ -1,0 +1,288 @@
+{
+  "slug": "tres-eras",
+  "num": 1,
+  "menu": "Eras",
+  "titulo": "Three eras: from prompt to role",
+  "titulo_curto": "The three eras",
+  "minutos": 12,
+  "lead": "In just a few years, the way of working with AI has changed three times. First, the request written word by word. Then, the context the AI receives before the request. Now, the role: the AI works like someone on the team and you manage. Knowing which era each of your requests belongs to shows you what's missing.",
+  "objetivo": "sort five of your requests into the three eras and say what each one is missing to reach the role.",
+  "competencias": [
+    "reconhecer-eras-da-ia",
+    "diagnosticar-pedido",
+    "pensar-como-gestor"
+  ],
+  "aprende": [
+    {
+      "icone": "camadas",
+      "t": "What each era asked of you"
+    },
+    {
+      "icone": "lupa",
+      "t": "Recognize the era of a request"
+    },
+    {
+      "icone": "usuario",
+      "t": "Why AI became someone on the team"
+    },
+    {
+      "icone": "video",
+      "t": "The whole course in five minutes"
+    }
+  ],
+  "hero_alt": "Three objects on a dark table: a crumpled sheet of paper, a folder full of documents and an employee badge.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The three eras",
+      "sub": "Tap or click each era. Notice what changes: who does the work and what you hand over.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "caneta",
+          "titulo": "Prompt",
+          "sub": "the request",
+          "itens": [
+            {
+              "t": "special words"
+            },
+            {
+              "t": "prompt templates"
+            },
+            {
+              "t": "tricks"
+            }
+          ],
+          "detalhe": "The skill was writing the request. Because the model was weak, you made up for it with instructions: \"think step by step,\" \"you are an expert,\" lists of \"don't do this.\" Much of that no longer makes sense with today's models (lesson 2)."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Context",
+          "sub": "what it knows",
+          "itens": [
+            {
+              "t": "project rules"
+            },
+            {
+              "t": "documents and memory"
+            },
+            {
+              "t": "tools"
+            }
+          ],
+          "detalhe": "The request got shorter because the AI started receiving, before it, what it needs to know: the rules, the files, the history. The skill became building that foundation once, instead of repeating everything in every conversation (lesson 3)."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Role",
+          "sub": "who it is",
+          "forte": true,
+          "itens": [
+            {
+              "t": "a goal you can measure"
+            },
+            {
+              "t": "context and example"
+            },
+            {
+              "t": "training in cycles"
+            }
+          ],
+          "detalhe": "The AI runs on its own for hours or days, like an employee. You don't write what it does word for word: you define the role, the goal and the quality standard, and check in from time to time. This is role engineering (lessons 4 to 7)."
+        }
+      ],
+      "legenda": "One era doesn't erase the one before it: the role uses a clear request and good context. What changes is where your work is.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "From the request to management",
+        "texto": "With a prompt, you wrote the work. With context, you prepared the foundation. With a role, you manage: you define, check and correct."
+      },
+      "dica": "In this course, \"agent\" is the AI with a fixed role. In a chat, it's a project (ChatGPT, Claude) or a Gem (Gemini) with instructions and files. In the terminal, it's Claude Code or Codex working in a folder. The role is the same in both. In a chat, the agent works when you open the conversation; running on its own, for hours or at scheduled times, belongs to the terminal and to automations."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What each era asks of you",
+      "sub": "Tap or click each era and compare the same request.",
+      "passos": [
+        {
+          "titulo": "Prompt",
+          "sub": "you write everything",
+          "texto": [
+            "You describe step by step how to do it, because the model couldn't figure it out on its own.",
+            "The result depended more on how you worded the request than on your knowledge of the subject."
+          ],
+          "exemplo": {
+            "rot": "Typical request",
+            "texto": "You are an award-winning copywriter. Think step by step. Write a post about our course. Don't use emojis. Don't be wordy. Use a friendly tone."
+          }
+        },
+        {
+          "titulo": "Context",
+          "sub": "you prepare the foundation",
+          "texto": [
+            "Who the audience is, what the house tone is, what has already been published: this is kept in a place the AI reads before answering.",
+            "The request stays short because the rest is already there."
+          ],
+          "exemplo": {
+            "rot": "Typical request",
+            "texto": "Write the launch post for the new course, following the tone and audience in the rules file."
+          }
+        },
+        {
+          "titulo": "Role",
+          "sub": "you manage",
+          "texto": [
+            "You hand over a whole job, not a single task: what success is, how to measure it, where the context is, what good work looks like.",
+            "The agent works, checks itself and shows you the result. You review and correct, as you would with someone new on the team."
+          ],
+          "exemplo": {
+            "rot": "Typical request",
+            "texto": "You take care of promoting the courses. Every Monday, publish one post per new course, following the example post's format. Done when: each post has a link that opens and has been approved by me."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template: the diagnosis of your requests",
+      "sub": "Copy this into a document (Word, Google Docs) or a spreadsheet and fill it in with five requests you made to the AI this week.",
+      "blocos": [
+        {
+          "rot": "Diagnosis (document or spreadsheet)",
+          "icone": "arquivo",
+          "conteudo": "# Diagnosis: which era are my requests in?\n\n| # | request (summary) | era | what was missing to reach the role |\n|---|---|---|---|\n| 1 | <request> | prompt / context / role | <measurable goal? saved context? example?> |\n| 2 | | | |\n| 3 | | | |\n| 4 | | | |\n| 5 | | | |\n\nQuestions for each row:\n- Did I write HOW to do it or WHAT success looks like?\n- Did the AI already know the context, or did I repeat everything?\n- Could it check on its own whether it was finished?"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Filled-in example",
+            "html": "<ol><li><b>\"Summarize this PDF in 5 points\"</b> · prompt · it didn't say who the summary is for or what to do with it.</li><li><b>\"Write the email in the tone from the rules file\"</b> · context · it was missing the done-when criterion (who approves, by when).</li><li><b>\"Every Friday by 5 p.m., put together the report just like the example; done when the totals match the spreadsheet and I approve\"</b> · role · it has a measurable goal, an example, a deadline and who approves.</li></ol>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Thinking a long request is a role request</b>: length doesn't change the era. What changes it is having a measurable goal, saved context and an example.</li><li><b>Skipping the \"what was missing\" column</b>: it is your plan for the next lessons.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: diagnose your requests",
+      "sub": "Use real requests from your week.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Five real requests",
+          "min": "15 min",
+          "texto": "Open the history of your AI chat and copy the summary of five requests from this week into the diagnosis document.",
+          "pronto": "the table has five rows with requests you really made."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The era and what was missing",
+          "min": "15 min",
+          "texto": "For each request, mark the era and write what was missing using the three questions from the template.",
+          "pronto": "all five rows have the era marked and the \"what was missing\" column filled in."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · The role candidate",
+          "min": "5 min",
+          "texto": "Pick the request you repeat every week. This is the one that becomes the job sheet in lesson 4.",
+          "pronto": "one of the requests is marked as \"role candidate\", with its frequency noted (e.g., every Monday)."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "The whole course in video",
+      "sub": "Five minutes: from the shift to AI as an employee through to the cost.",
+      "chave": "dpap-completo"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "What changes the most from the prompt era to the role era?",
+          "opcoes": [
+            "The size of the request, which gets much bigger because the agent needs more details to work on its own.",
+            "Your job: from writing how to do it to defining what success looks like and checking it.",
+            "The tool, which has to be a different one.",
+            "Nothing: it's just a new name for the same thing."
+          ],
+          "certa": 1,
+          "explica": "In the role you manage: goal, context, example and checking. The request may even get shorter. Switching tools doesn't change the era.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "\"Write the email in the tone from the rules file\" is in which era?",
+          "opcoes": [
+            "Context: the tone is already saved and the request got short.",
+            "Prompt: it's a one-line request.",
+            "Role: the AI will work on its own.",
+            "None of the three."
+          ],
+          "certa": 0,
+          "explica": "The request uses a saved base (the rules file): that is context. To be a role it would need the measurable goal and the routine, such as who approves and when.",
+          "ref": "passos"
+        },
+        {
+          "p": "With the role era, what happens to context?",
+          "opcoes": [
+            "It stops mattering, because today's model already knows everything it needs about your business.",
+            "It becomes the AI provider's responsibility.",
+            "It only matters for people who code.",
+            "It stays: the role uses good context and a clear request."
+          ],
+          "certa": 3,
+          "explica": "One era doesn't erase the one before it. The role builds on context (lesson 3); what changes is where your work is: defining, checking and correcting.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Three eras",
+          "texto": "Prompt (writing the request), context (preparing the base) and role (managing the AI like someone on the team)."
+        },
+        {
+          "t": "One supports the other",
+          "texto": "The role uses a clear request and good context. The difference is that you hand over a job, not a loose task."
+        },
+        {
+          "t": "The diagnosis is the plan",
+          "texto": "What was missing in each of your requests is what the next lessons teach."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "FEP → AGI: from prompt to intent, the eras in nine lessons",
+          "href": "https://inematds.github.io/FEP-AGI/",
+          "icone": "camadas"
+        },
+        {
+          "t": "FEP 2026: what died and what stayed of the prompt",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        },
+        {
+          "t": "The video on YouTube",
+          "href": "https://www.youtube.com/watch?v=miP2vLsr6jE",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

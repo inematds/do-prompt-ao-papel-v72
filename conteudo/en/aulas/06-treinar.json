@@ -1,0 +1,335 @@
+{
+  "slug": "treinar",
+  "num": 6,
+  "menu": "Train",
+  "titulo": "Train in a cycle: five, ten rounds and a list",
+  "titulo_curto": "Train the agent",
+  "minutos": 16,
+  "lead": "Once the agent already does the work, comes the part almost nobody does: training. Don't ask just once. Ask five, ten times, evaluate it the way you'd evaluate an employee, gather the corrections into a list and run it in a cycle until it fixes everything. It takes more time and more usage, but in the end you have a written standard procedure that works for any agent.",
+  "objetivo": "run the same task in a cycle, gather the corrections into one list, and close out a written standard procedure.",
+  "competencias": [
+    "avaliar-saidas-do-agente",
+    "escrever-lista-de-correcoes",
+    "escrever-procedimento-padrao"
+  ],
+  "aprende": [
+    {
+      "icone": "fila",
+      "t": "Why a single run fools you"
+    },
+    {
+      "icone": "lista",
+      "t": "From evaluation to the list of corrections"
+    },
+    {
+      "icone": "arquivo",
+      "t": "The written standard procedure"
+    },
+    {
+      "icone": "chip",
+      "t": "The new-model test"
+    }
+  ],
+  "hero_alt": "Humanoid robot at a table with five identical sheets in a row; a person points to the sheet marked with a red tag.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The training cycle",
+      "sub": "Tap or click each step. The cycle only ends when the list is empty.",
+      "nos": [
+        {
+          "icone": "fila",
+          "titulo": "Run",
+          "sub": "5 to 10 times",
+          "itens": [
+            {
+              "t": "the same task"
+            },
+            {
+              "t": "different inputs"
+            }
+          ],
+          "detalhe": "One good run can be luck; one bad run can be bad luck. Five to ten runs, with different inputs, show what the agent does every time and what it does only sometimes."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Evaluate",
+          "sub": "like an employee",
+          "itens": [
+            {
+              "t": "by the sheet's Measure"
+            },
+            {
+              "t": "against the example"
+            }
+          ],
+          "detalhe": "Look at all the results using the sheet's criteria and compare them with your example. Note for each run: \"on task A I didn't like this, on B this was missing\"."
+        },
+        {
+          "icone": "lista",
+          "titulo": "List",
+          "sub": "of corrections",
+          "itens": [
+            {
+              "t": "what repeats"
+            },
+            {
+              "t": "one line each"
+            }
+          ],
+          "detalhe": "Put your notes together into a single list, with no repeats, from most serious to least serious. This is what you hand to the agent, not a loose vent."
+        },
+        {
+          "icone": "check",
+          "titulo": "Fix",
+          "sub": "in a cycle",
+          "itens": [
+            {
+              "t": "run again"
+            },
+            {
+              "t": "cross off what passed"
+            }
+          ],
+          "detalhe": "Hand over the list, ask it to adjust, and run again. Cross off what passed, keep what failed. Repeat until the list is empty in every run."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Standard",
+          "sub": "procedure, written",
+          "forte": true,
+          "itens": [
+            {
+              "t": "works for any agent"
+            }
+          ],
+          "detalhe": "With the list empty, ask the agent to write the standard procedure (a simple text): the steps, the rules that came out of the corrections, and the final test. It holds for the coming years and for any agent."
+        }
+      ],
+      "volta": "Did any run fail? The failure goes back on the list and the cycle starts over",
+      "legenda": "In my case (Nei, from INEMA), a good part of the day works like this: I delegate, I give feedback, and each correction becomes a written rule. In a way, I train the agent as much as it trains me.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "The whole training",
+        "texto": "Run several times, evaluate, list, fix in a cycle until it is empty, and write the procedure. The same mistake doesn't come back."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Five training habits",
+      "sub": "Tap or click each one.",
+      "passos": [
+        {
+          "titulo": "In the chat",
+          "sub": "where each thing goes",
+          "texto": [
+            "Each run in a new conversation of the same project: that way one run doesn't contaminate the other.",
+            "The list of corrections goes into the project instructions before the next run. A new conversation without the list in the instructions forgets everything."
+          ],
+          "exemplo": {
+            "rot": "In the terminal",
+            "texto": "Put the list in AGENTS.md (or in a file it points to), and make each round a new session."
+          }
+        },
+        {
+          "titulo": "Varied inputs",
+          "sub": "not the same one",
+          "texto": [
+            "Use different cases in each round: an easy one, a hard one, a weird one.",
+            "Running the same case five times only measures luck."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "A notice about a party, a schedule change and a bus strike."
+          }
+        },
+        {
+          "titulo": "Grade everything",
+          "sub": "not just the worst",
+          "texto": [
+            "Also write down what turned out well: that is what goes into the procedure as \"do it this way.\"",
+            "Without what worked, the list becomes just a list of bans."
+          ],
+          "exemplo": {
+            "rot": "Note",
+            "texto": "Round 3: great opening, keep it. Missing the start date."
+          }
+        },
+        {
+          "titulo": "One fix per line",
+          "sub": "checkable",
+          "texto": [
+            "Each line on the list says what to change in a way you can check.",
+            "\"It felt off\" doesn't help; \"the date comes in the first sentence\" does."
+          ],
+          "exemplo": {
+            "rot": "Good line",
+            "texto": "The start date appears in the first sentence."
+          }
+        },
+        {
+          "titulo": "New model",
+          "sub": "for free",
+          "texto": [
+            "When a new model comes out, your employee gets smarter for free. Keep the list of tasks it does every time.",
+            "Run the procedure on the new model, compare quality and cost, and decide with the results in hand."
+          ],
+          "exemplo": {
+            "rot": "Test",
+            "texto": "The same 5 inputs, on the current model and the new one, side by side."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Models in the cycle",
+      "sub": "Copy and use. Replace the text between < > with your own.",
+      "blocos": [
+        {
+          "rot": "Evaluation (document or spreadsheet)",
+          "icone": "lupa",
+          "conteudo": "# Evaluation · <task> · <date>\nCriterion: the Measure from the sheet + the reference example\n\n| round | input | passed the Measure? | what turned out good | what to fix |\n|---|---|---|---|---|\n| 1 | <case> | yes / no | | |\n| 2 | | | | |\n| 3 | | | | |\n| 4 | | | | |\n| 5 | | | | |"
+        },
+        {
+          "rot": "Request: run again after pasting the list into the instructions",
+          "icone": "chat",
+          "conteudo": "The list of fixes is in the project instructions, from most serious to least serious.\nDo this task following the list: <this round's input>\nWhen you finish, tell me which items on the list you checked and how."
+        },
+        {
+          "rot": "Request: write the standard procedure",
+          "icone": "arquivo",
+          "conteudo": "The list reached zero in all 5 rounds. Write the standard procedure for this task (a plain text that I will keep) with:\n- when to use it and what it delivers;\n- the steps, in order;\n- the rules that came from the fixes (one per line);\n- the final test: how to check against the Measure before delivering.\nUse language that another agent, or another person, can understand without asking me."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Example list",
+            "html": "<ol><li>The start date appears in the first sentence. (failed in 3 of 5)</li><li>No student names, not even in examples. (failed in 1 of 5)</li><li>The text fits on one phone screen. (failed in 2 of 5)</li></ol><p>After the cycle: 5 of 5 on every item.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>One round and done</b>: an error that shows up 1 time in 5 stays hidden until the day it matters.</li><li><b>A fix left loose in the chat</b>: it disappears in the next conversation. It goes on the list and then into the procedure.</li><li><b>A procedure you write before the cycle</b>: it comes from what the rounds showed, not from what you imagined.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: train your agent",
+      "sub": "Use the sheet from lesson 4 and the goal from lesson 5.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Five rounds",
+          "min": "40 min",
+          "texto": "Run the task from your sheet five times, each in a new project conversation and with a different input, and fill in the evaluation (document or spreadsheet).",
+          "pronto": "the table has five filled-in rows, with \"yes\" or \"no\" in the Measure column."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The list of fixes",
+          "min": "15 min",
+          "texto": "Gather what to fix into a single list, one checkable fix per line.",
+          "pronto": "the list has at least three fixes, and each one can be checked by looking at the result."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · The cycle until zero",
+          "min": "40 min",
+          "dias": 2,
+          "texto": "Paste the list into the project instructions, run the same inputs again (new chats), and repeat until they all pass.",
+          "pronto": "in one final round, all five inputs passed every item on the list."
+        },
+        {
+          "id": "e4",
+          "titulo": "E4 · The procedure",
+          "min": "15 min",
+          "texto": "Ask for the standard procedure and keep it with the sheet (in the chat, in the instructions or as a project file; in the terminal, in the folder).",
+          "pronto": "the file exists and has the rules that came out of the corrections and the final test."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "This lesson in one minute",
+      "sub": "Train the agent like an employee.",
+      "chave": "dpap-reel3"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Why run the same task five to ten times?",
+          "opcoes": [
+            "To have more options and pick the best answer to hand in.",
+            "Because the agent learns on its own with each round and keeps getting better even if you give no feedback.",
+            "Because the tools require it.",
+            "Because a single round can be luck or bad luck; several rounds show what it does every time."
+          ],
+          "certa": 3,
+          "explica": "An error that shows up 1 time in 5 only appears with several rounds. The agent does not learn on its own between them: what improves is the list you hand over.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "Which line works for the corrections list?",
+          "opcoes": [
+            "It looked odd.",
+            "The start date appears in the first sentence.",
+            "Try harder next time.",
+            "I didn't like the tone."
+          ],
+          "certa": 1,
+          "explica": "You can look at the result and check it. The others are opinion with no criterion: the agent doesn't know what to change.",
+          "ref": "passos"
+        },
+        {
+          "p": "A new model came out. What is the right way to decide whether to switch?",
+          "opcoes": [
+            "Run the procedure on the same inputs with both models and compare quality and cost.",
+            "Switch right away, because the new model is always better and cheaper than the previous one, for any task.",
+            "Wait for someone to comment on social media.",
+            "Rewrite all the prompts from scratch."
+          ],
+          "certa": 0,
+          "explica": "With the task list and the procedure saved, switching becomes a test: same inputs, side by side, quality and cost in hand.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Several rounds",
+          "texto": "Five to ten runs with different inputs show what the agent does every time."
+        },
+        {
+          "t": "List and cycle",
+          "texto": "Verifiable corrections, one per line, applied in a cycle until none are left."
+        },
+        {
+          "t": "Standard procedure",
+          "texto": "The result of the training is a text that works for any agent and any new model."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "The reel on YouTube",
+          "href": "https://www.youtube.com/watch?v=z60IMZwKrTM",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

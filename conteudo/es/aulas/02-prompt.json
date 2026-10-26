@@ -1,0 +1,319 @@
+{
+  "slug": "prompt",
+  "num": 2,
+  "menu": "Prompt",
+  "titulo": "La era del prompt: qué murió y qué quedó",
+  "titulo_curto": "Qué quedó del prompt",
+  "minutos": 14,
+  "lead": "Buena parte de las técnicas de prompt nació para compensar modelos débiles: mandar a pensar paso a paso, inventar una persona de 30 líneas, listar todo lo que no se puede. Los modelos de hoy hacen eso solos. Otras técnicas siguen valiendo, pero solo en ciertas condiciones. Y algunas nunca envejecen. Separar una cosa de la otra hace tu pedido más corto y mejor.",
+  "objetivo": "recortar de un prompt antiguo tuyo lo que el modelo de hoy ya hace solo, sin empeorar el resultado.",
+  "competencias": [
+    "auditar-prompt",
+    "distinguir-muleta-de-destino",
+    "testar-antes-e-depois"
+  ],
+  "aprende": [
+    {
+      "icone": "x",
+      "t": "Qué murió y por qué"
+    },
+    {
+      "icone": "relogio",
+      "t": "Qué vale solo en ciertas condiciones"
+    },
+    {
+      "icone": "check",
+      "t": "El núcleo que no envejece"
+    },
+    {
+      "icone": "caneta",
+      "t": "Auditar un prompt por sustracción"
+    }
+  ],
+  "hero_alt": "Mano con un bolígrafo sobre un cuaderno lleno de líneas tachadas, con papeles arrugados alrededor.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "¿Muleta o destino?",
+      "sub": "La pregunta para cada técnica: ¿dice lo que quiero o compensa una debilidad del modelo antiguo? Toca o haz clic en cada grupo.",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Murió",
+          "sub": "era muleta",
+          "itens": [
+            {
+              "t": "\"piensa paso a paso\""
+            },
+            {
+              "t": "persona de 30 líneas"
+            },
+            {
+              "t": "lista larga de \"no hagas\""
+            },
+            {
+              "t": "cadena manual de prompts (investigación → guion → texto, uno por vez)"
+            }
+          ],
+          "detalhe": "Los modelos actuales razonan antes de responder y encadenan etapas solos. \"Eres el mejor redactor del mundo\" no cambia el resultado. Las listas de \"no hagas\" compiten entre sí y llenan el espacio de la conversación. Esas instrucciones no aportan y a veces empeoran."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Solo cuando sirve",
+          "sub": "con condición",
+          "itens": [
+            {
+              "t": "ejemplos listos en el pedido (few-shot)"
+            },
+            {
+              "t": "rol con perspectiva"
+            },
+            {
+              "t": "salida en JSON (datos para otro programa)"
+            },
+            {
+              "t": "etapas con aprobación"
+            }
+          ],
+          "detalhe": "Los ejemplos sirven cuando el estilo es difícil de describir. El rol sirve cuando define perspectiva y criterio (\"evalúa como un auditor que busca lo que falta\"), no un título de prestigio. JSON sirve cuando el resultado va a otro programa. Las etapas sirven cuando tú apruebas entre una y otra."
+        },
+        {
+          "icone": "check",
+          "titulo": "Sigue",
+          "sub": "es destino",
+          "forte": true,
+          "itens": [
+            {
+              "t": "claridad del resultado"
+            },
+            {
+              "t": "contexto"
+            },
+            {
+              "t": "formato de entrega"
+            },
+            {
+              "t": "fronteras"
+            }
+          ],
+          "detalhe": "Lo que describe el destino no envejece: qué debe pasar, para quién, en qué formato, qué nunca puede pasar en tu negocio. La claridad cambia de lugar: sale del procedimiento (cómo hacerlo) y va al resultado (qué es bueno)."
+        }
+      ],
+      "legenda": "La muleta compensaba al modelo de ayer. El destino dice lo que tú quieres, y vale para cualquier modelo.",
+      "dica": "\"Rol\" aquí no es la ingeniería de rol de la clase 4: allí el rol es una función completa, con objetivo, contexto y ejemplo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Auditoría por sustracción",
+      "sub": "Cuatro pasos para aligerar un prompt antiguo. Toca o haz clic en cada uno.",
+      "passos": [
+        {
+          "titulo": "Separar",
+          "sub": "línea por línea",
+          "texto": [
+            "Toma un prompt que usas desde hace tiempo y divídelo en líneas, una instrucción por línea.",
+            "Marca cada línea: muleta, solo cuando sirve o destino."
+          ],
+          "exemplo": {
+            "rot": "Marcación",
+            "texto": "\"Piensa paso a paso\" → muleta. \"Para padres de alumnos de 5.º grado\" → destino."
+          }
+        },
+        {
+          "titulo": "Recortar",
+          "sub": "las muletas",
+          "texto": [
+            "Borra las muletas. En las líneas \"solo cuando sirve\", revisa si la condición vale para este caso; si no vale, bórrala también.",
+            "Todavía no toques las líneas de destino."
+          ],
+          "exemplo": {
+            "rot": "Sale",
+            "texto": "\"Eres un especialista premiado con 20 años de experiencia.\""
+          }
+        },
+        {
+          "titulo": "Completar",
+          "sub": "el destino",
+          "texto": [
+            "Ahora mira qué falta en el destino: el resultado esperado, para quién es, el formato, el límite y el criterio de bueno.",
+            "Muchas veces el prompt antiguo era largo y aun así no decía qué es un buen resultado."
+          ],
+          "exemplo": {
+            "rot": "Entra",
+            "texto": "Buen resultado: el padre entiende en 30 segundos qué cambia en la rutina de su hijo."
+          }
+        },
+        {
+          "titulo": "Probar",
+          "sub": "antes y después",
+          "texto": [
+            "Ejecuta las dos versiones con la misma entrada, dos veces cada una, y compara los resultados lado a lado.",
+            "Si la versión corta quedó igual o mejor, se queda. Si empeoró, vuelve solo la línea que hizo falta."
+          ],
+          "exemplo": {
+            "rot": "Registro",
+            "texto": "Versión antigua: 11 líneas. Nueva: 5 líneas. Ejecuté dos veces: en las dos la versión corta quedó igual, y en una de ellas más directa."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Antes y después",
+      "sub": "El mismo pedido, en la era del prompt y después de la auditoría.",
+      "blocos": [
+        {
+          "rot": "Antes · prompt antiguo (11 líneas)",
+          "icone": "x",
+          "conteudo": "Eres un redactor premiado con 20 años de experiencia en educación.\nPiensa paso a paso antes de responder.\nEscribe un comunicado para los padres sobre el cambio de horario.\nNo uses emojis.\nNo seas extenso.\nNo uses términos técnicos.\nNo uses frases largas.\nNo olvides la fecha.\nUsa un tono amistoso.\nRevisa el texto antes de entregarlo.\nDa lo mejor de ti."
+        },
+        {
+          "rot": "Después · pedido auditado (5 líneas)",
+          "icone": "check",
+          "conteudo": "Escribe el comunicado a los padres de 5.º grado sobre el cambio de horario de salida.\nQué cambia: la salida pasa de las 17:30 a las 17:00, a partir del 3 de noviembre.\nPara quién: padres que leen en el celular, con prisa.\nLímite: no prometas transporte; la escuela no lo ofrece.\nBuen resultado: el padre entiende en 30 segundos qué cambia y desde cuándo."
+        },
+        {
+          "rot": "Pedido para que la propia IA audite",
+          "icone": "lupa",
+          "conteudo": "Abajo está un prompt que uso desde hace tiempo. Sepáralo en líneas y marca cada una como:\n- MULETA (compensaba un modelo antiguo: \"piensa paso a paso\", persona de prestigio, lista de \"no hagas\" de estilo),\n- SOLO CUANDO SIRVE (di la condición y si vale aquí),\n- DESTINO (resultado, público, formato, límite, criterio de bueno).\nDespués escribe la versión depurada y di qué falta en el destino.\n\n<pega aquí tu prompt>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Lo que se recortó",
+            "html": "<ul><li><b>Persona de prestigio</b> y \"da lo mejor de ti\": no cambian el resultado.</li><li><b>\"Piensa paso a paso\"</b> y \"revisa antes\": el modelo ya lo hace.</li><li><b>Cinco \"no\" de estilo</b>: se volvieron una línea positiva, \"padres que leen en el celular, con prisa\".</li></ul>"
+          },
+          {
+            "rot": "Lo que entró",
+            "html": "<ul><li>El dato que faltaba (17:30 → 17:00, desde el 3 de noviembre).</li><li>Un <b>límite</b> real del negocio (transporte).</li><li>El <b>criterio de bueno</b>, que el modelo antiguo nunca recibió.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: audita un prompt tuyo",
+      "sub": "Usa un prompt que uses de verdad, no el ejemplo.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Marcar las líneas",
+          "min": "15 min",
+          "texto": "Elige el prompt que más reutilizas. Divídelo en líneas y marca cada una como muleta, solo cuando sirve o destino (a mano o con el pedido de auditoría).",
+          "pronto": "toda línea del prompt tiene una de las tres marcas."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · La versión depurada",
+          "min": "15 min",
+          "texto": "Recorta las muletas y completa el destino: resultado, público, formato, límite y criterio de bueno.",
+          "pronto": "la versión nueva tiene menos líneas que la antigua y tiene una línea que empieza con \"Buen resultado:\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Antes y después",
+          "min": "20 min",
+          "texto": "Ejecuta las dos versiones con la misma entrada, dos veces cada una, y anota la comparación.",
+          "pronto": "tienes los cuatro resultados guardados y una frase que dice qué versión quedó y por qué."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué \"piensa paso a paso\" perdió fuerza?",
+          "opcoes": [
+            "Porque los modelos de hoy ya razonan antes de responder.",
+            "Porque los proveedores de IA lo prohibieron.",
+            "Porque solo funciona en inglés.",
+            "Porque deja la respuesta demasiado corta y sin las explicaciones que el lector espera."
+          ],
+          "certa": 0,
+          "explica": "Era una muleta para modelos que no razonaban. Hoy el modelo ya lo hace; la instrucción no aporta nada y a veces alarga la respuesta sin ganancia.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Cuándo sigue ayudando darle un rol a la IA?",
+          "opcoes": [
+            "Siempre que el rol sea de alguien famoso.",
+            "Cuando define perspectiva y criterio: \"evalúa como un auditor que busca lo que falta\".",
+            "Cuando el rol tiene al menos 20 líneas que describen la experiencia, el estilo y las manías del especialista.",
+            "Nunca: el rol es una técnica muerta."
+          ],
+          "certa": 1,
+          "explica": "Un rol como título de prestigio no cambia nada. Un rol que dice desde qué punto de vista mirar y qué juzgar sí cambia el resultado. Por eso está en \"solo cuando sirve\".",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "En la auditoría por sustracción, ¿qué viene después de cortar las muletas?",
+          "opcoes": [
+            "Publicar la versión corta sin probarla.",
+            "Pedirle a la IA que escriba una persona nueva, más detallada, para compensar las líneas cortadas.",
+            "Juntar todos los \"no hagas\" en una sola lista.",
+            "Completar el destino y probar las dos versiones con la misma entrada."
+          ],
+          "certa": 3,
+          "explica": "Cortar sin probar es adivinar. Se completa el destino (resultado, público, formato, frontera, criterio) y se ejecuta antes y después con la misma entrada.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"No prometas transporte; la escuela no lo ofrece.\" ¿Por qué esta línea se queda?",
+          "opcoes": [
+            "Porque toda lista de \"no hagas\" ayuda al modelo a evitar errores, así que cuantos más, mejor.",
+            "Porque deja el texto más largo y completo.",
+            "Porque es una frontera del negocio, no una regla de estilo.",
+            "Porque el modelo no entiende frases positivas."
+          ],
+          "certa": 2,
+          "explica": "Una instrucción negativa se queda cuando es una frontera real (lo que nunca puede ocurrir). \"No seas prolijo\" es estilo y se convierte en una frase positiva sobre el lector.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La clase en tres frases",
+      "itens": [
+        {
+          "t": "La muleta muere",
+          "texto": "Lo que compensaba a un modelo débil (paso a paso, persona de prestigio, lista de \"no\") puede salir."
+        },
+        {
+          "t": "El destino se queda",
+          "texto": "Resultado, público, formato, frontera y criterio de bueno valen para cualquier modelo."
+        },
+        {
+          "t": "Corta y prueba",
+          "texto": "La versión ajustada solo se queda después de ejecutar antes y después con la misma entrada."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "FEP 2026: cada técnica del FEP, lo que murió y lo que se quedó",
+          "href": "https://inematds.github.io/FEP2026/",
+          "icone": "lista"
+        },
+        {
+          "t": "FEP: Ingeniería de Prompts (el curso original)",
+          "href": "https://inematds.github.io/FEP/",
+          "icone": "caneta"
+        },
+        {
+          "t": "FEP2: Prompt Engineering Masterclass",
+          "href": "https://inematds.github.io/FEP2/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

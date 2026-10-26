@@ -1,0 +1,262 @@
+{
+  "id": "do-prompt-ao-papel-v72",
+  "lang": "es",
+  "url": "https://inematds.github.io/do-prompt-ao-papel-v72/es/",
+  "nome": "Del prompt al rol",
+  "sub": "Gestiona la IA como a alguien del equipo",
+  "volta": {
+    "t": "INEMA.CLUB",
+    "href": "https://inema.club/"
+  },
+  "lado_card": {
+    "rot": "Idea central",
+    "t": "En lugar del prompt perfecto, el rol",
+    "texto": "Un objetivo que se pueda medir, el contexto que el agente ya tiene y un ejemplo bien hecho. Después, entrenamiento en ciclos.",
+    "link": "Ir a la ficha de función",
+    "href": "aulas/papel/"
+  },
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a>",
+  "videos": {
+    "dpap-completo": {
+      "titulo": "Olvida el prompt: en 2027, gestiona la IA",
+      "duracao": "5 min 11 s",
+      "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-completo.mp4",
+      "vtt": "assets/vtt/dpap-completo.vtt",
+      "poster": "assets/img/videos/dpap-completo.jpg",
+      "pagina": "https://www.youtube.com/watch?v=miP2vLsr6jE"
+    },
+    "dpap-reel1": {
+      "titulo": "Deja de escribir prompts: define el rol",
+      "duracao": "51 s",
+      "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel1.mp4",
+      "vtt": "assets/vtt/dpap-reel1.vtt",
+      "poster": "assets/img/videos/dpap-reel1.jpg",
+      "pagina": "https://www.youtube.com/watch?v=6L7V2d1iSoY",
+      "formato": "9:16"
+    },
+    "dpap-reel2": {
+      "titulo": "Cómo delegar en la IA: objetivo SMART",
+      "duracao": "46 s",
+      "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel2.mp4",
+      "vtt": "assets/vtt/dpap-reel2.vtt",
+      "poster": "assets/img/videos/dpap-reel2.jpg",
+      "pagina": "https://www.youtube.com/watch?v=T945m2nfaAA",
+      "formato": "9:16"
+    },
+    "dpap-reel3": {
+      "titulo": "Entrena al agente como a un empleado",
+      "duracao": "53 s",
+      "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel3.mp4",
+      "vtt": "assets/vtt/dpap-reel3.vtt",
+      "poster": "assets/img/videos/dpap-reel3.jpg",
+      "pagina": "https://www.youtube.com/watch?v=z60IMZwKrTM",
+      "formato": "9:16"
+    },
+    "dpap-reel4": {
+      "titulo": "Agente de IA sin que el costo se te vaya de las manos",
+      "duracao": "40 s",
+      "mp4": "https://github.com/inematds/do-prompt-ao-papel-v72/releases/download/video-v1.0.0/dpap-reel4.mp4",
+      "vtt": "assets/vtt/dpap-reel4.vtt",
+      "poster": "assets/img/videos/dpap-reel4.jpg",
+      "pagina": "https://www.youtube.com/watch?v=1yXmp-xTErI",
+      "formato": "9:16"
+    }
+  },
+  "inicio": {
+    "kicker": "Curso · 8 clases · prompt, contexto y rol",
+    "titulo": "Deja de buscar el prompt perfecto: define el rol",
+    "lead": "Primero se escribía el pedido palabra por palabra. Después se aprendió a dar contexto. Ahora la IA trabaja como alguien del equipo, y la habilidad que vale es gestionar. En ocho clases ves qué cambió en cada era, armas la ficha de función de un agente, le das un objetivo que pueda verificar, lo entrenas en ciclos y cuidas el costo.",
+    "cta": "Empezar por la clase 1",
+    "cta2": {
+      "t": "Ir directo a la ficha de función",
+      "href": "aulas/papel/"
+    },
+    "capa_alt": "Oficina oscura de noche: un gerente de cabello canoso observa robots humanoides que trabajan en escritorios separados.",
+    "numeros": [
+      {
+        "v": "3",
+        "t": "eras: prompt, contexto, rol"
+      },
+      {
+        "v": "3",
+        "t": "pasos para delegar"
+      },
+      {
+        "v": "5–10",
+        "t": "rondas para entrenar"
+      },
+      {
+        "v": "8",
+        "t": "clases con práctica"
+      }
+    ],
+    "aulas_titulo": "Las clases",
+    "aulas_sub": "De las tres eras a la ficha de función, del objetivo medible al entrenamiento en ciclos y al costo. Cada clase tiene diagrama, modelo para copiar, práctica con \"listo cuando\" y prueba comentada.",
+    "blocos": [
+      {
+        "t": "Para quién es",
+        "itens": [
+          "Para quien ya usa ChatGPT, Claude o Gemini y siente que vive reescribiendo pedidos.",
+          "Para quien hizo un curso de prompts y quiere entender qué sigue valiendo con los modelos de hoy.",
+          "Para quien empezó a usar agentes y quiere delegar como le delega a una persona."
+        ]
+      },
+      {
+        "t": "Lo que sales haciendo",
+        "itens": [
+          "Recortando de un prompt antiguo lo que el modelo ya hace solo.",
+          "Escribiendo la ficha de función de un agente, con un objetivo que se pueda medir.",
+          "Entrenando al agente en ciclos hasta tener un procedimiento estándar por escrito.",
+          "Eligiendo el modelo adecuado para cada tarea y siguiendo la cuenta."
+        ]
+      },
+      {
+        "t": "Dónde hacerlo",
+        "itens": [
+          "En el chat (ChatGPT, Claude o Gemini), con un proyecto de instrucciones fijas: es el camino principal del curso.",
+          "En la terminal, con Claude Code o Codex, para quien ya los usa: las clases 3, 4 y 6 muestran también ese camino."
+        ]
+      },
+      {
+        "t": "Quién habla en el curso",
+        "itens": [
+          "Nei Maldaner, de INEMA.CLUB: 40 años de tecnología, de programador a fundador de empresas.",
+          "Cuando el texto dice \"yo\" o \"en mi caso\", es él contando cómo trabaja hoy con agentes de IA."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Saltar al contenido",
+    "aulas": "Clases",
+    "concluido": "completado",
+    "aula": "Clase",
+    "nesta_aula": "En esta clase vas a aprender:",
+    "objetivo": "Objetivo:",
+    "proxima_aula": "Siguiente clase",
+    "aula_anterior": "Clase anterior",
+    "voltar_inicio": "Volver al inicio del curso",
+    "marcar_concluida": "Marcar la clase como completada",
+    "dg_dica": "Toca o haz clic en cada bloque del diagrama para ver qué hace.",
+    "copiar": "Copiar",
+    "copiado": "Copiado",
+    "selo_simulacao": "Simulación: ejemplo ilustrativo",
+    "selo_real": "Ejemplo del repositorio",
+    "pronto_quando": "Listo cuando:",
+    "fiz": "Hice este ejercicio",
+    "video_pagina": "Página del video con guion",
+    "pergunta": "Pregunta",
+    "de": "de",
+    "cert_tag": "competencia",
+    "correto": "Correcto",
+    "errado": "Esa no es",
+    "quiz_aguarda": "Elige una alternativa. La explicación aparece después de tu intento.",
+    "proxima_pergunta": "Siguiente pregunta",
+    "quiz_ver": "Ver resultado",
+    "quiz_fim": "Prueba completada",
+    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como completada.",
+    "aparencia": "Apariencia",
+    "tamanho_texto": "Tamaño del texto",
+    "tema": "Tema",
+    "tema_escuro": "Oscuro",
+    "tema_papel": "Papel claro",
+    "role_dica": "Desplázate por la página: cada etapa de abajo enciende su parte del diagrama.",
+    "pre_requisito": "requiere",
+    "ver_aula": "Ver la clase",
+    "mapa_dica": "Toca o haz clic en un ejercicio para ver qué hacer y el \"listo cuando\".",
+    "etapas": "Etapas",
+    "exercicios": "ejercicios",
+    "rever": "Repasar:",
+    "revisar_erradas": "Revisar las incorrectas",
+    "refazer": "Rehacer la prueba",
+    "h_semana": "h por semana",
+    "data_inicio": "Fecha de inicio",
+    "ritmo": "Tiempo disponible",
+    "gerar_plano": "Generar mi plan",
+    "baixar_md": "Descargar plano.md",
+    "baixar_ics": "Descargar al calendario (.ics)",
+    "ind_estudo": "Estudio (clases)",
+    "ind_pratica": "Práctica declarada",
+    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación viene en el examen de la certificación.",
+    "estudo": {
+      "titulo": "Tu estudio",
+      "continuar": "Continuar donde lo dejé",
+      "comecar": "Empezar por la clase 1",
+      "cta_continuar": "Continuar la clase {n}",
+      "hoje": "hoy",
+      "ontem": "ayer",
+      "ha_dias": "hace {n} días",
+      "desempenho": "Desempeño en las pruebas",
+      "notas": "Mis anotaciones",
+      "dados": "Copiar mis datos",
+      "sem_testes": "Aún no has hecho ninguna prueba. La prueba está al final de cada clase.",
+      "nao_fez": "prueba aún no hecha",
+      "ultimo": "Última",
+      "melhor": "Mejor",
+      "tentativas": "intentos",
+      "tentativa": "intento",
+      "tudo_certo": "Acertaste todo en la última prueba.",
+      "rever": "Para repasar",
+      "resposta": "Respuesta correcta:",
+      "ir_teste": "Rehacer la prueba",
+      "sem_notas": "Aún no hay anotaciones. En la clase, selecciona un fragmento del texto y toca Marcar o Anotar.",
+      "so_marcado": "(solo marcado)",
+      "marcar": "Marcar",
+      "anotar": "Anotar",
+      "salvar": "Guardar",
+      "apagar": "Borrar marca",
+      "fechar": "Cerrar",
+      "nota_ph": "Escribe tu anotación sobre este fragmento…",
+      "um_bloco": "Marca dentro de un solo párrafo.",
+      "nao_marca": "Este fragmento no se puede marcar.",
+      "dados_exp": "Tu progreso, tus anotaciones y las notas de las pruebas se quedan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otro computador o navegador; allí, carga la copia. Cargar se suma a lo que ya existe y no borra nada.",
+      "exportar": "Descargar copia",
+      "importar": "Cargar copia",
+      "import_ok": "Copia cargada ({n} elementos). Actualizando la página…",
+      "import_erro": "Archivo no reconocido. No se cambió nada.",
+      "import_outro": "Esta copia es de otro curso. No se cambió nada.",
+      "export_ok": "Copia descargada."
+    },
+    "conv_dica": "Elige tu respuesta. El comentario aparece justo después y la conversación sigue según tu elección.",
+    "conv_voce": "Tú",
+    "conv_escolha": "Tu respuesta",
+    "conv_boa": "Buena elección",
+    "conv_meio": "Se puede mejorar",
+    "conv_ruim": "Mala elección",
+    "conv_fim": "Fin de la conversación",
+    "conv_placar": "Hiciste {p} de {m} puntos posibles.",
+    "conv_licao": "Lección:",
+    "conv_recomecar": "Reiniciar la conversación",
+    "conv_feita": "Tu mejor puntaje: {p} de {m} puntos.",
+    "conf_campo": "La línea {c} falta o es demasiado corta: escribe \"{c}:\" al comienzo y al menos {x} letras después.",
+    "comecar": "Comenzar la clase",
+    "nesta_vai": "En esta clase vas a",
+    "trocar_tema": "Cambiar tema claro/oscuro",
+    "conf_vazio": "Pega el texto o carga el archivo antes de revisar.",
+    "conf_falta": "Todavía no. Lo que falta:",
+    "conf_planos": "Encontré {n} planos numerados; el pedido es de {x} a {y}. Comienza cada plano con el número (1 | ...).",
+    "conf_no_plano": "Plano {i}: falta {g}.",
+    "conf_um_so": "Plano {i}: {n} opciones de {g}; quédate con una sola.",
+    "conf_variedade": "Solo {n} tipo(s) diferente(s) de {g} en los planos; varía hasta tener al menos {x}.",
+    "conf_sem_duracao": "Plano {i}: falta la duración en segundos (ej.: 4 s).",
+    "conf_duracao": "Los planos suman {s} s; el pedido es de {x} a {y} s.",
+    "conf_termo": "Falta mencionar {g}.",
+    "conf_proibe": "{g}: cambia \"{c}\" por algo que se pueda verificar.",
+    "conf_mais": "… y {n} más.",
+    "conf_rot": "Pega aquí tu archivo (o carga el .txt):",
+    "conf_conferir": "Revisar",
+    "conf_exemplo": "Ejemplo que pasa",
+    "conf_errado": "Ejemplo con error",
+    "conf_carregar": "Cargar .txt",
+    "conf_baixar": "Descargar el archivo",
+    "conf_limpar": "Borrar",
+    "conf_video_dur": "El video dura {s} s; el pedido es de {x} a {y} s.",
+    "conf_video_prop": "El video es {w}×{h} ({p}); el pedido es {q}.",
+    "conf_video_larg": "El video tiene {w} px de ancho; el mínimo es {x} px.",
+    "conf_video_ler": "No pude leer este video. Expórtalo en MP4 (H.264) o WebM e inténtalo de nuevo.",
+    "conf_video_rot": "Elige tu video. Se lee aquí en el navegador: no se envía nada.",
+    "conf_video_escolher": "Elegir el video",
+    "conf_video_lendo": "Leyendo el video…"
+  },
+  "icone": "camadas"
+}

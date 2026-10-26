@@ -1,0 +1,298 @@
+{
+  "slug": "custo",
+  "num": 7,
+  "menu": "Costo",
+  "titulo": "El lado malo: la cuenta, y cómo cuidarla",
+  "titulo_curto": "Cuidar el costo",
+  "minutos": 13,
+  "lead": "Con un agente funcionando todo el día, el uso crece rápido: en la suscripción llegas al límite; pagando por uso, se vuelve una cuenta grande. En mi caso, casi todo corre por la suscripción. Como con cualquier empleado, hay que auditar y cuidar el costo. Primero lo que vale para todos: el modelo correcto y la cuenta bien seguida. Después, para quien paga por uso, caché y lote.",
+  "objetivo": "elegir el modelo correcto para cada tarea recurrente, seguir el uso de una semana y saber cuándo valen el caché y el lote.",
+  "competencias": [
+    "escolher-modelo-por-tarefa",
+    "usar-cache-e-lote",
+    "acompanhar-custo"
+  ],
+  "aprende": [
+    {
+      "icone": "chip",
+      "t": "El modelo correcto para cada trabajo"
+    },
+    {
+      "icone": "memoria",
+      "t": "Qué es el caché de prompt"
+    },
+    {
+      "icone": "relogio",
+      "t": "Cuándo enviar en lote"
+    },
+    {
+      "icone": "grafico",
+      "t": "Seguir la cuenta"
+    }
+  ],
+  "hero_alt": "Mesa oscura con un medidor analógico, una calculadora y un cuaderno; al fondo, servidores con luces frías.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cuatro palancas del costo",
+      "sub": "Toca o haz clic en cada una.",
+      "nos": [
+        {
+          "icone": "chip",
+          "titulo": "Modelo",
+          "sub": "correcto",
+          "itens": [
+            {
+              "t": "menor: tarea simple"
+            },
+            {
+              "t": "del medio: el día a día"
+            },
+            {
+              "t": "mayor: lo que importa"
+            }
+          ],
+          "detalhe": "No toda tarea necesita el modelo más potente. Clasificar mensajes o extraer un campo va en el menor; escribir y revisar, en el del medio; las decisiones y lo que de verdad marca la diferencia, en el mayor. Los nombres, del menor al mayor: en Claude, Haiku → Sonnet → Opus o Fable (Fable es el más nuevo y más potente de ellos); en ChatGPT, las versiones \"mini\" → el modelo estándar → las de razonamiento y las \"Pro\"; en Gemini, Flash → Pro. El modelo se elige en el selector que está arriba de la conversación; lo que aparece ahí depende de tu plan."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Cuenta",
+          "sub": "con seguimiento",
+          "forte": true,
+          "itens": [
+            {
+              "t": "uso por tarea"
+            },
+            {
+              "t": "revisar cada semana"
+            }
+          ],
+          "detalhe": "Anota cuánto consume cada tarea: en la suscripción, cuántas veces llegaste al límite y con qué tarea; en la API, el valor. Un agente bien entrenado ya se encarga de buena parte de las tareas, y todo el equipo puede hablar con él en el mismo canal. Sin una cuenta con seguimiento, el costo solo aparece en la factura."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Caché",
+          "sub": "si pagas por uso",
+          "itens": [
+            {
+              "t": "mismo inicio de conversación"
+            },
+            {
+              "t": "en poco tiempo"
+            }
+          ],
+          "detalhe": "Vale para quien paga por uso a través de la API (el acceso directo al modelo mediante un programa, cobrado por volumen). Si repites el mismo comienzo de conversación (las reglas, la ficha, los documentos) en poco tiempo, esa parte se guarda y sale por una fracción del precio. Por eso conviene mantener el comienzo fijo y dejar lo que cambia al final."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Lote",
+          "sub": "si pagas por uso",
+          "itens": [
+            {
+              "t": "batch API"
+            },
+            {
+              "t": "la mitad del precio"
+            }
+          ],
+          "detalhe": "También es de la API. Lo que puede esperar (informes, clasificaciones masivas, traducciones) va en lote mediante la batch API (envío por lotes) de la API, que cobra la mitad del precio y devuelve el resultado en hasta un día. La tarea que alguien espera en el momento queda fuera del lote."
+        }
+      ],
+      "legenda": "Audita como auditarías a un empleado: qué entrega, cuánto cuesta y si el modelo es el adecuado para el trabajo.",
+      "dica": "En mi caso, el modelo de cada sistema queda anotado en un solo lugar. Cuando sale uno mejor o más barato, lo cambio en una línea, sin tener que buscarlo por todas partes."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Decidir, tarea por tarea",
+      "sub": "Tres preguntas para cada tarea recurrente. Toca o haz clic en cada una.",
+      "passos": [
+        {
+          "titulo": "¿Qué tan difícil es?",
+          "sub": "elige el modelo",
+          "texto": [
+            "Lo simple y repetitivo va en el menor; el texto y el análisis del día a día, en el del medio; lo que tiene riesgo o decide dinero, en el mayor.",
+            "Si tienes dudas, aplica el procedimiento de la clase 6 en los dos y compara."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "Separar correos por asunto: modelo menor. Propuesta para un cliente: modelo mayor."
+          }
+        },
+        {
+          "titulo": "¿Solo suscripción?",
+          "sub": "lo que cuenta",
+          "texto": [
+            "Si usas solo la suscripción del chat, el caché y el lote no aparecen para ti: de eso se encarga el proveedor.",
+            "Lo que cuenta es elegir el modelo adecuado, no repetir el contexto sin necesidad (el proyecto ya lo guarda) y observar cuándo llegas al límite."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "¿Llegaste al límite todos los jueves? Mira qué tarea usó el modelo mayor sin necesitarlo."
+          }
+        },
+        {
+          "titulo": "¿Alguien espera? (API)",
+          "sub": "elige el lote",
+          "texto": [
+            "Si nadie está esperando la respuesta ahora, la tarea puede ir en lote por la mitad del precio.",
+            "Junta las del día y envíalas de una vez."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "Resumen semanal de 200 reseñas de clientes: lote."
+          }
+        },
+        {
+          "titulo": "¿El inicio se repite? (API)",
+          "sub": "aprovecha el caché",
+          "texto": [
+            "Si toda llamada empieza con las mismas reglas y documentos, deja ese comienzo idéntico y al principio.",
+            "Lo que cambia (la pregunta, el caso) va al final."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "Atención al cliente: reglas y tabla de precios siempre iguales al comienzo; el mensaje del cliente al final."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "Una tabla por agente. Cambia el texto entre < > por el tuyo.",
+      "blocos": [
+        {
+          "rot": "Costo por tarea (documento u hoja de cálculo)",
+          "icone": "grafico",
+          "conteudo": "# Costo por tarea · <agente> · semana del <fecha>\n\n| tarea | veces por semana | modelo | motivo | al momento o en lote | ¿inicio fijo (caché)? | uso anotado |\n|---|---|---|---|---|---|---|\n| <tarea 1> | | menor / medio / mayor | <por qué, en una frase> | momento / lote | sí / no | <¿llegó al límite? o el valor> |\n| <tarea 2> | | | | | | |\n| <tarea 3> | | | | | | |\n| <tarea 4> | | | | | | |\n| <tarea 5> | | | | | | |\n\nDecisión de la semana: <qué cambia de modelo o pasa al lote>"
+        },
+        {
+          "rot": "Pedido: revisar el costo con el propio agente",
+          "icone": "chat",
+          "conteudo": "Abajo está la lista de las tareas que haces para mí cada semana.\nPara cada una, dime:\n1. si de verdad necesita el modelo mayor, o si el menor puede con ella (y cómo lo pruebo);\n2. si puede esperar e ir en lote;\n3. si el inicio del pedido es siempre igual (y qué dejo fijo para aprovechar el caché).\nResponde en una tabla y no cambies nada todavía.\n\n<lista de tareas>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo completado",
+            "html": "<ul><li><b>Separar correos por asunto</b> · 50×/semana · menor · al momento · inicio fijo.</li><li><b>Resumen de las evaluaciones</b> · 1×/semana · medio · lote.</li><li><b>Propuesta para el cliente</b> · 3×/semana · mayor · al momento.</li></ul><p>Decisión: el resumen pasa al lote; la separación de correos baja al modelo menor después de pasar la prueba de 5 rondas.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Todo en el modelo mayor</b> \"por si acaso\": pagas caro por lo que el menor hace igual.</li><li><b>Cambiar de modelo sin probar</b>: corre el procedimiento en los dos y compara.</li><li><b>Cambiar el inicio del pedido cada vez</b>: pierdes el caché.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la cuenta de tu agente",
+      "sub": "Una semana de uso real.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · La tabla",
+          "min": "20 min",
+          "texto": "Haz una lista de las cinco tareas que más le entregas a la IA y llena la tabla de costo por tarea con modelo, momento o lote e inicio fijo (si solo usas suscripción, marca \"momento\").",
+          "pronto": "las cinco filas tienen modelo y \"momento\" o \"lote\" marcados, con el motivo en una frase."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Una semana anotada",
+          "min": "10 min",
+          "dias": 7,
+          "texto": "Durante una semana, anota el uso de cada tarea: en la suscripción, si usaste el modelo mayor y si llegaste al límite; en la API, el valor.",
+          "pronto": "la columna \"uso anotado\" está llena para la semana completa."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Una decisión",
+          "min": "15 min",
+          "texto": "Con la semana en la mano, elige un cambio (modelo menor, lote o inicio fijo) y pruébalo con el procedimiento de la clase 6.",
+          "pronto": "la fila \"Decisión de la semana\" tiene un cambio probado, con el resultado de la comparación."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Esta clase en un minuto",
+      "sub": "Agente de IA sin que el costo lo rompa.",
+      "chave": "dpap-reel4"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "Separar 50 correos por asunto cada semana. ¿Qué elección tiene más sentido?",
+          "opcoes": [
+            "El modelo mayor, por si acaso, ya que equivocarse en la separación cuesta más que el modelo.",
+            "Probar con el modelo menor y quedarte con él si pasa las rondas.",
+            "Hacerlo a mano para no gastar.",
+            "Cambiar de proveedor de IA."
+          ],
+          "certa": 1,
+          "explica": "Una tarea simple y repetitiva suele salir bien con el modelo menor. La prueba de varias rondas (clase 6) dice si puede con ella.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "Llegas al límite de la suscripción todos los jueves. ¿Qué miras primero?",
+          "opcoes": [
+            "Si necesitas cambiar a un plan más caro ya esta semana.",
+            "Qué tarea está usando el modelo mayor sin necesitarlo.",
+            "Si se pueden abrir más cuentas gratis en otras herramientas.",
+            "Si el problema desaparece al borrar las conversaciones antiguas del proyecto."
+          ],
+          "certa": 1,
+          "explica": "En la suscripción, la palanca es el modelo correcto para cada tarea. La tabla de costo por tarea muestra cuál de ellas gasta el modelo mayor sin necesidad.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Para quién valen el caché y el lote?",
+          "opcoes": [
+            "Para quien paga por uso en la API; en la suscripción, de eso se encarga el proveedor.",
+            "Para todos los que usan ChatGPT, sin ninguna configuración.",
+            "Solo para quien usa el modelo menor.",
+            "Solo para quien trabaja en la terminal."
+          ],
+          "certa": 0,
+          "explica": "El caché y el lote son recursos de la API, que se cobra por volumen. Quien usa solo la suscripción cuida el modelo correcto y el límite.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La clase en tres frases",
+      "itens": [
+        {
+          "t": "Modelo correcto",
+          "texto": "Menor para lo simple, medio para el día a día, mayor para lo que importa."
+        },
+        {
+          "t": "Caché y lote",
+          "texto": "El inicio fijo sale por una fracción; lo que puede esperar va en lote a la mitad."
+        },
+        {
+          "t": "Cuenta al día",
+          "texto": "Uso anotado por tarea, cada semana, y una decisión probada a la vez."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "El reel en YouTube",
+          "href": "https://www.youtube.com/watch?v=1yXmp-xTErI",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}

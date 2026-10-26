@@ -1,0 +1,298 @@
+{
+  "slug": "custo",
+  "num": 7,
+  "menu": "Cost",
+  "titulo": "The downside: the bill, and how to manage it",
+  "titulo_curto": "Managing cost",
+  "minutos": 13,
+  "lead": "With an agent running all day, usage grows fast: on a subscription you hit the limit; paying per use, it becomes a big bill. In my case, almost everything runs on the subscription. As with any employee, you need to audit and watch the cost. First what applies to everyone: the right model and keeping track of the bill. Then, for those who pay per use, cache and batch.",
+  "objetivo": "choose the right model for each recurring task, track a week of usage and know when cache and batch are worth it.",
+  "competencias": [
+    "escolher-modelo-por-tarefa",
+    "usar-cache-e-lote",
+    "acompanhar-custo"
+  ],
+  "aprende": [
+    {
+      "icone": "chip",
+      "t": "The right model for each job"
+    },
+    {
+      "icone": "memoria",
+      "t": "What prompt caching is"
+    },
+    {
+      "icone": "relogio",
+      "t": "When to send in a batch"
+    },
+    {
+      "icone": "grafico",
+      "t": "Tracking the bill"
+    }
+  ],
+  "hero_alt": "Dark desk with an analog meter, a calculator and a notebook; in the background, servers with cool lights.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Four levers of cost",
+      "sub": "Tap or click each one.",
+      "nos": [
+        {
+          "icone": "chip",
+          "titulo": "Model",
+          "sub": "right",
+          "itens": [
+            {
+              "t": "smallest: simple task"
+            },
+            {
+              "t": "middle: everyday work"
+            },
+            {
+              "t": "largest: what really matters"
+            }
+          ],
+          "detalhe": "Not every task needs the strongest model. Sorting messages or pulling out a single field goes to the smallest; writing and reviewing goes to the middle one; decisions and what really makes a difference go to the largest. The names, from smallest to largest: in Claude, Haiku → Sonnet → Opus or Fable (Fable is the newest and strongest of them); in ChatGPT, the \"mini\" versions → the standard model → the reasoning and \"Pro\" ones; in Gemini, Flash → Pro. You pick the model in the selector at the top of the conversation; what shows up there depends on your plan."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Cost",
+          "sub": "tracked",
+          "forte": true,
+          "itens": [
+            {
+              "t": "usage per task"
+            },
+            {
+              "t": "check every week"
+            }
+          ],
+          "detalhe": "Write down how much each task uses: on a subscription, how many times you hit the limit and with which task; on the API, the dollar amount. A well-trained agent can already handle a good share of your tasks, and the whole team can talk to it in the same channel. If you don't track cost, it only shows up on the bill."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Cache",
+          "sub": "if you pay per use",
+          "itens": [
+            {
+              "t": "same start of conversation"
+            },
+            {
+              "t": "in a short time"
+            }
+          ],
+          "detalhe": "This applies if you pay per use through the API (direct access to the model by program, billed by volume). If you repeat the same start of a conversation (the rules, the profile, the documents) in a short time, that part is saved and costs a fraction of the price. That's why it pays to keep the start fixed and leave what changes for the end."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Batch",
+          "sub": "if you pay per use",
+          "itens": [
+            {
+              "t": "batch API"
+            },
+            {
+              "t": "half the price"
+            }
+          ],
+          "detalhe": "This one is also an API feature. Whatever can wait (reports, bulk classifications, translations) goes in a batch through the API's batch API (sending in bulk), which charges half the price and returns the result within a day. A task someone is waiting on right now stays out of the batch."
+        }
+      ],
+      "legenda": "Audit it the way you would audit an employee: what it delivers, how much it costs and whether the model is the right one for the job.",
+      "dica": "In my case, the model for each system is written down in one single place. When a better or cheaper one comes out, I change it on one line, without hunting through the rest."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Deciding, task by task",
+      "sub": "Three questions for each recurring task. Tap or click each one.",
+      "passos": [
+        {
+          "titulo": "How hard is it?",
+          "sub": "picks the model",
+          "texto": [
+            "Simple and repetitive goes to the smallest; everyday text and analysis to the middle one; anything with risk or that decides money to the largest.",
+            "If in doubt, run the procedure from lesson 6 on both and compare."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "Sorting emails by subject: smaller model. Proposal for a client: larger model."
+          }
+        },
+        {
+          "titulo": "Subscription only?",
+          "sub": "what counts",
+          "texto": [
+            "If you only use the chat subscription, cache and batch don't show up for you: the provider takes care of that.",
+            "What counts is picking the right model, not repeating the context for nothing (the project already keeps it) and noticing when you hit the limit."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "Hit the limit every Thursday? See which task used the larger model without needing to."
+          }
+        },
+        {
+          "titulo": "Is anyone waiting? (API)",
+          "sub": "picks the batch",
+          "texto": [
+            "If nobody is waiting for the answer right now, the task can go in a batch for half the price.",
+            "Gather the day's tasks and send them all at once."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "Weekly summary of 200 customer reviews: batch."
+          }
+        },
+        {
+          "titulo": "Does the start repeat? (API)",
+          "sub": "uses the cache",
+          "texto": [
+            "If every call starts with the same rules and documents, keep that start identical and at the beginning.",
+            "What changes (the question, the case) goes at the end."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "Customer service: rules and price table always the same at the start; the customer's message at the end."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "One table per agent. Replace the text between < > with yours.",
+      "blocos": [
+        {
+          "rot": "Cost per task (document or spreadsheet)",
+          "icone": "grafico",
+          "conteudo": "# Cost per task · <agent> · week of <date>\n\n| task | times per week | model | reason | on the spot or in batch | fixed start (cache)? | usage noted |\n|---|---|---|---|---|---|---|\n| <task 1> | | smaller / middle / larger | <why, in one sentence> | on the spot / batch | yes / no | <hit the limit? or the amount> |\n| <task 2> | | | | | | |\n| <task 3> | | | | | | |\n| <task 4> | | | | | | |\n| <task 5> | | | | | | |\n\nDecision of the week: <what changes model or moves to batch>"
+        },
+        {
+          "rot": "Request: review the cost with the agent itself",
+          "icone": "chat",
+          "conteudo": "Below is the list of tasks you do for me every week.\nFor each one, tell me:\n1. whether it really needs the larger model, or whether the smaller one can handle it (and how I test that);\n2. whether it can wait and go in a batch;\n3. whether the start of the request is always the same (and what I keep fixed to take advantage of the cache).\nAnswer in a table and don't change anything yet.\n\n<list of tasks>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Filled-in example",
+            "html": "<ul><li><b>Sorting emails by topic</b> · 50×/week · smaller · on the spot · fixed start.</li><li><b>Review summary</b> · 1×/week · middle · batch.</li><li><b>Client proposal</b> · 3×/week · larger · on the spot.</li></ul><p>Decision: the summary goes to batch; the email sorting drops to the smaller model after it passes the 5-round test.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Everything on the larger model</b> \"just to be safe\": you pay a lot for what the smaller one does just as well.</li><li><b>Switching models without testing</b>: run the procedure on both and compare.</li><li><b>Changing the start of the request every time</b>: you lose the cache.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your agent's bill",
+      "sub": "One week of real use.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The table",
+          "min": "20 min",
+          "texto": "List the five tasks you hand off to AI the most and fill in the cost-per-task table with model, on the spot or batch, and fixed start (if you only use a subscription, mark \"on the spot\").",
+          "pronto": "all five rows have a model and \"on the spot\" or \"batch\" marked, with the reason in one sentence."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A week of notes",
+          "min": "10 min",
+          "dias": 7,
+          "texto": "For one week, note the usage of each task: on a subscription, whether you used the larger model and whether you hit the limit; on the API, the amount.",
+          "pronto": "the \"usage noted\" column is filled in for the whole week."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · One decision",
+          "min": "15 min",
+          "texto": "With the week in hand, pick one change (smaller model, batch or fixed start) and test it with the procedure from lesson 6.",
+          "pronto": "the \"Decision of the week\" line has one tested change, with the result of the comparison."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "This lesson in one minute",
+      "sub": "AI agent without breaking the bank.",
+      "chave": "dpap-reel4"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Sorting 50 emails by topic every week. Which choice makes the most sense?",
+          "opcoes": [
+            "The larger model, just to be safe, since a sorting mistake costs more than the model.",
+            "Test it on the smaller model and keep it if it passes the rounds.",
+            "Do it by hand so you don't spend anything.",
+            "Switch AI providers."
+          ],
+          "certa": 1,
+          "explica": "A simple, repetitive task usually does well on the smaller model. The multi-round test (lesson 6) tells you whether it can handle it.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "You hit your subscription limit every Thursday. What do you look at first?",
+          "opcoes": [
+            "Whether you need to switch to a pricier plan this very week.",
+            "Which task is using the larger model when it doesn't need to.",
+            "Whether you can open more free accounts on other tools.",
+            "Whether the problem goes away when you delete the project's old conversations."
+          ],
+          "certa": 1,
+          "explica": "On a subscription, the lever is the right model for each task. The cost-per-task table shows which one is wasting the larger model.",
+          "ref": "passos"
+        },
+        {
+          "p": "Who do cache and batch apply to?",
+          "opcoes": [
+            "To those who pay per use through the API; on a subscription, the provider takes care of it.",
+            "To everyone who uses ChatGPT, with no setup at all.",
+            "Only to those who use the smaller model.",
+            "Only to those who work in the terminal."
+          ],
+          "certa": 0,
+          "explica": "Cache and batch are API features, billed by volume. If you only use a subscription, you take care of the right model and the limit.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Right model",
+          "texto": "Smaller for the simple, middle for everyday, larger for what matters."
+        },
+        {
+          "t": "Cache and batch",
+          "texto": "A fixed start costs a fraction; what can wait goes in batch at half price."
+        },
+        {
+          "t": "Tracked bill",
+          "texto": "Usage noted per task, every week, and one tested decision at a time."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "The reel on YouTube",
+          "href": "https://www.youtube.com/watch?v=1yXmp-xTErI",
+          "icone": "video"
+        }
+      ]
+    }
+  ]
+}
